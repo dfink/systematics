@@ -76,6 +76,7 @@
 \newcommand{\erg}{{\rm ~erg}}
 \newcommand{\degree}{^{\rm o}}
 \newcommand{\sigmav}{\langle\sigma_Av\rangle}
+\newcommand{\zrock}{$Z_{\rm rock}$}
 \def\la{\vcenter{\hbox{$<$}\offinterlineskip\hbox{$\sim$}}}
 \def\ga{\vcenter{\hbox{$>$}\offinterlineskip\hbox{$\sim$}}}
 
@@ -170,6 +171,50 @@ These papers have provoked theorists to try to reconcile the observations with
 a number of theories (cite dozens of papers).  But all of this work depends on
 the question:
 
+(What was the question?)
+
+\subsection{???}
+We begin by examining the limb events and finding a bump at 130 GeV in a
+subsample of these events.  We consider two hypothesis for the origin of the
+bump: that the events come from far away in energy, or the more subtle
+possibility that an energy mapping error could redistribute in energy, making
+a spectral feature.  We then explore the various parameters of the GC line
+events and the limb bump events. 
+
+\subsection{standard survey strategy}
+
+In standard survey mode, the LAT points at zenith angle \zrock\ north of the
+zenith on one orbit and \zrock\ south of the zenith on the next.  \zrock\ was
+$35\degree$ early in the survey, but was changed to $50\degree$ in 2009 for
+better thermal management of the downard-facing battery radiator.  This
+rocking profile, combined with the precession of the orbit every 55 days,
+allow the LAT to cover the whole sky every two orbits with approximately
+uniform coverage.  This survey mode is only occasionally interrupted for
+pointed observations of targets of opportunity (ToOs). 
+
+At an altitude $a$, the geometric (unrefracted) horizon is at zenith angle
+\be
+Z_{\rm hor} = \cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree
+\ee
+The Fermi orbit is nearly circular with $535 < a < 564$, yielding $Z_{\rm
+  hor}$ in the 112.7$\degree$ to 113.3$\degree$ range, with the tangent point
+some 2400 km distant.  At this distance, the 90 km height of the atmosphere
+subtends about $2\degree$, or roughly $111 < Z < 113$.  
+
+At lower zenith angles ($Z \la 105\degree$) Fermi observes the sky with very
+little background from the limb.  The incidence angle on the detector,
+$\theta$, is defined such that $\theta=0$ corresponds to the ``boresight.''
+For \zrock = $50\degree$, the limb photons are typically at $\theta >
+60\degree$ (See figure \ref{fig:theta-E}.
+
+\section{Earth limb photons}
+The continual cosmic-ray cascades in the Earth's atmosphere produce gamma rays
+with $dN/dE \sim E^{-2.6}$.  (check this???)  These atmospheric gammas are
+referred to as ``Earth limb photons'' or sometimes as ``albedo photons.''
+These photons provide a convenient reference sample to search for systematics
+in the LAT data.  Because the limb photons result from atmospheric cascades,
+they are produced by interactions in a highly boosted frame, and cannot
+contain line emission. 
 
 
 
@@ -181,9 +226,7 @@ the question:
 
 
 
-10.  Direction of the orbital pole (upper panel) and Sun (lower panel)
-for the events.   Note that some times of year these events do not
-occur.
+
 
 
 
