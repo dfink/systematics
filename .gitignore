@@ -1,2 +1,3 @@
-systemics.pdf
-systemics.ps
+.*
+*.pdf
+*.ps
