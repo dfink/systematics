@@ -190,19 +190,56 @@ the question:
 In standard survey mode, the LAT points at zenith angle \zrock\ north of the
 zenith on one orbit and \zrock\ south of the zenith on the next.  \zrock\ was
 $35\degree$ early in the survey, but was changed to $50\degree$ in 2009 for
-better thermal management of the downard-facing battery radiator.  This
+better thermal management of the downward-facing battery radiator.  This
 rocking profile, combined with the precession of the orbit every 55 days,
-allow the LAT to cover the whole sky every two orbits with approximately
+allows the LAT to cover the whole sky every two orbits with approximately
 uniform coverage.  This survey mode is only occasionally interrupted for
 pointed observations of targets of opportunity (ToOs). 
 
 \textbf{Define all parameters, $\theta$, $\phi$, $z$, $x-y-z$ coordinates etc}
 
+\begin{table*}
+\begin{center}
+  \begin{tabular}{l|rr|l}
+    \hline
+    Parameter & & Range &  Description\\
+    name      & min & max &            \\
+    \hline
+    $\theta$ &    0 &  $\sim80$ & Polar coordinate (instrument frame) \\
+    $\phi$   &    0 &       360 & Azimuthal coordinate (instrument frame) \\
+    $Z$      &    0 & $\sim113$ & Zenith angle (horizon at $Z=113\degree$) \\
+    \zrock\  & -110 & 110 & Rocking angle (boresight angle N of zenith \\
+    $\ell$   &    0 & 360 & Galactic longitude \\
+    $b$      &  -90 &  90 & Galactic latitude \\
+    $\psi$   &    0 & 180 & Angle to Galactic center.  $\cos\psi=\cos\ell\cos b$ \\
+    \hline
+  \end{tabular}
+  \caption{Parameter definitions}
+  \label{tab:eventRatios}
+\end{center}
+\end{table*}
+
+
+
+
 \textbf{Discuss standard event selection used throughout}
 
 \subsection{Peculiarities of the Galactic center observation}
+The fact that the dominant 130 GeV line signal is near the Galactic center
+raises a number of concerns.  The GC is near the ecliptic ($\beta \approx
+-5\degree$) and may be observed in a restricted range of angles in instrument
+coordinates $(\theta, \phi)$ when the Sun passes near it.  Also, the gamma-ray
+flux at the GC is somewhat brighter and has a harder spectrum than neighboring
+regions.  We consider whether these facts could exacerbate any systematic
+errors in the LAT data to produce a spurious signal.
 
-\subsubsection{Is the Galactic center observed under peculiar incident angles?}
+{\bf note: The subsection titles could relate to the hypothesis being tested.
+For example: ``Hypothesis: the GC observations have a restricted range of
+incidence angles on the instrument'' or ``Hypothesis: The Galactic center is
+bright, so instrumental artifacts are more significant there'' and so on.
+Just to be exceedingly clear about what we are testing.}
+
+\subsubsection{Is the Galactic center observed at peculiar incidence angles?}
 
 \begin{figure*}
   \centering
@@ -225,7 +262,7 @@ pointed observations of targets of opportunity (ToOs).
 \begin{figure}
 \centering
 \includegraphics[width=1.0\linewidth]{plots/phi_energy.eps}
-\caption{Energy distribution of all-sky events with incident angles close to
+\caption{Energy distribution of all-sky events with incidence angles close to
 the x-z plane (perpendicular to the solar panels). The red dotted line
 indicates 130 GeV \textbf{(what is the other line?)}.}
 \label{fig:spectrum_phi}
@@ -234,15 +271,15 @@ indicates 130 GeV \textbf{(what is the other line?)}.}
 In case the Galactic center is predominantly observed under specific angles in
 LAT instrumental coordinates, associated instrumental problems could be
 projected onto the Galactic center simply for geometrical reasons. The sky
-coverage of Fermi at different incident angles is usually approximately uniform,
-but this is not necessarily the case for the Galactic center: In late Dec
-(Jun), the angular distance between the Sun and the Galactic center
+coverage of Fermi at various incidence angles is usually approximately uniform,
+but this is not necessarily the case for the Galactic center.  In late December
+(June), the angular distance between the Sun and the Galactic center
 (anti-center) reduces to about $5^\circ$.  Since Fermi keeps the solar panels
 aligned to the Sun, this leads to an increase of Galactic center events at
 instrument azimuth angles of $\phi\approx 0^\circ$ ($\phi\approx 180^\circ$).
 This behaviour is clearly visible in the upper left panel of Fig.~\ref{fig:time_phi}, where we show
 the $\phi$ distribution of $>10\GeV$ events from the Galactic center as
-function of time (modulo one year); the $\theta$ distribution in the upper
+a function of time (modulo one year).  The $\theta$ distribution in the upper
 right panel shows the precession pattern of 55 days \textbf{(check!)}.
 Integrated over time, the $\phi$ and $\theta$ distributions look like in the
 lower panels of Fig.~\ref{fig:time_phi}.
@@ -264,10 +301,10 @@ $\psi<3^\circ$), a few other bright regions exist.  The most important are the
 Earth limb ($\approx2800$ events at $z>110^\circ$ and \emph{all} impact
 angles) and the Galactic bulge ($\approx640$ events at
 $3^\circ<|\ell|\lesssim30^\circ$, $|b|<2^\circ$ \textbf{(does this definition
-make sense?)}).\footnote{In the vicinity ($<0.5^\circ$) of the bright point
+make sense? -- I would call this the inner Galactic plane - DPF)}).\footnote{In the vicinity ($<0.5^\circ$) of the bright point
 sources Vela and Geminga only two $>100\GeV$ events were measured.} These
-targets provide a large amount of high energy photons that can be used to
-check for systematic artefacts in the energy spectra. The largest test sample,
+targets provide a large number of high energy photons that can be used to
+check for systematic artifacts in the energy spectra. The largest test sample,
 however, with events at all impact angles, is simply the full set of all
 standard events, excluding only the Galactic center $\psi<10^\circ$ ($\approx
 4300$ events). For all these targets, we show the energy distribution in
@@ -317,7 +354,7 @@ events above this energy to make up the 130 GeV excess.
 
 \subsection{Peculiarities of the instrument}
 
-\subsubsection{Indications for artefacts at different incident angles?}
+\subsubsection{Indications for artifact at different incidence angles?}
 In Fig.~\ref{fig:polarPlotsAll}, we show the statistical significance for a
 line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
 
@@ -421,8 +458,8 @@ contain line emission.
   \includegraphics[width=0.48\linewidth]{plots/albedo_line_thetaCut.eps}
   \includegraphics[width=0.48\linewidth]{plots/noalbedo_line_thetaCut.eps}
   \caption{\emph{Left panel:} Fit of a monochromatic line at 129 GeV to the
-  low incident angle Earth limb data. A 129 GeV line has a local significance of
-  3.2$\sigma$.  \emph{Right panel:} same, but for the low incident angle
+  low incidence angle Earth limb data. A 129 GeV line has a local significance of
+  3.2$\sigma$.  \emph{Right panel:} same, but for the low incidence angle
   standard events. The inner $10^\circ$ around the Galactic center is masked
   out. We find no indication for a line at 129 GeV.}
   \label{fig:albedoline}
@@ -564,24 +601,24 @@ Some of these look very similar to the bump in Figure \ref{fig:Ehist-all}.
 Ways to progress.
 
 One to two weeks of additional limb data would provide an exposure comparable
-to teh limb photons used here.  One option would be to release comissioning
+to the limb photons used here.  One option would be to release commissioning
 data from early in the survey, if they are thought to be of sufficient
 quality.  Otherwise, new limb observations could be undertaken, in order to
-test teh reality of the 130 GeV limb feature.  
+test the reality of the 130 GeV limb feature.  
 
 If the 130 GeV feature is not replicated, it can be dismissed as a statistical
-fluke.  If it reappears, a deppr inestigation into its cause is warrented.  
+fluke.  If it reappears, a deeper investigation into its cause is warranted.  
 
-even then, it is a challenge to understand how such an instrumental feature
+Even then, it is a challenge to understand how such an instrumental feature
 could be mapped so precisely onto a localized region within 5-10 degrees of
 the GC.  The GC is not near the path of the orbital pole, nor its axis of
 precession.  The orbital phase, precession, Earth's orbit, and time of year
 are all well mixed by the few $\times10^4$ orbits and 25 precession cycles
 over 1500 days.  We have shown that the events in question are drawn from
-every part of event and spacecraft parameter space available in teh public
+every part of event and spacecraft parameter space available in the public
 files.  In the absence of any model of instrumental behavior that explains how
 these events land near the GC and not elsewhere in the Galactic plane, it is
-far fetched to say that they invalidate a result with a local signiifcance of
+far fetched to say that they invalidate a result with a local significance of
 $p\approx10^{-9}$.  
 
 
