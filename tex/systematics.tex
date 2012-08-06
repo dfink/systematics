@@ -200,9 +200,9 @@ pointed observations of targets of opportunity (ToOs).
 
 \textbf{Discuss standard event selection used throughout}
 
-\subsection{Galactic center observation}
+\subsection{Peculiarities of the Galactic center observation}
 
-\subsubsection{Is the Galactic center observed under peculiar impact angles?}
+\subsubsection{Is the Galactic center observed under peculiar incident angles?}
 
 \begin{figure*}
   \centering
@@ -227,24 +227,25 @@ pointed observations of targets of opportunity (ToOs).
 \includegraphics[width=1.0\linewidth]{plots/phi_energy.eps}
 \caption{Energy distribution of all-sky events with incident angles close to
 the x-z plane (perpendicular to the solar panels). The red dotted line
-indicates 130 GeV.}
+indicates 130 GeV \textbf{(what is the other line?)}.}
 \label{fig:spectrum_phi}
 \end{figure}
 
 In case the Galactic center is predominantly observed under specific angles in
-LAT coordinates, associated instrumental problems could be projected onto the
-Galactic center simply for geometrical reasons. The sky coverage of Fermi at
-different impact angles is usually approximately uniform, but this is not
-necessarily the case for the Galactic center: In late Dec (Jun), the angular
-distance between the Sun and the Galactic center (anti-center) reduces to
-about $5^\circ$.  Since Fermi keeps the solar panels aligned to the Sun, this
-leads to an increase of Galactic center events at instrument azimuth angles of
-$\phi\approx 0^\circ$ ($\phi\approx 180^\circ$). This behaviour is clearly
-visible in Fig.~\ref{fig:time_phi}, where we show the $\phi$ distribution of
-$>10\GeV$ events from the Galactic center as function of time (modulo one
-year).  However, apart from this anomaly, the $\phi$ distribution away from
-the Galactic center as well as the distribution of the inclination angle
-$\theta$ are mostly even.
+LAT instrumental coordinates, associated instrumental problems could be
+projected onto the Galactic center simply for geometrical reasons. The sky
+coverage of Fermi at different incident angles is usually approximately uniform,
+but this is not necessarily the case for the Galactic center: In late Dec
+(Jun), the angular distance between the Sun and the Galactic center
+(anti-center) reduces to about $5^\circ$.  Since Fermi keeps the solar panels
+aligned to the Sun, this leads to an increase of Galactic center events at
+instrument azimuth angles of $\phi\approx 0^\circ$ ($\phi\approx 180^\circ$).
+This behaviour is clearly visible in the upper left panel of Fig.~\ref{fig:time_phi}, where we show
+the $\phi$ distribution of $>10\GeV$ events from the Galactic center as
+function of time (modulo one year); the $\theta$ distribution in the upper
+right panel shows the precession pattern of 55 days \textbf{(check!)}.
+Integrated over time, the $\phi$ and $\theta$ distributions look like in the
+lower panels of Fig.~\ref{fig:time_phi}.
 
 It is tempting to relate the locality of the 130 GeV excess in the Galactic
 plane to this inhomogeneous $\phi$ distribution. A simple check (and
@@ -257,26 +258,27 @@ angles should appear in this data sample with high significance. However, the
 energy distribution shown in Fig.~\ref{fig:spectrum_phi} shows no sign for a
 strong feature at 130 GeV.
 
-\subsubsection{Is the Galactic center distinct due to its high flux?} 
-Besides the Galactic center with $\approx80$ events above 100 GeV (and within
+\subsubsection{Is the Galactic center distinct due to its high flux?} Besides
+the Galactic center with $\approx80$ events above 100 GeV (and within
 $\psi<3^\circ$), a few other bright regions exist.  The most important are the
 Earth limb ($\approx2800$ events at $z>110^\circ$ and \emph{all} impact
 angles) and the Galactic bulge ($\approx640$ events at
-$3^\circ<|\ell|\lesssim30^\circ$, $|b|<2^\circ$).\footnote{In the vicinity
-($<0.5^\circ$) of the bright point sources Vela and Geminga only two
-$>100\GeV$ events were measured.} These targets provide a large amount of high
-energy photons that can be used to check for systematic artefacts in the
-energy spectra. The largest test sample, however, with events at all impact
-angles, is simply the full set of all standard events, excluding only the
-Galactic center $\psi<10^\circ$ ($\approx 4300$ events). For all these
-targets, we show the energy distribution in Fig.~\ref{fig:target_spectra}.
-None of the regions exhibit an $\mathcal{O}(1)$ excess at 130 GeV as observed
-in the Galactic center.
+$3^\circ<|\ell|\lesssim30^\circ$, $|b|<2^\circ$ \textbf{(does this definition
+make sense?)}).\footnote{In the vicinity ($<0.5^\circ$) of the bright point
+sources Vela and Geminga only two $>100\GeV$ events were measured.} These
+targets provide a large amount of high energy photons that can be used to
+check for systematic artefacts in the energy spectra. The largest test sample,
+however, with events at all impact angles, is simply the full set of all
+standard events, excluding only the Galactic center $\psi<10^\circ$ ($\approx
+4300$ events). For all these targets, we show the energy distribution in
+Fig.~\ref{fig:target_spectra}.  None of the regions exhibit an
+$\mathcal{O}(1)$ excess at 130 GeV as observed in the Galactic center.
 
 \begin{figure}
 \centering
 \includegraphics[width=1.0\linewidth]{plots/target_spectra.eps}
-\caption{Energy distribution in different bright regions.}
+\caption{Energy distribution in different bright regions \textbf{(improve
+plot)}.}
 \label{fig:target_spectra}
 \end{figure}
 
@@ -287,16 +289,16 @@ amount of source with very hard spectra. If these high energy photons are
 occasionally miss-reconstructed with energies close to 130 GeV, this could
 produce a line feature in the data that would dominantly show up at the
 Galactic center. As a simple check for this possibility, we calculated the
-ratio of events above $300\GeV$ to events above $100\GeV$ in different regions
-of the sky. The results are shown in Tab.~\ref{tab:eventRatios}; the Galactic
-center does not harbour significantly more events high energy events than
-other regions of the sky, which all do not exhibit a feature at 130 GeV (see
-Fig.~\ref{fig:target_spectra}). 
+ratio of events above $300\GeV$ (and up to $500\GeV$) to events above
+$100\GeV$ in different regions of the sky. The results are shown in
+Tab.~\ref{tab:eventRatios}; the Galactic center does not harbour significantly
+more events high energy events than other regions of the sky, which all do not
+exhibit a feature at 130 GeV (see Fig.~\ref{fig:target_spectra}). 
 
 About 10--15 events contribute to the line feature seen at the GC. Assuming
 that fluxes are not harder than $\propto E^{-2.6}$, most of these events would
 have to come from energies below $300\GeV$, since there would be not enough
-events above this energy.
+events above this energy to make up the 130 GeV excess.
 
 \begin{table}
   \begin{tabular}{lrr}
@@ -313,9 +315,13 @@ events above this energy.
   \label{tab:eventRatios}
 \end{table}
 
-\subsection{Instrumental coordinates}
+\subsection{Peculiarities of the instrument}
+
+\subsubsection{Indications for artefacts at different incident angles?}
 In Fig.~\ref{fig:polarPlotsAll}, we show the statistical significance for a
 line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
+
+\textbf{Add more details}
 
 \begin{figure*}[p]
   \centering
@@ -326,12 +332,13 @@ line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
   \includegraphics[width=0.45\textwidth]{plots/polar_z.LE.100.eps}
   \includegraphics[width=0.40\textwidth]{plots/scan_z.LE.100.eps}
   \caption{Significance for a 130 GeV line-like excess in different parts of
-  the $\theta$-$\phi$ plane.}
+  the $\theta$-$\phi$ plane. \textbf{(add 130 GEV to figure)}.}
   \label{fig:polarPlotsAll}
 \end{figure*}
 
-\subsubsection{Indications from instrumental reconstruction?}
+\subsubsection{Indications for a bad event reconstruction?}
 There could be indications, but there are not. See Fig.~\ref{fig:CTBquality}.
+\text
 
 \begin{figure*}
   \centering
@@ -409,8 +416,8 @@ contain line emission.
   \includegraphics[width=0.48\linewidth]{plots/albedo_line_thetaCut.eps}
   \includegraphics[width=0.48\linewidth]{plots/noalbedo_line_thetaCut.eps}
   \caption{\emph{Left panel:} Fit of a monochromatic line at 129 GeV to the
-  low impact angle Earth limb data. A 129 GeV line has a local significance of
-  3.2$\sigma$.  \emph{Right panel:} same, but for the low impact angle
+  low incident angle Earth limb data. A 129 GeV line has a local significance of
+  3.2$\sigma$.  \emph{Right panel:} same, but for the low incident angle
   standard events. The inner $10^\circ$ around the Galactic center is masked
   out. We find no indication for a line at 129 GeV.}
   \label{fig:albedoline}
