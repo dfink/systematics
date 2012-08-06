@@ -174,9 +174,9 @@ the question:
 (What was the question?)
 
 
-\section{Observation of the Galactic Center}
+\section{The 130 GeV excess}
 
-\subsection{Standard Survey Strategy}
+\subsection{Standard survey strategy and definitions}
 
 \begin{figure}[h]
   \begin{center}
@@ -196,23 +196,12 @@ allow the LAT to cover the whole sky every two orbits with approximately
 uniform coverage.  This survey mode is only occasionally interrupted for
 pointed observations of targets of opportunity (ToOs). 
 
-At an altitude $a$, the geometric (unrefracted) horizon is at zenith angle
-\be
-Z_{\rm hor} = \cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree
-\ee
-The Fermi orbit is nearly circular with $535 < a < 564$, yielding $Z_{\rm
-  hor}$ in the 112.7$\degree$ to 113.3$\degree$ range, with the tangent point
-some 2400 km distant.  At this distance, the 90 km height of the atmosphere
-subtends about $2\degree$, or roughly $111 < Z < 113$.  
+\textbf{Define all parameters, $\theta$, $\phi$, $z$, $x-y-z$ coordinates etc}
 
-At lower zenith angles ($Z \la 105\degree$) Fermi observes the sky with very
-little background from the limb.  The incidence angle on the detector,
-$\theta$, is defined such that $\theta=0$ corresponds to the ``boresight.''
-For \zrock = $50\degree$, the limb photons are typically at $\theta >
-60\degree$ (See figure \ref{fig:theta-E}.
+\textbf{Discuss standard event selection used throughout}
 
+\subsection{Galactic center observation}
 
-\subsection{Basic Concerns}
 \subsubsection{Is the Galactic center observed under peculiar impact angles?}
 
 \begin{figure*}
@@ -291,8 +280,7 @@ in the Galactic center.
 \label{fig:target_spectra}
 \end{figure}
 
-\subsubsection{Are energy spectra in the Galactic center particularly hard or
-soft?}
+\subsubsection{Are energy spectra in the Galactic center particularly hard?}
 
 One concern is that the Galactic center might harbour a distinctively large
 amount of source with very hard spectra. If these high energy photons are
@@ -325,8 +313,8 @@ events above this energy.
   \label{tab:eventRatios}
 \end{table}
 
-\subsubsection{Is there an indication of 130 GeV features under specific impact
-angles?} In Fig.~\ref{fig:polarPlotsAll}, we show the statistical significance for a
+\subsection{Instrumental coordinates}
+In Fig.~\ref{fig:polarPlotsAll}, we show the statistical significance for a
 line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
 
 \begin{figure*}[p]
@@ -341,19 +329,6 @@ line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
   the $\theta$-$\phi$ plane.}
   \label{fig:polarPlotsAll}
 \end{figure*}
-
-\subsubsection{Is the Galactic center line related to
-$30^\circ<\theta<45^\circ$?}
-No. See Fig.~\ref{fig:GCevents}.
-
-\begin{figure}[p]
-  \centering
-  \includegraphics[width=1.0\linewidth]{plots/gc_energy.eps}
-  \caption{Galactic center spectrum with with and without
-  $30^\circ<\theta<45^\circ$ events.}
-  \label{fig:GCevents}
-\end{figure}
-
 
 \subsubsection{Indications from instrumental reconstruction?}
 There could be indications, but there are not. See Fig.~\ref{fig:CTBquality}.
@@ -377,6 +352,21 @@ There could be indications, but there are not. See Fig.~\ref{fig:CTBquality}.
 
 \clearpage
 \section{Earth limb photons}
+At an altitude $a$, the geometric (unrefracted) horizon is at zenith angle
+\be
+Z_{\rm hor} = \cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree
+\ee
+The Fermi orbit is nearly circular with $535 < a < 564$, yielding $Z_{\rm
+  hor}$ in the 112.7$\degree$ to 113.3$\degree$ range, with the tangent point
+some 2400 km distant.  At this distance, the 90 km height of the atmosphere
+subtends about $2\degree$, or roughly $111 < Z < 113$.  
+
+At lower zenith angles ($Z \la 105\degree$) Fermi observes the sky with very
+little background from the limb.  The incidence angle on the detector,
+$\theta$, is defined such that $\theta=0$ corresponds to the ``boresight.''
+For \zrock = $50\degree$, the limb photons are typically at $\theta >
+60\degree$ (See figure \ref{fig:theta-E}.
+
 We begin by examining the limb events and finding a bump at 130 GeV in a
 subsample of these events.  We consider two hypothesis for the origin of the
 bump: that the events come from far away in energy, or the more subtle
@@ -426,16 +416,6 @@ contain line emission.
   \label{fig:albedoline}
 \end{figure*}
 
-\begin{figure*}[p]
-  \centering
-  \includegraphics[width=0.48\textwidth]{plots/gc_theta_phi.eps}
-  \includegraphics[width=0.48\textwidth]{plots/limb_theta_phi.eps}
-  \caption{Line events (125 GeV $< E <$ 140 GeV) in physical detector angle
-  coordinates ($\theta, \phi$).  The $30\degree < \theta < 45\degree$ events
-  are blue in this and following panels}
-  \label{fig:theta-phi}
-\end{figure*}
-
 \begin{figure}[p]
   \centering
   \includegraphics[width=1.0\linewidth]{plots/limb_l_b.eps}
@@ -447,10 +427,12 @@ contain line emission.
 \end{figure}
 
 \begin{figure}[p]
-  \centering
-  \includegraphics[width=0.9\linewidth]{plots/rockangle.ps}
-  \caption{Rock angle -- \textbf{need to add red and blue to this plot}...  }
-  \label{fig:rock}
+  \begin{center}
+    % \includegraphics{<+file+>}
+    \fbox{\Huge Figure}
+  \end{center}
+  \caption{Rocking angle as function of time}
+  \label{fig:rockTime}
 \end{figure}
 
 Now for some text...
@@ -485,6 +467,18 @@ However, it is still plausible that there is a more subtle energy mapping
 error that distorts the energy scale near 130 GeV.  In the next section, we
 argue that this is a reasonable explanation of the limb line, but not of the
 GC lines. 
+
+\textbf{Mention Fig.~\ref{fig:GCevents}}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=1.0\linewidth]{plots/gc_energy.eps}
+  \caption{Galactic center spectrum with with and without
+  $30^\circ<\theta<45^\circ$ events.}
+  \label{fig:GCevents}
+\end{figure}
+
+
 
 \clearpage
 
@@ -665,6 +659,23 @@ avoidance of the SAA leaves a hole in the upper panel.}
   \label{fig:bumpmodelmany}
 \end{figure*}
  
+\begin{figure*}[p]
+  \centering
+  \includegraphics[width=0.48\textwidth]{plots/gc_theta_phi.eps}
+  \includegraphics[width=0.48\textwidth]{plots/limb_theta_phi.eps}
+  \caption{Line events (125 GeV $< E <$ 140 GeV) in physical detector angle
+  coordinates ($\theta, \phi$).  The $30\degree < \theta < 45\degree$ events
+  are blue in this and following panels}
+  \label{fig:theta-phi}
+\end{figure*}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.9\linewidth]{plots/rockangle.ps}
+  \caption{Rock angle -- \textbf{need to add red and blue to this plot}...  }
+  \label{fig:rock}
+\end{figure}
+
 
 \bibliography{systematics}
 
