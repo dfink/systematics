@@ -173,15 +173,19 @@ the question:
 
 (What was the question?)
 
-\subsection{???}
-We begin by examining the limb events and finding a bump at 130 GeV in a
-subsample of these events.  We consider two hypothesis for the origin of the
-bump: that the events come from far away in energy, or the more subtle
-possibility that an energy mapping error could redistribute in energy, making
-a spectral feature.  We then explore the various parameters of the GC line
-events and the limb bump events. 
 
-\subsection{standard survey strategy}
+\section{Observation of the Galactic Center}
+
+\subsection{Standard Survey Strategy}
+
+\begin{figure}[h]
+  \begin{center}
+    % \includegraphics{<+file+>}
+    \fbox{\Huge Figure}
+  \end{center}
+  \caption{Phi/theta distribution of all events}
+  \label{fig:phiThetaDist}
+\end{figure}
 
 In standard survey mode, the LAT points at zenith angle \zrock\ north of the
 zenith on one orbit and \zrock\ south of the zenith on the next.  \zrock\ was
@@ -207,195 +211,36 @@ $\theta$, is defined such that $\theta=0$ corresponds to the ``boresight.''
 For \zrock = $50\degree$, the limb photons are typically at $\theta >
 60\degree$ (See figure \ref{fig:theta-E}.
 
-\section{Earth limb photons}
-The continual cosmic-ray cascades in the Earth's atmosphere produce gamma rays
-with $dN/dE \sim E^{-2.6}$.  (check this???)  These atmospheric gammas are
-referred to as ``Earth limb photons'' or sometimes as ``albedo photons.''
-These photons provide a convenient reference sample to search for systematics
-in the LAT data.  Because the limb photons result from atmospheric cascades,
-they are produced by interactions in a highly boosted frame, and cannot
-contain line emission. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\begin{figure*}[p]
-\centering
-\includegraphics[width=0.6\textwidth]{plots/theta-E.ps}
-\caption{Incidence angle $\theta$ vs. log $E$ for $Z > 105\degree$.  A blue
-  box indicates the region $30\degree < \theta < 45\degree$ and 125 GeV $< E
-  <$ 140 GeV, where an excess of events appear.  The vast majority of limb
-  events are at $\theta > 60\degree$ because the telescope seldom points more
-  than $50\degree$ from zenith, and the limb events are mostly at
-  $Z>110\degree$.}
-\label{fig:theta-E}
-\end{figure*}
-
-
-\begin{figure*}[p]
-\centering
-\includegraphics[width=0.6\textwidth]{plots/Ehist-all.ps}
-\caption{Histogram of limb $(Z>105\degree)$ events vs. log($E$) for various
-  ranges of $\theta$. The position of the 130 GeV line is indicated (red
-  dotted line).  Note the excess in the $30\degree < \theta < 45\degree$ bin,
-  which contains about 5\% of the limb events.}
-\label{fig:Ehist-all}
-\end{figure*}
-
-\begin{figure*}[p]
-\centering
-\includegraphics[width=0.6\textwidth]{plots/albedo_line_thetaCut.eps}
-\caption{Fit of a monochromatic line at 129 GeV to the low impact angle Earth
-  limb data. A 129 GeV line has a local significance of 3.2$\sigma$.
-}
-\label{fig:albedoline}
-\end{figure*}
-
-\begin{figure*}[p]
-\centering
-\includegraphics[width=0.6\textwidth]{plots/noalbedo_line_thetaCut.eps}
-\caption{Same as Figure \ref{fig:albedoline}, but for the low
-impact angle standard events. The inner $10^\circ$ around the Galactic center
-is masked out. We find no indication for a line at 129 GeV.
-}
-\label{fig:noalbedoline}
-\end{figure*}
-
-\begin{figure*}[p]
-\centering
-\includegraphics[width=0.6\textwidth]{plots/limb_bump_model.ps}
-\caption{Upper panel: function mapping true energy $E_t$ to reported energy
-  $E$ (see Eqs. \ref{eq:yofx} and \ref{eq:dydx}).  Middle panel: The effect of
-  this mapping on a spectrum of constant $dN/d\log E_t$, as in Eq.
-  \ref{eq:dndy} (red line) and also for mock data (black histogram).  Lower
-  panel: Same, but for $dN/dE \sim E^{-2.6}$.  }
-\label{fig:bumpmodel}
-\end{figure*}
-
-\begin{figure*}[p]
-\centering
-\includegraphics[width=0.6\textwidth]{plots/limb_bump_model_many.ps}
-\caption{Ten mock spectra of an underlying spectrum $dN/dE \sim E^{-2.6}$,
-  distorted according to Eq. \ref{eq:dndy}.  Note the similarity to the
-  $30\degree < \theta < 45\degree$ panel in Figure \ref{fig:Ehist-all}.  
-}
-\label{fig:bumpmodelmany}
-\end{figure*}
-
-\begin{figure*}[p]
-\centering
-\includegraphics[width=0.6\textwidth]{plots/limbfits.ps}
-\caption{Fits of the energy mapping model to limb data for various ranges of
-  inclination angle $\theta$.  The vertical dotted line corresponds to 130
-  GeV.  The test statistic ($2\Delta\ln L$) for the best fit model (green
-  line) relative to the null hypothesis (red line) is given, along with the
-  significance, expressed in ``sigma'' including a penalty for the 3
-  additional degrees of freedom.  The deviation from linearity is only
-  significant in the $30\degree < \theta < 45\degree$ panel.}
-\label{fig:limbfits}
-\end{figure*}
-
-\begin{figure*}[p]
-\centering
-\includegraphics[width=0.6\textwidth]{plots/gc_energy.eps}
-\caption{Galactic center spectrum with with and without
-$30^\circ<\theta<45^\circ$ events.}
-\label{fig:GCevents}
-\end{figure*}
-
-\begin{figure*}[p]
-\centering
-\includegraphics[width=0.49\textwidth]{plots/gc_theta_phi.eps}
-\includegraphics[width=0.49\textwidth]{plots/limb_theta_phi.eps}
-\caption{Line events (125 GeV $< E <$ 140 GeV) in physical detector angle
-  coordinates ($\theta, \phi$).  The $30\degree < \theta < 45\degree$ events
-  are blue in this and following panels}
-\label{fig:theta-phi}
-\end{figure*}
-
-% \begin{figure*}
-% \centering
-% \includegraphics[width=0.6\textwidth]{plots/GC_THETA_PHI.eps}
-% \caption{THETA and PHI distribution of GC line (red crosses), compared to
-% distribution of all $>10$ GeV events within $10^\circ$ of the GC.}
-% \label{fig:gc_theta_phi}
-% \end{figure*}
-% 
-% 
-
-\begin{figure*}[p]
-\centering
-\includegraphics[width=0.6\textwidth]{plots/limb_l_b.eps}
-\caption{Same events, projected as an equal-area plot of Galactic $(\ell, \sin
-  b)$.  The majority of high-incidence limb events appear near the orbital
-  pole, which precesses around the celestial pole.  This pattern is expected
-  from the observing strategy.}
-\label{fig:l-b}
-\end{figure*}
-
-
-
-
-\begin{figure*}[p]
-\centering
-\includegraphics[width=0.6\textwidth]{plots/rockangle.ps}
-\caption{Rock angle -- \textbf{need to add red and blue to this plot}...
-}
-\label{fig:rock}
-\end{figure*}
-
-\clearpage
-Now for some text...
-
-
-Possible systematic errors:
-
-- Extra events
-
-{\bf Low energy photons:} Events would have to be mistakenly mapped from
-either lower energy ($E \la 10$ GeV) gammas or much lower energy photons
-(X-rays from the 1E $1740.7-2942$ microquasar?  511 keV photons?) in which the
-Galactic center is much brighter.  It is difficult to see how this could
-happen.
-
-{\bf High energy photons:} At $E > 100$ GeV, the Galactic center is only
-modestly brighter than the surrounding regions, so there are not enough
-photons available.
-
-{\bf Particle contamination:} If monochromatic photons from the limb are
-difficult to explain, it is even harder to understand how mono-energetic
-particles could be present. 
-
-{\bf Effective area error:} An error in the LAT effective area (e.g. various
-cuts are less restrictive for some reason) for $30\degree < \theta <
-45\degree$ could explain the limb photons, but would also produce a line
-everywhere in the Galactic plane.  No such line is seen outside of the GC. 
-
-From these considerations, we conclude that there is no way for the limb line
-to be caused by extra events. 
-
-However, it is still plausible that there is a more subtle energy mapping
-error that distorts the energy scale near 130 GeV.  In the next section, we
-argue that this is a reasonable explanation of the limb line, but not of the
-GC lines. 
-
-\section{Observation of the Galactic Center}
 
 \subsection{Basic Concerns}
 \subsubsection{Is the Galactic center observed under peculiar impact angles?}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=0.44\textwidth]{plots/TIME_PHI.eps}
+  \includegraphics[width=0.44\textwidth]{plots/TIME_THETA.eps}
+  \includegraphics[width=0.44\textwidth]{plots/L_PHI.eps}
+  \includegraphics[width=0.44\textwidth]{plots/L_THETA.eps}
+  \caption{\emph{Upper panels:} PHI (left panel) and THETA (right panel)
+  distribution of GC events as function of time modulo one year (with Jan 1st
+  as origin). In Dec (Jun) the sun stands in Sagittarius (anti galactic
+  center). In these periods, most events are observed under $\phi\approx
+  0^\circ$ ($\phi\approx 180^\circ$), since the instrumental x-z plane is
+  fixed by the sun to keep the solar panels aligned. \emph{Lower panels:} PHI
+  (left panel) and THETA (right panel) distribution of events along the
+  galactic disk. Close to the GC, the distribution becomes significantly
+  biased.}
+  \label{fig:time_phi}
+\end{figure*}
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0\linewidth]{plots/phi_energy.eps}
+\caption{Energy distribution of all-sky events with incident angles close to
+the x-z plane (perpendicular to the solar panels). The red dotted line
+indicates 130 GeV.}
+\label{fig:spectrum_phi}
+\end{figure}
 
 In case the Galactic center is predominantly observed under specific angles in
 LAT coordinates, associated instrumental problems could be projected onto the
@@ -423,18 +268,6 @@ angles should appear in this data sample with high significance. However, the
 energy distribution shown in Fig.~\ref{fig:spectrum_phi} shows no sign for a
 strong feature at 130 GeV.
 
-% Figure \ref{fig:l_phi} and \ref{fig:l_theta} show the distribution of event
-% incident angles as function of the Galactic longitude. From
-% Fig.~\ref{fig:l_phi} it is apparent that the Galactic center is predominantly
-% observed under $\phi\approx 0^\circ$ and $\phi\approx 180^\circ$. This is
-% because the path of the Sun over the sky actually intersects with the Galactic
-% center, and Fermi keeps the solar panels aligned to the Sun. This anual
-% modulation is clearly visible in Fig.~\ref{fig:time_phi}. To check whether
-% this behaviour could cause the 130 GeV feature, we plot in
-% Fig.~\ref{fig:spectrum_phi} the energy distribution of events with impact
-% angles close to $\phi\approx0^\circ$ and $\phi\approx180^\circ$. No line at
-% 130 GeV appears.
-
 \subsubsection{Is the Galactic center distinct due to its high flux?} 
 Besides the Galactic center with $\approx80$ events above 100 GeV (and within
 $\psi<3^\circ$), a few other bright regions exist.  The most important are the
@@ -450,6 +283,13 @@ Galactic center $\psi<10^\circ$ ($\approx 4300$ events). For all these
 targets, we show the energy distribution in Fig.~\ref{fig:target_spectra}.
 None of the regions exhibit an $\mathcal{O}(1)$ excess at 130 GeV as observed
 in the Galactic center.
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0\linewidth]{plots/target_spectra.eps}
+\caption{Energy distribution in different bright regions.}
+\label{fig:target_spectra}
+\end{figure}
 
 \subsubsection{Are energy spectra in the Galactic center particularly hard or
 soft?}
@@ -486,79 +326,194 @@ events above this energy.
 \end{table}
 
 \subsubsection{Is there an indication of 130 GeV features under specific impact
-angles?} In Fig.~\ref{fig:123}, we show the statistical significance for a
+angles?} In Fig.~\ref{fig:polarPlotsAll}, we show the statistical significance for a
 line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
-\textbf{Include plot.}
+
+\begin{figure*}[p]
+  \centering
+  \includegraphics[width=0.45\textwidth]{plots/polar_all.eps}
+  \includegraphics[width=0.40\textwidth]{plots/scan_all.eps}
+  \includegraphics[width=0.45\textwidth]{plots/polar_z.GT.110.eps}
+  \includegraphics[width=0.40\textwidth]{plots/scan_z.GT.110.eps}
+  \includegraphics[width=0.45\textwidth]{plots/polar_z.LE.100.eps}
+  \includegraphics[width=0.40\textwidth]{plots/scan_z.LE.100.eps}
+  \caption{Significance for a 130 GeV line-like excess in different parts of
+  the $\theta$-$\phi$ plane.}
+  \label{fig:polarPlotsAll}
+\end{figure*}
 
 \subsubsection{Is the Galactic center line related to
 $30^\circ<\theta<45^\circ$?}
 No. See Fig.~\ref{fig:GCevents}.
 
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=1.0\linewidth]{plots/gc_energy.eps}
+  \caption{Galactic center spectrum with with and without
+  $30^\circ<\theta<45^\circ$ events.}
+  \label{fig:GCevents}
+\end{figure}
+
+
+\subsubsection{Indications from instrumental reconstruction?}
+There could be indications, but there are not. See Fig.~\ref{fig:CTBquality}.
 
 \begin{figure*}
-\centering
-\includegraphics[width=0.6\textwidth]{plots/target_spectra.eps}
-\caption{Energy distribution in different bright regions.}
-\label{fig:target_spectra}
+  \centering
+  \includegraphics[width=0.48\linewidth]{plots/CTBCORE_CTBBestEnergyProb.eps}
+  \includegraphics[width=0.48\linewidth]{plots/Tkr1FirstLayer.eps}
+  \caption{\emph{Left panel:} Distribution of CTBCORE (the probability that
+  the direction estimate is good) and CTBBestEnergyProb (the probability that
+  the best energy chosen from the two energy estimators is correct) for GC
+  events (in red), compared to average distribution for $>50$ GeV events.
+  \emph{Right panel}: First tracker layer to show evidence of a particle hit
+  for the best track reconstruction. Tracker layers are 0-17 where 0 is
+  closest to the calorimeter, and 6-17 (2-5) corresponds to front-
+  (back-)converting events (tracker layers 0 and 1 come without conversion
+  foils). The gray bars show the distribution averaged over all $>100$ GeV
+  events, the green/red bars show the distribution for the GC line.}
+  \label{fig:CTBquality}
 \end{figure*}
 
+\clearpage
+\section{Earth limb photons}
+We begin by examining the limb events and finding a bump at 130 GeV in a
+subsample of these events.  We consider two hypothesis for the origin of the
+bump: that the events come from far away in energy, or the more subtle
+possibility that an energy mapping error could redistribute in energy, making
+a spectral feature.  We then explore the various parameters of the GC line
+events and the limb bump events. 
 
-\begin{figure*}
-\centering
-\includegraphics[width=0.6\textwidth]{plots/CTBCORE_CTBBestEnergyProb.eps}
-\caption{Distribution of CTBCORE (the probability that the direction estimate
-is good) and CTBBestEnergyProb (the probability that the best energy chosen
-from the two energy estimators is correct) for GC events (in red), compared to
-average distribution for $>50$ GeV events. \textbf{Add blue dots}}
-\label{fig:CTBquality}
+The continual cosmic-ray cascades in the Earth's atmosphere produce gamma rays
+with $dN/dE \sim E^{-2.6}$.  (check this???)  These atmospheric gammas are
+referred to as ``Earth limb photons'' or sometimes as ``albedo photons.''
+These photons provide a convenient reference sample to search for systematics
+in the LAT data.  Because the limb photons result from atmospheric cascades,
+they are produced by interactions in a highly boosted frame, and cannot
+contain line emission. 
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=1.0\linewidth]{plots/theta-E.ps}
+  \caption{Incidence angle $\theta$ vs. log $E$ for $Z > 105\degree$.  A blue
+  box indicates the region $30\degree < \theta < 45\degree$ and 125 GeV $< E
+  <$ 140 GeV, where an excess of events appear.  The vast majority of limb
+  events are at $\theta > 60\degree$ because the telescope seldom points more
+  than $50\degree$ from zenith, and the limb events are mostly at
+  $Z>110\degree$.}
+  \label{fig:theta-E}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=1.0\linewidth]{plots/Ehist-all.ps}
+  \caption{Histogram of limb $(Z>105\degree)$ events vs. log($E$) for various
+  ranges of $\theta$. The position of the 130 GeV line is indicated (red
+  dotted line).  Note the excess in the $30\degree < \theta < 45\degree$ bin,
+  which contains about 5\% of the limb events.}
+  \label{fig:Ehist-all}
+\end{figure}
+
+\begin{figure*}[p]
+  \centering
+  \includegraphics[width=0.48\linewidth]{plots/albedo_line_thetaCut.eps}
+  \includegraphics[width=0.48\linewidth]{plots/noalbedo_line_thetaCut.eps}
+  \caption{\emph{Left panel:} Fit of a monochromatic line at 129 GeV to the
+  low impact angle Earth limb data. A 129 GeV line has a local significance of
+  3.2$\sigma$.  \emph{Right panel:} same, but for the low impact angle
+  standard events. The inner $10^\circ$ around the Galactic center is masked
+  out. We find no indication for a line at 129 GeV.}
+  \label{fig:albedoline}
 \end{figure*}
 
-\begin{figure*}
-\centering
-\includegraphics[width=0.6\textwidth]{plots/Tkr1FirstLayer.eps}
-\caption{First tracker layer to show evidence of a particle hit for the best
-track reconstruction. Tracker layers are 0-17 where 0 is closest to the
-calorimeter, and 6-17 (2-5) corresponds to front- (back-)converting events
-(tracker layers 0 and 1 come without conversion foils). The gray bars show the
-distribution averaged over all $>100$ GeV events, the green/red bars show the
-distribution for the GC line. \textbf{Same for limb line}}
-\label{fig:Tkr1FirstLayer}
+\begin{figure*}[p]
+  \centering
+  \includegraphics[width=0.48\textwidth]{plots/gc_theta_phi.eps}
+  \includegraphics[width=0.48\textwidth]{plots/limb_theta_phi.eps}
+  \caption{Line events (125 GeV $< E <$ 140 GeV) in physical detector angle
+  coordinates ($\theta, \phi$).  The $30\degree < \theta < 45\degree$ events
+  are blue in this and following panels}
+  \label{fig:theta-phi}
 \end{figure*}
 
-\begin{figure*}
-\centering
-\includegraphics[width=0.49\textwidth]{plots/L_PHI.eps}
-\includegraphics[width=0.49\textwidth]{plots/L_THETA.eps}
-\caption{PHI (left panel) and THETA (right panel) distribution of events along
-the galactic disk. Close to the GC, the distribution becomes significantly
-biased.}
-\label{fig:l_phiandtheta}
-\end{figure*}
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=1.0\linewidth]{plots/limb_l_b.eps}
+  \caption{Same events, projected as an equal-area plot of Galactic $(\ell,
+  \sin b)$.  The majority of high-incidence limb events appear near the
+  orbital pole, which precesses around the celestial pole.  This pattern is
+  expected from the observing strategy.}
+  \label{fig:l-b}
+\end{figure}
 
-\begin{figure*}
-\centering
-\includegraphics[width=0.49\textwidth]{plots/TIME_PHI.eps}
-\includegraphics[width=0.49\textwidth]{plots/TIME_THETA.eps}
-\caption{PHI (left panel) and THETA (right panel) distribution of GC events as
-function of time modulo one year (with Jan 1st as origin). In Dec (Jun) the
-sun stands in Sagittarius (anti galactic center). In these periods, most
-events are observed under $\phi\approx 0^\circ$ ($\phi\approx 180^\circ$),
-since the instrumental x-z plane is fixed by the sun to keep the solar panels
-aligned.}
-\label{fig:time_phi}
-\end{figure*}
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.9\linewidth]{plots/rockangle.ps}
+  \caption{Rock angle -- \textbf{need to add red and blue to this plot}...  }
+  \label{fig:rock}
+\end{figure}
 
+Now for some text...
 
-\begin{figure*}
-\centering
-\includegraphics[width=0.6\textwidth]{plots/phi_energy.eps}
-\caption{Energy distribution of all-sky events with incident angles close to
-the x-z plane (perpendicular to the solar panels). The red dotted line
-indicates 130 GeV.}
-\label{fig:spectrum_phi}
-\end{figure*}
+Possible systematic errors:
+
+- Extra events
+
+{\bf Low energy photons:} Events would have to be mistakenly mapped from
+either lower energy ($E \la 10$ GeV) gammas or much lower energy photons
+(X-rays from the 1E $1740.7-2942$ microquasar?  511 keV photons?) in which the
+Galactic center is much brighter.  It is difficult to see how this could
+happen.
+
+{\bf High energy photons:} At $E > 100$ GeV, the Galactic center is only
+modestly brighter than the surrounding regions, so there are not enough
+photons available.
+
+{\bf Particle contamination:} If monochromatic photons from the limb are
+difficult to explain, it is even harder to understand how mono-energetic
+particles could be present. 
+
+{\bf Effective area error:} An error in the LAT effective area (e.g. various
+cuts are less restrictive for some reason) for $30\degree < \theta <
+45\degree$ could explain the limb photons, but would also produce a line
+everywhere in the Galactic plane.  No such line is seen outside of the GC. 
+
+From these considerations, we conclude that there is no way for the limb line
+to be caused by extra events. 
+
+However, it is still plausible that there is a more subtle energy mapping
+error that distorts the energy scale near 130 GeV.  In the next section, we
+argue that this is a reasonable explanation of the limb line, but not of the
+GC lines. 
+
+\clearpage
 
 \section{Energy mapping error: a model for the limb bump}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=1.0\linewidth]{plots/limb_bump_model.ps}
+  \caption{Upper panel: function mapping true energy $E_t$ to reported energy
+  $E$ (see Eqs. \ref{eq:yofx} and \ref{eq:dydx}).  Middle panel: The effect of
+  this mapping on a spectrum of constant $dN/d\log E_t$, as in Eq.
+  \ref{eq:dndy} (red line) and also for mock data (black histogram).  Lower
+  panel: Same, but for $dN/dE \sim E^{-2.6}$.  }
+  \label{fig:bumpmodel}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=1.0\linewidth]{plots/limbfits.ps}
+\caption{Fits of the energy mapping model to limb data for various ranges of
+  inclination angle $\theta$.  The vertical dotted line corresponds to 130
+  GeV.  The test statistic ($2\Delta\ln L$) for the best fit model (green
+  line) relative to the null hypothesis (red line) is given, along with the
+  significance, expressed in ``sigma'' including a penalty for the 3
+  additional degrees of freedom.  The deviation from linearity is only
+  significant in the $30\degree < \theta < 45\degree$ panel.}
+\label{fig:limbfits}
+\end{figure}
+
 Given the difficulty in explaining the excess any other way, we consider the
 possibility that the limb bump results from an energy mapping error.  We
 propose a simple model, in which the mapping from true energy to reported
@@ -598,6 +553,7 @@ with this distortion in Figure \ref{fig:bumpmodelmany}.
 Some of these look very similar to the bump in Figure \ref{fig:Ehist-all}.
 
 
+\clearpage
 \section{Future}
 Ways to progress.
 
@@ -621,32 +577,6 @@ files.  In the absence of any model of instrumental behavior that explains how
 these events land near the GC and not elsewhere in the Galactic plane, it is
 far fetched to say that they invalidate a result with a local signiifcance of
 $p\approx10^{-9}$.  
-
-
-
-
-% \begin{figure*}[p]
-% \centering
-% \includegraphics[width=0.6\textwidth]{plots/theta-time.ps}
-% \caption{Distribution of impact angles $\theta$ as function of
-% time. Red (black) dots show the events from the Galactic center (Earth limb)
-% 130 GeV feature; yellow(gray) dots show all standard (Earth limb) events for
-% comparison.
-% }
-% \label{fig:cw3}
-% \end{figure*}
- 
-% \begin{figure*}[p]
-% \centering
-% \includegraphics[width=0.6\textwidth]{plots/theta-time-rock52.ps}
-% \caption{Same as [theta-time.png], but with rocking angles above
-% $52^\circ$ excluded.
-% }
-% \label{fig:cw4}
-% \end{figure*}
-
-
-
 
 
 \section{Conclusions}
@@ -728,30 +658,13 @@ avoidance of the SAA leaves a hole in the upper panel.}
 
 \begin{figure*}[p]
   \centering
-  \includegraphics[width=0.45\textwidth]{plots/polar_all.eps}
-  \includegraphics[width=0.45\textwidth]{plots/scan_all.eps}
-  \caption{Significance for a 130 GeV line-like excess in different parts of
-  the $\theta$-$\phi$ plane.}
-  \label{fig:polarPlotsAll}
+  \includegraphics[width=0.6\textwidth]{plots/limb_bump_model_many.ps}
+  \caption{Ten mock spectra of an underlying spectrum $dN/dE \sim E^{-2.6}$,
+  distorted according to Eq. \ref{eq:dndy}.  Note the similarity to the
+  $30\degree < \theta < 45\degree$ panel in Figure \ref{fig:Ehist-all}.  }
+  \label{fig:bumpmodelmany}
 \end{figure*}
-
-\begin{figure*}[p]
-  \centering
-  \includegraphics[width=0.45\textwidth]{plots/polar_z.GT.110.eps}
-  \includegraphics[width=0.45\textwidth]{plots/scan_z.GT.110.eps}
-  \caption{Same as Fig.~\ref{fig:polarPlotsAll}, but for $z>110^\circ$ events
-  only.}
-  \label{fig:polarPlots110}
-\end{figure*}
-
-\begin{figure*}[p]
-  \centering
-  \includegraphics[width=0.45\textwidth]{plots/polar_z.LE.100.eps}
-  \includegraphics[width=0.45\textwidth]{plots/scan_z.LE.100.eps}
-  \caption{Same as Fig.~\ref{fig:polarPlotsAll}, but for $z<100^\circ$ events
-  only.}
-  \label{fig:polarPlots100}
-\end{figure*}
+ 
 
 \bibliography{systematics}
 
