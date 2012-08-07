@@ -196,8 +196,6 @@ allows the LAT to cover the whole sky every two orbits with approximately
 uniform coverage.  This survey mode is only occasionally interrupted for
 pointed observations of targets of opportunity (ToOs). 
 
-\textbf{Define all parameters, $\theta$, $\phi$, $z$, $x-y-z$ coordinates etc}
-
 \begin{table*}
 \begin{center}
   \begin{tabular}{l|rr|l}
@@ -207,6 +205,8 @@ pointed observations of targets of opportunity (ToOs).
     \hline
     $\theta$ &    0 &  $\sim80$ & Polar coordinate (instrument frame) \\
     $\phi$   &    0 &       360 & Azimuthal coordinate (instrument frame) \\
+    $(x,y,z)$&      &     & Cartesian coordinates;
+    $\propto(\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$\\
     $Z$      &    0 & $\sim113$ & Zenith angle (horizon at $Z=113\degree$) \\
     \zrock\  & -110 & 110 & Rocking angle (boresight angle N of zenith) \\
     $\ell$   &    0 & 360 & Galactic longitude \\
@@ -214,7 +214,9 @@ pointed observations of targets of opportunity (ToOs).
     $\psi$   &    0 & 180 & Angle to Galactic center; $\cos\psi=\cos\ell\cos b$ \\
     \hline
   \end{tabular}
-  \caption{Parameter definitions}
+  \caption{Parameter definitions. The Cartesian coordinates $(x, y, z)$ are
+  defined such that the $z$-axis corresponds to the LAT boresight, and the
+  y-axis is parallel to the solar panels.}
   \label{tab:eventRatios}
 \end{center}
 \end{table*}
