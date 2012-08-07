@@ -1,6 +1,6 @@
 all :
-#	latex systematics.tex
-#	bibtex systematics
+	latex systematics.tex
+	bibtex systematics
 	latex systematics.tex
 	latex systematics.tex
 	latex systematics.tex
