@@ -208,10 +208,10 @@ pointed observations of targets of opportunity (ToOs).
     $\theta$ &    0 &  $\sim80$ & Polar coordinate (instrument frame) \\
     $\phi$   &    0 &       360 & Azimuthal coordinate (instrument frame) \\
     $Z$      &    0 & $\sim113$ & Zenith angle (horizon at $Z=113\degree$) \\
-    \zrock\  & -110 & 110 & Rocking angle (boresight angle N of zenith \\
+    \zrock\  & -110 & 110 & Rocking angle (boresight angle N of zenith) \\
     $\ell$   &    0 & 360 & Galactic longitude \\
     $b$      &  -90 &  90 & Galactic latitude \\
-    $\psi$   &    0 & 180 & Angle to Galactic center.  $\cos\psi=\cos\ell\cos b$ \\
+    $\psi$   &    0 & 180 & Angle to Galactic center; $\cos\psi=\cos\ell\cos b$ \\
     \hline
   \end{tabular}
   \caption{Parameter definitions}
@@ -233,13 +233,8 @@ flux at the GC is somewhat brighter and has a harder spectrum than neighboring
 regions.  We consider whether these facts could exacerbate any systematic
 errors in the LAT data to produce a spurious signal.
 
-{\bf note: The subsection titles could relate to the hypothesis being tested.
-For example: ``Hypothesis: the GC observations have a restricted range of
-incidence angles on the instrument'' or ``Hypothesis: The Galactic center is
-bright, so instrumental artifacts are more significant there'' and so on.
-Just to be exceedingly clear about what we are testing.}
-
-\subsubsection{Is the Galactic center observed at peculiar incidence angles?}
+\subsubsection{Hypothesis: the GC observations have a restricted range of
+incidence angles on the instrument}
 
 \begin{figure*}
   \centering
@@ -295,13 +290,16 @@ angles should appear in this data sample with high significance. However, the
 energy distribution shown in Fig.~\ref{fig:spectrum_phi} shows no sign for a
 strong feature at 130 GeV.
 
-\subsubsection{Is the Galactic center distinct due to its high flux?} Besides
+\subsubsection{Hypothesis: The Galactic center is bright, so instrumental
+artifacts are more significant there}
+
+Besides
 the Galactic center with $\approx80$ events above 100 GeV (and within
 $\psi<3^\circ$), a few other bright regions exist.  The most important are the
 Earth limb ($\approx2800$ events at $z>110^\circ$ and \emph{all} impact
-angles) and the Galactic bulge ($\approx640$ events at
-$3^\circ<|\ell|\lesssim30^\circ$, $|b|<2^\circ$ \textbf{(does this definition
-make sense? -- I would call this the inner Galactic plane - DPF)}).\footnote{In the vicinity ($<0.5^\circ$) of the bright point
+angles) and the inner Galactic plane ($\approx640$ events at
+$3^\circ<|\ell|\lesssim30^\circ$, $|b|<2^\circ$).\footnote{In the vicinity
+($<0.5^\circ$) of the bright point
 sources Vela and Geminga only two $>100\GeV$ events were measured.} These
 targets provide a large number of high energy photons that can be used to
 check for systematic artifacts in the energy spectra. The largest test sample,
@@ -319,7 +317,8 @@ plot)}.}
 \label{fig:target_spectra}
 \end{figure}
 
-\subsubsection{Are energy spectra in the Galactic center particularly hard?}
+\subsubsection{Hypothesis: The spectra at the Galactic center are hard, making
+energy mapping errors more significant}
 
 One concern is that the Galactic center might harbour a distinctively large
 amount of source with very hard spectra. If these high energy photons are
@@ -354,7 +353,9 @@ events above this energy to make up the 130 GeV excess.
 
 \subsection{Peculiarities of the instrument}
 
-\subsubsection{Indications for artifact at different incidence angles?}
+\subsubsection{Hypothesis: A 130 GeV features is visible under specific
+incidence angles on the instrument}
+
 In Fig.~\ref{fig:polarPlotsAll}, we show the statistical significance for a
 line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
 
@@ -378,8 +379,10 @@ line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
   \label{fig:polarPlotsAll}
 \end{figure*}
 
-\subsubsection{Indications for a bad event reconstruction?}
-There could be indications, but there are not. See Fig.~\ref{fig:CTBquality}.
+\subsubsection{Hypothesis: The Galactic center events are flagged as badly
+reconstructed}
+
+There could be indications, but there are none. See Fig.~\ref{fig:CTBquality}.
 \text
 
 \begin{figure*}
