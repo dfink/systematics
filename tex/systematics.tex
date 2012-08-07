@@ -183,10 +183,11 @@ the question:
     \includegraphics[width=0.9\linewidth]{plots/polarCounts.eps}
     \vspace{-0.5cm}
   \end{center}
-  \caption{Distribution of incidence angles for all $E>100\GeV$ events (blue
-  dots) and for the GC line events (red dots, see text for definition) in the
-  ($\theta$, $\phi$) plane. The contribution from
-  the earth limb is clearly visible at $\theta\gtrsim 60^\circ$.}
+  \caption{Incidence angle distribution of \emph{all} events with $E>100\GeV$
+  (blue dots) and of GC line events (red dots; see
+  Tab.~\ref{tab:regions}), as function of the instrumental coordinates
+  $\theta$ and $\phi$. The Earth limb contribution is clearly visible
+  at $\theta\gtrsim 60^\circ$.}
   \label{fig:phiThetaDist}
 \end{figure}
 
@@ -224,9 +225,11 @@ pointed observations of targets of opportunity (ToOs).
 \end{center}
 \end{table*}
 
-Event selection: XXX months of data, SOURCE (??) events,
-\texttt{DATA\_QUAL==1} and \texttt{LAT\_CONFIG==1} cuts (but leave
-\texttt{ROCK\_ANGLE} unconstrained). \textbf{(update!)}
+Throughout, we use 207 weeks of \texttt{P7CLEAN\_V6} events, with the
+good-time-interval cut \texttt{DATA\_QUAL==1}, however without cuts on the
+zenith angle $Z$ or rocking angle \zrock. We checked that our results remain
+qualitatively the same when using instead \texttt{P7SOURCE\_V6} events or when
+applying \texttt{LAT\_CONFIG==1}. \textbf{(check!)} 
 
 \subsection{Peculiarities of the Galactic center observation}
 The fact that the dominant 130 GeV line signal is near the Galactic center
@@ -247,12 +250,12 @@ incidence angles on the instrument}
   \includegraphics[width=0.44\textwidth]{plots/L_PHI.eps}
   \includegraphics[width=0.44\textwidth]{plots/L_THETA.eps}
   \caption{\emph{Upper panels:} PHI (left panel) and THETA (right panel)
-  distribution of GC events as function of time modulo one year (with Jan 1st
+  distribution of of standard events close to the Galactic center, as function of time modulo one year (with Jan 1st
   at the origin). In Dec (Jun) the Sun passes near the Galactic center
   (anti-center).  In these periods, most events are observed at $\phi\approx
   0^\circ$ ($\phi\approx 180^\circ$), since the LAT $x-z$ plane is
   determined by the Sun to keep the solar panels oriented. \emph{Lower panels:}
-  PHI (left panel) and THETA (right panel) distribution of events along the
+  PHI (left panel) and THETA (right panel) distribution of standard events along the
   galactic disk. Close to the GC, the distribution becomes significantly
   bimodal.}
   \label{fig:time_phi}
@@ -261,9 +264,9 @@ incidence angles on the instrument}
 \begin{figure}
 \centering
 \includegraphics[width=1.0\linewidth]{plots/phi_energy.eps}
-\caption{Energy distribution of all-sky events with incidence angles close to
+\caption{Energy distribution of events with incidence angles close to
 the LAT $x-z$ plane (perpendicular to the solar panels). The red dotted lines
-indicates 111 and 130 GeV.}
+indicate 111 and 129 GeV.}
 \label{fig:spectrum_phi}
 \end{figure}
 
@@ -312,12 +315,13 @@ Fig.~\ref{fig:target_spectra}.  None of the regions exhibit an
 $\mathcal{O}(1)$ excess at 130 GeV as observed in the Galactic center.
 
 \begin{figure}
-\centering
-\includegraphics[width=1.0\linewidth]{plots/target_spectra.eps}
-\caption{Energy distribution in various bright regions.  None of them show the
-  excess events around 130 GeV seen in the Galactic center.  \textbf{(improve
-plot)}.}
-\label{fig:target_spectra}
+  \centering
+  \includegraphics[width=1.0\linewidth]{plots/target_spectra.eps}
+  \caption{Energy distribution in various bright regions (see
+  Tab.~\ref{tab:regions}).  None of them show the excess events around 130 GeV
+  seen in the Galactic center.  \textbf{(improve plot)}. The red dotted lines
+  indicate 111 and 129 GeV.}
+  \label{fig:target_spectra}
 \end{figure}
 
 \subsubsection{Hypothesis: The spectra at the Galactic center are hard, making
@@ -341,20 +345,25 @@ have to come from energies below $300\GeV$, since there would be not enough
 events above this energy to make up the 130 GeV excess even if \emph{all} of
 them were incorrectly mapped to 130 GeV. 
 
-\begin{table}
-  \begin{tabular}{lrr}
+\begin{table*}
+  \begin{tabular}{lllccc}
     \hline
-    Region & $\frac{N(>100\GeV)}{N(>30\GeV)}$ & $\frac{N(>300\GeV)}{N(>100\GeV)}$\\
+    Event selection &&Cuts & $N(>10\GeV)$ & $\frac{N(>100\GeV)}{N(>30\GeV)}$ & $\frac{N(>300\GeV)}{N(>100\GeV)}$\\
     \hline
-    $\psi<3^\circ$ & 17.6\% & 9.2\% \\
-    $Z>110^\circ$  & 10.3\% & 9.2\% \\
-    $3^\circ < |\ell| < 30^\circ,\ |b|<2^\circ$ & 16.9\% & 10.1\% \\
-    $\psi>10^\circ$ & 13.2\% & 9.3\% \\
+    Earth limb           &  & $Z>110^\circ$                                                  &  & 10.3\% & 9.2\% \\
+    Standard events      &  & $Z<100^\circ$                                                  &  & 10.3\% & 9.2\% \\
+    Galactic center      &  & $Z<100^\circ$, $\psi<3^\circ$                                  &  & 17.6\% & 9.2\% \\
+    Inner Galactic plane &  & $Z<100^\circ$, $3^\circ < |\ell| < 30^\circ,\ |b|<2^\circ$     &  & 16.9\% & 10.1\% \\
+    Galactic center line &  & $Z<100^\circ$, $\psi<3^\circ$, $120\GeV<E<138\GeV$             &  & 16.9\% & 10.1\% \\
+    Earth limb line      &  & $Z>110^\circ$, $30^\circ<\theta<45^\circ$, $120\GeV<E<138\GeV$ &  & 10.3\% & 9.2\% \\ 
+    % FWHM of GC line is 13.6%
     \hline
   \end{tabular}
-  \caption{Event ratios in different regions of the sky}
-  \label{tab:eventRatios}
-\end{table}
+  \caption{Different sets of events that we use throught this work. In
+  addition, we show the total number of events and event ratios.
+  \textbf{(update $N$ numbers)}. We always restrict the events to $>10\GeV$.}
+  \label{tab:regions}
+\end{table*}
 
 \subsection{Peculiarities of the instrument}
 
@@ -375,7 +384,9 @@ line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
   \includegraphics[width=0.45\textwidth]{plots/polar_z.LE.100.eps}
   \includegraphics[width=0.40\textwidth]{plots/scan_z.LE.100.eps}
   \caption{\emph{Left panels:} Significance for a 130 GeV line-like excess in different parts of
-  the $\theta$-$\phi$ plane (for $\theta=0$--$80^\circ$). The three numbers
+  the $\theta$-$\phi$ plane (for $\theta=0$--$80^\circ$). From top to bottom,
+  the results are derived from all events, from the Earth limb events, and
+  from standard events. The three numbers
   show the TS value for the presence of a 130 GeV line, the
   signal-to-background ratio and the number of events above $80\GeV$ inside
   the considered $\theta$-$\phi$ region. \emph{Right panels:} The significance
@@ -395,14 +406,15 @@ There could be indications, but there are none. See Fig.~\ref{fig:CTBquality}.
   \includegraphics[width=0.48\linewidth]{plots/Tkr1FirstLayer.eps}
   \caption{\emph{Left panel:} Distribution of CTBCORE (the probability that
   the direction estimate is good) and CTBBestEnergyProb (the probability that
-  the best energy chosen from the two energy estimators is correct) for GC
-  events (in red), compared to average distribution for $>50$ GeV events.
-  \emph{Right panel}: First tracker layer to show evidence of a particle hit
-  for the best track reconstruction. Tracker layers are 0-17 where 0 is
-  closest to the calorimeter, and 6-17 (2-5) corresponds to front-
-  (back-)converting events (tracker layers 0 and 1 come without conversion
-  foils). The gray bars show the distribution averaged over all $>100$ GeV
-  events, the green/red bars show the distribution for the GC line.}
+  the best energy chosen from the two energy estimators is correct) for
+  Galactic center line events (in red), compared to the distribution of $>50$
+  GeV standard events.  \emph{Right panel}: First tracker layer to show
+  evidence of a particle hit for the best track reconstruction. Tracker layers
+  are 0-17 where 0 is closest to the calorimeter, and 6-17 (2-5) corresponds
+  to front- (back-)converting events (tracker layers 0 and 1 come without
+  conversion foils). The gray bars show the distribution averaged over all
+  $>100$ GeV standard events, the green/red bars show the distribution for the
+  GC line.}
   \label{fig:CTBquality}
 \end{figure*}
 
