@@ -183,7 +183,10 @@ the question:
     \includegraphics[width=0.9\linewidth]{plots/polarCounts.eps}
     \vspace{-0.5cm}
   \end{center}
-  \caption{Phi/theta distribution of all events}
+  \caption{Distribution of incidence angles for all $E>100\GeV$ events (blue
+  dots) and for the GC line events (red dots, see text for definition) in the
+  ($\theta$, $\phi$) plane. The contribution from
+  the earth limb is clearly visible at $\theta\gtrsim 60^\circ$.}
   \label{fig:phiThetaDist}
 \end{figure}
 
@@ -221,10 +224,9 @@ pointed observations of targets of opportunity (ToOs).
 \end{center}
 \end{table*}
 
-
-
-
-\textbf{Discuss standard event selection used throughout}
+Event selection: XXX months of data, SOURCE (??) events,
+\texttt{DATA\_QUAL==1} and \texttt{LAT\_CONFIG==1} cuts (but leave
+\texttt{ROCK\_ANGLE} unconstrained). \textbf{(update!)}
 
 \subsection{Peculiarities of the Galactic center observation}
 The fact that the dominant 130 GeV line signal is near the Galactic center
@@ -245,11 +247,11 @@ incidence angles on the instrument}
   \includegraphics[width=0.44\textwidth]{plots/L_PHI.eps}
   \includegraphics[width=0.44\textwidth]{plots/L_THETA.eps}
   \caption{\emph{Upper panels:} PHI (left panel) and THETA (right panel)
-  distribution of GC events as function of time modulo one year (with Jan 1st
-  as origin). In Dec (Jun) the sun stands in Sagittarius (anti galactic
+  distribution of GC events as function of time modulo one year (with January 1st
+  as origin). In December (June) the Sun stands in Sagittarius (anti galactic
   center). In these periods, most events are observed under $\phi\approx
   0^\circ$ ($\phi\approx 180^\circ$), since the instrumental x-z plane is
-  fixed by the sun to keep the solar panels aligned. \emph{Lower panels:} PHI
+  fixed to the Sun to keep the solar panels aligned. \emph{Lower panels:} PHI
   (left panel) and THETA (right panel) distribution of events along the
   galactic disk. Close to the GC, the distribution becomes significantly
   biased.}
@@ -376,8 +378,7 @@ line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
   show the TS value for the presence of a 130 GeV line, the
   signal-to-background ratio and the number of events above $80\GeV$ inside
   the considered $\theta$-$\phi$ region. \emph{Right panels:} The significance
-  for a $E_\gamma$ line-like excess for the same $\theta$-$\phi$ regions.
-  \textbf{(add 130 GeV to figure)}.}
+  for a $E_\gamma$ line-like excess for the same $\theta$-$\phi$ regions.}
   \label{fig:polarPlotsAll}
 \end{figure*}
 
