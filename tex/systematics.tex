@@ -247,14 +247,14 @@ incidence angles on the instrument}
   \includegraphics[width=0.44\textwidth]{plots/L_PHI.eps}
   \includegraphics[width=0.44\textwidth]{plots/L_THETA.eps}
   \caption{\emph{Upper panels:} PHI (left panel) and THETA (right panel)
-  distribution of GC events as function of time modulo one year (with January 1st
-  as origin). In December (June) the Sun stands in Sagittarius (anti galactic
-  center). In these periods, most events are observed under $\phi\approx
-  0^\circ$ ($\phi\approx 180^\circ$), since the instrumental x-z plane is
-  fixed to the Sun to keep the solar panels aligned. \emph{Lower panels:} PHI
-  (left panel) and THETA (right panel) distribution of events along the
+  distribution of GC events as function of time modulo one year (with Jan 1st
+  at the origin). In Dec (Jun) the Sun passes near the Galactic center
+  (anti-center).  In these periods, most events are observed at $\phi\approx
+  0^\circ$ ($\phi\approx 180^\circ$), since the LAT $x-z$ plane is
+  determined by the Sun to keep the solar panels oriented. \emph{Lower panels:}
+  PHI (left panel) and THETA (right panel) distribution of events along the
   galactic disk. Close to the GC, the distribution becomes significantly
-  biased.}
+  bimodal.}
   \label{fig:time_phi}
 \end{figure*}
 
@@ -262,8 +262,8 @@ incidence angles on the instrument}
 \centering
 \includegraphics[width=1.0\linewidth]{plots/phi_energy.eps}
 \caption{Energy distribution of all-sky events with incidence angles close to
-the x-z plane (perpendicular to the solar panels). The red dotted line
-indicates 130 GeV \textbf{(what is the other line?)}.}
+the LAT $x-z$ plane (perpendicular to the solar panels). The red dotted lines
+indicates 111 and 130 GeV.}
 \label{fig:spectrum_phi}
 \end{figure}
 
@@ -291,19 +291,17 @@ full sky (excluding $\psi < 10^\circ$) in the range close to $\phi\approx
 times larger than the number of Galactic center events (here $\psi<3^\circ$)
 at all $\phi$; an anomaly in the event reconstruction under these $\phi$
 angles should appear in this data sample with high significance. However, the
-energy distribution shown in Fig.~\ref{fig:spectrum_phi} shows no sign for a
-strong feature at 130 GeV.
+energy distribution shown in Fig.~\ref{fig:spectrum_phi} shows no significant
+feature at 111 or 130 GeV.
 
 \subsubsection{Hypothesis: The Galactic center is bright, so instrumental
 artifacts are more significant there}
 
-Besides
-the Galactic center with $\approx80$ events above 100 GeV (and within
-$\psi<3^\circ$), a few other bright regions exist.  The most important are the
-Earth limb ($\approx2800$ events at $Z>110^\circ$ and \emph{all} impact
-angles) and the inner Galactic plane ($\approx640$ events at
-$3^\circ<|\ell|\lesssim30^\circ$, $|b|<2^\circ$).\footnote{In the vicinity
-($<0.5^\circ$) of the bright point
+Besides the Galactic center ($\psi<3^\circ$) with $\approx80$ events above 100
+GeV, a few other bright regions exist.  The most important are the Earth limb
+($\approx2800$ events at $Z>110^\circ$ and \emph{all} impact angles) and the
+inner Galactic plane ($\approx640$ events at $3^\circ<|\ell|\lesssim30^\circ$,
+$|b|<2^\circ$).\footnote{In the vicinity ($<0.5^\circ$) of the bright point
 sources Vela and Geminga only two $>100\GeV$ events were measured.} These
 targets provide a large number of high energy photons that can be used to
 check for systematic artifacts in the energy spectra. The largest test sample,
@@ -316,7 +314,8 @@ $\mathcal{O}(1)$ excess at 130 GeV as observed in the Galactic center.
 \begin{figure}
 \centering
 \includegraphics[width=1.0\linewidth]{plots/target_spectra.eps}
-\caption{Energy distribution in different bright regions \textbf{(improve
+\caption{Energy distribution in various bright regions.  None of them show the
+  excess events around 130 GeV seen in the Galactic center.  \textbf{(improve
 plot)}.}
 \label{fig:target_spectra}
 \end{figure}
@@ -324,21 +323,23 @@ plot)}.}
 \subsubsection{Hypothesis: The spectra at the Galactic center are hard, making
 energy mapping errors more significant}
 
-One concern is that the Galactic center might harbour a distinctively large
-amount of source with very hard spectra. If these high energy photons are
-occasionally miss-reconstructed with energies close to 130 GeV, this could
+One concern is that the Galactic center might harbour an unusually large
+number of sources with very hard spectra. If these high energy photons are
+occasionally mis-reconstructed with energies close to 130 GeV, this could
 produce a line feature in the data that would dominantly show up at the
 Galactic center. As a simple check for this possibility, we calculated the
 ratio of events above $300\GeV$ (and up to $500\GeV$) to events above
 $100\GeV$ in different regions of the sky. The results are shown in
-Tab.~\ref{tab:eventRatios}; the Galactic center does not harbour significantly
-more events high energy events than other regions of the sky, which all do not
+Tab.~\ref{tab:eventRatios}.  The Galactic center does not harbour significantly
+more high energy events than other regions of the sky, none of which
 exhibit a feature at 130 GeV (see Fig.~\ref{fig:target_spectra}). 
 
 About 10--15 events contribute to the line feature seen at the GC. Assuming
-that fluxes are not harder than $\propto E^{-2.6}$, most of these events would
+that fluxes are not harder than $dN/dE \propto E^{-2.6}$, most of these events
+would
 have to come from energies below $300\GeV$, since there would be not enough
-events above this energy to make up the 130 GeV excess.
+events above this energy to make up the 130 GeV excess even if \emph{all} of
+them were incorrectly mapped to 130 GeV. 
 
 \begin{table}
   \begin{tabular}{lrr}
