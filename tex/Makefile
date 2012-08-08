@@ -6,7 +6,7 @@ all :
 	latex systematics.tex
 	dvips -o systematics.ps -t letter systematics
 	ps2pdf systematics.ps
-	rm -f *.aux *.blg *.log *.dvi *~
+	rm -f *.aux *.blg *.log *.dvi *~ *.bbl
 
 
 latex -interaction=nonstopmode :

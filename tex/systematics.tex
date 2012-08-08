@@ -230,7 +230,7 @@ better thermal management of the downward-facing battery radiator.  This
 rocking profile, combined with the precession of the orbit every 55 days,
 allows the LAT to cover the whole sky every two orbits with approximately
 uniform coverage.  This survey mode is only occasionally interrupted for
-pointed observations of targets of opportunity (ToOs). 
+pointed observations of targets of opportunity (ToOs).
 
 \begin{table*}
 \begin{center}
@@ -257,11 +257,11 @@ pointed observations of targets of opportunity (ToOs).
 \end{center}
 \end{table*}
 
-Throughout, we use 207 weeks of \texttt{P7CLEAN\_V6} events, with the
-good-time-interval cut \texttt{DATA\_QUAL==1}, however without cuts on the
-zenith angle $Z$ or rocking angle \zrock. We checked that our results remain
-qualitatively the same when using instead \texttt{P7SOURCE\_V6} events or when
-applying \texttt{LAT\_CONFIG==1}. \textbf{(check!)} 
+Throughout, we will use 207 weeks of \texttt{P7CLEAN\_V6} events, with the
+good-time-interval cuts \texttt{DATA\_QUAL==1} and \texttt{LAT\_CONFIG==1},
+however without cuts on the zenith angle $Z$ or the rocking angle \zrock. 
+% We checked that our results remain qualitatively the same when using instead
+% \texttt{P7SOURCE\_V6} events. \textbf{(check!)}
 
 \subsection{Peculiarities of the Galactic center observation}
 The fact that the dominant 130 GeV line signal is near the Galactic center
@@ -429,8 +429,24 @@ line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
 \subsubsection{Hypothesis: The Galactic center events are flagged as badly
 reconstructed}
 
-There could be indications, but there are none. See Fig.~\ref{fig:CTBquality}.
-\text
+The extended LAT event files contain additional information about the quality
+of the event reconstruction. CTBCORE describes the probablity that the
+direction estimate is good (roughly the probability that the reconstructed
+direction falls within the nominal 68\% containment angle), CTBBestEnergyProb
+the probability that the reconstructed energy falls into the core of the
+energy dispersion. We show these parameters for the the GC line events in the
+left panel of Fig.~\ref{fig:CTBquality}; the background histogram shows the
+distribuion of the these parameters in standard events above 50 GeV. No
+significant bias in the distribution is visible.
+
+The green and red bars in the right panel of Fig.~\ref{fig:CTBquality} show
+the first tracker layer that shows evidence of a particle hit for the best
+track reconstruction (Tkr1FirstLayer) in case of the GC line events.  Tracker
+layers are 0--17, where 0 is closest to the calorimeter and 6--17 (2--5)
+corresponds to front- (back-)converting events (tracker layers 0 and 1 come
+without conversion foils). The gray bars show the distribution averaged over
+all $>100$ GeV standard events for comparison. The distribution of GC line
+events is compatible with the expectations.
 
 \begin{figure*}
   \centering
@@ -440,13 +456,9 @@ There could be indications, but there are none. See Fig.~\ref{fig:CTBquality}.
   the direction estimate is good) and CTBBestEnergyProb (the probability that
   the best energy chosen from the two energy estimators is correct) for
   Galactic center line events (in red), compared to the distribution of $>50$
-  GeV standard events.  \emph{Right panel}: First tracker layer to show
-  evidence of a particle hit for the best track reconstruction. Tracker layers
-  are 0-17 where 0 is closest to the calorimeter, and 6-17 (2-5) corresponds
-  to front- (back-)converting events (tracker layers 0 and 1 come without
-  conversion foils). The gray bars show the distribution averaged over all
-  $>100$ GeV standard events, the green/red bars show the distribution for the
-  GC line.}
+  GeV standard events.  \emph{Right panel}: Red/green bars show distribution
+  of Tkr1FirstLayer for GC line events (see text for definition); gray bars
+  the distribution expected for standard $>100\GeV$ events.}
   \label{fig:CTBquality}
 \end{figure*}
 
