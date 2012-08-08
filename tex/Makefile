@@ -13,7 +13,7 @@ latex -interaction=nonstopmode :
 	latex -interaction=nonstopmode fermiics
 
 clean :
-	rm -f *.aux *.blg *.log *.dvi *.bbl *.ps *.pdf *~
+	rm -f *.aux *.blg *.log *.dvi *.bbl *.ps *.pdf *~ *.bbl
 
 
 xxx :
