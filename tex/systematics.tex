@@ -402,10 +402,63 @@ them were incorrectly mapped to 130 GeV.
 \subsubsection{Hypothesis: A 130 GeV features is visible under specific
 incidence angles on the instrument}
 
-In Fig.~\ref{fig:polarPlotsAll}, we show the statistical significance for a
-line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
+An interesting concern is that a 130 GeV feature in the reconstructed events
+is visible only for events with certain incidence angles $(\theta, \phi$) in
+instrumental coordinates. The 130 GeV excess would be then imprinted on
+regions of the sky that are predominantly observed under these problematic
+angles. A study in terms of instrumental $x-y-z$ coordinates is not possible
+using public data only. It is however difficult to conceive how these
+conditional parameters could be correlated with certain regions of the sky.
 
-\textbf{Add more details}
+To study line-like features under different incidence angles, we split up the
+$(\theta, \phi)$ plane in different regions as shown in the left panels of
+Fig.~\ref{fig:polarPlotsAll}. We then analyse the spectrum of all events that
+hit the detector under these incidence angle patches separately and search for
+lines. The fits are performed as in Ref.~\cite{Weniger:2012}, but the energy
+window is fixed to 80 to 200 GeV, we assume a flat acceptance and as line we
+take a simple Gaussian with $6\%$ width.
+
+The left panels of Fig.~\ref{fig:polarPlotsAll} show from top to bottom the
+results obtained (1) using all events, (2) using Earth limb events only, and
+(3) using standard events only; the latter two are obviously disjunct subsets
+of the former one. For each $(\theta, \phi)$ range we quote three numbers: the
+significance of a 130 GeV line-feature in terms of the $TS$ value, the
+signal-to-background ratio of the putative line signal, and the number of
+events above 80 GeV that contribute to this region. The $TS$ value is as usual
+defined as $TS=-2\ln \mathcal{L}_{\rm null}/\mathcal{L}_{\rm alt}$, where
+$\mathcal{L}_{\rm null(alt)}$ is the likelihood of a fit without(with) line;
+note that the line normalization is constrained to be non-negative. The $TS$
+values are also shown by the colors for better visibility.
+
+In most $(\theta,\phi)$ regions, the $TS$ value remains small, but in case of
+the Earth limb events it grows up to $TS=6.9$ in one of the panels with
+$30^\circ<\theta<45^\circ$; neighbouring panels also exhibit larger $TS$
+values. One could read this as an indication for an instrumental effect under
+these incidence angles. However, the number of events in each panel is small,
+$<100$, and the much larger control sample of standard events with
+$Z<100^\circ$ does not show any evidence for 130 GeV features in the critical
+$(\theta, \phi)$ panels. This strongly indicates that the large $TS$ values
+for $Z>110^\circ$ are just a statistical fluctuation. 
+
+As a further check whether energies around 130 GeV are in some unexpected way
+distinct, we search for line-like features at other energies from 100 to 160
+GeV. The resulting $TS$ values as function of the line energy are shown in the
+right plots of Fig.~\ref{fig:polarPlotsAll}. In particular the lower two plots
+which correspond to independent data sets show clearly that the enhanced $TS$
+values are not correlated, which strongly suggests a statistical origin.
+Lastly, we note that the significance of the largest $TS$ value, $TS=10.5$,
+has a $p$-value of about $0.38$ when taking into into account
+$2\times23\times2$ trials over a $\chi_{k=2}^2$ distribution (two $Z$ ranges,
+$23$ incidence angle panels, $\sim2$ ``independent search
+regions''~\cite{Vittels}), in perfect agreement with the expectations.
+
+However, it cannot be entirely excluded that the energy reconstruction under
+different incident angles somehow depends on the zenith angle $Z$ of the
+events (e.g. if there is a subtle dependence on the rocking angle), and that
+the large $TS$ values around $\theta\sim40^\circ$ actually indicate an
+instrumental effect. We will further contemplate on this in
+section~\ref{sec:EarthLimb}; in any case more Earth limb data will help to
+sort out this possibility.
 
 \begin{figure*}[p]
   \centering
@@ -422,7 +475,9 @@ line when scanning over $(\theta, \phi)$ subsamples of the full-sky data.
   show the TS value for the presence of a 130 GeV line, the
   signal-to-background ratio and the number of events above $80\GeV$ inside
   the considered $\theta$-$\phi$ region. \emph{Right panels:} The significance
-  for a $E_\gamma$ line-like excess for the same $\theta$-$\phi$ regions.}
+  for a $E_\gamma$ line-like excess for the same $\theta$-$\phi$ regions.
+  Starting from $\phi=0^\circ$ and going counter-clockwise, the panels are
+  represented by the solid, dashed, dotted and dash-dotted lines.}
   \label{fig:polarPlotsAll}
 \end{figure*}
 
@@ -464,6 +519,7 @@ events is compatible with the expectations.
 
 \clearpage
 \section{Earth limb photons}
+\label{sec:EarthLimb}
 At an altitude $a$, the geometric (unrefracted) horizon is at zenith angle
 \be
 Z_{\rm hor} = \cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree
