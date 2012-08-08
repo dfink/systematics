@@ -77,6 +77,7 @@
 \newcommand{\degree}{^{\rm o}}
 \newcommand{\sigmav}{\langle\sigma_Av\rangle}
 \newcommand{\zrock}{$Z_{\rm rock}$}
+\newcommand\reftbl[1]{Table \ref{tbl:#1}}
 \def\la{\vcenter{\hbox{$<$}\offinterlineskip\hbox{$\sim$}}}
 \def\ga{\vcenter{\hbox{$>$}\offinterlineskip\hbox{$\sim$}}}
 
@@ -223,14 +224,44 @@ But all of this work depends on the question:
   \label{fig:phiThetaDist}
 \end{figure}
 
-In standard survey mode, the LAT points at zenith angle \zrock\ north of the
-zenith on one orbit and \zrock\ south of the zenith on the next.  \zrock\ was
-$35\degree$ early in the survey, but was changed to $50\degree$ in 2009 for
-better thermal management of the downward-facing battery radiator.  This
-rocking profile, combined with the precession of the orbit every 55 days,
-allows the LAT to cover the whole sky every two orbits with approximately
-uniform coverage.  This survey mode is only occasionally interrupted for
-pointed observations of targets of opportunity (ToOs).
+In standard survey mode, the LAT points at zenith angle
+\zrock\ offset north from the zenith perpendicular to the
+orbit and \zrock\ south of the zenith (the opposite side of
+the orbital plane) on the next, surveying the northern and
+southern hemispheres on each orbit. The survey mode are
+performed with a repeating pattern of slews with 17
+waypoints about the velocity vector, the waypoint defines
+the time and the corresponding angle at which the LAT
+boresight is rocked north (on one orbit) or south (on the
+other orbit) of the orbit plane\footnote{The survey mode can
+be also performed with alternate explicit slew
+commands}\footnote{The survey pattern profiles are available
+at
+\texttt{http://fermi.gsfc.nasa.gov/ssc/observations/types/allsky/}.
+The effective dates and times for each profile are
+provided. }. \zrock\ was $35\degree$ since the start of the
+nominal mission on August 4, 2008 to May 7th, 2009, but was
+changed to $50\degree$ on Sep 3rd, 2009 for better thermal
+management of the downward-facing battery
+radiator\footnote{Different observatory sky-survey profiles
+with rocking angle 39$\degree$, 40$\degree$, and 45$\degree$
+respectively have been tested with relatively short periods,
+including the 3 orbit profile test for various rocking
+angless.}. This rocking profile, combined with the
+precession of the orbit every $\sim$55 days, allows the LAT
+to cover the whole sky every two orbits with the most
+uniform sky coverage in a short time.
+
+This survey mode is only occasionally interrupted for
+pointed observations of targets of opportunity (ToOs). The
+total amount of time in the pointed observations is $<$20\%
+of the total observing time. Fermi's survey observations are
+regularly interrupted during passages through the South
+Atlantic Anomaly. This interruption results in an exposure
+differential between north and south of ~15\%. In addition,
+sky-survey is occasionally interrupted by Autonomous
+Repoints of the observatory for the purpose of triggered
+gamma-ray bursts follow up observations.
 
 \begin{table*}
 \begin{center}
@@ -257,6 +288,20 @@ pointed observations of targets of opportunity (ToOs).
 \end{center}
 \end{table*}
 
+We have defined key parameters used in this paper in
+Tab. I. $\theta$ is the reconstructed
+incidence angle of the photon event with respect to the LAT
+boresight -- defined as the $z$-axis while the $y$-axis is
+parallel to the solar panels. $\phi$ is the reconstructed
+incidence angle with respect to the +X axis (the normal to
+the $y-z$ plane with positive defined as facing the Sun, or
+along the orbiting velocity vector). The Zenith angle $Z$ is
+defined as the angle between the reconstructed event
+direction and the zenith line, which is connecting the
+eartch center with the satellite center. All angles are in
+units of degrees.
+% EARTH_AZIMUTH_ANGLE (degrees)
+
 Throughout, we will use 207 weeks of \texttt{P7CLEAN\_V6} events, with the
 good-time-interval cuts \texttt{DATA\_QUAL==1} and \texttt{LAT\_CONFIG==1},
 however without cuts on the zenith angle $Z$ or the rocking angle \zrock. 
@@ -264,6 +309,7 @@ however without cuts on the zenith angle $Z$ or the rocking angle \zrock.
 % \texttt{P7SOURCE\_V6} events. \textbf{(check!)}
 
 \subsection{Peculiarities of the Galactic center observation}
+
 The fact that the dominant 130 GeV line signal is near the Galactic center
 raises a number of concerns.  The GC is near the ecliptic ($\beta \approx
 -5\degree$) and may be observed in a restricted range of angles in instrument
@@ -366,9 +412,9 @@ produce a line feature in the data that would dominantly show up at the
 Galactic center. As a simple check for this possibility, we calculated the
 ratio of events above $300\GeV$ (and up to $500\GeV$) to events above
 $100\GeV$ in different regions of the sky. The results are shown in
-Tab.~\ref{tab:eventRatios}.  The Galactic center does not harbour significantly
-more high energy events than other regions of the sky, none of which
-exhibit a feature at 130 GeV (see Fig.~\ref{fig:target_spectra}). 
+Tab.~\ref{tab:regions}.  The Galactic center does not harbour significantly
+more high energy events than other regions of the sky, none of which exhibit a
+feature at 130 GeV (see Fig.~\ref{fig:target_spectra}).
 
 About 10--15 events contribute to the line feature seen at the GC. Assuming
 that fluxes are not harder than $dN/dE \propto E^{-2.6}$, most of these events
@@ -529,11 +575,14 @@ The Fermi orbit is nearly circular with $535 < a < 564$, yielding $Z_{\rm
 some 2400 km distant.  At this distance, the 90 km height of the atmosphere
 subtends about $2\degree$, or roughly $111 < Z < 113$.  
 
-At lower zenith angles ($Z \la 105\degree$) Fermi observes the sky with very
-little background from the limb.  The incidence angle on the detector,
-$\theta$, is defined such that $\theta=0$ corresponds to the ``boresight.''
-For \zrock = $50\degree$, the limb photons are typically at $\theta >
-60\degree$ (See figure \ref{fig:theta-E}.
+At lower zenith angles ($Z \la 105\degree$) Fermi observes
+the sky with very little background from the limb.  The
+incidence angle on the detector, $\theta$, is defined such
+that $\theta=0$ corresponds to the ``boresight'' (see
+Tab.~\ref{tab:eventRatios}).  For \zrock = $50\degree$ (the
+typical survey rocking angle, see Sec. II), the limb photons
+are typically at $\theta > 60\degree$ (See
+Fig. \ref{fig:theta-E}).
 
 We begin by examining the limb events and finding a bump at 130 GeV in a
 subsample of these events.  We consider two hypothesis for the origin of the
@@ -549,6 +598,35 @@ These photons provide a convenient reference sample to search for systematics
 in the LAT data.  Because the limb photons result from atmospheric cascades,
 they are produced by interactions in a highly boosted frame, and cannot
 contain line emission. 
+
+
+In Fig. \ref{fig:theta-E}, we show the incidence angle
+$\theta$ distribution as a function of events energy with $Z
+> 105\degree$ (see \ref{} \texttt{FRONT} and \texttt{BACK} converting events only in \ref{{fig:theta-E-frontback}}). In 125 GeV $< E <$ 140 GeV, we find that
+there is an excess of events appear in the region of
+$30\degree < \theta < 45\degree$ which contains about 5\% of
+the limb events. No significant excess in this energy range
+has been found in other $\theta$ region (see
+\ref{fig:Ehist-all}). The arrivel time distribution of the
+selected limb photon and all the limb photons are shown in
+\ref{fig:timehist}.
+
+We fit the Earth limb events with low
+incidence angle with a monochromatic line at 129 GeV (shown
+in \ref{fig:albedoline}), and we find a local significance
+of 3.2$\sigma$. For standard events with $Z<100\degree$ and
+$\theta<45\degree$ (after masking out the inner $10\degree$
+from the Galactic center), we find no indication of a 129
+GeV line.
+
+We compare the Galactic center line photons and the selected
+low incidence Earth limb events with the high-incidence limb
+event distribution in~\ref{fig:l-b}. We show the rocking
+angle and the arrival time of the Galactic center line and
+the same limb events in \ref{fig:rockTime}
+
+
+
 
 \begin{figure}[p]
   \centering
@@ -636,6 +714,9 @@ error that distorts the energy scale near 130 GeV.  In the next section, we
 argue that this is a reasonable explanation of the limb line, but not of the
 GC lines. 
 
+
+Even remove the earth limb photon, we still have a 4$\sigma$ detection! show figures!!!
+
 \textbf{Mention Fig.~\ref{fig:GCevents}}
 
 \begin{figure}[p]
@@ -709,11 +790,19 @@ Note that that the extreme values of $dy/dx = 1 \pm A$ occur at $x-x_0 = \pm
 power law, we may apply this factor to obtain a model spectrum, and maximize
 the Poisson likelihood of observing the data given the model.
 
-To illustrate that this model can generate a spectrum similar to the limb bump
-spectrum, we show 10 random realizations of a $dN/dE \sim E^{-2.6}$ spectrum
-with this distortion in Figure \ref{fig:bumpmodelmany}.
-Some of these look very similar to the bump in Figure \ref{fig:Ehist-all}.
+To illustrate that this model can generate a spectrum
+similar to the limb bump spectrum, we show 10 random
+realizations of a $dN/dE \sim E^{-2.6}$ spectrum with this
+distortion in Figure \ref{fig:bumpmodelmany}.  Some of these
+look very similar to the bump in Figure
+\ref{fig:Ehist-all}. We have checked that this 129 GeV
+excess appears equally in front and back converting events
+(shown in \ref{fig:Ehist-frontback}).
 
+In \ref{fig:limbfits}, we fit the energy mapping model to
+the earth limb data for various range of inclination
+angle. We find a 4.7$\sigma$ excess of $30\degree-45\degree$
+limb photons at 129 GeV.
 
 \clearpage
 \section{Future}
@@ -776,7 +865,7 @@ angles that occur during pointed observations.
 \begin{figure*}[p]
 \centering
 \includegraphics[width=0.45\textwidth]{plots/theta-E-frontback.ps}
-\caption{Same as ??? but for front and back converting events.}
+\caption{Same as \ref{fig:theta-E} but for front and back converting events.}
 \label{fig:theta-E-frontback}
 \end{figure*}
 
