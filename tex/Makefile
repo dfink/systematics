@@ -6,14 +6,14 @@ all :
 	latex systematics.tex
 	dvips -o systematics.ps -t letter systematics
 	ps2pdf systematics.ps
-	rm -f *.aux *.blg *.log *.dvi *~
+	rm -f *.aux *.blg *.log *.dvi *~ *.bbl
 
 
 latex -interaction=nonstopmode :
 	latex -interaction=nonstopmode fermiics
 
 clean :
-	rm -f *.aux *.blg *.log *.dvi *.bbl *.ps *.pdf *~
+	rm -f *.aux *.blg *.log *.dvi *.bbl *.ps *.pdf *~ *.bbl
 
 
 xxx :
