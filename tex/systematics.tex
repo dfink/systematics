@@ -711,39 +711,22 @@ instrumental effect. We will further contemplate on this in
 section~\ref{sec:EarthLimb}; in any case more Earth limb data will help to
 sort out this possibility.
 
-\begin{figure*}[p]
-  \centering
-  \includegraphics[width=0.45\textwidth]{plots/polar_all.eps}
-  \includegraphics[width=0.40\textwidth]{plots/scan_all.eps}
-  \includegraphics[width=0.45\textwidth]{plots/polar_z.GT.110.eps}
-  \includegraphics[width=0.40\textwidth]{plots/scan_z.GT.110.eps}
-  \includegraphics[width=0.45\textwidth]{plots/polar_z.LE.100.eps}
-  \includegraphics[width=0.40\textwidth]{plots/scan_z.LE.100.eps}
-  \caption{\emph{Left panels:} Significance for a 130 GeV line-like excess in different parts of
-  the $\theta$-$\phi$ plane (for $\theta=0$--$80^\circ$). From top to bottom,
-  the results are derived from all events, from the Earth limb events, and
-  from standard events. The three numbers
-  show the TS value for the presence of a 130 GeV line, the
-  signal-to-background ratio and the number of events above $80\GeV$ inside
-  the considered $\theta$-$\phi$ region. \emph{Right panels:} The significance
-  for a $E_\gamma$ line-like excess for the same $\theta$-$\phi$ regions.
-  Starting from $\phi=0^\circ$ and going counter-clockwise, the panels are
-  represented by the solid, dashed, dotted and dash-dotted lines.}
-  \label{fig:polarPlotsAll}
-\end{figure*}
-
 \subsubsection{Hypothesis: The Galactic center events are flagged as badly
 reconstructed}
 
-The extended LAT event files contain additional information about the quality
-of the event reconstruction. CTBCORE describes the probablity that the
-direction estimate is good (roughly the probability that the reconstructed
-direction falls within the nominal 68\% containment angle), CTBBestEnergyProb
-the probability that the reconstructed energy falls into the core of the
-energy dispersion. We show these parameters for the the GC line events in the
-left panel of Fig.~\ref{fig:CTBquality}; the background histogram shows the
-distribuion of the these parameters in standard events above 50 GeV. No
-significant bias in the distribution is visible.
+The extended LAT event files contain additional information
+about the quality of the event
+reconstruction\footnote{\texttt{http://fermi.gsfc.nasa.gov/ssc/data/analysis/documentation/Cicerone/Cicerone\_Data/LAT\_Data\_Columns.html}}. CTBCORE
+describes the probablity that the direction estimate is good
+(roughly the probability that the reconstructed direction
+falls within the nominal 68\% containment angle),
+CTBBestEnergyProb the probability that the reconstructed
+energy falls into the core of the energy dispersion. We show
+these parameters for the the GC line events in the left
+panel of Fig.~\ref{fig:CTBquality}; the background histogram
+shows the distribuion of the these parameters in standard
+events above 50 GeV. No significant bias in the distribution
+is visible.
 
 The green and red bars in the right panel of Fig.~\ref{fig:CTBquality} show
 the first tracker layer that shows evidence of a particle hit for the best
@@ -754,81 +737,87 @@ without conversion foils). The gray bars show the distribution averaged over
 all $>100$ GeV standard events for comparison. The distribution of GC line
 events is compatible with the expectations.
 
-\begin{figure*}
-  \centering
-  \includegraphics[width=0.48\linewidth]{plots/CTBCORE_CTBBestEnergyProb.eps}
-  \includegraphics[width=0.48\linewidth]{plots/Tkr1FirstLayer.eps}
-  \caption{\emph{Left panel:} Distribution of CTBCORE (the probability that
-  the direction estimate is good) and CTBBestEnergyProb (the probability that
-  the best energy chosen from the two energy estimators is correct) for
-  Galactic center line events (in red), compared to the distribution of $>50$
-  GeV standard events.  \emph{Right panel}: Red/green bars show distribution
-  of Tkr1FirstLayer for GC line events (see text for definition); gray bars
-  the distribution expected for standard $>100\GeV$ events.}
-  \label{fig:CTBquality}
-\end{figure*}
-
-
 %%%%%%%%%%%%%%%%%%%%%% SECTION III %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Earth limb photons}
 \label{sec:EarthLimb}
+
+Nearly grazing incident cosmic rays interacting with Earth
+atmosphere produce cascade showers with forward-moving
+gamma-rays which can penetrate the upper thin layer of
+atmosphere without strong attenuation and produce a bright
+gamma-ray horizon. As an earth-orbiting gamma-ray detector,
+the Earth atmosphere is the brightest source in the sky due
+to its proximity to LAT. The gamma-ray emission from Earth
+is produced by cosmic-ray (mostly protons, helium, and
+heavier nuclei) interactions with atmosphere material. Earth
+limb gamma-rays at$\sim$100 GeV are mainly from the decay of
+neutral pions and kaons. At this energy, due to the
+kinematics of the collisions, the cross section are peaked
+in the forward direction, and the back-scattered secondary
+particles at large angles relative to the direction of the
+cosmic-ray cascade is very rare.
 
 In section III we follow the weak indication of the limb
 photon excess at $\sim$130 GeV and discuss the limb photons
 in more detail. We show that the critical incident angles
 are not (solely) responsible for the GC excess.
 
-At an altitude $a$, the geometric (unrefracted) horizon is at zenith angle
-\be
-Z_{\rm hor} = \cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree
-\ee
-The Fermi orbit is nearly circular with $535 < a < 564$, yielding $Z_{\rm
-  hor}$ in the 112.7$\degree$ to 113.3$\degree$ range, with the tangent point
-some 2400 km distant.  At this distance, the 90 km height of the atmosphere
-subtends about $2\degree$, or roughly $111 < Z < 113$.  
+At an altitude $a$, the geometric (unrefracted) horizon is
+at zenith angle \be Z_{\rm hor} =
+\cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree
+\ee The Fermi orbit is nearly circular with 535 km < a <
+564 km, yielding $Z_{\rm hor}$ in the 112.7$\degree$ to
+113.3$\degree$ range, with the tangent point some 2400 km
+distant.  At this distance, the 90 km height of the
+atmosphere subtends about $2\degree$, or roughly $111\degree
+< Z < 113\degree$.
 
 At lower zenith angles ($Z \la 105\degree$) Fermi observes
-the sky with very little background from the limb.  The
-incidence angle on the detector, $\theta$, is defined such
+the sky with very little background from the Earth limb.  The
+incidence angle on the detector $\theta$ is defined such
 that $\theta=0$ corresponds to the ``boresight'' (see
 Tab.~\ref{tab:eventRatios}).  For \zrock = $50\degree$ (the
 typical survey rocking angle, see Sec. II), the limb photons
 are typically at $\theta > 60\degree$ (See
 Fig. \ref{fig:theta-E}).
 
-We begin by examining the limb events and finding a bump at 130 GeV in a
-subsample of these events.  We consider two hypothesis for the origin of the
-bump: that the events come from far away in energy, or the more subtle
-possibility that an energy mapping error could redistribute in energy, making
-a spectral feature.  We then explore the various parameters of the GC line
-events and the limb bump events. 
 
-The continual cosmic-ray cascades in the Earth's atmosphere produce gamma rays
-with $dN/dE \sim E^{-2.6}$.  (check this???)  These atmospheric gammas are
-referred to as ``Earth limb photons'' or sometimes as ``albedo photons.''
-These photons provide a convenient reference sample to search for systematics
-in the LAT data.  Because the limb photons result from atmospheric cascades,
-they are produced by interactions in a highly boosted frame, and cannot
-contain line emission. 
+We begin by examining the limb events and finding a bump at
+130 GeV in a subsample of these events.  We consider two
+hypothesis for the origin of the bump: that the events come
+from far away in energy, or the more subtle possibility that
+an energy mapping error could redistribute in energy, making
+a spectral feature.  We then explore the various parameters
+of the GC line events and the limb bump events.
+
+The continual cosmic-ray cascades in the Earth's atmosphere
+produce gamma rays with $dN/dE \sim
+E^{-2.8}$~\citep{FermiLimb}. These atmospheric gammas are
+referred to as ``Earth limb photons'' or sometimes as
+``albedo photons.''  These photons provide a convenient
+reference sample to search for systematics in the LAT data.
+Because the limb photons result from atmospheric cascades,
+they are produced by interactions in a highly boosted frame,
+and cannot contain line emission.
 
 
 In Fig. \ref{fig:theta-E}, we show the incidence angle
 $\theta$ distribution as a function of events energy with $Z
 > 105\degree$ (see \ref{fig:theta-E} \texttt{FRONT} and
 \texttt{BACK} converting events only in
-\ref{{fig:theta-E-frontback}}). In 125 GeV $< E <$ 140 GeV,
-we find that there is an excess of events appear in the
+Fig. \ref{{fig:theta-E-frontback}}). In 125 GeV $< E <$ 140
+GeV, we find that there is an excess of events appear in the
 region of $30\degree < \theta < 45\degree$ which contains
 about 5\% of the limb events. No significant excess in this
 energy range has been found in other $\theta$ region (see
-\ref{fig:Ehist-all}). The arrivel time distribution of the
+Fig. \ref{fig:Ehist-all}). The arrivel time distribution of the
 selected limb photon and all the limb photons are shown in
-\ref{fig:timehist}.
+Fig. \ref{fig:timehist}.
 
-We fit the Earth limb events with low
-incidence angle with a monochromatic line at 129 GeV (shown
-in \ref{fig:albedoline}), and we find a local significance
-of 3.2$\sigma$. For standard events with $Z<100\degree$ and
+We fit the Earth limb events with low incidence angle with a
+monochromatic line at 129 GeV (shown in Fig.
+\ref{fig:albedoline}), and we find a local significance of
+3.2$\sigma$. For standard events with $Z<100\degree$ and
 $\theta<45\degree$ (after masking out the inner $10\degree$
 from the Galactic center), we find no indication of a 129
 GeV line.
@@ -837,73 +826,80 @@ We compare the Galactic center line photons and the selected
 low incidence Earth limb events with the high-incidence limb
 event distribution in~\ref{fig:l-b}. We show the rocking
 angle and the arrival time of the Galactic center line and
-the same limb events in \ref{fig:rockTime}
+the same limb events in Fig. \ref{fig:rockTime}.
 
 
+\subsection{Possible Systematic Errors}
 
+Although there is no indication of instrumental systematics
+which can produce any gamma-ray line feature in the spectrum
+from either Galactic center or the Earth limb events, here
+we list several possibilities that might in principle fake a
+line feature:
 
-Now for some text...
-
-Possible systematic errors:
-
-- Extra events
-
-{\bf Low energy photons:} Events would have to be mistakenly mapped from
-either lower energy ($E \la 10$ GeV) gammas or much lower energy photons
-(X-rays from the 1E $1740.7-2942$ microquasar?  511 keV photons?) in which the
-Galactic center is much brighter.  It is difficult to see how this could
+{\it Extra photons from low energy events:} Events would
+have to be mistakenly mapped from either lower energy ($E
+\la 10$ GeV) gammas or much lower energy photons
+(e.g. X-rays from the 1E 1740.7-2942
+microquasar~\cite{Gallo:2002} or 511 keV
+photons~\cite{Prantzos:2011}) in which the Galactic center
+is much brighter.  It is difficult to see how this could
 happen.
 
-{\bf High energy photons:} At $E > 100$ GeV, the Galactic center is only
-modestly brighter than the surrounding regions, so there are not enough
-photons available.
+{\it Extra photons from High energy events:} At $E > 100$
+GeV, the Galactic center is only modestly brighter than the
+surrounding regions, so there are not enough photons
+available.
 
-{\bf Particle contamination:} If monochromatic photons from the limb are
-difficult to explain, it is even harder to understand how mono-energetic
-particles could be present. 
+{\it Particle contamination:} If monochromatic photons from
+the limb are difficult to explain, it is even harder to
+understand how mono-energetic particles could be present.
 
-{\bf Effective area error:} An error in the LAT effective area (e.g. various
-cuts are less restrictive for some reason) for $30\degree < \theta <
-45\degree$ could explain the limb photons, but would also produce a line
-everywhere in the Galactic plane.  No such line is seen outside of the GC. 
+{\it Effective area error:} An error in the LAT effective
+area (e.g. various cuts are less restrictive for some
+reason) for $30\degree < \theta < 45\degree$ could explain
+the limb photons, but would also produce a line everywhere
+in the Galactic plane.  No such line is seen outside of the
+GC.
 
-From these considerations, we conclude that there is no way for the limb line
-to be caused by extra events. 
+From these considerations, we conclude that there is no way
+for the limb line to be caused by extra events. However, it
+is still plausible that there is a more subtle energy
+mapping error that distorts the energy scale near 130 GeV.
+In the next section, we argue that this is a reasonable
+explanation of the line feature revealed in the limb
+photons, but {\em not} of the GC lines. In
+Fig.~\ref{fig:GCevents} we show the Galactic center energy
+spectrum with and without incidence angle events with
+$30^\circ<\theta<45^\circ$.
 
-However, it is still plausible that there is a more subtle energy mapping
-error that distorts the energy scale near 130 GeV.  In the next section, we
-argue that this is a reasonable explanation of the limb line, but not of the
-GC lines. 
-
-
-Even remove the earth limb photon, we still have a 4$\sigma$ detection! show figures!!!
-
-\textbf{Mention Fig.~\ref{fig:GCevents}}
 
 
 %%%%%%%%%%%%%%%%%%%%%% SECTION IV %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Energy mapping error: a model for the limb bump}
-In section IV (which could become a subsection
-of III?) we discuss then the energy remapping model, which enhances the
-significance of the 130 GeV limb excess drastically.
 
+In this subsection, we discuss then the energy remapping
+model, which enhances the significance of the 130 GeV line
+feature in the limb photons.
 
-Given the difficulty in explaining the excess any other way, we consider the
-possibility that the limb bump results from an energy mapping error.  We
-propose a simple model, in which the mapping from true energy to reported
-energy, $E(E_t)$, is linear except for a bump near some reference energy.
-Smooth low-level perturbations over large energy scales are not relevant here,
-and could be absorbed in the effective area calibration.  In order to include
-a small-scale bump in the response, we introduce a local compact perturbation
-in the form of a Gaussian.  It is convenient to work in logarithmic
-quantities, so we take $x=\log E_t, y=\log E$, and
-\be
+Given the difficulty in explaining the excess any other way,
+we consider the possibility that the limb bump results from
+an energy mapping error.  We propose a simple model, in
+which the mapping from true energy to reported energy,
+$E(E_t)$, is linear except for a bump near some reference
+energy.  Smooth low-level perturbations over large energy
+scales are not relevant here, and could be absorbed in the
+effective area calibration.  In order to include a
+small-scale bump in the response, we introduce a local
+compact perturbation in the form of a Gaussian.  It is
+convenient to work in logarithmic quantities, so we take
+$x=\log E_t, y=\log E$, and \be
 \label{eq:yofx}
 y=x - A\sigma \exp\left(\frac{1}{2}-\frac{(x-x_0)^2}{2\sigma^2}\right),
 \ee
 where $A$ is a dimensionless amplitude of the bump ($-1<A<1$ is required
 for monotonicity of $y(x)$), $x_0$ is a reference energy, and $\sigma$ is the
-width of the bump (see Figure \ref{fig:bumpmodel}).
+width of the bump (see Fig. \ref{fig:bumpmodel}).
 The effect of the distortion is to change the true spectrum $dN/dx =
 dN/dlog(E_t)$ into an observed spectrum
 \be
@@ -924,102 +920,133 @@ the Poisson likelihood of observing the data given the model.
 To illustrate that this model can generate a spectrum
 similar to the limb bump spectrum, we show 10 random
 realizations of a $dN/dE \sim E^{-2.6}$ spectrum with this
-distortion in Figure \ref{fig:bumpmodelmany}.  Some of these
-look very similar to the bump in Figure
-\ref{fig:Ehist-all}. We have checked that this 129 GeV
+distortion in Fig. \ref{fig:bumpmodelmany}.  Some of these
+look very similar to the bump in
+Fig. \ref{fig:Ehist-all}. We have checked that this 129 GeV
 excess appears equally in front and back converting events
-(shown in \ref{fig:Ehist-frontback}).
+(shown in Fig. \ref{fig:Ehist-frontback}).
 
-In \ref{fig:limbfits}, we fit the energy mapping model to
-the earth limb data for various range of inclination
+In Fig. \ref{fig:limbfits}, we fit the energy mapping model
+to the earth limb data for various range of inclination
 angle. We find a 4.7$\sigma$ excess of $30\degree-45\degree$
 limb photons at 129 GeV.
 
 
-\section{Future}
-Finally in section V/VI, we may then argue that the limb excess could well be
-a statistical fluctuation and does not look worrisome at the moment, but the
-fact that an energy remapping model gives such a large significance makes
-further studies important.
+\section{Discussion and Conclusion}
 
-Ways to progress.
+We recently claimed an evidence of gamma-ray line feature at
+$\sim$130 GeV towards the inner Galaxy using data from
+\Fermi-LAT, which is a "smoking gun" signature for dark
+matter annihilation. While \Fermi\ accumulating additional
+data, a thorough investigation of possible LAT systematics
+which might induce a fake line signal is timely requested.
 
-One to two weeks of additional limb data would provide an exposure comparable
-to the limb photons used here.  One option would be to release commissioning
-data from early in the survey, if they are thought to be of sufficient
-quality.  Otherwise, new limb observations could be undertaken, in order to
-test the reality of the 130 GeV limb feature.  
+In particular, the earth limb photons provide a smooth
+reference spectrum for null tests of instrumental
+systematics. While detailed information of each event
+reconstruction is not publically available preventing us to
+check the particle nature of each event, we can still check
+various statistics of spatial and spectrual distribution of
+the line photons and the earth limb photons, and compare the
+behaviour between the two to search for indications of
+spurious signal from unknown systematics. 
 
-If the 130 GeV feature is not replicated, it can be dismissed as a statistical
-fluke.  If it reappears, a deeper investigation into its cause is warranted.  
-
-Even then, it is a challenge to understand how such an instrumental feature
-could be mapped so precisely onto a localized region within 5-10 degrees of
-the GC.  The GC is not near the path of the orbital pole, nor its axis of
-precession.  The orbital phase, precession, Earth's orbit, and time of year
-are all well mixed by the few $\times10^4$ orbits and 25 precession cycles
-over 1500 days.  We have shown that the events in question are drawn from
-every part of event and spacecraft parameter space available in the public
-files.  In the absence of any model of instrumental behavior that explains how
-these events land near the GC and not elsewhere in the Galactic plane, it is
-far fetched to say that they invalidate a result with a local significance of
-$p\approx10^{-9}$.  
+We find a marginally significant 130 GeV feature in a small
+subset of the earth limb data.  This raises concerns about
+the 130 GeV Galactic center feature, even though we can
+think of no plausible model of instrumental behavior that
+connects the two.  We argue that the limb excess could well
+be a statistical fluctuation and does not look worrisome at
+the moment, but the fact that an energy remapping model
+gives such a large significance makes further studies
+important. A modest amount of additional limb data
+would tell us if the limb feature is a statistical fluke.
+If the limb feature persists, it raises serious concerns
+about the Pass 7 processing of $E > 100$ GeV events. 
 
 
-\section{Conclusions}
 
-%%     LAT_GEO (degrees) - Ground point latitude at START
-%%     LON_GEO (degrees) - Ground point longitude at START
-%%     RAD_GEO (meters) - Spacecraft altitude at START
-%%     RA_ZENITH (degrees) - RA of zenith at START
-%%     DEC_ZENITH (degrees) - DEC of zenith at START
+During the normal survey mode, the LAT usually points away
+from the Earth to avoid its comtamination. However the Earth
+were within the LAT field of view with various angles with
+respect to the LAT z-axis during its commissioning phase:
+the so called Launch \& Early Operations (LEO) data was
+taken during the first 60 days of the mission. Combined with
+a dedicated Earth-limb observation in Septemper 2008 (with
+two orbits i.e. close to 3 hours of direct limb
+observations) provides $\sim$250 hrs total livetime for the
+highest quality data selection (diffuse class in Pass
+6)\cite{FermiLimb}. This data set has allowed the study of
+the spatial and spectral distributionf of the limb photons
+and provide a calibration of the LAT instrument, especially
+to check if there is any instrumental systematics at 130 GeV
+producing a line-like feature.
+
+With Pass 6 diffuse class events (with post-launch
+instrument respone functions P6V3), \citep{FermiLimb} has
+analyzed the spatial morphology and the energy spectrum from
+the combined Earth limb photon events which contains 218
+photons above 100 GeV and 16 photons above 500 GeV. The
+energy spectrum of the Earth limb photons shows a power-law
+behavior with the spectral index $2.79\pm 0.06$ for 3-500
+GeV photons (Fig. 2 of \cite{FermiLimb}), which is
+consistent with the primary cosmic-ray spectral index
+$2.75\pm 0.03$\footnote{The Earth limb photon above 10 GeV
+  from cosmic ray interactions in the upper atmospheric
+  layers do not suffer large energy loses and the cosmic-ray
+  primaries at this energy is unaffected by the Earth
+  magnetic fields. The Earth limb photon should have a
+  spectral index close to that of the primary cosmic
+  rays. }. No significant line/bump feature is revealed in
+the spectrum. The systematic errors have been taken into
+account by extrapolated the estimation based on Vela
+observations less than 10 GeV to above 10 GeV. Note that the
+systematic error dominates over the statistical error in the
+spectrum fitting.
+
+
+We note that one to two weeks of additional limb data would
+provide an exposure comparable to the limb photons used
+here.  One option would be to release commissioning data
+from early in the survey, if they are thought to be of
+sufficient quality.  Otherwise, new limb observations could
+be undertaken, in order to test the reality of the 130 GeV
+limb feature.
+
+The spectrum of the Earth limb photons provided by
+\citep{FermiLimb} does not show any significant feature at
+130 GeV. If improved processing of the limb photons still
+does not reveal the 130 GeV feature and replicate the line
+or the "remapping error" we found for a subsample of the
+limb photon during the normal survey mode, it can be
+dismissed as a statistical fluke.  If it reappears, a deeper
+investigation into its cause is warranted.
+
+Even then, it is a challenge to understand how such an
+instrumental feature could be mapped so precisely onto a
+localized region within 5-10 degrees of the GC.  The GC is
+not near the path of the orbital pole, nor its axis of
+precession.  The orbital phase, precession, Earth's orbit,
+and time of year are all well mixed by the few $\times10^4$
+orbits and 25 precession cycles over 1500 days.  We have
+shown that the events in question are drawn from every part
+of event and spacecraft parameter space available in the
+public files.  In the absence of any model of instrumental
+behavior that explains how these events land near the GC and
+not elsewhere in the Galactic plane, it is far fetched to
+say that they invalidate a result with a local significance
+of $p\approx10^{-9}$.
+
+
+\appendix
+\section{This here is an appendix}
+
 In \ref{fig:rock}, we show the rocking angle distribution
 (i.e. the angle of the spacecraft Z-axis from zenith) of the
 GC line events
 
-%% AT_GEO (degrees) - Ground point latitude at START
-%% LON_GEO (degrees) - Ground point longitude at START
-%% RAD_GEO (meters) - Spacecraft altitude at START
-%% RA_ZENITH (degrees) - RA of zenith at START
-%% DEC_ZENITH (degrees) - DEC of zenith at START
-%% B_MCILWAIN (Gauss) - McIlwain B parameter, magnitude of the magnetic field at START
-%% L_MCILWAIN (Earth radii) - McIlwain L parameter, distance/shell value at START
 
-%%     More information on the McIlwain parameters
-
-%% GEOMAG_LAT (degrees) - Geomagnetic latitude at START
-%% IN_SAA (T/F) - Whether the spacecraft was in the SAA at START
-
-%% RA_SCZ (degrees) - viewing direction at START (RA of S/C +z axis)
-%% DEC_SCZ (degrees) - viewing direction at START (Dec of S/C +z axis)
-
-%% RA_SCX (degrees) - viewing direction at START (RA of S/C +x axis)
-%% DEC_SCX (degrees) - viewing direction at START (Dec of S/C +x axis)
-
-%%  north orbital pole 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\clearpage
-\appendix
-\section{This here is an appendix}
-
-Here are a bunch of plots that are good to have, and could have shown
-something interesting, but do not. 
-
-\begin{figure*}[p]
+\begin{figure}
 \centering
 \includegraphics[width=0.45\textwidth]{plots/timehist.ps}
 \caption{Time histogram (1-day bins) of suspicious limb events and all limb
@@ -1027,10 +1054,10 @@ events.  The suspicious events are only observed at high rocking
 angles that occur during pointed observations.
 }
 \label{fig:timehist}
-\end{figure*}
+\end{figure}
 
 
-\begin{figure*}[p]
+\begin{figure}
 \centering
 \includegraphics[width=0.45\textwidth]{plots/Ehist-frontback.ps}
 \caption{Energy histogram as in Figure \ref{fig:Ehist-all}, but for front
@@ -1038,36 +1065,36 @@ angles that occur during pointed observations.
   appears equally in front and back converting events. 
 }
 \label{fig:Ehist-frontback}
-\end{figure*}
+\end{figure}
 
 
 
-\begin{figure*}[p]
+\begin{figure}
 \centering
 \includegraphics[width=0.45\textwidth]{plots/theta-E-frontback.ps}
 \caption{Same as \ref{fig:theta-E} but for front and back converting events.}
 \label{fig:theta-E-frontback}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[p]
+\begin{figure}
 \centering
 \includegraphics[width=0.45\textwidth]{plots/geo-lonlat.ps}
 \caption{Distribution of suspicious events in Earth longitude and latitude
 (upper panel) and satellite zenith RA,dec (lower panel).   The
 avoidance of the SAA leaves a hole in the upper panel.}
 \label{fig:geo-lonlat}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[p]
+\begin{figure}
 \centering
 \includegraphics[width=0.45\textwidth]{plots/spacecraft-zx.ps}
 \caption{RA and Dec of spacecraft Z axis (boresight direction) and X axis
 (Solar panel direction) for the suspicious events.
 }
 \label{fig:spacecraft-zx}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[p]
+\begin{figure}
 \centering
 \includegraphics[width=0.45\textwidth]{plots/earth-az.ps}
 \caption{Zenith angle vs. Earth azimuth angle for limb photons.  As expected,
@@ -1075,9 +1102,9 @@ avoidance of the SAA leaves a hole in the upper panel.}
   predominantly to the north and south azimuth directions, i.e approximately
   perpendicular to the orbit direction. The blue points are the earth limb ``line'' events. }
 \label{fig:earth-az}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[p]
+\begin{figure}
 \centering
 \includegraphics[width=0.45\textwidth]{plots/sun.ps}
 \caption{Blue, red, and black events as a function of orbital precession phase
@@ -1085,18 +1112,18 @@ avoidance of the SAA leaves a hole in the upper panel.}
   about 6 months of the year during which the 38 limb events are seen. 
 }
 \label{fig:sun}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[p]
+\begin{figure*}
   \centering
-  \includegraphics[width=0.6\textwidth]{plots/limb_bump_model_many.ps}
+  \includegraphics[width=0.8\textwidth]{plots/limb_bump_model_many.ps}
   \caption{Ten mock spectra of an underlying spectrum $dN/dE \sim E^{-2.6}$,
   distorted according to Eq. \ref{eq:dndy}.  Note the similarity to the
   $30\degree < \theta < 45\degree$ panel in Figure \ref{fig:Ehist-all}.  }
   \label{fig:bumpmodelmany}
 \end{figure*}
  
-\begin{figure*}[p]
+\begin{figure*}
   \centering
   \includegraphics[width=0.48\textwidth]{plots/gc_theta_phi.eps}
   \includegraphics[width=0.48\textwidth]{plots/limb_theta_phi.eps}
@@ -1106,7 +1133,7 @@ avoidance of the SAA leaves a hole in the upper panel.}
   \label{fig:theta-phi}
 \end{figure*}
 
-\begin{figure}[p]
+\begin{figure}
   \centering
   \includegraphics[width=0.9\linewidth]{plots/rockangle.ps}
   \caption{The rocking angle of the Galactic center line
