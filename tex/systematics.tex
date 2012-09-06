@@ -767,7 +767,7 @@ of the GC line signal would start to challenge any dark matter related
 interpretation.  In any case, the (very weak) indication for a temporal
 pattern is not observed in case of the Earth limb line. 
 
-\clearpage
+% \clearpage
 %%%%%%%%%%%%%%%%%%%%%% SECTION III %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Earth limb photons}
 \label{sec:EarthLimb}
@@ -784,6 +784,14 @@ pattern is not observed in case of the Earth limb line.
   $Z>110\degree$.}
   \label{fig:theta-E}
 \end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{plots/theta-E-frontback.ps}
+\caption{Same as \ref{fig:theta-E} but for front and back converting events.}
+\label{fig:theta-E-frontback}
+\end{figure}
+
 
 \begin{figure}
   \centering
@@ -829,6 +837,26 @@ pattern is not observed in case of the Earth limb line.
 \end{figure}
 
 \begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{plots/timehist.ps}
+\caption{Time histogram (1-day bins) of suspicious limb events and all limb
+events.  The suspicious events are only observed at high rocking
+angles that occur during pointed observations.
+}
+\label{fig:timehist}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{plots/Ehist-frontback.ps}
+\caption{Energy histogram as in Figure \ref{fig:Ehist-all}, but for front
+  (upper panel) and back (lower panel) converting events.  The 130 GeV excess
+  appears equally in front and back converting events. 
+}
+\label{fig:Ehist-frontback}
+\end{figure}
+
+\begin{figure}
   \centering
   \includegraphics[width=1.0\linewidth]{plots/limb_bump_model.ps}
   \caption{Upper panel: function mapping true energy $E_t$ to reported energy
@@ -838,6 +866,15 @@ pattern is not observed in case of the Earth limb line.
   panel: Same, but for $dN/dE \sim E^{-2.6}$.  }
   \label{fig:bumpmodel}
 \end{figure}
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=0.8\textwidth]{plots/limb_bump_model_many.ps}
+  \caption{Ten mock spectra of an underlying spectrum $dN/dE \sim E^{-2.6}$,
+  distorted according to Eq. \ref{eq:dndy}.  Note the similarity to the
+  $30\degree < \theta < 45\degree$ panel in Figure \ref{fig:Ehist-all}.  }
+  \label{fig:bumpmodelmany}
+\end{figure*}
 
 \begin{figure}
 \centering
@@ -851,7 +888,22 @@ pattern is not observed in case of the Earth limb line.
   significant in the $30\degree < \theta < 45\degree$ panel.}
 \label{fig:limbfits}
 \end{figure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In this section we follow the weak indication of the limb
+photon excess at $\sim$130 GeV and discuss the limb photons
+in more detail. We show that the critical incident angles
+are not (solely) responsible for the GC excess.
+
+We begin by examining the limb events and finding a bump at
+130 GeV in a subsample of these events.  We consider two
+hypothesis for the origin of the bump: that the events come
+from far away in energy, or the more subtle possibility that
+an energy mapping error could redistribute in energy, making
+a spectral feature.  We then explore the various parameters
+of the GC line events and the limb bump events.
+\medskip
 
 Nearly grazing incident cosmic rays interacting with Earth
 atmosphere produce cascade showers with forward-moving
@@ -869,38 +921,15 @@ in the forward direction, and the back-scattered secondary
 particles at large angles relative to the direction of the
 cosmic-ray cascade is very rare.
 
-In section III we follow the weak indication of the limb
-photon excess at $\sim$130 GeV and discuss the limb photons
-in more detail. We show that the critical incident angles
-are not (solely) responsible for the GC excess.
-
 At an altitude $a$, the geometric (unrefracted) horizon is
 at zenith angle \be Z_{\rm hor} =
 \cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree
-\ee The Fermi orbit is nearly circular with 535 km < a <
-564 km, yielding $Z_{\rm hor}$ in the 112.7$\degree$ to
+\ee The Fermi orbit is nearly circular with 535~km $< a <$
+564~km, yielding $Z_{\rm hor}$ in the 112.7$\degree$ to
 113.3$\degree$ range, with the tangent point some 2400 km
 distant.  At this distance, the 90 km height of the
 atmosphere subtends about $2\degree$, or roughly $111\degree
 < Z < 113\degree$.
-
-At lower zenith angles ($Z \la 105\degree$) Fermi observes
-the sky with very little background from the Earth limb.  The
-incidence angle on the detector $\theta$ is defined such
-that $\theta=0$ corresponds to the ``boresight'' (see
-Tab.~\ref{tab:parameters}).  For \zrock = $50\degree$ (the
-typical survey rocking angle, see Sec. II), the limb photons
-are typically at $\theta > 60\degree$ (See
-Fig. \ref{fig:theta-E}).
-
-
-We begin by examining the limb events and finding a bump at
-130 GeV in a subsample of these events.  We consider two
-hypothesis for the origin of the bump: that the events come
-from far away in energy, or the more subtle possibility that
-an energy mapping error could redistribute in energy, making
-a spectral feature.  We then explore the various parameters
-of the GC line events and the limb bump events.
 
 The continual cosmic-ray cascades in the Earth's atmosphere
 produce gamma rays with $dN/dE \sim
@@ -911,34 +940,46 @@ reference sample to search for systematics in the LAT data.
 Because the limb photons result from atmospheric cascades,
 they are produced by interactions in a highly boosted frame,
 and cannot contain line emission.
+\medskip
+
+In Fig. \ref{fig:theta-E}, we show the incidence angle $\theta$ distribution
+as a function of events energy with $Z > 105\degree$ (see
+Fig.~\ref{fig:theta-E-frontback} for a separation of \texttt{FRONT} and
+\texttt{BACK} converting events).  The incidence angle on the detector
+$\theta$ is defined such that $\theta=0$ corresponds to the ``boresight'' (see
+Tab.~\ref{tab:parameters}).  At lower zenith angles ($Z \la 105\degree$) Fermi
+observes the sky with very little background from the Earth limb.  For \zrock
+= $50\degree$ (the typical survey rocking angle, see Sec. II), the limb
+photons are hence typically at $\theta > 60\degree$.
+
+In 125 GeV $< E <$ 140 GeV, we find that there is an excess of events
+appearing in the region of $30\degree < \theta < 45\degree$, as already
+indicated in Fig.~\ref{fig:polarPlotsAll} (this $\theta$ range contains about
+5\% of the limb events). No significant excess in this energy range has been
+found other $\theta$ regions (see Fig. \ref{fig:Ehist-all}). 
+
+We fit the Earth limb events with incidence angles $30^\circ<\theta<45^\circ$
+with a monochromatic line at 129 GeV (shown in Fig.~\ref{fig:spectra1}). We
+find a local significance of 3.2$\sigma$. For standard events with
+$Z<100\degree$ and $\theta<45\degree$ (after masking out the inner $10\degree$
+from the Galactic center), we find no indication of a 129 GeV line.
+\textbf{(update text to plot)}
+
+We compare the Galactic center line photons and the selected low incidence
+Earth limb events with the high-incidence limb event distribution in
+Fig.~~\ref{fig:l-b}. We show the rocking angle and the arrival time of the
+Galactic center line and the same limb events in Fig.~\ref{fig:rockTime}.  The
+arrival time distribution of the selected limb photon and all the limb photons
+are shown in Fig.~\ref{fig:timehist}. In Fig.~\ref{fig:spectra2} we show the
+Galactic center energy spectrum with and without incidence angle events with
+$30^\circ<\theta<45^\circ$.
+We have checked that this 129 GeV
+excess appears equally in front and back converting events
+(shown in Fig. \ref{fig:Ehist-frontback}).
 
 
-In Fig. \ref{fig:theta-E}, we show the incidence angle
-$\theta$ distribution as a function of events energy with $Z
-> 105\degree$ (see \ref{fig:theta-E} \texttt{FRONT} and
-\texttt{BACK} converting events only in
-Fig. \ref{{fig:theta-E-frontback}}). In 125 GeV $< E <$ 140
-GeV, we find that there is an excess of events appear in the
-region of $30\degree < \theta < 45\degree$ which contains
-about 5\% of the limb events. No significant excess in this
-energy range has been found in other $\theta$ region (see
-Fig. \ref{fig:Ehist-all}). The arrival time distribution of the
-selected limb photon and all the limb photons are shown in
-Fig. \ref{fig:timehist}.
 
-We fit the Earth limb events with low incidence angle with a
-monochromatic line at 129 GeV (shown in Fig.
-\ref{fig:albedoline}), and we find a local significance of
-3.2$\sigma$. For standard events with $Z<100\degree$ and
-$\theta<45\degree$ (after masking out the inner $10\degree$
-from the Galactic center), we find no indication of a 129
-GeV line.
-
-We compare the Galactic center line photons and the selected
-low incidence Earth limb events with the high-incidence limb
-event distribution in~\ref{fig:l-b}. We show the rocking
-angle and the arrival time of the Galactic center line and
-the same limb events in Fig. \ref{fig:rockTime}.
+\textbf{(extend discussion)}
 
 
 \subsection{Possible Systematic Errors}
@@ -947,7 +988,7 @@ Although there is no indication of instrumental systematics
 which can produce any gamma-ray line feature in the spectrum
 from either Galactic center or the Earth limb events, here
 we list several possibilities that might in principle fake a
-line feature:
+line feature with extra events:
 
 {\it Extra photons from low energy events:} Events would
 have to be mistakenly mapped from either lower energy ($E
@@ -973,6 +1014,7 @@ reason) for $30\degree < \theta < 45\degree$ could explain
 the limb photons, but would also produce a line everywhere
 in the Galactic plane.  No such line is seen outside of the
 GC.
+\medskip
 
 From these considerations, we conclude that there is no way
 for the limb line to be caused by extra events. However, it
@@ -980,20 +1022,15 @@ is still plausible that there is a more subtle energy
 mapping error that distorts the energy scale near 130 GeV.
 In the next section, we argue that this is a reasonable
 explanation of the line feature revealed in the limb
-photons, but {\em not} of the GC lines. In
-Fig.~\ref{fig:GCevents} we show the Galactic center energy
-spectrum with and without incidence angle events with
-$30^\circ<\theta<45^\circ$.
-
-
+photons, but {\em not} of the GC lines. 
 
 %%%%%%%%%%%%%%%%%%%%%% SECTION IV %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Energy mapping error: a model for the limb bump}
 
-In this subsection, we discuss then the energy remapping
-model, which enhances the significance of the 130 GeV line
-feature in the limb photons.
-
+% In this subsection, we discuss then the energy remapping
+% model, which enhances the significance of the 130 GeV line
+% feature in the limb photons.
+ 
 Given the difficulty in explaining the excess any other way,
 we consider the possibility that the limb bump results from
 an energy mapping error.  We propose a simple model, in
@@ -1034,11 +1071,9 @@ similar to the limb bump spectrum, we show 10 random
 realizations of a $dN/dE \sim E^{-2.6}$ spectrum with this
 distortion in Fig. \ref{fig:bumpmodelmany}.  Some of these
 look very similar to the bump in
-Fig. \ref{fig:Ehist-all}. We have checked that this 129 GeV
-excess appears equally in front and back converting events
-(shown in Fig. \ref{fig:Ehist-frontback}).
+Fig. \ref{fig:Ehist-all}. 
 
-In Fig. \ref{fig:limbfits}, we fit the energy mapping model
+In Fig.~\ref{fig:limbfits}, we fit the energy mapping model
 to the earth limb data for various range of inclination
 angle. We find a 4.7$\sigma$ excess of $30\degree-45\degree$
 limb photons at 129 GeV.
@@ -1152,41 +1187,9 @@ of $p\approx10^{-9}$.
 
 \appendix
 \section{This here is an appendix}
+% In Fig.~\ref{fig:rock}, we show the rocking angle distribution (i.e. the angle
+% of the spacecraft Z-axis from zenith) of the GC line events.
 
-In \ref{fig:rock}, we show the rocking angle distribution
-(i.e. the angle of the spacecraft Z-axis from zenith) of the
-GC line events
-
-
-\begin{figure}
-\centering
-\includegraphics[width=0.45\textwidth]{plots/timehist.ps}
-\caption{Time histogram (1-day bins) of suspicious limb events and all limb
-events.  The suspicious events are only observed at high rocking
-angles that occur during pointed observations.
-}
-\label{fig:timehist}
-\end{figure}
-
-
-\begin{figure}
-\centering
-\includegraphics[width=0.45\textwidth]{plots/Ehist-frontback.ps}
-\caption{Energy histogram as in Figure \ref{fig:Ehist-all}, but for front
-  (upper panel) and back (lower panel) converting events.  The 130 GeV excess
-  appears equally in front and back converting events. 
-}
-\label{fig:Ehist-frontback}
-\end{figure}
-
-
-
-\begin{figure}
-\centering
-\includegraphics[width=0.45\textwidth]{plots/theta-E-frontback.ps}
-\caption{Same as \ref{fig:theta-E} but for front and back converting events.}
-\label{fig:theta-E-frontback}
-\end{figure}
 
 \begin{figure}
 \centering
@@ -1207,51 +1210,41 @@ avoidance of the SAA leaves a hole in the upper panel.}
 \end{figure}
 
 \begin{figure}
-\centering
-\includegraphics[width=0.45\textwidth]{plots/earth-az.ps}
-\caption{Zenith angle vs. Earth azimuth angle for limb photons.  As expected,
-  the $\theta > 60\degree$ limb photons observed in survey mode are seen
-  predominantly to the north and south azimuth directions, i.e approximately
-  perpendicular to the orbit direction. The blue points are the earth limb ``line'' events. }
-\label{fig:earth-az}
+  \centering
+  \includegraphics[width=0.45\textwidth]{plots/earth-az.ps}
+  \caption{Zenith angle vs. Earth azimuth angle for limb photons.  As
+  expected, the $\theta > 60\degree$ limb photons observed in survey mode are
+  seen predominantly to the north and south azimuth directions, i.e
+  approximately perpendicular to the orbit direction. The blue points are the
+  earth limb ``line'' events. }
+  \label{fig:earth-az}
 \end{figure}
 
 \begin{figure}
-\centering
-\includegraphics[width=0.45\textwidth]{plots/sun.ps}
-\caption{Blue, red, and black events as a function of orbital precession phase
-  (upper panel) and time of year (lower panel).  Note that there are only
-  about 6 months of the year during which the 38 limb events are seen. 
-}
-\label{fig:sun}
+  \centering
+  \includegraphics[width=0.45\textwidth]{plots/sun.ps}
+  \caption{Blue, red, and black events as a function of orbital precession
+  phase (upper panel) and time of year (lower panel).  Note that there are
+  only about 6 months of the year during which the 38 limb events are seen.}
+  \label{fig:sun}
 \end{figure}
 
-\begin{figure*}
-  \centering
-  \includegraphics[width=0.8\textwidth]{plots/limb_bump_model_many.ps}
-  \caption{Ten mock spectra of an underlying spectrum $dN/dE \sim E^{-2.6}$,
-  distorted according to Eq. \ref{eq:dndy}.  Note the similarity to the
-  $30\degree < \theta < 45\degree$ panel in Figure \ref{fig:Ehist-all}.  }
-  \label{fig:bumpmodelmany}
-\end{figure*}
+% \begin{figure*}
+%   \centering
+%   \includegraphics[width=0.48\textwidth]{plots/gc_theta_phi.eps}
+%   \includegraphics[width=0.48\textwidth]{plots/limb_theta_phi.eps}
+%   \caption{Line events (125 GeV $< E <$ 140 GeV) in physical detector angle
+%   coordinates ($\theta, \phi$).  The $30\degree < \theta < 45\degree$ events
+%   are blue in this and following panels}
+%   \label{fig:theta-phi}
+% \end{figure*}
  
-\begin{figure*}
-  \centering
-  \includegraphics[width=0.48\textwidth]{plots/gc_theta_phi.eps}
-  \includegraphics[width=0.48\textwidth]{plots/limb_theta_phi.eps}
-  \caption{Line events (125 GeV $< E <$ 140 GeV) in physical detector angle
-  coordinates ($\theta, \phi$).  The $30\degree < \theta < 45\degree$ events
-  are blue in this and following panels}
-  \label{fig:theta-phi}
-\end{figure*}
-
 \begin{figure}
   \centering
   \includegraphics[width=0.9\linewidth]{plots/rockangle.ps}
-  \caption{The rocking angle of the Galactic center line
-events (positive values indicate a rock angle toward the
-north from zenith)-- \textbf{need to add red and blue to
-this plot}...  }
+  \caption{The rocking angle of the Galactic center line events (positive
+  values indicate a rock angle toward the north from zenith)-- \textbf{need to
+  add red and blue to this plot}...  }
   \label{fig:rock}
 \end{figure}
 
