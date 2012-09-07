@@ -966,13 +966,13 @@ line.
   \includegraphics[width=1.0\linewidth]{plots/limbfits.ps}
   \caption{Fits of the energy mapping model to limb data for
   various ranges of inclination angle $\theta$.  The
-  vertical dotted line corresponds to 130 GeV.  The test
+  vertical red dotted line corresponds to 130 GeV.  The test
   statistic ($2\Delta\ln L$) for the best fit model (green
   line) relative to the null hypothesis (red line) is given,
   along with the significance, expressed in ``sigma''
   including a penalty for the 3 additional degrees of
   freedom.  The deviation from linearity is only significant
-  in the $30\degree < \theta < 45\degree$ panel.}
+  in the $30\degree < \theta < 45\degree$ panel, but in events with other incidence angles.}
   \label{fig:limbfits}
 \end{figure}
 
@@ -1160,23 +1160,23 @@ Poisson likelihood of observing the data given the model.
 To illustrate that this model can generate a spectrum
 similar to the limb bump spectrum, we show 10 random
 realizations of a $dN/dE \sim E^{-2.6}$ spectrum with this
-distortion in Fig. \ref{fig:bumpmodelmany}.  Some of these
-look very similar to the bump in Fig. \ref{fig:Ehist-all}. 
+distortion in Fig. \ref{fig:bumpmodelmany}.  Note that some of these
+look very similar to the bump in real data as shown in Fig. \ref{fig:Ehist-all}. 
 
-In Fig.~\ref{fig:limbfits}, we fit the energy mapping model
+In Fig.~\ref{fig:limbfits}, we fit this energy mapping model
 to the earth limb data for various range of inclination
 angle. We find a 4.7$\sigma$ excess of $30\degree-45\degree$
-limb photons at 129 GeV.
+limb photons at 129 GeV. But note that this is only 5\% subsample of the Earth limb photon events in the public available Fermi data.
 
 
 \section{Discussion and Conclusion}
 
+Gamma-ray line emission has been considered a "smoking gun" signature for dark matter annihilation. 
 We recently claimed an evidence of gamma-ray line feature at
 $\sim$130 GeV towards the inner Galaxy using data from
-\Fermi-LAT, which is a "smoking gun" signature for dark
-matter annihilation. While \Fermi\ accumulating additional
-data, a thorough investigation of possible LAT systematics
-which might induce a fake line signal is timely requested.
+\Fermi-LAT. While \Fermi\ accumulating additional
+data, a thorough investigation of any LAT systematics
+which can possibly induce a fake line signal is timely requested.
 
 In particular, the earth limb photons provide a smooth
 reference spectrum for null tests of instrumental
@@ -1188,14 +1188,14 @@ the line photons and the earth limb photons, and compare the
 behaviour between the two to search for indications of
 spurious signal from unknown systematics. 
 
-We find a marginally significant 130 GeV feature in a small
-subset of the earth limb data.  This raises concerns about
+We select earth limb photons from publically available Fermi-LAT events and look for any suspicious line feature around 130 GeV.  We find a marginally significant 130 GeV feature (3.2$\sigma$) in a small
+subset (5\%) of the earth limb data with a particular incidence angle range between 30$\degree$ to 45$\degree$, but not in other limb events.  This might raise concerns about
 the 130 GeV Galactic center feature, even though we can
 think of no plausible model of instrumental behavior that
 connects the two.  We argue that the limb excess could well
 be a statistical fluctuation and does not look worrisome at
-the moment, but the fact that an energy remapping model
-gives such a large significance makes further studies
+the moment, but the fact that an energy remapping model we invented to mimic the effect of miscalibrate photon energy around 130 GeV
+gives an even larger significance (4.7$\sigma$) makes further studies
 important. A modest amount of additional limb data would
 tell us if the limb feature is a statistical fluke.  If the
 limb feature persists, it raises serious concerns about the
@@ -1206,20 +1206,17 @@ During the normal survey mode, the LAT usually points away
 from the Earth to avoid its contamination. However the Earth
 were within the LAT field of view with various angles with
 respect to the LAT z-axis during its commissioning phase:
-the so called Launch \& Early Operations (LEO) data was
-taken during the first 60 days of the mission. Combined with
+the so called Launch \& Early Operations (LEO) data taken during the first 60 days of the mission. Combined with
 a dedicated Earth-limb observation in September 2008 (with
 two orbits i.e. close to 3 hours of direct limb
-observations) provides $\sim$250 hrs total livetime for the
-highest quality data selection (diffuse class in Pass
-6)\cite{FermiLimb}. This data set has allowed the study of
+observations) provides $\sim$250 hrs total livetime~\cite{FermiLimb}. This data set has allowed the study of
 the spatial and spectral distribution of the limb photons
 and provide a calibration of the LAT instrument, especially
 to check if there is any instrumental systematics at 130 GeV
 producing a line-like feature.
 
-With Pass 6 diffuse class events (with post-launch
-instrument response functions P6V3), \citep{FermiLimb} has
+With Pass 6 \texttt{diffuse} class events along with post-launch
+instrument response functions (P6\_V3), \cite{FermiLimb} has
 analyzed the spatial morphology and the energy spectrum from
 the combined Earth limb photon events which contains 218
 photons above 100 GeV and 16 photons above 500 GeV. The
@@ -1233,26 +1230,24 @@ $2.75\pm 0.03$\footnote{The Earth limb photon above 10 GeV
   primaries at this energy is unaffected by the Earth
   magnetic fields. The Earth limb photon should have a
   spectral index close to that of the primary cosmic
-  rays. }. No significant line/bump feature is revealed in
-the spectrum. The systematic errors have been taken into
-account by extrapolated the estimation based on Vela
-observations less than 10 GeV to above 10 GeV. Note that the
+  rays. }. Note that the systematic errors have been taken into
+account in the spectral fitting by extrapolated the estimation based on Vela
+observations less than 10 GeV to above 10 GeV. And the
 systematic error dominates over the statistical error in the
-spectrum fitting.
+spectrum fitting. {\emph No significant line/bump feature is revealed in this spectrum of earth limb photons around 130 GeV.}
 
 
-We note that one to two weeks of additional limb data would
+We note that the additional limb data provided by LEO would
 provide an exposure comparable to the limb photons used
-here.  One option would be to release commissioning data
-from early in the survey, if they are thought to be of
+in this paper. Detailed analysis / Public release of the LEO data
+from early commissioning phase would be very helpful to study systematics of LAT around 130 GeV, if they are thought to be of
 sufficient quality.  Otherwise, new limb observations could
 be undertaken, in order to test the reality of the 130 GeV
 limb feature.
 
 The spectrum of the Earth limb photons provided by
 \citep{FermiLimb} does not show any significant feature at
-130 GeV. If improved processing of the limb photons still
-does not reveal the 130 GeV feature and replicate the line
+130 GeV. If improved processing of the limb photons does not replicate the line
 or the "remapping error" we found for a subsample of the
 limb photon during the normal survey mode, it can be
 dismissed as a statistical fluke.  If it reappears, a deeper
