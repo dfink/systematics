@@ -228,12 +228,12 @@ the question:
 
 \section{The 130 GeV excess}
 %%%%%%%%%%%%%%%%%%%%%% SECTION II %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In this section, we focus on Galactic Center observations.
-We introduce of some basic parameters and give a short
+In this section, %we focus on Galactic Center observations.
+we introduce of some basic parameters and give a short
 summary of the standard survey strategy of Fermi. We will
-ask the question Wether observations of the Galactic center
-are peculiar in some way that could enhance instrumental
-effects in this direction, search for suspicious trends in
+ask the question whether observations of the Galactic center
+are peculiar in a way that could enhance instrumental
+effects towards this direction and search for suspicious trends in
 other regions of the sky and the reconstruction parameters.
 
 %% Rock angle is 50, orbit precesses in 55 days, leading to nearly uniform
@@ -308,7 +308,7 @@ $+y$ axis (the normal to the $y-z$ plane with positive
 defined as facing the Sun, or along the orbiting velocity
 vector). The Zenith angle $Z$ is defined as the angle
 between the reconstructed event direction and the zenith
-line, which is connecting the earth center with the
+line, which is connecting the Earth center with the
 satellite center.  Lastly, \zrock\ is the rocking angle of
 the satellite (the the boresight angle north of the zenith)
 at the time of the event.  All angles are in units of
@@ -335,18 +335,21 @@ degrees.
   \label{tab:regions}
 \end{table*}
 
-In Tab.~\ref{tab:regions} we define some key regions (cuts
-on the full set of events), that we will use excessively
-throughout this work. `Standard events' are all events with
-the commonly adopted zenith angle cut $Z<100^\circ$, which
-avoids contamination with the earth limb photons (see
-below); `Inner Galactic plane' refers to a part of the
-Galactic disk close to the center, but excluding the center;
+In Tab.~\ref{tab:regions} we define some key sky and
+paramter regions %(cuts on the full set of events)
+that we will use
+throughout this work: `Standard events' are all events with
+the zenith angle cut $Z<100^\circ$ recommended by the LAT
+team, which
+avoids contamination with the Earth limb photons (see
+Section~\ref{sec:EarthLimb}); `Inner Galactic plane' refers to a part of the
+Galactic disk close to but without the center;
 `Galactic center' events are defined as coming from within
+a radius of
 $3^\circ$ around $\ell=b=0^\circ$; `Earth limb events' are
 defined as all events with zenith angles $Z>110^\circ$, and
 completely dominated by photons generated in CR interaction
-with the atmosphere. The `line' events refer to a subset
+with the atmosphere. `Line' events refer to subsets
 with energies between $120$ and $138$ GeV. This energy range
 is selected since the dominant line at the GC is found to be
 around 129 GeV~\cite{linepaper}, and the FWHM of the line is
@@ -355,7 +358,8 @@ about 13.6\%~\cite{Weniger:2012}.
 Throughout, we will use \texttt{P7CLEAN\_V6} events from 4
 Aug 2008 to 18 Jul 2012, with the good-time-interval cuts
 \texttt{DATA\_QUAL==1} and \texttt{LAT\_CONFIG==1}, however
-without cuts on the rocking angle \zrock, which would remove
+without commonly adopted cut on the rocking angle
+$|$\zrock$|<52^\circ$, unless stated otherwise. This last cut would remove
 all low incidence angle Earth limb events.
 % Contamination due to neglected rocking angle cut (GC
 % events from zrock>52 etc?) What happens for P7SOURCE_V6?
@@ -995,7 +999,7 @@ Nearly grazing incident cosmic rays interacting with Earth
 atmosphere produce cascade showers with forward-moving
 gamma-rays which can penetrate the upper thin layer of
 atmosphere without strong attenuation and produce a bright
-gamma-ray horizon. As an earth-orbiting gamma-ray detector,
+gamma-ray horizon. As an Earth-orbiting gamma-ray detector,
 the Earth atmosphere is the brightest source in the sky due
 to its proximity to LAT. The gamma-ray emission from Earth
 is produced by cosmic-ray (mostly protons, helium, and
@@ -1163,8 +1167,8 @@ realizations of a $dN/dE \sim E^{-2.6}$ spectrum with this
 distortion in Fig. \ref{fig:bumpmodelmany}.  Note that some of these
 look very similar to the bump in real data as shown in Fig. \ref{fig:Ehist-all}. 
 
-In Fig.~\ref{fig:limbfits}, we fit this energy mapping model
-to the earth limb data for various range of inclination
+In Fig.~\ref{fig:limbfits}, we fit the energy mapping model
+to the Earth limb data for various range of inclination
 angle. We find a 4.7$\sigma$ excess of $30\degree-45\degree$
 limb photons at 129 GeV. But note that this is only 5\% subsample of the Earth limb photon events in the public available Fermi data.
 
@@ -1178,13 +1182,13 @@ $\sim$130 GeV towards the inner Galaxy using data from
 data, a thorough investigation of any LAT systematics
 which can possibly induce a fake line signal is timely requested.
 
-In particular, the earth limb photons provide a smooth
+In particular, the Earth limb photons provide a smooth
 reference spectrum for null tests of instrumental
 systematics. While detailed information of each event
 reconstruction is not publicly available preventing us to
 check the particle nature of each event, we can still check
 various statistics of spatial and spectral distribution of
-the line photons and the earth limb photons, and compare the
+the line photons and the Earth limb photons, and compare the
 behaviour between the two to search for indications of
 spurious signal from unknown systematics. 
 
@@ -1303,7 +1307,7 @@ of $p\approx10^{-9}$.
   photons observed in survey mode are seen predominantly to
   the north and south azimuth directions, i.e approximately
   perpendicular to the orbit direction. The blue points are
-  the earth limb ``line'' events. }
+  the Earth limb ``line'' events. }
   \label{fig:earth-az}
 \end{figure}
 
