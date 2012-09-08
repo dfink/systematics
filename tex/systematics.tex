@@ -236,18 +236,34 @@ While we do not have access to the details of the
 reconstruction of each photon event, which prevent us to
 perform event-by-event checking of the line photons, we do
 have information about each event from the public event
-lists and spacecraft parameter files. In this paper, we
-search for suspicious trends that could indicate a spurious
-signal at 130 GeV.  In particular, the Earth limb photons
-provide a smooth reference spectrum for null tests.  We
-examine these events in detail and compare with the line
-photons from the Galactic center.
-%But all of this work depends on
-%the question:
-%(What was the question?)
+lists and spacecraft parameter files. 
 
-%accretion of a dwarf galaxy.
-In \Refsec{130GeV} we briefly define the key parameters to
+In particular, the so called ``Earth limb photons'' or
+sometimes referred as ``albedo photons'' provide a smooth
+reference spectrum for null tests. Nearly grazing incident
+cosmic rays interacting with Earth atmosphere produce
+cascade showers with forward-moving gamma-rays which can
+penetrate the upper thin layer of atmosphere without strong
+attenuation and produce a bright gamma-ray
+horizon~\citep[e.g.][and reference therein]{FermiLimb}. As
+an Earth-orbiting gamma-ray detector, the Earth atmosphere
+is the brightest source in the sky due to its proximity to
+LAT. The gamma-ray emission from Earth is produced by
+cosmic-ray (mostly protons, helium, and heavier nuclei)
+interactions with atmosphere material. Earth limb gamma-rays
+at$\sim$100 GeV are mainly from the decay of neutral pions
+and kaons. At this energy, due to the kinematics of the
+collisions, the cross section are peaked in the forward
+direction, and the back-scattered secondary particles at
+large angles relative to the direction of the cosmic-ray
+cascade is very rare.
+
+In this paper, we use Earth limb photons contained in LAT
+publically available 4 years data to search for any
+suspicious trends that could indicate a spurious line signal
+at 130 GeV.  We examine these events in detail and compare
+with the line photons from the Galactic center.  In
+\Refsec{130GeV} we briefly define the key parameters to
 describe the LAT photon events and its survey strategy. We
 examine several possible pecularities of Galactic center
 observation and systematics of LAT instrument which we can
@@ -969,14 +985,14 @@ line.
   \label{fig:l-b}
 \end{figure}
 
-\begin{figure}
-  \begin{center}
-    % \includegraphics{<+file+>}
-    \fbox{\Huge Figure}
-  \end{center}
-  \caption{GC and limb events. Rocking angle vs. time.}
-  \label{fig:rockTime}
-\end{figure}
+%% \begin{figure}
+%%   \begin{center}
+%%     % \includegraphics{<+file+>}
+%%     \fbox{\Huge Figure}
+%%   \end{center}
+%%   \caption{GC and limb events. Rocking angle vs. time.}
+%%   \label{fig:rockTime}
+%% \end{figure}
 
 \begin{figure}
   \centering
@@ -1039,33 +1055,17 @@ line.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 In this section we follow the weak indication of the limb
-photon excess at $\sim$130 GeV and discuss the limb photons
+photon excess at $\sim$130 GeV and analyze the limb photons
 in more detail. We show that the critical incident angles
 are not (solely) responsible for the GC excess.
 
 We begin by examining the limb events and finding a bump at
 130 GeV in a subsample of these events.  We consider two
-hypothesis for the origin of the bump: that the events come
-from far away in energy, or the more subtle possibility that
-an energy mapping error could redistribute in energy, making
-a spectral feature.  We then explore the various parameters
-of the GC line events and the limb bump events.  \medskip
-
-Nearly grazing incident cosmic rays interacting with Earth
-atmosphere produce cascade showers with forward-moving
-gamma-rays which can penetrate the upper thin layer of
-atmosphere without strong attenuation and produce a bright
-gamma-ray horizon. As an Earth-orbiting gamma-ray detector,
-the Earth atmosphere is the brightest source in the sky due
-to its proximity to LAT. The gamma-ray emission from Earth
-is produced by cosmic-ray (mostly protons, helium, and
-heavier nuclei) interactions with atmosphere material. Earth
-limb gamma-rays at$\sim$100 GeV are mainly from the decay of
-neutral pions and kaons. At this energy, due to the
-kinematics of the collisions, the cross section are peaked
-in the forward direction, and the back-scattered secondary
-particles at large angles relative to the direction of the
-cosmic-ray cascade is very rare.
+hypothesis for the origin of the bump: (1) the events come
+from far away in energy; (2) the more subtle possibility
+that an energy mapping error could redistribute in energy,
+thus making a spectral feature. We then explore the various
+parameters of the GC line events and the limb bump events.
 
 At an altitude $a$, the geometric (unrefracted) horizon is
 at zenith angle \be Z_{\rm hor} =
@@ -1079,13 +1079,12 @@ atmosphere subtends about $2\degree$, or roughly $111\degree
 
 The continual cosmic-ray cascades in the Earth's atmosphere
 produce gamma rays with $dN/dE \sim
-E^{-2.8}$~\citep{FermiLimb}. These atmospheric gammas are
-referred to as ``Earth limb photons'' or sometimes as
-``albedo photons.''  These photons provide a convenient
-reference sample to search for systematics in the LAT data.
-Because the limb photons result from atmospheric cascades,
-they are produced by interactions in a highly boosted frame,
-and cannot contain line emission.  \medskip
+E^{-2.8}$~\citep{FermiLimb}. These Earth limb photons
+provide a convenient reference sample to search for
+systematics in the LAT data.  Because the limb photons
+result from atmospheric cascades, they are produced by
+interactions in a highly boosted frame, and cannot contain
+line emission.  
 
 In Fig. \ref{fig:theta-E}, we show the incidence angle
 $\theta$ distribution as a function of events energy with $Z
@@ -1093,20 +1092,24 @@ $\theta$ distribution as a function of events energy with $Z
 separation of \texttt{FRONT} and \texttt{BACK} converting
 events).  The incidence angle on the detector $\theta$ is
 defined such that $\theta=0$ corresponds to the
-``boresight'' (see Tab.~\ref{tab:parameters}).  At lower
-zenith angles ($Z \la 105\degree$) Fermi observes the sky
-with very little background from the Earth limb.  For \zrock
-= $50\degree$ (the typical survey rocking angle, see Sec.
-II), the limb photons are hence typically at $\theta >
-60\degree$.
+``boresight'' of LAT instrument (see
+Tab.~\ref{tab:parameters}).  At lower zenith angles ($Z \la
+105\degree$) \Fermi\ observes the sky with very little
+background from the Earth limb.  For \zrock = $50\degree$
+(the typical survey rocking angle, see \Refsec{130GeV}), the
+limb photons are hence typically at $\theta > 60\degree$.
 
 In 125 GeV $< E <$ 140 GeV, we find that there is an excess
 of events appearing in the region of $30\degree < \theta <
 45\degree$, as already indicated in
 Fig.~\ref{fig:polarPlotsAll} (this $\theta$ range contains
 about 5\% of the limb events). No significant excess in this
-energy range has been found other $\theta$ regions (see Fig.
-\ref{fig:Ehist-all}). 
+energy range has been found in other $\theta$ regions (see
+Fig.~\ref{fig:Ehist-all}). We fit the Earth limb events with
+incidence angles $30^\circ<\theta<45^\circ$ with a
+monochromatic line at 129 GeV (shown in top panel of
+Fig.~\ref{fig:spectra2}). We find a local significance of
+3.2$\sigma$.
 
 \begin{figure}
   \centering
@@ -1120,29 +1123,25 @@ energy range has been found other $\theta$ regions (see Fig.
   \label{fig:spectra2}
 \end{figure}
 
-We fit the Earth limb events with incidence angles
-$30^\circ<\theta<45^\circ$ with a monochromatic line at 129
-GeV (shown in top panel of Fig.~\ref{fig:spectra2}). We find a local
-significance of 3.2$\sigma$. 
+
 %For standard events with
 %$Z<100\degree$ and $\theta<45\degree$ (after masking out the
 %inner $10\degree$ from the Galactic center), we find no
 %indication of a 129 GeV line. \textbf{(update text to
 %plot)}
-
+%% We show the
+%% rocking angle and the arrival time of the Galactic center
+%% line and the same limb events in Fig.~\ref{fig:rockTime}.
 We compare the Galactic center line photons and the selected
 low incidence Earth limb events with the high-incidence limb
-event distribution in Fig.~~\ref{fig:l-b}. We show the
-rocking angle and the arrival time of the Galactic center
-line and the same limb events in Fig.~\ref{fig:rockTime}.
-The arrival time distribution of the selected limb photon
-and all the limb photons are shown in
-Fig.~\ref{fig:timehist}. In Fig.~\ref{fig:spectra2} we show
-the Galactic center energy spectrum with and without
-incidence angle events with $30^\circ<\theta<45^\circ$.  We
-have checked that this 129 GeV excess appears equally in
-front and back converting events (shown in Fig.
-\ref{fig:Ehist-frontback}).
+event distribution in Fig.~~\ref{fig:l-b}. The arrival time
+distribution of the selected limb photon and all the limb
+photons are shown in Fig.~\ref{fig:timehist}. In
+Fig.~\ref{fig:spectra2} we show the Galactic center energy
+spectrum with and without incidence angle events with
+$30^\circ<\theta<45^\circ$.  We have checked that this 129
+GeV excess appears equally in front and back converting
+events (shown in Fig.  \ref{fig:Ehist-frontback}).
 
 \textbf{(extend discussion)}
 
@@ -1273,8 +1272,8 @@ $30\degree$ to $45\degree$, but not in other limb events.  This
 might raise concerns about the 130 GeV Galactic center
 feature, even though we can think of no plausible model of
 instrumental behavior that connects the two.  We note that
-the majority of events with incidence angle 30$\degree$ to
-45$\degree$ are {\emph not} from Earth limb, but from
+the majority of events with incidence angle $30\degree$ to
+$45\degree$ are {\emph not} from Earth limb, but from
 astrophysical sources. We have not found significant 130 GeV
 feature with much larger sample of events at this incidence
 angle.
@@ -1367,10 +1366,44 @@ of $p\approx10^{-9}$.
 
 
 \appendix
-\section{This here is an appendix}
+
+In Appendix, we check a couple of possible function
+dependence of the Earth limb photon and compare with the
+Galactic center events. 
 % In Fig.~\ref{fig:rock}, we show the rocking angle
 % distribution (i.e. the angle of the spacecraft Z-axis from
 % zenith) of the GC line events.
+
+In Fig.~\ref{fig:geo-lonlat}, we show the distribution of
+suspicious Earth limb line events in the map of Earth
+longitude and latitude and satellite zenith RA and Dec. We
+don't find any strange distribution in these
+coordinates. The red points are the Galactic center line
+photons and the blue points are the Earth limb ``line''
+events.
+
+In Fig.~\ref{fig:spacecraft-zx}, we show the distribution of
+RA and Dec of spacecraft Z axis (boresight direction) and X
+axis (Solar panel direction) for the suspicious Earth limb
+events. We don't find any strange distribution in these
+coordinates. The red points are the Galactic center line
+photons and the blue points are the Earth limb ``line''
+events.
+
+In Fig.~\ref{fig:earth-az}, we show the Zenith angle
+vs. Earth azimuth angle for the Earth limb photons. The
+$\theta > 60\degree$ limb photons observed in the normal
+survey mode are seen predominantly to the north and south
+azimuth directions, i.e approximately perpendicular to the
+orbit direction. The red points are the Galactic center line
+photons and the blue points are the Earth limb ``line''
+events.
+
+In Fig.~\ref{fig:sun}, we show the dependence of the orbital
+precession phase and arriving time of year.
+
+%% In Fig.~\ref{fig:rock}, we show the rocking angle of the
+%% Galactic center line events.
 
 
 \begin{figure}
@@ -1425,15 +1458,15 @@ of $p\approx10^{-9}$.
 %   \label{fig:theta-phi}
 % \end{figure*}
  
-\begin{figure}
-  \centering
-  \includegraphics[width=0.9\linewidth]{plots/rockangle.ps}
-  \caption{The rocking angle of the Galactic center line
-  events (positive values indicate a rock angle toward the
-  north from zenith)-- \textbf{need to add red and blue to
-  this plot}...  }
-  \label{fig:rock}
-\end{figure}
+%% \begin{figure}
+%%   \centering
+%%   \includegraphics[width=0.9\linewidth]{plots/rockangle.ps}
+%%   \caption{The rocking angle of the Galactic center line
+%%   events (positive values indicate a rock angle toward the
+%%   north from zenith)-- \textbf{need to add red and blue to
+%%   this plot}...  }
+%%   \label{fig:rock}
+%% \end{figure}
 
 
 \bibliography{systematics}
