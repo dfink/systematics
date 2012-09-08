@@ -82,13 +82,9 @@
 \newcommand\reftbl[1]{Table \ref{tbl:#1}}
 \def\la{\vcenter{\hbox{$<$}\offinterlineskip\hbox{$\sim$}}}
 \def\ga{\vcenter{\hbox{$>$}\offinterlineskip\hbox{$\sim$}}}
-
+\newcommand\Refsec[1]{Section \ref{sec:#1}}
 
 % Necessary for appendices
-\newcommand{\lmax}{{l_{\rm max}}}
-\newcommand{\lmaxtwo}{{l_{\rm max}^2}}
-\newcommand{\lmaxthree}{{l_{\rm max}^3}}
-
 
 \newcommand\dpf[1]{{\bf (DPF: #1)}}
 
@@ -161,37 +157,39 @@
 
 \section{Introduction}
 
-The search for dark matter takes many forms: exploration of
-its astrophysical properties, direct detection in
-underground labs, and even collider signatures of WIMPs or
-related
-particles~\citep{Jungman:1995df,Bergstrom:2000,Bertone:2005,
-Hooper:2007Review, 2012arXiv1205.4882B}.
 
-For indirect detection, distinguishing the dark matter
+The search for non-gravitational signature from dark matter
+has been generally taken place in three different
+directions: missing energy searching from colliders, direct
+searches for the recoil of nuclei from underground detectors,
+and indirect methods including searching dark matter signal
+from cosmic rays and multiwavelength astronomical
+observations~\citep{Jungman:1995df,Bergstrom:2000,Bertone:2005,Hooper:2007Review, 2012arXiv1205.4882B}.
+
+For indirect direction, distinguishing the dark matter
 signal from conventional astrophysics background is always a
-challenging. Gamma-ray line emission is a long-sought
-``smoking gun'' for dark matter annihilation, as no
-plausible astrophysical background can produce such line
+challenge. Among various possible signatures, gamma-ray line
+emission has been considered as a long-sought ``smoking
+gun'' for dark matter annihilation, as no plausible
+astrophysical background can produce such line
 signature\footnote{although a narrow feature is possible
-\citep[see][]{2012arXiv1207.0458A}}.  The line(s) could be
-produced by dark matter decays or annihilations into two
-photons, or two-body final states involving one photon plus
-a Higgs boson, Z boson, or other neutral non-SM particle. We
-were not optimistic, because in most models the branching
-ratio to lines is loop suppressed relative to the continuum
-emission, and one would have expected to see the continuum
-first in e.g. MSSM models~\citep[e.g.][]{Bergstrom:1997}.
-Although this theoretical prejudice led most previous
-studies to focus on continuum searches, this is not true in
-all models that allow high line to continuum
+  \citep[see][]{2012arXiv1207.0458A}}.  The monochromatic
+gamma-ray line(s) could be produced by e.g. dark matter
+decays or annihilations into two photons, or two-body final
+states involving one photon plus a Higgs boson, Z boson, or
+other neutral non-SM particle. Unfortunately, in most models the
+branching ratio to lines is loop suppressed relative to the
+continuum emission, and one would have expected to see the
+continuum first in e.g. MSSM
+models~\citep[e.g.][]{Bergstrom:1997}.  Although this
+theoretical prejudice led most previous studies to focus on
+continuum searches, there are models being proposed that
+allow high line to continuum
 ratios~\citep[e.g.][]{Bergstrom:1998, Bergstrom:2000,
-Bertone:2009, Jackson:2010, Cline:2012, Weiner:2012}.  In
-this work, we drop all theoretical prejudice and simply ask
-if there is a line in the Galactic center spectrum.
+  Bertone:2009, Jackson:2010, Cline:2012, Weiner:2012}.
 
-The first claim of a line around 130 GeV emerged from the
-work of Weniger~\citep{Weniger:2012}, which grew out of an
+In particular, the first claim of a line around 130 GeV emerged recently
+from the work of Weniger~\citep{Weniger:2012}, which grew out of an
 earlier search for other hard photon signals from
 annihilations~\citep{Bringmann:2012}.  Weniger focused on
 spectral fitting to photon events in regions of interest
@@ -200,39 +198,72 @@ designed to maximize S/N.  He found a 4.6$\sigma$
 structure at 130 GeV .
 
 Subsequent work by Su \& Finkbeiner approached the problem
-with template fitting, assuming various profiles (Einasto,
-NFW, Gaussian) for the DM distribution~\citep{linepaper}.
-If the template is correct, this should allow extraction of
-the DM signal with higher S/N.  This work found 6.6$\sigma$
-(5.1$\sigma$ after the trials factor correction) for an
-Einasto profile centered $1.5\degree$ west of the Galactic
-center, and also suggest that there may be two lines, at
-about 111 and 129 GeV.  The lower energy is tantalizing
-because it matches the expected energy of a $Z\gamma$ line
-if the higher energy is the $\gamma\gamma$ line.  Recent
-evidence for lines at 111 GeV and 129 GeV with a local
-significance of $3.3\sigma$ from Fermi unassociated point
-sources provide further compelling support for the
-hypothesis that the Galactic center line signal is indeed
-from dark matter annihilation~\cite{doubleline}.
+with template fitting which takes into account the spatial
+information along with spectral information, assuming
+various profiles (Einasto, NFW, Gaussian) for the DM
+distribution~\citep{linepaper}.  If the template is correct,
+this should allow extraction of the DM signal with higher
+S/N.  This work found 6.6$\sigma$ (5.1$\sigma$ after the
+trials factor correction) for an Einasto profile centered
+$1.5\degree$ west of the Galactic center, and also suggest
+that there may be two lines, at about 111 and 129 GeV.  The
+lower energy line is tantalizing because it matches the
+expected energy of a $Z\gamma$ line if the higher energy is
+the $\gamma\gamma$ line.  Recent evidence for lines at 111
+GeV and 129 GeV with a local significance of $3.3\sigma$
+from Fermi unassociated point sources provide further
+compelling support for the hypothesis that the Galactic
+center line signal is indeed from dark matter
+annihilation~\cite{doubleline}.
 
 These papers have provoked theorists to try to reconcile the
-observations with a number of theories~\citep{Dudas:2012,
-Choi:2012, Kyae:2012, Lee:2012, Rajaraman:2012,
-Acharya:2012, Garny:2012, Buckley:2012, Chu:2012, Kang:2012,
-Buchmuller:2012, Heo:2012, Park:2012, Tulin:2012,
-Cline:2012, Weiner:2012}.  But all of this work depends on
-the question:
+observations with a number of models~\citep{Dudas:2012,
+  Choi:2012, Kyae:2012, Lee:2012, Rajaraman:2012,
+  Acharya:2012, Garny:2012, Buckley:2012, Chu:2012,
+  Kang:2012, Buchmuller:2012, Heo:2012, Park:2012,
+  Tulin:2012, Cline:2012, Weiner:2012}. If one believes the
+statistical significance of this line feature, the only
+question left is to confirm that the feature we found from
+the data indeed comes from the sky -- i.e. not from any
+unknown instrumental systematics.  While LAT is accumulating
+additional data and other instruments e.g. HESS II, Calet,
+DAMPE are on the line and expected to confirm this finding
+indepently in the near future, a thorough investigation of
+any LAT systematics which can possibly induce a fake line
+signal is ergently requested.
 
-(What was the question?)
+While we do not have access to the details of the
+reconstruction of each photon event, which prevent us to
+perform event-by-event checking of the line photons, we do
+have information about each event from the public event
+lists and spacecraft parameter files. In this paper, we
+search for suspicious trends that could indicate a spurious
+signal at 130 GeV.  In particular, the Earth limb photons
+provide a smooth reference spectrum for null tests.  We
+examine these events in detail and compare with the line
+photons from the Galactic center.
+%But all of this work depends on
+%the question:
+%(What was the question?)
 
+%accretion of a dwarf galaxy.
+In \Refsec{130GeV} we briefly define the key parameters to
+describe the LAT photon events and its survey strategy. We
+examine several possible pecularities of Galactic center
+observation and systematics of LAT instrument which we can
+think of might introduce suspecious line signal. In
+\Refsec{EarthLimb}, we use the Earth limb photons and assume
+its smooth nature in spectrum to look for line-like feature
+in much detail. Finally in \Refsec{Conclusion}, we discuss
+our findings and implications to the 130 GeV line search.
 
 
 \section{The 130 GeV excess}
+\label{sec:130GeV}
 %%%%%%%%%%%%%%%%%%%%%% SECTION II %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In this section, %we focus on Galactic Center observations.
 we introduce some basic parameters and give a short
-summary of the standard survey strategy of Fermi. We will
+summary of the standard survey strategy of \Fermi. We will
 ask the question whether observations of the Galactic center
 are peculiar in a way that could enhance instrumental
 effects towards this direction and search for suspicious trends in
@@ -337,24 +368,22 @@ degrees.
 \end{table*}
 
 In Tab.~\ref{tab:regions} we define some key sky and
-paramter regions %(cuts on the full set of events)
-that we will use
-throughout this work: `Standard events' are all events with
-the zenith angle cut $Z<100^\circ$ recommended by the LAT
-team, which
-avoids contamination with the Earth limb photons (see
-Section~\ref{sec:EarthLimb}); `Inner Galactic plane' refers to a part of the
-Galactic disk close to but without the center;
-`Galactic center' events are defined as coming from within
-a radius of
-$3^\circ$ around $\ell=b=0^\circ$; `Earth limb events' are
-defined as all events with zenith angles $Z>110^\circ$, and
-completely dominated by photons generated in CR interaction
-with the atmosphere. `Line' events refer to subsets
-with energies between $120$ and $138$ GeV. This energy range
-is selected since the dominant line at the GC is found to be
-around 129 GeV~\cite{linepaper}, and the FWHM of the line is
-about 13.6\%~\cite{Weniger:2012}.
+paramter regions %(cuts on the full set of events) that we
+will use throughout this work: `Standard events' are all
+events with the zenith angle cut $Z<100^\circ$ recommended
+by the LAT team, which avoids contamination with the Earth
+limb photons (see Section~\ref{sec:EarthLimb}); `Inner
+Galactic plane' refers to a part of the Galactic disk close
+to but without the center; `Galactic center' events are
+defined as coming from within a radius of $3^\circ$ around
+$\ell=b=0^\circ$; `Earth limb events' are defined as all
+events with zenith angles $Z>110^\circ$, and completely
+dominated by photons generated in CR interaction with the
+atmosphere. `Line' events refer to subsets with energies
+between $120$ and $138$ GeV. This energy range is selected
+since the dominant line at the GC is found to be around 129
+GeV~\cite{linepaper}, and the FWHM of the line is about
+13.6\%~\cite{Weniger:2012}.
 
 Throughout, we will use \texttt{P7CLEAN\_V6} events from 4
 Aug 2008 to 18 Jul 2012, with the good-time-interval cuts
@@ -1214,13 +1243,15 @@ limb photons at 129 GeV. But note that this is only 5\% subsample of the Earth l
 
 
 \section{Discussion and Conclusion}
+\label{sec:Conclusion}
 
-Gamma-ray line emission has been considered a "smoking gun" signature for dark matter annihilation. 
-We recently claimed an evidence of gamma-ray line feature at
-$\sim$130 GeV towards the inner Galaxy using data from
-\Fermi-LAT. While \Fermi\ accumulating additional
-data, a thorough investigation of any LAT systematics
-which can possibly induce a fake line signal is timely requested.
+Gamma-ray line emission has been considered a "smoking gun"
+signature for dark matter annihilation.  We recently claimed
+an evidence of gamma-ray line feature at $\sim$130 GeV
+towards the inner Galaxy using data from \Fermi-LAT. While
+\Fermi\ accumulating additional data, a thorough
+investigation of any LAT systematics which can possibly
+induce a fake line signal is timely requested.
 
 In particular, the Earth limb photons provide a smooth
 reference spectrum for null tests of instrumental
@@ -1230,72 +1261,94 @@ check the particle nature of each event, we can still check
 various statistics of spatial and spectral distribution of
 the line photons and the Earth limb photons, and compare the
 behaviour between the two to search for indications of
-spurious signal from unknown systematics. 
+spurious signal from unknown systematics.
 
-We select earth limb photons from publically available Fermi-LAT events and look for any suspicious line feature around 130 GeV.  We find a marginally significant 130 GeV feature (3.2$\sigma$) in a small
-subset (5\%) of the earth limb data with a particular incidence angle range between 30$\degree$ to 45$\degree$, but not in other limb events.  This might raise concerns about
-the 130 GeV Galactic center feature, even though we can
-think of no plausible model of instrumental behavior that
-connects the two.  We argue that the limb excess could well
-be a statistical fluctuation and does not look worrisome at
-the moment. However, the fact that an energy remapping model we invented to mimic the effect of miscalibration of event energy around 130 GeV
-gives an even larger significance (4.7$\sigma$) makes further studies
-important. A modest amount of additional limb data would
-tell us if the limb feature is a statistical fluke.  If the
-limb feature persists, it raises serious concerns about the
-Pass 7 processing of $E > 100$ GeV events. 
 
+We select earth limb photons from publically available
+Fermi-LAT events and look for any suspicious line feature
+around 130 GeV.  We find a marginally significant 130 GeV
+feature (3.2$\sigma$) in a small subset (5\%) of the earth
+limb data with a particular incidence angle range between
+$30\degree$ to $45\degree$, but not in other limb events.  This
+might raise concerns about the 130 GeV Galactic center
+feature, even though we can think of no plausible model of
+instrumental behavior that connects the two.  We note that
+the majority of events with incidence angle 30$\degree$ to
+45$\degree$ are {\emph not} from Earth limb, but from
+astrophysical sources. We have not found significant 130 GeV
+feature with much larger sample of events at this incidence
+angle.
+
+%At $\sim$100 GeV, Galactic center is not particular bright. 
+
+We argue that the limb excess could well be a statistical
+fluctuation and does not look worrisome at the moment, but
+the fact that an energy remapping model we invented to mimic
+the effect of miscalibrate photon energy around 130 GeV
+gives an even larger significance (4.7$\sigma$) makes
+further studies important. A modest amount of additional
+limb data would tell us if the limb feature is a statistical
+fluke.  If the limb feature persists, it raises serious
+concerns about the Pass 7 processing of $E > 100$ GeV
+events.
 
 During the normal survey mode, the LAT usually points away
-from the Earth to avoid the contamination from Earth limb photons. However the Earth
-were within the LAT field of view with various angles with
-respect to the LAT z-axis during its commissioning phase:
-the so called Launch \& Early Operations (LEO) data was taken during the first 60 days of the mission. Combined with
-a dedicated Earth-limb observation in September 2008 (with
-two orbits i.e. close to 3 hours of direct limb
-observations) provides $\sim$250 hrs total livetime of the Earth limb photons~\cite{FermiLimb}. This data set has allowed the study of
-the spatial and spectral distribution of the limb photons
-and provide a calibration of the LAT instrument, especially
-to check if there is any instrumental systematics at 130 GeV
-producing a line-like feature.
+from the Earth to avoid the contamination from Earth limb
+photons. However the Earth were within the LAT field of view
+with various angles with respect to the LAT z-axis during
+its commissioning phase: the so called Launch \& Early
+Operations (LEO) data was taken during the first 60 days of
+the mission. Combined with a dedicated Earth-limb
+observation in September 2008 (with two orbits i.e. close to
+3 hours of direct limb observations) provides $\sim$250 hrs
+total livetime of the Earth limb
+photons~\cite{FermiLimb}. This data set has allowed the
+study of the spatial and spectral distribution of the limb
+photons and provide a calibration of the LAT instrument,
+especially to check if there is any instrumental systematics
+at 130 GeV producing a line-like feature.
 
-With Pass 6 \texttt{diffuse} class events along with post-launch
-instrument response functions (P6\_V3), \cite{FermiLimb} has
-analyzed the spatial morphology and the energy spectrum from
-the combined Earth limb photon events which contains 218
-photons above 100 GeV and 16 photons above 500 GeV. The
-energy spectrum of the Earth limb photons shows a power-law
-behavior with the spectral index $2.79\pm 0.06$ for 3-500
-GeV photons (Fig. 2 of \cite{FermiLimb}), which is
-consistent with the primary cosmic-ray spectral index
-$2.75\pm 0.03$\footnote{The Earth limb photon above 10 GeV
-  from cosmic ray interactions in the upper atmospheric
+With Pass 6 \texttt{diffuse} class events along with
+post-launch instrument response functions (P6\_V3),
+\cite{FermiLimb} has analyzed the spatial morphology and the
+energy spectrum from the combined Earth limb photon events
+which contains 218 photons above 100 GeV and 16 photons
+above 500 GeV. The energy spectrum of the Earth limb photons
+shows a power-law behavior with the spectral index $2.79\pm
+0.06$ for 3-500 GeV photons (Fig. 2 of \cite{FermiLimb}),
+which is consistent with the primary cosmic-ray spectral
+index $2.75\pm 0.03$\footnote{The Earth limb photon above 10
+  GeV from cosmic ray interactions in the upper atmospheric
   layers do not suffer large energy loses and the cosmic-ray
   primaries at this energy is unaffected by the Earth
   magnetic fields. The Earth limb photon should have a
   spectral index close to that of the primary cosmic
-  rays. }. Note that the systematic errors have been taken into
-account in the spectral fitting by extrapolating the estimation based on Vela
-observations less than 10 GeV to above 10 GeV. And the
-systematic error dominates over the statistical error in the
-spectrum fitting. \emph{No significant line/bump feature is revealed in this spectrum of earth limb photons around 130 GeV.}
+  rays~\cite{FermiLimb}. }. Note that the systematic errors
+have been taken into account in the spectral fitting by
+extrapolating the estimation based on Vela observations less
+than 10 GeV to above 10 GeV. And the systematic error
+dominates over the statistical error in the spectrum
+fitting. \emph{No significant line/bump feature is revealed
+  in this spectrum of earth limb photons around 130 GeV.}
 
 
 We note that the additional limb data provided by LEO would
-provide an exposure comparable to the limb photons used
-in this paper. Detailed analysis / Public release of the LEO data
-from early commissioning phase would be very helpful to study systematics of LAT around 130 GeV, if they are thought to be of
-sufficient quality.  Otherwise, new limb observations could
-be undertaken, in order to test the reality of the 130 GeV
-limb feature.
+provide an exposure comparable to the limb photons used in
+this paper. Detailed analysis/public release of the LEO data
+from early commissioning phase would be very helpful to
+study systematics of LAT around 130 GeV, if they are thought
+to be of sufficient quality.  Otherwise, new limb
+observations could be undertaken, in order to test the
+reality of the 130 GeV limb feature.
 
 The spectrum of the Earth limb photons provided by
 \citep{FermiLimb} does not show any significant feature at
-130 GeV. If improved processing of the limb photons does not replicate the line
-or the "remapping error" we found for a subsample of the
-limb photon during the normal survey mode, it can be
-dismissed as a statistical fluke.  If it reappears, a deeper
-investigation into its cause is warranted.
+130 GeV. If improved processing of the limb photons does not
+replicate the line or the "remapping error" we found for a
+subsample of the limb photon during the normal survey mode,
+it can be dismissed as a statistical fluke.  If it
+reappears, a deeper investigation into its cause is
+warranted.
 
 Even then, it is a challenge to understand how such an
 instrumental feature could be mapped so precisely onto a
