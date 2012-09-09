@@ -158,7 +158,8 @@
 \section{Introduction}
 
 
-The search for non-gravitational signatures from dark matter
+The search for non-gravitational signatures from WIMP (weakly interacting
+massive particle) dark matter
 has been generally taken place in three different
 directions: missing energy searching from colliders, direct
 searches for the recoil of nuclei from underground detectors,
@@ -281,7 +282,7 @@ are peculiar in a way that could enhance instrumental
 effects towards this direction and search for suspicious trends in
 other regions of the sky and the reconstruction parameters.
 
-%% Rock angle is 50, orbit precesses in 55 days, leading to nearly uniform
+%% Rock angle is 50, orbit precesses in $53.4$ days, leading to nearly uniform
 %% exposure.  Occasional ToO observations.
 
 \begin{table*}
@@ -366,7 +367,7 @@ with rocking angle 39$\degree$, 40$\degree$, and 45$\degree$
 respectively have been tested with relatively short periods,
 including the 3 orbit profile test for various rocking
 angles.}. This rocking profile, combined with the precession
-of the orbit every $\sim$55 days, allows the LAT to cover
+of the orbit every $\sim53.4$ days, allows the LAT to cover
 the whole sky every two orbits with the most uniform sky
 coverage in a short time.
 
@@ -660,7 +661,7 @@ Fig.~\ref{fig:time_phi}, where we show the $\phi$
 distribution of $>10\GeV$ events from the Galactic center as
 a function of time (modulo one year).  The $\theta$
 distribution in the upper right panel reflects the
-precession pattern with a $\sim55$ day period. Integrated
+precession pattern with a $\sim53.4$ day period. Integrated
 over time, the $\phi$ and $\theta$ distributions look like
 in the lower panels of Fig.~\ref{fig:time_phi}, where they
 are shown as function of the Galactic longitude. Close to
@@ -851,39 +852,41 @@ line-like features in other sky regions}
   \begin{center}
     \includegraphics[width=1.0\linewidth]{plots/hotspot_histogram.eps}
   \end{center}
-  \caption{Histogram of TS values observed close to the GC
-  (red) and in the rest of the sky (black), compared to the
-  expected distribution (dashed). \textbf{(include other
-  energies than 130 GeV)}.}
+  \caption{Histogram of TS values observed in different
+  $6^\circ\times6^\circ$ along the Galactic disk, centered on $b=0^\circ$ and
+  $|\ell|=13.5^\circ, 16.5^\circ \dots 178.5^\circ$. We show results for
+  different line energies from 90 to $170\GeV$ (dotted lines), as well as all
+  TS values combined (black solid line); in the latter case, the black dotted
+  line is the theoretical expectation (a $0.5\chi^2_{k=0}+0.5\chi^2{k=1}$
+  distribution), the yellow band shows the $\pm1\sigma$ band. The tail of the
+  observed distribution is in agreement with what is expected.}
   \label{fig:hotspots}
 \end{figure}
 
-The 130 GeV excess is located in a narrow range of about
-$\sim5^\circ$ around the Galactic center. The existence of
-other
-significant `hotspots' (localized regions with a significant
-line-like emission at or around 130 GeV) in the sky could
-indicate an instrumental effect, or point to a source class
-that is concentrated to the GC. In absence of knowledge
-about the distribution of such a source, we adopt the
-following strategy: For each standard event above 80 GeV, we
-select the 103 nearest neighbour events (in physical
-coordinates; 103 is the number of events in the GC region
-above 80 GeV), and calculate the TS value for a line at 130
-GeV. The details of the fit correspond to what we did for
-e.g.~Fig.~\ref{fig:spectra1}. We exclude cases where the
-nearest neighbours are closer than $10^\circ$ to the GC to
-avoid contamination with the GC signature. The distribution
-of TS values obtained in this way is shown in
-Fig.~\ref{fig:hotspots} by the black line. Though we indeed
-find places in the sky with TS values as large as $TS=13$
-(which indicates a local $>3\sigma$ significance), this is
-in perfect agreement with the statistical expectations as
-shown by the dashed line. On the other hand, the TS value
-distribution in cases where the nearest neighbours overlap
-with $\ell=b=0^\circ$ shows strong deviations from the
-expected distribution, as shown by the red line in
-Fig.~\ref{fig:hotspots}.
+The 130 GeV excess is located in a narrow range of about $\sim5^\circ$ around
+the Galactic center. The existence of other significant `hotspots' (localized
+regions with a significant line-like emission at or around 130 GeV) in the sky
+could indicate an instrumental effect, or point to a source class that is
+concentrated to the GC. In absence of knowledge about the distribution of such
+a source, we adopt the following strategy. We select regions of
+$6^\circ\times6^\circ$ degrees size, centered along the Galactic disk at
+$b=0^\circ$, $|\ell|=13.5^\circ, 16.5^\circ \dots 178.5^\circ$. The size of
+the region is choosen to include roughly 50--100 events (like in our `GC
+region'); regions close to the GC are excluded to avoid contamination with the
+130 GeV excess. In each reagion we calculate the TS valule for the presence of
+a line at different energies. The details of the fit are the same as above for
+Fig.~\ref{fig:spectra1} (in particular the energy window is always fixed to
+80--200~GeV). The distribution of TS values that we obtain in this way is
+shown in Fig.~\ref{fig:hotspots} by the dotted colored lines, a combination of
+TS values for all line energies is shown by the solid black line. Its tail
+distribution is in excellent agreement with the statistical expectations
+(shown by te black dotted line), within the yellow $\pm1\sigma$ error bars. We
+checked that we obtain the same result when reducing the size of the regions,
+when shifting them by a common offset, or when selection regions all over the
+sky such that always $\sim100$ events are included. We hence conclude that
+regions with $\geq3\sigma$ lines are present in the data also away from the
+GC, however in agreement with the statistical expectations and hence not
+significant.
 
 \subsubsection{Hypothesis: The observed signal is variable}
 
