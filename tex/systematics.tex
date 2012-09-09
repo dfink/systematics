@@ -160,7 +160,7 @@
 \section{Introduction}
 
 
-The search for non-gravitational signatures from WIMP
+The search for non-gravitational signatures from WIMP{}
 (weakly interacting massive particle) dark matter has been
 generally taken place in three different directions: missing
 energy searching from colliders, direct searches for the
@@ -191,21 +191,22 @@ being proposed that allow high line to continuum
 ratios~\citep[e.g.][]{Bergstrom:1998, Bergstrom:2000,
   Bertone:2009, Jackson:2010, Cline:2012, Weiner:2012}.
 
-The first claim of a line around 130 GeV emerged recently
-from the work of Weniger~\citep{Weniger:2012}, which grew
+The first claim of a line around 130 GeV by 
+Weniger~\citep{Weniger:2012} grew
 out of an earlier search for other hard photon signals from
 annihilations~\citep{Bringmann:2012}.  Weniger focused on
-spectral fitting to photon events in regions of interest
+spectral fitting to photon events in regions of interest 
+in the inner Galaxy
 designed to maximize S/N.  He found a 4.6$\sigma$
 (3.2$\sigma$ after the trials factor correction) line
-structure at 130 GeV .
+structure at 130 GeV.
 
 Subsequent work by Su \& Finkbeiner approached the problem
 with template fitting, which takes into account the spatial
 distribution of events along with spectral information,
 assuming various profiles (Einasto, NFW, Gaussian) for the
 DM distribution~\citep{linepaper}.  If the template is
-correct, this should allow extraction of the DM signal with
+correct, this allows extraction of the DM signal with
 higher S/N.  This work found 6.6$\sigma$ (5.1$\sigma$ after
 the trials factor correction) for an Einasto profile
 centered $1.5\degree$ west of the Galactic center, and also
@@ -213,7 +214,7 @@ suggested that there may be two lines, at about 111 and 129
 GeV.  The lower energy line is tantalizing because it
 matches the expected energy of a $Z\gamma$ line if the
 higher energy is the $\gamma\gamma$ line.  These findings
-have provoked theorists to try to reconcile the observations
+have inspired theorists to try to reconcile the observations
 with a number of models~\citep{Dudas:2012, Choi:2012,
   Kyae:2012, Lee:2012, Rajaraman:2012, Acharya:2012,
   Garny:2012, Buckley:2012, Chu:2012, Kang:2012,
@@ -224,13 +225,13 @@ Recent evidence for lines at 111 GeV and 129 GeV with a
 local significance of $3.3\sigma$ from \Fermi\ unassociated
 point sources suggests an annihilation signal is present, as
 does the claim of line emission from galaxy clusters at 130
-GeV~\cite{galaxyclusters}.  Neither of these would stand on
+GeV~\cite{Hektor:2012kc}.  Neither of these would stand on
 their own, but they provide support for the hypothesis that
 the Galactic center line signal is indeed from dark matter
 annihilation~\cite{doubleline}.
 
-If one believes the statistical significance of this line
-feature, it motivates a search for systematic errors in the
+The statistical significance of the line
+feature motivates a search for systematic errors in the
 LAT data that could mimic a line in the Galactic center.
 Confirmation by H.E.S.S II is possible in the next
 year~\cite{Bergstrom:2012}, but in the meantime a thorough
@@ -243,31 +244,31 @@ parameter files.  We can use this information to search for
 any line-producing artifacts in the detector frame, and
 investigate if they could map onto the Galactic center.
 
-In order to test suspecious spectral feature at $\sim$130
-GeV from LAT instrument, a signal with smooth reference
-spectrum extended at least to this energy is
-required. Nearly grazing incidence cosmic rays (CR) initiate
-cascades in the Earth's atmosphere, making gamma-rays which
-can penetrate the upper thin layer of atmosphere without
-strong attenuation and produce a bright gamma-ray horizon
-with featureless spectrum~\citep[e.g.][and reference
-  therein]{FermiLimb}, sometimes referred as ``Earth limb
-photons'' or ``albedo photons''.
+The Earth's atmosphere provides a convenient source of photons for systematics
+tests.  Cosmic rays (CR) entering the Earth's atmosphere nearly parallel to
+the ground initiate cascades, producing a featureless gamma-ray spectrum on
+the horizon as viewed from \Fermi~\citep[e.g.][and references
+therein]{FermiLimb}.  These ``Earth limb'' photons (also called ``albedo''
+photons) are created in a highly boosted frame, and therefore have a smooth
+spectrum extending up to $E \gg 130$ GeV. 
 
-In this paper, we use Earth limb photons contained in LAT
-publically available 4 years data to search for any
-suspicious trends that could indicate a spurious line signal
+In this paper, we use Earth limb photons in the first 4 years of LAT data to
+search for any
+suspicious trends that could generate a spurious line signal
 at 130 GeV.  We examine these events in detail and compare
-with the line photons from the Galactic center.  In
-\Refsec{130GeV} we briefly define the key parameters to
-describe the LAT photon events and its survey strategy. We
-examine several possible pecularities of Galactic center
-observation and systematics of LAT instrument which we can
-think of might introduce suspecious line signal. In
-\Refsec{EarthLimb}, we use the Earth limb photons and assume
-its smooth nature in spectrum to look for line-like feature
-in much detail. Finally in \Refsec{Conclusion}, we discuss
-our findings and implications to the 130 GeV line search.
+with the line photons from the Galactic center.  {\bf compare what?  I would
+  make this sentence more informative or remove it}  In
+\Refsec{130GeV} we briefly define the key parameters
+of LAT photon events and describe its survey strategy. We
+examine possible peculiarities of Galactic center
+observation and systematics of the LAT instrument which could plausibly 
+introduce a spurious line signal. In
+\Refsec{EarthLimb}, we use the Earth limb photons to look for line-like features
+in more detail.  Finally in \Refsec{Conclusion}, we discuss
+our findings and implications for the 130 GeV line search.
+{\bf come back to this at the end -- I don't quite have a feeling for the
+  layout of the paper just from reading this}
+
 
 
 \section{The 130 GeV excess}
@@ -275,7 +276,7 @@ our findings and implications to the 130 GeV line search.
 %%%%%%%%%%%%%%%%%%%%%% SECTION II %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In this section, we briefly summarize the standard survey strategy of \Fermi\ 
 and introduce basic parameters of each event.  We will
-ask the question whether observations of the Galactic center
+address the question of whether observations of the Galactic center
 are peculiar in a way that could enhance instrumental
 effects towards this direction and search for suspicious trends in
 other regions of the sky and the reconstruction parameters.
@@ -291,7 +292,7 @@ other regions of the sky and the reconstruction parameters.
       name      && min & max &&            \\
       \hline
       $\theta$ &&    0 &  $\sim80$ && Polar coordinate (instrument frame) \\
-      $\phi$   &&    0 &       360 && Azimuthal coordinate (instrument frame) \\
+      $\phi$   &&    0 &       360 && Azimuthal coordinate wrt $+x$ (instrument frame) \\
       $(x,y,z)$&&  $-1$& $1$ && Cartesian coordinates;
       $\propto(\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$\\
       $Z$      &&    0 & $\sim113$ && Zenith angle (horizon at $Z=113\degree$) \\
@@ -341,61 +342,54 @@ other regions of the sky and the reconstruction parameters.
 %%       above 300 GeV to explain the signal, even if all of them got
 %%       mapped to 130 GeV.
 
-In \emph{standard survey mode}, the LAT points at zenith
-angle \zrock\ offset north from the zenith perpendicular to
-the orbit and \zrock\ south of the zenith (the opposite side
-of the orbital plane) on the next, surveying the northern
-and southern hemispheres on each orbit. The survey mode are
-performed with a repeating pattern of slews with 17
-waypoints about the velocity vector, the waypoint defines
-the time and the corresponding angle at which the LAT
-boresight is rocked north (on one orbit) or south (on the
-other orbit) of the orbit plane\footnote{The survey mode can
+With a field of view of approximately 2 sr, the LAT can survey the entire sky
+in two orbits.  In \emph{standard survey mode}, the LAT points north of zenith
+by an angle \zrock\ on one orbit, and south of zenith by the same angle on the
+next orbit.  In this mode, the LAT pointing is confined to the plane
+perpendicular to its orbital velocity.  The slews are
+performed with a repeating pattern of 17 waypoints defining
+\zrock\ as a function of time.\footnote{The survey mode can
 be also performed with alternate explicit slew
-commands}\footnote{The survey pattern profiles are available
+commands - IS THIS TRUE?  I think this would not be survey mode any more...}
+\footnote{The survey pattern profiles are available
 at
 \url{http://fermi.gsfc.nasa.gov/ssc/observations/types/allsky/}.
 The effective dates and times for each profile are provided.
-}. \zrock\ was $35\degree$ since the start of the nominal
-mission on August 4, 2008 to May 7th, 2009, but was changed
+} \zrock\ was $35\degree$ at the start of the nominal
+mission on August 4, 2008 until May 7th, 2009, and was changed
 to $50\degree$ on Sep 3rd, 2009 for better thermal
 management of the downward-facing battery
-radiator\footnote{Different observatory sky-survey profiles
+radiator.\footnote{Various profiles
 with rocking angle 39$\degree$, 40$\degree$, and 45$\degree$
 respectively have been tested with relatively short periods,
-including the 3 orbit profile test for various rocking
-angles.}. This rocking profile, combined with the precession
+including a 3 orbit profile test that overweights the south.} 
+This rocking profile, combined with the precession
 of the orbit every $\sim53.4$ days, allows the LAT to cover
-the whole sky every two orbits with the most uniform sky
-coverage in a short time.
+the whole sky with approximately uniform coverage.
 
-This survey mode is only occasionally interrupted for
-pointed observations of targets of opportunity (ToOs). The
-total amount of time in the pointed observations is $<$20\%
-of the total observing time. \Fermi's survey observations are
-regularly interrupted during passages through the South
+Survey mode is only occasionally interrupted for
+pointed observations of targets of opportunity (ToOs). Pointed 
+observations account for $<$20\%
+of the total observing time. {\bf I thought it was even much less} \Fermi's survey observations are
+halted during passages through the South
 Atlantic Anomaly. This interruption results in an exposure
-differential between north and south of ~15\%. In addition,
-sky-survey is occasionally interrupted by Autonomous
-Repoints of the observatory for the purpose of triggered
+differential between north and south of $\sim15$\%. In addition,
+survey mode is occasionally interrupted by Autonomous
+Repoints of the observatory for triggered
 gamma-ray bursts follow up observations.  
 
-We have defined the relevant event parameters used in this
-paper in Tab.~\ref{tab:parameters}: $\theta$ is the
-reconstructed incidence angle of the photon event with
-respect to the LAT boresight -- defined as the $z$-axis
-while the $y$-axis is parallel to the solar panels; $\phi$
-is the reconstructed incidence angle with respect to the
-$+y$ axis (the normal to the $y-z$ plane with positive
-defined as facing the Sun, or along the orbiting velocity
-vector). The Zenith angle $Z$ is defined as the angle
-between the reconstructed event direction and the zenith
-line, which is connecting the Earth center with the
-satellite center.  Lastly, \zrock\ is the rocking angle of
-the satellite (the the boresight angle north of the zenith)
-at the time of the event.  All angles are in units of
-degrees. 
-% EARTH_AZIMUTH_ANGLE (degrees)
+We have defined the relevant event parameters used in this paper in
+Table~\ref{tab:parameters}: $\theta$ is the reconstructed incidence angle of
+the photon event with respect to the LAT boresight (defined as the $+z$ axis).
+The $+x$ axis is the line normal to the Sun-facing side of the spacecraft,
+i.e. the solar panels face the $+x$ direction.   $\phi$ is the
+incidence angle with respect to the $+x$ axis.  {\bf I think this was wrong
+  before and fixed it -- make sure you agree -- DPF}
+The Zenith angle $Z$ is the angle between the
+reconstructed event direction and the zenith line, which passes from the
+Earth center through the satellite center.   All angles are in units of
+degrees.
+
 
 \begin{table*}
   \begin{tabular}{lllccc}
@@ -417,7 +411,7 @@ degrees.
   \label{tab:regions}
 \end{table*}
 
-In Tab.~\ref{tab:regions} we define some key sky and
+In Table~\ref{tab:regions} we define some key sky and
 paramter regions %(cuts on the full set of events) that we
 will use throughout this work: `Standard events' are all
 events with the zenith angle cut $Z<100^\circ$ recommended
@@ -456,9 +450,9 @@ all low incidence angle Earth limb events.
   \caption{Incidence angle distribution of \emph{all} events
   with $E>100\GeV$ that enter our analysis (gray dots; see
   discussion in Sec.~\ref{sec:conventions}), of GC line
-  events (red dots; see Tab.~\ref{tab:regions}) and of
+  events (red dots; see Table~\ref{tab:regions}) and of
   suspicious Earth limb events (blue dots; see
-  Tab.~\ref{tab:regions} `Earth limb line'), as function of
+  Table~\ref{tab:regions} `Earth limb line'), as function of
   the instrumental coordinates $\theta$ and $\phi$. The
   Earth limb contribution is clearly visible in the gray
   dots at $\theta > 61^\circ$.}
@@ -517,7 +511,7 @@ suspicious features at 130 GeV. Among these regions are the
 Earth limb (with \emph{all} impact angles and a flux of $XXX
 \ph \cm^{-2}\s^{-1}\sr^{-1}$) and the inner Galactic plane
 ($XXX\ph\cm^{-2}\s^{-1}\sr^{-1}$), see
-Tab.~\ref{tab:regions}. Another `region' with very high
+Table~\ref{tab:regions}. Another `region' with very high
 statistics but a somewhat smaller flux (
 $XXX\ph\cm^{-2}\s^{-1}\sr^{-1}$) is the whole set of
 standard events excluding the region around the GC
@@ -623,7 +617,7 @@ of sources with very hard spectra. If these high energy
 photons are occasionally mis-reconstructed with energies
 close to 130 GeV, this could produce a line feature in the
 data that would dominantly show up at the Galactic center.
-In Tab.~\ref{tab:regions}, we list the ratio of $>300\GeV$
+In Table~\ref{tab:regions}, we list the ratio of $>300\GeV$
 events to $>100\GeV$ events and of $>100\GeV$ to $>30\GeV$
 events, in different regions of the sky.  Interestingly, the
 Galactic center does not harbour significantly more high
@@ -1105,7 +1099,7 @@ $\theta$ distribution as a function of events energy with $Z
 converting events.  The incidence angle on the detector
 $\theta$ is defined such that $\theta=0$ corresponds to the
 ``boresight'' of LAT instrument (see
-Tab.~\ref{tab:parameters}).  At lower zenith angles ($Z \la
+Table~\ref{tab:parameters}).  At lower zenith angles ($Z \la
 105\degree$) \Fermi\ observes the sky with very little
 background from the Earth limb.  For \zrock = $50\degree$
 (the typical survey rocking angle, see \Refsec{130GeV}), the
