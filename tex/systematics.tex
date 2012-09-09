@@ -86,7 +86,9 @@
 
 % Necessary for appendices
 
-\newcommand\dpf[1]{{\bf (DPF: #1)}}
+%% \newcommand\dpf[1]{{\bf (DPF: #1)}}
+%% \newcommand\dpf[1]{{\bf (MS: #1)}}
+%% \newcommand\dpf[1]{{\bf (CW: #1)}}
 
 \begin{document}
 
@@ -118,7 +120,7 @@
 %% systematics.  Limb photons provide a reference spectrum and look a bit
 %% fishy.  Need more data.
 \begin{abstract} Our recent claims of a Galactic center
-  feature in Fermi/LAT data at approximately 130 GeV have
+  feature in \Fermi-LAT data at approximately 130 GeV have
   prompted an avalanche of papers proposing explanations
   ranging from dark matter annihilation to exotic pulsar
   winds.  Because of the importance of such interpretations
@@ -158,40 +160,40 @@
 \section{Introduction}
 
 
-The search for non-gravitational signatures from WIMP (weakly interacting
-massive particle) dark matter
-has been generally taken place in three different
-directions: missing energy searching from colliders, direct
-searches for the recoil of nuclei from underground detectors,
-and indirect methods including searching dark matter signal
-from cosmic rays and multiwavelength astronomical
-observations~\citep{Jungman:1995df,Bergstrom:2000,Bertone:2005,Hooper:2007Review, 2012arXiv1205.4882B}.
+The search for non-gravitational signatures from WIMP
+(weakly interacting massive particle) dark matter has been
+generally taken place in three different directions: missing
+energy searching from colliders, direct searches for the
+recoil of nuclei from underground detectors, and indirect
+methods including searching dark matter signal from cosmic
+rays and multiwavelength astronomical
+observations~\citep{Jungman:1995df,Bergstrom:2000,Bertone:2005,Hooper:2007Review,
+  2012arXiv1205.4882B}.
 
 For indirect direction, distinguishing the dark matter
-signal from conventional astrophysical backgrounds is challenging.
-Among various possible signatures, gamma-ray line
-emission has been considered as a long-sought ``smoking
+signal from conventional astrophysical backgrounds is
+challenging.  Among various possible signatures, gamma-ray
+line emission has been considered as a long-sought ``smoking
 gun'' for dark matter annihilation, as no plausible
 astrophysical background can produce such line
 signature\footnote{although a narrow feature is possible
-  \citep[see][]{2012arXiv1207.0458A}}. 
-Gamma-ray line(s) could be produced by dark matter
-decays or annihilations into two photons, or two-body final
-states involving one photon plus a Higgs boson, Z boson, or
-other neutral non-SM particle. Unfortunately, in most models the
-branching ratio to lines is loop suppressed relative to the
-continuum emission, and one would have expected to see the
-continuum first in e.g. MSSM
-models~\citep[e.g.][]{Bergstrom:1997}.  Although this
-theoretical prejudice led most previous studies to focus on
-continuum searches, there are models being proposed that
-allow high line to continuum
+  \citep[see][]{2012arXiv1207.0458A}}.  Gamma-ray line(s)
+could be produced by dark matter decays or annihilations
+into two photons, or two-body final states involving one
+photon plus a Higgs boson, Z boson, or other neutral non-SM
+particle. Unfortunately, in most models the branching ratio
+to lines is loop suppressed relative to the continuum
+emission, and one would have expected to see the continuum
+first in e.g. MSSM models~\citep[e.g.][]{Bergstrom:1997}.
+Although this theoretical prejudice led most previous
+studies to focus on continuum searches, there are models
+being proposed that allow high line to continuum
 ratios~\citep[e.g.][]{Bergstrom:1998, Bergstrom:2000,
   Bertone:2009, Jackson:2010, Cline:2012, Weiner:2012}.
 
 The first claim of a line around 130 GeV emerged recently
-from the work of Weniger~\citep{Weniger:2012}, which grew out of an
-earlier search for other hard photon signals from
+from the work of Weniger~\citep{Weniger:2012}, which grew
+out of an earlier search for other hard photon signals from
 annihilations~\citep{Bringmann:2012}.  Weniger focused on
 spectral fitting to photon events in regions of interest
 designed to maximize S/N.  He found a 4.6$\sigma$
@@ -200,61 +202,57 @@ structure at 130 GeV .
 
 Subsequent work by Su \& Finkbeiner approached the problem
 with template fitting, which takes into account the spatial
-distribution of events along with spectral information, assuming
-various profiles (Einasto, NFW, Gaussian) for the DM
-distribution~\citep{linepaper}.  If the template is correct,
-this should allow extraction of the DM signal with higher
-S/N.  This work found 6.6$\sigma$ (5.1$\sigma$ after the
-trials factor correction) for an Einasto profile centered
-$1.5\degree$ west of the Galactic center, and also suggested
-that there may be two lines, at about 111 and 129 GeV.  The
-lower energy line is tantalizing because it matches the
-expected energy of a $Z\gamma$ line if the higher energy is
-the $\gamma\gamma$ line.  
+distribution of events along with spectral information,
+assuming various profiles (Einasto, NFW, Gaussian) for the
+DM distribution~\citep{linepaper}.  If the template is
+correct, this should allow extraction of the DM signal with
+higher S/N.  This work found 6.6$\sigma$ (5.1$\sigma$ after
+the trials factor correction) for an Einasto profile
+centered $1.5\degree$ west of the Galactic center, and also
+suggested that there may be two lines, at about 111 and 129
+GeV.  The lower energy line is tantalizing because it
+matches the expected energy of a $Z\gamma$ line if the
+higher energy is the $\gamma\gamma$ line.  These findings
+have provoked theorists to try to reconcile the observations
+with a number of models~\citep{Dudas:2012, Choi:2012,
+  Kyae:2012, Lee:2012, Rajaraman:2012, Acharya:2012,
+  Garny:2012, Buckley:2012, Chu:2012, Kang:2012,
+  Buchmuller:2012, Heo:2012, Park:2012, Tulin:2012,
+  Cline:2012, Weiner:2012}.
 
-Recent evidence for lines at 111
-GeV and 129 GeV with a local significance of $3.3\sigma$
-from Fermi unassociated point sources suggests an annihilation signal is
-present, as does the claim of line emission from galaxy clusters at 130
-GeV~\cite{galaxyclusters}.  Neither of these would stand on their own, but
-they provide support for the hypothesis that the Galactic center line signal
-is indeed from dark matter annihilation~\cite{doubleline}.
+Recent evidence for lines at 111 GeV and 129 GeV with a
+local significance of $3.3\sigma$ from \Fermi\ unassociated
+point sources suggests an annihilation signal is present, as
+does the claim of line emission from galaxy clusters at 130
+GeV~\cite{galaxyclusters}.  Neither of these would stand on
+their own, but they provide support for the hypothesis that
+the Galactic center line signal is indeed from dark matter
+annihilation~\cite{doubleline}.
 
-{\bf put this sentence somewhere else?}
-These papers have provoked theorists to try to reconcile the
-observations with a number of models~\citep{Dudas:2012,
-  Choi:2012, Kyae:2012, Lee:2012, Rajaraman:2012,
-  Acharya:2012, Garny:2012, Buckley:2012, Chu:2012,
-  Kang:2012, Buchmuller:2012, Heo:2012, Park:2012,
-  Tulin:2012, Cline:2012, Weiner:2012}. 
+If one believes the statistical significance of this line
+feature, it motivates a search for systematic errors in the
+LAT data that could mimic a line in the Galactic center.
+Confirmation by H.E.S.S II is possible in the next
+year~\cite{Bergstrom:2012}, but in the meantime a thorough
+study of LAT systematics is urgently needed.  We do not have
+access to the details of the reconstruction of each photon
+event, which would allow us to study how it developed in the
+tracker and calorimeter.  However, we do have information
+about each event from the public event lists and spacecraft
+parameter files.  We can use this information to search for
+any line-producing artifacts in the detector frame, and
+investigate if they could map onto the Galactic center.
 
-If one believes the statistical significance of this line feature, it
-motivates a search for systematic errors in the LAT data that could mimic a
-line in the Galactic center.  Confirmation by H.E.S.S II is possible in the
-next year~\cite{Bergstrom:2012}, but in the meantime a thorough study of LAT
-systematics is urgently needed.  We do not have access to the details of the
-reconstruction of each photon event, which would allow us to study how it
-developed in the tracker and calorimeter.  However, we do have information
-about each event from the public event lists and spacecraft parameter files.
-We can use this information to search for any line-producing artifacts in the
-detector frame, and investigate if they could map onto the Galactic center. 
-
-A smooth reference spectrum is provided by the so-called ``Earth limb
-photons,'' sometimes referred as ``albedo photons''. Nearly grazing incidence
-cosmic rays initiate cascades in the Earth's atmosphere, making 
-gamma-rays which can
-penetrate the upper thin layer of atmosphere without strong
-attenuation and produce a bright gamma-ray
-horizon~\citep[e.g.][and reference therein]{FermiLimb}.
-The gamma-ray emission from Earth is produced by
-cosmic-ray (mostly protons, helium, and heavier nuclei)
-interactions with atmosphere material. Earth limb gamma-rays
-at$\sim$100 GeV are mainly from the decay of neutral pions
-and kaons. At this energy, due to the kinematics of the
-collisions, the cross section are peaked in the forward
-direction, and the back-scattered secondary particles at
-large angles relative to the direction of the cosmic-ray
-cascade is very rare. {\bf too much detail in this paragraph?}
+In order to test suspecious spectral feature at $\sim$130
+GeV from LAT instrument, a signal with smooth reference
+spectrum extended at least to this energy is
+required. Nearly grazing incidence cosmic rays (CR) initiate
+cascades in the Earth's atmosphere, making gamma-rays which
+can penetrate the upper thin layer of atmosphere without
+strong attenuation and produce a bright gamma-ray horizon
+with featureless spectrum~\citep[e.g.][and reference
+  therein]{FermiLimb}, sometimes referred as ``Earth limb
+photons'' or ``albedo photons''.
 
 In this paper, we use Earth limb photons contained in LAT
 publically available 4 years data to search for any
@@ -374,7 +372,7 @@ coverage in a short time.
 This survey mode is only occasionally interrupted for
 pointed observations of targets of opportunity (ToOs). The
 total amount of time in the pointed observations is $<$20\%
-of the total observing time. Fermi's survey observations are
+of the total observing time. \Fermi's survey observations are
 regularly interrupted during passages through the South
 Atlantic Anomaly. This interruption results in an exposure
 differential between north and south of ~15\%. In addition,
@@ -569,13 +567,17 @@ lower panels of Fig.~\ref{fig:spectra1}.
 %; a suspicious subset
 %of limb events will be discussed below).
 
-\emph{We emphasize that signal significances calculated from the GC region as
-adopted in this paper are not sufficient to represent the full significance of
-the putative signal, which is usually higher when adopting regions with
-optimized signal-to-noise ratio~\cite{Weniger:2012} or a template
-analysis~\cite{linepaper}. We use the GC region here since it should be
-dominated by line events, making it a good starting point to look for
-suspicious trends in the data.}
+\bf{[We might want to move this paragraph somewhere
+    else]}{\emph{We emphasize that signal significances
+    calculated from the GC region as adopted in this paper
+    are not sufficient to represent the full significance of
+    the putative signal, which is usually higher when
+    adopting regions with optimized signal-to-noise
+    ratio~\cite{Weniger:2012} or a template
+    analysis~\cite{linepaper}. We use the GC region here
+    since it should be dominated by line events, making it a
+    good starting point to look for suspicious trends in the
+    data.}}
 
 
 % CHECK: Time correlation with solar flares?
@@ -652,7 +654,7 @@ center simply for geometrical reasons.
 In late December (June), the Sun crosses the Galactic disk,
 and the angular
 distance between the Sun and the Galactic center
-(anti-center) reduces to about $5^\circ$. Since Fermi keeps
+(anti-center) reduces to about $5^\circ$. Since \Fermi\ keeps
 the solar panels aligned to the Sun, this leads to an
 increase of Galactic center events at instrument azimuth
 angles of $\phi\approx 0^\circ$ ($\phi\approx 180^\circ$).
@@ -890,40 +892,43 @@ significant.
 
 \subsubsection{Hypothesis: The observed signal is variable}
 
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=1.0\linewidth]{plots/TS_time.eps}
-  \end{center}
-  \caption{Time evolution of TS values. In red we show the
-  GC line, in blue the Earth limb line. Gray lines indicate
-  the $68\%$ and $95\%$ CL bands for the time evolution
-  obtained by removing random parts of the GC events as seen
-  today.}
-  \label{fig:timeevolution}
-\end{figure}
+% --- we might add the TS evolution after the template fitting results
 
-The most common interpretations of the 130 GeV excess (in
-terms of dark matter annihilation) would predict a steady
-source. On the other hand, a strong variability could
-indicate time-dependent instrumental effects. In
-Fig.~\ref{fig:timeevolution} we plot how the $TS$ value of
-the signal in the GC region evolved over time (red);
-compared to the time-evolution of the suspicious Earth limb
-line (blue). The GC curve appears to have grown most
-strongly during March 2011 and February 2012, and falling
-during last few months, but it lies mostly within the
-statistical expectations for a steady source. The number of
-GC line events (shown by the larger red circles in
-Fig.~\ref{fig:timeevolution}) in the first and second half
-of the observational period are respectively 12 and 14, and
-consistent with a non-variable flux. However, a further
-substantial decrease of the significance of the GC line
-signal would start to challenge any dark matter related
-interpretation.  In any case, the (very weak) indication for
-a temporal pattern is not observed in case of the Earth limb
-line. 
+%% \begin{figure}
+%%   \begin{center}
+%%     \includegraphics[width=1.0\linewidth]{plots/TS_time.eps}
+%%   \end{center}
+%%   \caption{Time evolution of TS values. In red we show the
+%%   GC line, in blue the Earth limb line. Gray lines indicate
+%%   the $68\%$ and $95\%$ CL bands for the time evolution
+%%   obtained by removing random parts of the GC events as seen
+%%   today.}
+%%   \label{fig:timeevolution}
+%% \end{figure}
+
+%% The most common interpretations of the 130 GeV excess (in
+%% terms of dark matter annihilation) would predict a steady
+%% source. On the other hand, a strong variability could
+%% indicate time-dependent instrumental effects. In
+%% Fig.~\ref{fig:timeevolution} we plot how the $TS$ value of
+%% the signal in the GC region evolved over time (red);
+%% compared to the time-evolution of the suspicious Earth limb
+%% line (blue). The GC curve appears to have grown most
+%% strongly during March 2011 and February 2012, and falling
+%% during last few months, but it lies mostly within the
+%% statistical expectations for a steady source. The number of
+%% GC line events (shown by the larger red circles in
+%% Fig.~\ref{fig:timeevolution}) in the first and second half
+%% of the observational period are respectively 12 and 14, and
+%% consistent with a non-variable flux. However, a further
+%% substantial decrease of the significance of the GC line
+%% signal would start to challenge any dark matter related
+%% interpretation.  In any case, the (very weak) indication for
+%% a temporal pattern is not observed in case of the Earth limb
+%% line. 
 
 % \clearpage
+
 %%%%%%%%%%%%%%%%%%%%%% SECTION III %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Earth limb photons}
 \label{sec:EarthLimb}
@@ -931,22 +936,16 @@ line.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
-  \includegraphics[width=1.0\linewidth]{plots/theta-E.ps}
+  \includegraphics[width=1.0\linewidth]{plots/theta-E-frontback.ps}
   \caption{Incidence angle $\theta$ vs. log $E$ for $Z >
-  105\degree$.  A blue box indicates the region $30\degree <
-  \theta < 45\degree$ and 125 GeV $< E <$ 140 GeV, where an
-  excess of events appear.  The vast majority of limb events
-  are at $\theta > 60\degree$ because the telescope seldom
-  points more than $50\degree$ from zenith, and the limb
-  events are mostly at $Z>110\degree$.}
-  \label{fig:theta-E}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.45\textwidth]{plots/theta-E-frontback.ps}
-  \caption{Same as \ref{fig:theta-E} but for front and back
-  converting events.}
+    105\degree$.  Dark green plots are \texttt{FRONT} only
+    events, and purple points are \texttt{BACK} only
+    events. A blue box indicates the region $30\degree <
+    \theta < 45\degree$ and 125 GeV $< E <$ 135 GeV, where
+    an excess of events appear.  The vast majority of limb
+    events are at $\theta > 60\degree$ because the telescope
+    seldom points more than $50\degree$ from zenith, and the
+    limb events are mostly at $Z>110\degree$.}
   \label{fig:theta-E-frontback}
 \end{figure}
 
@@ -955,11 +954,15 @@ line.
   \centering
   \includegraphics[width=1.0\linewidth]{plots/Ehist-all.ps}
   \caption{Histogram of limb $(Z>105\degree)$ events vs.
-  log($E$) for various ranges of $\theta$. The position of
-  the 130 GeV line (defined here by 125 GeV < E < 135 GeV)
-  is indicated (red dotted line).  Note the excess in the
-  $30\degree < \theta < 45\degree$ incidence angle bin,
-  which contains about 5\% of the limb events.}
+    log($E$) for various ranges of $\theta$. The position of
+    the 130 GeV line (defined by 125 GeV $<$ E $<$ 135 GeV) is
+    indicated by red dotted line.  Note the excess in the
+    $30\degree < \theta < 45\degree$ incidence angle bin,
+    which contains about 5\% of the limb
+    events. \texttt{FRONT} and \texttt{BACK} converting
+    events are overplotted with dark green and purple lines
+    respectively. The 130 GeV excess appears equally in
+    front and back converting events.}
   \label{fig:Ehist-all}
 \end{figure}
 
@@ -1008,15 +1011,12 @@ line.
   \label{fig:timehist}
 \end{figure}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.45\textwidth]{plots/Ehist-frontback.ps}
-  \caption{Energy histogram as in Figure
-  \ref{fig:Ehist-all}, but for front (upper panel) and back
-  (lower panel) converting events. The 130 GeV excess
-  appears equally in front and back converting events.}
-  \label{fig:Ehist-frontback}
-\end{figure}
+%% \begin{figure}
+%%   \centering
+%%   \includegraphics[width=0.45\textwidth]{plots/Ehist-frontback.ps}
+%%   \caption{}
+%%   \label{fig:Ehist-frontback}
+%% \end{figure}
 
 \begin{figure}
   \centering
@@ -1058,11 +1058,20 @@ line.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In this section we follow the weak indication of the limb
-photon excess at $\sim$130 GeV and analyze the limb photons
-in more detail. We show that the critical incident angles
-are not (solely) responsible for the GC excess.
 
+The gamma-ray emission from Earth is produced by CR (mostly
+protons, helium, and heavier nuclei) interactions with
+atmosphere material. Such earth limb gamma rays at $\sim$130
+GeV are mainly from the decay of neutral pions and kaons,
+and the cross section are peaked in the forward direction
+simply due to kinetics.  In this section, we follow the weak
+indication of the limb photon excess at $\sim$130 GeV and
+analyze the limb photons in more detail. We show that the
+critical incident angles are not (solely) responsible for
+the GC excess.
+%%  while the back-scattered secondary
+%% particles at large angles relative to the CR cascade
+%% direction is very rare
 We begin by examining the limb events and finding a bump at
 130 GeV in a subsample of these events.  We consider two
 hypothesis for the origin of the bump: (1) the events come
@@ -1074,7 +1083,7 @@ parameters of the GC line events and the limb bump events.
 At an altitude $a$, the geometric (unrefracted) horizon is
 at zenith angle \be Z_{\rm hor} =
 \cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree
-\ee The Fermi orbit is nearly circular with 535~km $< a <$
+\ee The \Fermi\ orbit is nearly circular with 535~km $< a <$
 564~km, yielding $Z_{\rm hor}$ in the 112.7$\degree$ to
 113.3$\degree$ range, with the tangent point some 2400 km
 distant.  At this distance, the 90 km height of the
@@ -1090,12 +1099,11 @@ result from atmospheric cascades, they are produced by
 interactions in a highly boosted frame, and cannot contain
 line emission.  
 
-In Fig. \ref{fig:theta-E}, we show the incidence angle
+In Fig. \ref{fig:theta-E-frontback}, we show the incidence angle
 $\theta$ distribution as a function of events energy with $Z
-> 105\degree$ (see Fig.~\ref{fig:theta-E-frontback} for a
-separation of \texttt{FRONT} and \texttt{BACK} converting
-events).  The incidence angle on the detector $\theta$ is
-defined such that $\theta=0$ corresponds to the
+> 105\degree$ for both \texttt{FRONT} and \texttt{BACK}
+converting events.  The incidence angle on the detector
+$\theta$ is defined such that $\theta=0$ corresponds to the
 ``boresight'' of LAT instrument (see
 Tab.~\ref{tab:parameters}).  At lower zenith angles ($Z \la
 105\degree$) \Fermi\ observes the sky with very little
@@ -1145,7 +1153,7 @@ Fig.~\ref{fig:spectra2} we show the Galactic center energy
 spectrum with and without incidence angle events with
 $30^\circ<\theta<45^\circ$.  We have checked that this 129
 GeV excess appears equally in front and back converting
-events (shown in Fig.  \ref{fig:Ehist-frontback}).
+events (shown in Fig. \ref{fig:Ehist-all}).
 
 \textbf{(extend discussion)}
 
@@ -1242,7 +1250,7 @@ look very similar to the bump in real data as shown in Fig. \ref{fig:Ehist-all}.
 In Fig.~\ref{fig:limbfits}, we fit the energy mapping model
 to the Earth limb data for various range of inclination
 angle. We find a 4.7$\sigma$ excess of $30\degree-45\degree$
-limb photons at 129 GeV. But note that this is only 5\% subsample of the Earth limb photon events in the public available Fermi data.
+limb photons at 129 GeV. But note that this is only 5\% subsample of the Earth limb photon events in the public available \Fermi\ data.
 
 
 \section{Discussion and Conclusion}
@@ -1266,9 +1274,8 @@ the line photons and the Earth limb photons, and compare the
 behaviour between the two to search for indications of
 spurious signal from unknown systematics.
 
-
 We select earth limb photons from publically available
-Fermi-LAT events and look for any suspicious line feature
+\Fermi-LAT events and look for any suspicious line feature
 around 130 GeV.  We find a marginally significant 130 GeV
 feature (3.2$\sigma$) in a small subset (5\%) of the earth
 limb data with a particular incidence angle range between
@@ -1281,9 +1288,7 @@ $45\degree$ are {\emph not} from Earth limb, but from
 astrophysical sources. We have not found significant 130 GeV
 feature with much larger sample of events at this incidence
 angle.
-
 %At $\sim$100 GeV, Galactic center is not particular bright. 
-
 We argue that the limb excess could well be a statistical
 fluctuation and does not look worrisome at the moment, but
 the fact that an energy remapping model we invented to mimic
@@ -1321,7 +1326,7 @@ shows a power-law behavior with the spectral index $2.79\pm
 0.06$ for 3-500 GeV photons (Fig. 2 of \cite{FermiLimb}),
 which is consistent with the primary cosmic-ray spectral
 index $2.75\pm 0.03$\footnote{The Earth limb photon above 10
-  GeV from cosmic ray interactions in the upper atmospheric
+  GeV from CR interactions in the upper atmospheric
   layers do not suffer large energy loses and the cosmic-ray
   primaries at this energy is unaffected by the Earth
   magnetic fields. The Earth limb photon should have a
@@ -1333,7 +1338,6 @@ than 10 GeV to above 10 GeV. And the systematic error
 dominates over the statistical error in the spectrum
 fitting. \emph{No significant line/bump feature is revealed
   in this spectrum of earth limb photons around 130 GeV.}
-
 
 We note that the additional limb data provided by LEO would
 provide an exposure comparable to the limb photons used in
@@ -1369,7 +1373,7 @@ say that they invalidate a result with a local significance
 of $p\approx10^{-9}$.
 
 
-\appendix
+%\appendix
 \section{Appendix}
 
 In Appendix, we check a couple of possible function
@@ -1463,15 +1467,14 @@ precession phase and arriving time of year.
 %   \label{fig:theta-phi}
 % \end{figure*}
  
-%% \begin{figure}
-%%   \centering
-%%   \includegraphics[width=0.9\linewidth]{plots/rockangle.ps}
-%%   \caption{The rocking angle of the Galactic center line
-%%   events (positive values indicate a rock angle toward the
-%%   north from zenith)-- \textbf{need to add red and blue to
-%%   this plot}...  }
-%%   \label{fig:rock}
-%% \end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\linewidth]{plots/rockangle.ps}
+  \caption{The rocking angle of the Galactic center line
+  events (positive values indicate a rock angle toward the
+  north from zenith.}
+  \label{fig:rock}
+\end{figure}
 
 
 \bibliography{systematics}
