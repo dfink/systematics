@@ -247,18 +247,11 @@ investigate if they could map onto the Galactic center.
 The Earth's atmosphere provides a convenient source of photons for systematics
 tests.  The continual cosmic-ray cascades in the Earth's atmosphere
 produce gamma rays with $dN/dE \sim
-E^{-2.8}$~\citep{FermiLimb}.  Because the limb photons
+E^{-2.8}$~\citep{FermiLimb}.  Because these so-called `Earth limb photons'
 result from atmospheric cascades, they are produced by
 interactions in a highly boosted frame, and cannot contain
 line emission.  
-
-At an altitude $a$, the geometric (unrefracted) horizon is at zenith angle \be
-Z_{\rm hor} = \cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree \ee
-The \Fermi\ orbit is nearly circular with 535~km $< a <$ 564~km, yielding
-$Z_{\rm hor}$ in the 112.7$\degree$ to 113.3$\degree$ range, with the tangent
-point some 2400 km distant.  At this distance, the $\sim 100$ km height of the
-atmosphere subtends about $2\degree$, or roughly $111\degree < Z <
-113\degree$.
+\medskip
 
 In this paper, we use Earth limb photons in the first 4 years of LAT data to
 search for any
@@ -350,7 +343,7 @@ other regions of the sky and the reconstruction parameters.
 %%       above 300 GeV to explain the signal, even if all of them got
 %%       mapped to 130 GeV.
 
-With a field of view of approximately 2 sr, the LAT can survey the entire sky
+With a field of view of $\sim2.5$~sr, the LAT can survey the entire sky
 in two orbits.  In \emph{standard survey mode}, the LAT points north of zenith
 by an angle \zrock\ on one orbit, and south of zenith by the same angle on the
 next orbit.  In this mode, the LAT pointing is confined to the plane
@@ -388,6 +381,7 @@ differential between north and south of $\sim15$\%. In addition,
 survey mode is occasionally interrupted by Autonomous
 Repoints of the observatory for triggered
 gamma-ray burst follow-up observations, and for calibration.
+\medskip
 
 The reconstructed arrival direction of photons in celestial coordinates, LAT
 coordinates, and Earth coordinates is described by parameters in 
@@ -402,6 +396,23 @@ reconstructed event direction and the zenith line, which passes from the
 Earth center through the satellite center.   All angles are in units of
 degrees.
 
+Due to the large rocking angle of \zrock$\simeq50\degree$
+since September 2009, photons from the Earth limb 
+% (seen
+% near zenith angles of $Z\sim113^\circ$; see discussion
+% below) 
+%{\bf (Move discussion here?)} 
+entered the FOV of the LAT:
+%
+At an spacecraft altitude $a$, the geometric (unrefracted) horizon is seen at zenith angle \be
+Z_{\rm hor} = \cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree\;. \ee
+The \Fermi\ orbit is nearly circular with 535~km $< a <$ 564~km, yielding
+$Z_{\rm hor}$ in the 112.7$\degree$ to 113.3$\degree$ range, with the tangent
+point some 2400 km distant.  At this distance, the $\sim 100$ km height of the
+atmosphere subtends about $2\degree$, or roughly $111\degree < Z <
+113\degree$. Combined with the large rocking angle, the Earth limb events are
+dominantly seen under the incidence angle $\theta=Z_{\rm hor}-Z_{\rm rock}\sim 63^\circ$.
+\medskip
 
 \begin{table*}
   \begin{tabular}{lllrrr}
@@ -472,11 +483,7 @@ all low incidence angle Earth limb events.
   \label{fig:phiThetaDist}
 \end{figure}
 
-Due to the large rocking angle of \zrock$\simeq50\degree$
-since September 2009, photons from the Earth limb (seen
-near zenith angles of $Z\sim113^\circ$; see discussion
-below) 
-{\bf (Move discussion here?)}entered the FOV of the LAT. In
+In
 Fig~\ref{fig:phiThetaDist}, the gray dots show the
 distribution of \emph{all} events (i.e.~without $Z$ cut)
 with energies above 100 GeV as a function of the instrumental
