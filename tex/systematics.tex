@@ -93,8 +93,8 @@
 \begin{document}
 
 
-\title{Is the 130 GeV Line Real? \\
-  A Search for Systematics in the Fermi-LAT Earth Limb Data}
+\title{Is the 130 GeV Line Real? 
+  A Search for Systematics in the Fermi-LAT Data}
 
 \author{Douglas P. Finkbeiner}
 %\email{dfinkbeiner@cfa.harvard.edu}
@@ -375,17 +375,19 @@ This rocking-angle profile, combined with the precession
 of the orbit every $\sim53.4$ days, allows the LAT to observe
 the whole sky with approximately uniform coverage.
 
-Survey mode is only occasionally interrupted for
+\Fermi\ spends over 95\% of the mission time in sky survey mode.
+This is only occasionally interrupted for
 pointed observations of targets of opportunity (ToOs).  During such times
 the LAT may point at larger zenith angle than usual, even at the horizon.
-Pointed observations account for $<$20\%
-of the total observing time. {\bf I thought it was even much less} \Fermi's survey observations are
+%Pointed observations account for $<$20\%
+%of the total observing time. {\bf I thought it was even much less} 
+\Fermi's survey observations are
 halted during passages through the South
 Atlantic Anomaly, resulting in an exposure
 differential between north and south of $\sim15$\%. In addition,
 survey mode is occasionally interrupted by Autonomous
 Repoints of the observatory for triggered
-gamma-ray burst follow-up observations.  
+gamma-ray burst follow-up observations, and for calibration.
 
 The reconstructed arrival direction of photons in celestial coordinates, LAT
 coordinates, and Earth coordinates is described by parameters in 
@@ -393,8 +395,8 @@ Table~\ref{tab:parameters}.  $\theta$ is the reconstructed incidence angle of
 the photon event with respect to the LAT boresight (defined as the $+z$ axis).
 The $+x$ axis is the line normal to the Sun-facing side of the spacecraft,
 i.e. the solar panels face roughly the $+x$ direction.   $\phi$ is the
-azimuthal angle of incidence with respect to the $+x$ axis.  {\bf I think this was wrong
-  before and fixed it -- make sure you agree -- DPF}
+azimuthal angle of incidence with respect to the $+x$ axis.
+%{\bf I think this was wrong before and fixed it -- make sure you agree -- DPF}
 The Zenith angle $Z$ is the angle between the
 reconstructed event direction and the zenith line, which passes from the
 Earth center through the satellite center.   All angles are in units of
@@ -501,8 +503,8 @@ instrumental artifacts are more significant there}
 \begin{figure}
   \centering
   \includegraphics[width=1.0\linewidth]{plots/target_spectra.eps}
-  \caption{Energy distribution in various bright regions {\bf (say event
-      samples instead of bright regions?) }as
+  \caption{Energy distribution in various event samples 
+      as
   discussed in the text. None of them show the excess events
   around 130 GeV seen in the Galactic center. The red dotted
   lines indicate 111 and 129 GeV.}
@@ -526,13 +528,13 @@ Earth limb (with \emph{all} impact angles and a flux of $XXX
 ($XXX\ph\cm^{-2}\s^{-1}\sr^{-1}$), see
 Table~\ref{tab:regions}. Another sample with very high
 statistics but a smaller flux (
-$XXX\ph\cm^{-2}\s^{-1}\sr^{-1}$) is the whole set of
+$XXX\ph\cm^{-2}\s^{-1}\sr^{-1}$) is the whole sample of
 standard events excluding the region around the GC
 ($\psi>10^\circ$).
 % CW: I will fill in the numbers later
-For these regions, we show the corresponding energy
+For these samples, we show the corresponding energy
 distributions in Fig.~\ref{fig:target_spectra}. None of the
-regions exhibit an $\mathcal{O}(1)$ excess at 130 GeV as
+samples exhibit an $\mathcal{O}(1)$ excess at 130 GeV as
 observed in the Galactic center. Note that in the vicinity
 of the bright point sources Vela and Geminga (within
 $0.8^\circ$, corresponding to the $95\%$ containment angle) 
@@ -663,8 +665,10 @@ over time, the $\phi$ and $\theta$ distributions look like
 in the lower panels of Fig.~\ref{fig:time_phi}, where they
 are shown as a function of the Galactic longitude. Close to
 the GC, the $\phi$ distribution becomes significantly
-bimodal. Note that this effect occurs along the full solar
-circle, {\bf (Do you mean the full ecliptic plane?)} but only the intersection with the Galactic disk
+bimodal. Note that this effect occurs along the full 
+ecliptic,
+%solar circle, %{\bf (Do you mean the full ecliptic plane?)} 
+but only the intersection with the Galactic disk
 close to the center is accompanied by a large number of
 events.
 
@@ -802,8 +806,8 @@ reconstructed}
   corresponds to front- (back-)converting events (tracker
   layers 0 and 1 come without conversion foils). The gray
   bars show the distribution averaged over all $>100$ GeV
-  standard events, the green/red bars show the distribution
-  for the GC line. {\bf green and red???}}
+  standard events, the red bars show the distribution
+  for the GC line.}
   \label{fig:CTBquality}
 \end{figure}
 
@@ -852,7 +856,7 @@ line-like features in other sky regions}
   different line energies from 90 to $170\GeV$ (dotted lines), as well as all
   TS values combined (black solid line); in the latter case, the black dotted
   line is the theoretical expectation (a $0.5\chi^2_{k=0}+0.5\chi^2_{k=1}$
-  distribution), the yellow band shows the $\pm1\sigma$ band. The tail of the
+  distribution), the yellow band shows the $\pm1\sigma$ errors. The tail of the
   observed distribution looks as expected.}
   \label{fig:hotspots}
 \end{figure}
@@ -883,41 +887,40 @@ GC, however in agreement with the statistical expectations and hence not
 significant.
 
 \subsubsection{Hypothesis: The observed signal is variable}
-{\bf decide what to do with this...}
 % --- we might add the TS evolution after the template fitting results
 
-%% \begin{figure}
-%%   \begin{center}
-%%     \includegraphics[width=1.0\linewidth]{plots/TS_time.eps}
-%%   \end{center}
-%%   \caption{Time evolution of TS values. In red we show the
-%%   GC line, in blue the Earth limb line. Gray lines indicate
-%%   the $68\%$ and $95\%$ CL bands for the time evolution
-%%   obtained by removing random parts of the GC events as seen
-%%   today.}
-%%   \label{fig:timeevolution}
-%% \end{figure}
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=1.0\linewidth]{plots/TS_time.eps}
+  \end{center}
+  \caption{Time evolution of TS values. In red we show the
+  GC line, in blue the Earth limb line. Gray lines indicate
+  the $68\%$ and $95\%$ CL bands for the time evolution
+  obtained by removing random parts of the GC events as seen
+  today.}
+  \label{fig:timeevolution}
+\end{figure}
 
-%% The most common interpretations of the 130 GeV excess (in
-%% terms of dark matter annihilation) would predict a steady
-%% source. On the other hand, a strong variability could
-%% indicate time-dependent instrumental effects. In
-%% Fig.~\ref{fig:timeevolution} we plot how the $TS$ value of
-%% the signal in the GC region evolved over time (red);
-%% compared to the time-evolution of the suspicious Earth limb
-%% line (blue). The GC curve appears to have grown most
-%% strongly during March 2011 and February 2012, and falling
-%% during last few months, but it lies mostly within the
-%% statistical expectations for a steady source. The number of
-%% GC line events (shown by the larger red circles in
-%% Fig.~\ref{fig:timeevolution}) in the first and second half
-%% of the observational period are respectively 12 and 14, and
-%% consistent with a non-variable flux. However, a further
-%% substantial decrease of the significance of the GC line
-%% signal would start to challenge any dark matter related
-%% interpretation.  In any case, the (very weak) indication for
-%% a temporal pattern is not observed in case of the Earth limb
-%% line. 
+The most common interpretations of the 130 GeV excess (in
+terms of dark matter annihilation) would predict a steady
+source. On the other hand, a strong variability could
+indicate time-dependent instrumental effects. In
+Fig.~\ref{fig:timeevolution} we plot how the $TS$ value of
+the signal in the GC region evolved over time (red);
+compared to the time-evolution of the suspicious Earth limb
+line (blue). The GC curve appears to have grown most
+strongly during March 2011 and February 2012, and falling
+during last few months, but it lies mostly within the
+statistical expectations for a steady source. The number of
+GC line events (shown by the larger red circles in
+Fig.~\ref{fig:timeevolution}) in the first and second half
+of the observational period are respectively 12 and 14, and
+consistent with a non-variable flux. However, a further
+substantial decrease of the significance of the GC line
+signal would start to challenge any dark matter related
+interpretation.  In any case, the (very weak) indication for
+a temporal pattern is not observed in case of the Earth limb
+line. 
 
 % \clearpage
 
