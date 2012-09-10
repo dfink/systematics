@@ -245,12 +245,20 @@ any line-producing artifacts in the detector frame, and
 investigate if they could map onto the Galactic center.
 
 The Earth's atmosphere provides a convenient source of photons for systematics
-tests.  Cosmic rays (CR) entering the Earth's atmosphere nearly parallel to
-the ground initiate cascades, producing a featureless gamma-ray spectrum on
-the horizon as viewed from \Fermi~\citep[e.g.][and references
-therein]{FermiLimb}.  These ``Earth limb'' photons (also called ``albedo''
-photons) are created in a highly boosted frame, and therefore have a smooth
-spectrum extending up to $E \gg 130$ GeV. 
+tests.  The continual cosmic-ray cascades in the Earth's atmosphere
+produce gamma rays with $dN/dE \sim
+E^{-2.8}$~\citep{FermiLimb}.  Because the limb photons
+result from atmospheric cascades, they are produced by
+interactions in a highly boosted frame, and cannot contain
+line emission.  
+
+At an altitude $a$, the geometric (unrefracted) horizon is at zenith angle \be
+Z_{\rm hor} = \cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree \ee
+The \Fermi\ orbit is nearly circular with 535~km $< a <$ 564~km, yielding
+$Z_{\rm hor}$ in the 112.7$\degree$ to 113.3$\degree$ range, with the tangent
+point some 2400 km distant.  At this distance, the $\sim 100$ km height of the
+atmosphere subtends about $2\degree$, or roughly $111\degree < Z <
+113\degree$.
 
 In this paper, we use Earth limb photons in the first 4 years of LAT data to
 search for any
@@ -465,7 +473,8 @@ all low incidence angle Earth limb events.
 Due to the large rocking angle of \zrock$\simeq50\degree$
 since September 2009, photons from the Earth limb (seen
 near zenith angles of $Z\sim113^\circ$; see discussion
-below) {\bf (Move discussion here?)}entered the FOV of the LAT. In
+below) 
+{\bf (Move discussion here?)}entered the FOV of the LAT. In
 Fig~\ref{fig:phiThetaDist}, the gray dots show the
 distribution of \emph{all} events (i.e.~without $Z$ cut)
 with energies above 100 GeV as a function of the instrumental
@@ -928,7 +937,8 @@ significant.
     an excess of events appear.  The vast majority of limb
     events are at $\theta > 60\degree$ because the telescope
     seldom points more than $50\degree$ from zenith, and the
-    limb events are mostly at $Z>110\degree$.}
+    limb events are mostly at $Z>110\degree$.  {\bf (Change ``Front only'' to
+      ``Front'' and ``Back only'' to ``Back'' ?)}}
   \label{fig:theta-E-frontback}
 \end{figure}
 
@@ -1014,15 +1024,15 @@ significant.
   \label{fig:bumpmodel}
 \end{figure}
 
-\begin{figure*}
-  \centering
-  \includegraphics[width=0.8\textwidth]{plots/limb_bump_model_many.ps}
-  \caption{Ten mock spectra of an underlying spectrum $dN/dE
-  \sim E^{-2.6}$, distorted according to Eq. \ref{eq:dndy}.
-  Note the similarity to the $30\degree < \theta <
-  45\degree$ panel in Figure \ref{fig:Ehist-all}.}
-  \label{fig:bumpmodelmany}
-\end{figure*}
+% \begin{figure*}
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{plots/limb_bump_model_many.ps}
+%   \caption{Ten mock spectra of an underlying spectrum $dN/dE
+%   \sim E^{-2.6}$, distorted according to Eq. \ref{eq:dndy}.
+%   Note the similarity to the $30\degree < \theta <
+%   45\degree$ panel in Figure \ref{fig:Ehist-all}.}
+%   \label{fig:bumpmodelmany}
+% \end{figure*}
 
 \begin{figure}
   \centering
@@ -1042,45 +1052,25 @@ significant.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-The gamma-ray emission from Earth is produced by CR (mostly
-protons, helium, and heavier nuclei) interactions with
-atmosphere material. Such earth limb gamma rays at $\sim$130
-GeV are mainly from the decay of neutral pions and kaons,
-and the cross section are peaked in the forward direction
-simply due to kinetics.  In this section, we follow the weak
-indication of the limb photon excess at $\sim$130 GeV and
-analyze the limb photons in more detail. We show that the
-critical incident angles are not (solely) responsible for
+In this section, we follow up the weak excess at $\sim$130 GeV 
+in the limb photons
+(Fig.~\ref{fig:polarPlotsAll})
+and
+analyze these events in more detail. We show that the
+critical incidence angles are not (solely) responsible for
 the GC excess.
 %%  while the back-scattered secondary
 %% particles at large angles relative to the CR cascade
 %% direction is very rare
 We begin by examining the limb events and finding a bump at
 130 GeV in a subsample of these events.  We consider two
-hypothesis for the origin of the bump: (1) the events come
+hypotheses for the origin of the bump: (1) the events come
 from far away in energy; (2) the more subtle possibility
-that an energy mapping error could redistribute in energy,
-thus making a spectral feature. We then explore the various
+that an energy mapping error could redistribute events in energy,
+thus making a spectral feature.  We then explore the various
 parameters of the GC line events and the limb bump events.
 
-At an altitude $a$, the geometric (unrefracted) horizon is
-at zenith angle \be Z_{\rm hor} =
-\cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree
-\ee The \Fermi\ orbit is nearly circular with 535~km $< a <$
-564~km, yielding $Z_{\rm hor}$ in the 112.7$\degree$ to
-113.3$\degree$ range, with the tangent point some 2400 km
-distant.  At this distance, the 90 km height of the
-atmosphere subtends about $2\degree$, or roughly $111\degree
-< Z < 113\degree$.
 
-The continual cosmic-ray cascades in the Earth's atmosphere
-produce gamma rays with $dN/dE \sim
-E^{-2.8}$~\citep{FermiLimb}. These Earth limb photons
-provide a convenient reference sample to search for
-systematics in the LAT data.  Because the limb photons
-result from atmospheric cascades, they are produced by
-interactions in a highly boosted frame, and cannot contain
-line emission.  
 
 In Fig. \ref{fig:theta-E-frontback}, we show the incidence angle
 $\theta$ distribution as a function of events energy with $Z
@@ -1094,9 +1084,9 @@ background from the Earth limb.  For \zrock = $50\degree$
 (the typical survey rocking angle, see \Refsec{130GeV}), the
 limb photons are hence typically at $\theta > 60\degree$.
 
-In 125 GeV $< E <$ 140 GeV, we find that there is an excess
+In 125 GeV $< E <$ 140 GeV, {\bf (caption says 125-135) }we find that there is an excess
 of events appearing in the region of $30\degree < \theta <
-45\degree$, as already indicated in
+45\degree$, as indicated in
 Fig.~\ref{fig:polarPlotsAll} (this $\theta$ range contains
 about 5\% of the limb events). No significant excess in this
 energy range has been found in other $\theta$ regions (see
@@ -1268,8 +1258,8 @@ feature, even though we can think of no plausible model of
 instrumental behavior that connects the two.  We note that
 the majority of events with incidence angle $30\degree$ to
 $45\degree$ are {\emph not} from Earth limb, but from
-astrophysical sources. We have not found significant 130 GeV
-feature with much larger sample of events at this incidence
+astrophysical sources. We have not found a significant 130 GeV
+feature with a much larger sample of events at this incidence
 angle.
 %At $\sim$100 GeV, Galactic center is not particular bright. 
 We argue that the limb excess could well be a statistical
