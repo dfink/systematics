@@ -1115,33 +1115,46 @@ that an energy mapping error could redistribute events in energy,
 thus making a spectral feature.  We then explore the various
 parameters of the GC line events and the limb bump events.
 
-
-
 In Fig. \ref{fig:theta-E-frontback}, we show the incidence angle
 $\theta$ distribution as a function of events energy with $Z
 > 105\degree$ for both \texttt{FRONT} and \texttt{BACK}
-converting events.  The incidence angle on the detector
-$\theta$ is defined such that $\theta=0$ corresponds to the
-``boresight'' of LAT instrument (see
-Table~\ref{tab:parameters}).  At lower zenith angles ($Z \la
-105\degree$) \Fermi\ observes the sky with very little
-background from the Earth limb.  For \zrock = $50\degree$
-(the typical survey rocking angle, see \Refsec{130GeV}), the
-limb photons are hence typically at $\theta > 60\degree$.
-
+converting events \textbf{(Maybe we should use $Z>110^\circ$ here and below--
+CW)}.  
+% The incidence angle on the detector
+% $\theta$ is defined such that $\theta=0$ corresponds to the
+% ``boresight'' of LAT instrument (see
+% Table~\ref{tab:parameters}).  
+% At lower zenith angles ($Z \la
+% 105\degree$) \Fermi\ observes the sky with very little
+% background from the Earth limb.  For \zrock = $50\degree$
+% (the typical survey rocking angle, see \Refsec{130GeV}), the
+% limb photons are hence typically at $\theta > 60\degree$. \textbf{(This should
+% the reader know already from above; remove? -- CW)}
+%
 In 125 GeV $< E <$ 135 GeV, we find that there is an excess
 of events appearing in the region of $30\degree < \theta <
-45\degree$, as indicated in Fig.~\ref{fig:polarPlotsAll}
+45\degree$, as already indicated in Fig.~\ref{fig:polarPlotsAll} above
 (this $\theta$ range contains about 5\% of the limb
-events). No significant excess in this energy range has been
-found in other $\theta$ regions (see
-Fig.~\ref{fig:Ehist-all}). We fit the Earth limb events with
+events). This excess is clearly visible in the event distribution plotted in
+the bottom panel of Fig.~\ref{fig:Ehist-all}, and decreases when
+considering larger ranges of $\theta$ (other panels).
+Note that the 129 GeV excess appears equally in \texttt{FRONT} and
+\texttt{BACK} converting events. %in Fig. \ref{fig:Ehist-all}).
+As shown in the top panel of Fig.~\ref{fig:spectra2},
+fitting the Earth limb events with
 incidence angles $30^\circ<\theta<45^\circ$ with a
-monochromatic line at 129 GeV (shown in top panel of
-Fig.~\ref{fig:spectra2}). We find a local significance of
-3.2$\sigma$.
-
-
+monochromatic line at 129 GeV yields a local significance of about
+3.2$\sigma$. For comparison, the lower panel
+shows a fit to the Galactic center energy
+spectrum \emph{without} incidence angles
+$30^\circ<\theta<45^\circ$. The GC excess is not removed by this cut, which
+would have been a strong indication against a real signal.  The distribution
+of GC line (red) and Earth limb line (blue) events in Galactic coordinates are
+shown in Fig.~\ref{fig:l-b}; the arrival time distribution in
+Fig.~\ref{fig:timehist}; further comparison is done in the above
+Figs.~\ref{fig:phiThetaDist} and~\ref{fig:time_phi}.  None of the figures
+reveals suspicious trends or correlations.
+\textbf{(Quantify this with KS test and time series analysis -- CW)}
 
 %For standard events with
 %$Z<100\degree$ and $\theta<45\degree$ (after masking out the
@@ -1151,28 +1164,17 @@ Fig.~\ref{fig:spectra2}). We find a local significance of
 %% We show the
 %% rocking angle and the arrival time of the Galactic center
 %% line and the same limb events in Fig.~\ref{fig:rockTime}.
-We compare the Galactic center line photons and the selected
-low incidence Earth limb events with the high-incidence limb
-event distribution in Fig.~\ref{fig:l-b}. The arrival time
-distribution of the selected limb photon and all the limb
-photons are shown in Fig.~\ref{fig:timehist}. In
-Fig.~\ref{fig:spectra2} we show the Galactic center energy
-spectrum with and without incidence angle events with
-$30^\circ<\theta<45^\circ$.  We have checked that this 129
-GeV excess appears equally in \texttt{FRONT} and \texttt{FRONT} converting
-events (shown in Fig. \ref{fig:Ehist-all}).
+%We compare the Galactic center line photons and the selected
+%low incidence Earth limb events with the high-incidence limb
 
-\textbf{(extend discussion)}
-
-\subsection{Possible Systematic Errors}
-
+\subsection{Fake lines from extra events}
 Although there is no indication of instrumental systematics
 which can produce any gamma-ray line feature in the spectrum
 from either Galactic center or the Earth limb events, here
 we list several possibilities that might in principle fake a
 line feature with extra events:
 
-{\it Extra photons from low energy events:} Events would
+{\it Misreconstructed low-energy photons:} Events would
 have to be mistakenly mapped from either lower energy ($E
 \la 10$ GeV) gammas or much lower energy photons (e.g.
 X-rays from the 1E 1740.7-2942 microquasar~\cite{Gallo:2002}
@@ -1180,23 +1182,26 @@ or 511 keV photons~\cite{Prantzos:2011}) in which the
 Galactic center is much brighter.  It is difficult to see
 how this could happen.
 
-{\it Extra photons from High energy events:} At $E > 100$
+{\it Misreconstructed high-energy photons:} At $E > 100$
 GeV, the Galactic center is only modestly brighter than the
-surrounding regions, so there are not enough photons
-available.
+surrounding regions (Tab.~\ref{tab:regions}), and there are not enough photons
+available (see discussion above).
 
 {\it Particle contamination:} If monochromatic photons from
 the limb are difficult to explain, it is even harder to
-understand how mono-energetic particles could be present.
+understand how mono-energetic particles could be present. What is more, a bright
+region like the Galactic center has a large gamma-ray-to-CR ratio, such that
+a CR contamination would affect it last, not first.
 
 {\it Effective area error:} An error in the LAT effective
-area (e.g. various cuts are less restrictive for some
-reason) for $30\degree < \theta < 45\degree$ could explain
-the limb photons, but would also produce a line everywhere
-in the Galactic plane.  No such line is seen outside of the
+area (e.g. various cuts at $\sim130\GeV$ are less restrictive for some
+reason) for $30\degree < \theta < 45\degree$ might explain
+the limb photons, but would also produce a line in the other samples of
+Tab.~\ref{tab:regions} or in all corresponding panels
+of~Fig.~\ref{fig:polarPlotsAll}.  No such line is seen outside of the
 GC.\medskip
 
-From these considerations, we conclude that there is no way
+From these considerations, we conclude that it is extremely unlikely %there is no way
 for the limb line to be caused by extra events. However, it
 is still plausible that there is a more subtle energy
 mapping error that distorts the energy scale near 130 GeV.
