@@ -10,6 +10,8 @@
 
 %\topmargin+1cm
 
+\hyphenation{CTBCORE}
+
 % Journals
 \newcommand{\aaps}{{Astron.~Astrophys.~Supp.}}
 \newcommand{\physrep}{{Physics~Reports}}
@@ -824,43 +826,46 @@ reconstructed}
   hit for the best track reconstruction. Tracker layers are
   0-17 where 0 is closest to the calorimeter, and 6-17 (2-5)
   corresponds to \texttt{FRONT}- (\texttt{BACK}-)converting events (tracker
-  layers 0 and 1 come without conversion foils). The gray
+  layers 0 and 1 come without conversion foils). The dark and light gray
   bars show the distribution averaged over all $>100$ GeV
   standard events, the red bars show the distribution
   for the GC line.}
   \label{fig:CTBquality}
 \end{figure}
 
-The extended LAT event files contain additional information
-about the quality of the event
-reconstruction.\footnote{\url{http://fermi.gsfc.nasa.gov/ssc/%
+Although we do not have access to all details of the event reconstruction, the
+extended LAT event files contain a few figure-of-merit quantities from the first step of the
+event-level analysis, which inform about the quality of
+calorimeter and tracker event reconstruction.\footnote{\url{http://fermi.gsfc.nasa.gov/ssc/%
 data/analysis/documentation/Cicerone/Cicerone\_Data/LAT\_Data\_Columns.html}}
 CTBCORE describes the probability that the direction estimate
 is good (roughly the probability that the reconstructed
 direction falls within the nominal 68\% containment angle),
 CTBBestEnergyProb the probability that the reconstructed
-energy falls into the core of the energy dispersion. We show
+energy falls into the core of the energy
+dispersion~\cite{collaboration:2012kca}. We show
 these parameters for the the GC line events in the upper
 panel of Fig.~\ref{fig:CTBquality}; the background histogram
 shows the distribution of the these parameters in standard
 events above 50 GeV. No significant bias in the distribution
-is visible.
+appears.
 
 The red bars in the lower panel of
-Fig.~\ref{fig:CTBquality} show the first tracker layer that
+Fig.~\ref{fig:CTBquality} indicate the first tracker layer that
 shows evidence of a particle hit for the best track
 reconstruction (Tkr1FirstLayer) in case of the GC line
 events.  Tracker layers are 0--17, where 0 is closest to the
 calorimeter and 6--17 (2--5) corresponds to \texttt{FRONT}-
 (\texttt{BACK}-)converting events (tracker layers 0 and 1 come
-without conversion foils). The dark gray bars show the
+without conversion foils due to requirements of the three-in-a-row trigger
+primitive). The dark gray bars show the
 distribution averaged over all $>100$ GeV standard events;
 the light gray bars
 show for comparison the distribution of $>100$~GeV events that are in the SOURCE
-but not in the CLEAN class, and hence with a high
-probability cosmic-ray contamination. The distribution of the latter is significantly biased
+but not in the CLEAN class, and hence with a higher
+probability to be cosmic-ray contamination. The distribution of the latter is significantly biased
 towards the first and last tracker layers, whereas
-distribution of GC line events is compatible with the
+the distribution of GC line events is compatible with the
 expectations for standard events.
 
 \subsubsection{Hypothesis: There are `hotspots' with
@@ -884,28 +889,29 @@ line-like features in other sky regions}
 The 130 GeV excess is located in a narrow range of about $\sim5^\circ$ around
 the Galactic center. The existence of other significant `hotspots' (localized
 regions with a significant line-like emission at or around 130 GeV) in the sky
-could indicate an instrumental effect, or point to a source class that is
-concentrated near the GC~\cite{Boyarsky:2012ca}. 
-In the absence of knowledge about the distribution of such
-a source, we adopt the following strategy. We select regions of
+could indicate an unexpected instrumental effect, or point to a new exotic
+source class~\cite{Boyarsky:2012ca}. 
+In absence of knowledge about the distribution of such possible
+sources, we adopt the following strategy. We select regions of
 $6^\circ\times6^\circ$ degrees size, centered along the Galactic disk at
 $b=0^\circ$, $|\ell|=13.5^\circ, 16.5^\circ \dots 178.5^\circ$. The size of
-the region is chosen to include roughly 50--100 events (like in our `GC
+the region is chosen to include roughly 50--100 events above 80 GeV (like in our `GC
 region'); regions close to the GC are excluded to avoid contamination with the
 130 GeV excess. In each region we calculate the TS value for the presence of
 a line at various energies. The details of the fit are the same as above for
 Fig.~\ref{fig:spectra1} (in particular the energy window is always fixed to
 80--200~GeV). The distribution of TS values obtained in this way is
-shown in Fig.~\ref{fig:hotspots} by the dotted colored lines, a combination of
+shown in Fig.~\ref{fig:hotspots} by the dotted colored lines for different
+line energies; a combination of
 TS values for all line energies is shown by the solid black line. Its tail
 distribution is in excellent agreement with the statistical expectations
-(shown by te black dotted line), within the yellow $\pm1\sigma$ error bars. We
+(shown by the black dotted line) within the $\pm1\sigma$ error bars, showing
+no indication for the presence of `hotspots'. We
 checked that we obtain the same result when reducing the size of the regions,
-when shifting them by a common offset, or when selection regions all over the
-sky such that always $\sim100$ events are included. We hence conclude that
-regions with $\geq3\sigma$ lines are present in the data also away from the
-GC, however in agreement with the statistical expectations and hence not
-significant.
+when shifting them by a common offset, or when selecting regions all over the
+sky such that always $\sim100$ events are included. 
+% Hence, regions with $\gtrsim3\sigma$ lines \emph{are} present in the data also away from the
+% GC, however in complete agreement with the statistical expectations.
 
 \subsubsection{Hypothesis: The observed signal is variable}
 % --- we might add the TS evolution after the template fitting results
@@ -916,30 +922,34 @@ significant.
   \end{center}
   \caption{Time evolution of TS values. In red we show the
   GC line, in blue the Earth limb line. Gray lines indicate
-  the $68\%$ and $95\%$ CL bands for the time evolution
+  the $68\%$ and $95\%$ CL bands for a steady time evolution
   obtained by removing random parts of the GC events as seen
-  today.}
+  today. Note that the significance of the line in the GC region as defined in
+  this paper \emph{does not} represent the full significance of the signal (see main
+  text). The jump in the Earth limb line significance are related to the
+  fraction of times where \zrock$>52^\circ$, cp.~Fig.~\ref{fig:timehist}.}
   \label{fig:timeevolution}
 \end{figure}
 
-The most common interpretations of the 130 GeV excess (in
-terms of dark matter annihilation) would predict a steady
-source. On the other hand, a strong variability could
-indicate time-dependent instrumental effects. In
+An interpretation of the 130 GeV excess in
+terms of dark matter annihilation predicts it to be steady;
+a strong variability could
+indicate (time-dependent) instrumental effects. In
 Fig.~\ref{fig:timeevolution} we plot how the $TS$ value of
 the signal in the GC region evolved over time (red);
 compared to the time-evolution of the suspicious Earth limb
 line (blue). The GC curve appears to have grown most
 strongly during March 2011 and February 2012, and falling
 during last few months, but it lies mostly within the
-statistical expectations for a steady source. The number of
-GC line events (shown by the larger red circles in
-Fig.~\ref{fig:timeevolution}) in the first and second half
+statistical expectations for a steady source (68\% and 95\% envelopes from a
+Monte Carlo analysis are shown by the gray lines). The number of
+GC line events, shown by the larger red circles in
+Fig.~\ref{fig:timeevolution}, in the first and second half
 of the observational period are respectively 12 and 14, and
 consistent with a non-variable flux. However, a further
 substantial decrease of the significance of the GC line
 signal would start to challenge any dark matter related
-interpretation.  In any case, the (very weak) indication for
+interpretation. In any case, the very weak indication for
 a temporal pattern is not observed in case of the Earth limb
 line. 
 
