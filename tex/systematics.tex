@@ -1194,15 +1194,19 @@ region like the Galactic center has a large gamma-ray-to-CR ratio, such that
 a CR contamination would affect it last, not first.
 
 {\it Effective area error:} An error in the LAT effective
-area (e.g. various cuts at $\sim130\GeV$ are less restrictive for some
-reason) for $30\degree < \theta < 45\degree$ might explain
-the limb photons, but would also produce a line in the other samples of
-Tab.~\ref{tab:regions} or in all corresponding panels
-of~Fig.~\ref{fig:polarPlotsAll}.  No such line is seen outside of the
-GC.\medskip
+area (e.g.~various cuts at $\sim130\GeV$ are less restrictive for some
+reason) for $30\degree < \theta < 45\degree$ could in principle explain
+the limb photons, but would also produce a line in the other samples listed in
+Tab.~\ref{tab:regions} or in the corresponding panels
+of~Fig.~\ref{fig:polarPlotsAll} in case of $Z<100^\circ$ events. No such line
+is seen outside of the GC. The LAT team estimated the point-to-point
+correlation of the effective area on scales relevant for line
+searches to be on the level of $2\%$~\cite{performance}, which is not enough
+to explain the $\mathcal{O}(1)$ GC or Earth limb features.
+\medskip
 
 From these considerations, we conclude that it is extremely unlikely %there is no way
-for the limb line to be caused by extra events. However, it
+for the limb and GC lines to be caused by extra events. However, it
 is still plausible that there is a more subtle energy
 mapping error that distorts the energy scale near 130 GeV.
 In the next section, we argue that this is a reasonable
@@ -1216,9 +1220,13 @@ photons, but {\em not} of the GC lines.
 % model, which enhances the significance of the 130 GeV line
 % feature in the limb photons.
  
-Given the difficulty in explaining the excess any other way,
-we consider the possibility that the limb bump results from
-an energy mapping error.  We propose a simple model, in
+Given the difficulty in explaining the excess with extra events, we consider the
+possibility that the limb bump results from an energy mapping error, and
+assume that for some unknown reason it only affects low incidence Earth limb
+and GC events (similar to the errors in the effective area, one would naively
+expect that such an error should affect all regions of the sky, in
+contradiction to the observations). 
+We propose a simple model, in
 which the mapping from true energy to reported energy,
 $E(E_t)$, is linear except for a bump near some reference
 energy.  Smooth low-level perturbations over large energy
@@ -1253,11 +1261,11 @@ Assuming the true limb spectrum is a power law, we may apply
 this factor to obtain a model spectrum, and maximize the
 Poisson likelihood of observing the data given the model.
 
-To illustrate that this model can generate a spectrum
-similar to the limb bump spectrum, we show 10 random
-realizations of a $dN/dE \sim E^{-2.6}$ spectrum with this
-distortion in Fig. \ref{fig:bumpmodelmany}.  Note that some of these
-look very similar to the bump in real data as shown in Fig. \ref{fig:Ehist-all}. 
+% To illustrate that this model can generate a spectrum
+% similar to the limb bump spectrum, we show 10 random
+% realizations of a $dN/dE \sim E^{-2.6}$ spectrum with this
+% distortion in Fig. \ref{fig:bumpmodelmany}.  Note that some of these
+% look very similar to the bump in real data as shown in Fig. \ref{fig:Ehist-all}. 
 
 In Fig.~\ref{fig:limbfits}, we fit the energy mapping model
 to the Earth limb data for various range of inclination
