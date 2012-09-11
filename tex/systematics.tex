@@ -176,8 +176,8 @@ challenging.  Among various possible signatures, gamma-ray
 line emission has been considered as a long-sought ``smoking
 gun'' for dark matter annihilation, as no plausible
 astrophysical background can produce such line
-signature\footnote{although a narrow feature is possible
-  \citep[see][]{2012arXiv1207.0458A}}.  Gamma-ray line(s)
+signature.\footnote{although a narrow feature is
+possible~\citep[see][]{2012arXiv1207.0458A}}  Gamma-ray line(s)
 could be produced by dark matter decays or annihilations
 into two photons, or two-body final states involving one
 photon plus a Higgs boson, Z boson, or other neutral non-SM
@@ -193,7 +193,7 @@ ratios~\citep[e.g.][]{Bergstrom:1998, Bergstrom:2000,
 
 The first claim of a line around 130 GeV by 
 Weniger~\citep{Weniger:2012} grew
-out of an earlier search for other hard photon signals from
+out of an earlier search for virtual internal Bremsstralung signals from
 annihilations~\citep{Bringmann:2012}.  Weniger focused on
 spectral fitting to photon events in regions of interest 
 in the inner Galaxy
@@ -230,10 +230,10 @@ their own, but they provide support for the hypothesis that
 the Galactic center line signal is indeed from dark matter
 annihilation~\cite{doubleline}.
 
-The statistical significance of the line
+The high statistical significance of the line
 feature motivates a search for systematic errors in the
 LAT data that could mimic a line in the Galactic center.
-Confirmation by H.E.S.S II is possible in the next
+Confirmation by H.E.S.S II might be possible already the next
 year~\cite{Bergstrom:2012}, but in the meantime a thorough
 study of LAT systematics is urgently needed.  We do not have
 access to the details of the reconstruction of each photon
@@ -353,13 +353,14 @@ for suspicious trends in the data.
 
 With a field of view of $\sim2.5$~sr, the LAT can survey the entire sky
 in two orbits.  In \emph{standard survey mode}, the LAT points north of zenith
+towards the orbital pole
 by an angle \zrock\ on one orbit, and south of zenith by the same angle on the
 next orbit.  In this mode, the LAT pointing is confined to the plane
 perpendicular to its orbital velocity.  The slews are
 performed with a repeating pattern of 17 waypoints defining
 \zrock\ as a function of time.\footnote{The survey mode can
 be also performed with alternate explicit slew
-commands - IS THIS TRUE?  I think this would not be survey mode any more...}
+commands - \bf IS THIS TRUE?  I think this would not be survey mode any more...}
 \footnote{The survey pattern profiles are available
 at
 \url{http://fermi.gsfc.nasa.gov/ssc/observations/types/allsky/}.
@@ -376,7 +377,7 @@ This rocking-angle profile, combined with the precession
 of the orbit every $\sim53.4$ days, allows the LAT to observe
 the whole sky with approximately uniform coverage.
 
-\Fermi\ spends over 95\% of the mission time in sky survey mode.
+\Fermi\ spends over 95\% of the mission time in standard survey mode.
 This is only occasionally interrupted for
 pointed observations of targets of opportunity (ToOs).  During such times
 the LAT may point at larger zenith angle than usual, even at the horizon.
@@ -396,12 +397,12 @@ coordinates, and Earth coordinates is described by parameters in
 Table~\ref{tab:parameters}.  $\theta$ is the reconstructed incidence angle of
 the photon event with respect to the LAT boresight (defined as the $+z$ axis).
 The $+x$ axis is the line normal to the Sun-facing side of the spacecraft,
-i.e. the solar panels face roughly the $+x$ direction.   $\phi$ is the
+i.e. the solar panels, which are parallel to the $y$ axis, face roughly the $+x$ direction.   $\phi$ is the
 azimuthal angle of incidence with respect to the $+x$ axis.
 %{\bf I think this was wrong before and fixed it -- make sure you agree -- DPF}
 The Zenith angle $Z$ is the angle between the
 reconstructed event direction and the zenith line, which passes from the
-Earth center through the satellite center.   All angles are in units of
+Earth center through the satellite center.  All angles are in units of
 degrees.
 
 Due to the large rocking angle of \zrock$\simeq50\degree$
@@ -419,7 +420,7 @@ $Z_{\rm hor}$ in the 112.7$\degree$ to 113.3$\degree$ range, with the tangent
 point some 2400 km distant.  At this distance, the $\sim 100$ km height of the
 atmosphere subtends about $2\degree$, or roughly $111\degree < Z <
 113\degree$. Combined with the large rocking angle, the Earth limb events are
-dominantly seen under the incidence angle $\theta=Z_{\rm hor}-Z_{\rm rock}\sim 63^\circ$.
+dominantly seen under the incidence angle $\theta=Z_{\rm hor}-Z_{\rm rock}\sim 62^\circ$.
 \medskip
 
 \begin{table*}
@@ -456,15 +457,16 @@ dominated by photons generated in CR interaction with the
 atmosphere. `Line' events refer to subsets with energies
 between $120$ and $138$ GeV. This energy range is selected
 since the dominant line at the GC is found to be around 129
-GeV~\cite{linepaper}, and the FWHM of the line is about
-13.6\%~\cite{Weniger:2012}.
+GeV~\cite{linepaper}, and the FWHM of the relevant LAT energy dispersion is about
+13.6\% at that energy~\cite{Weniger:2012}.
 
-Throughout, we will use \texttt{P7CLEAN\_V6} events from 4
-Aug 2008 to 18 Jul 2012, with the good-time-interval cuts
+Throughout, we will use \texttt{P7CLEAN\_V6} events from
+Aug 4th 2008 to Jul 18th 2012, with the good-time-interval cuts
 \texttt{DATA\_QUAL==1} and \texttt{LAT\_CONFIG==1}, however
 without the commonly adopted cut on the rocking angle
-$|$\zrock$|<52^\circ$, unless stated otherwise. This last cut would remove
-all low incidence angle Earth limb events.
+$|$\zrock$|<52^\circ$, unless otherwise stated. This last cut would remove
+low incidence angle Earth limb events, which will be of special interest
+below.
 % Contamination due to neglected rocking angle cut (GC
 % events from zrock>52 etc?) What happens for P7SOURCE_V6?
 \medskip
@@ -875,7 +877,8 @@ The 130 GeV excess is located in a narrow range of about $\sim5^\circ$ around
 the Galactic center. The existence of other significant `hotspots' (localized
 regions with a significant line-like emission at or around 130 GeV) in the sky
 could indicate an instrumental effect, or point to a source class that is
-concentrated near the GC. In the absence of knowledge about the distribution of such
+concentrated near the GC~\cite{Boyarsky:2012ca}. 
+In the absence of knowledge about the distribution of such
 a source, we adopt the following strategy. We select regions of
 $6^\circ\times6^\circ$ degrees size, centered along the Galactic disk at
 $b=0^\circ$, $|\ell|=13.5^\circ, 16.5^\circ \dots 178.5^\circ$. The size of
