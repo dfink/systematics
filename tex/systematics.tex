@@ -141,7 +141,7 @@
   connects the two.  A modest amount of additional limb data
   would tell us if the limb feature is a statistical fluke.
   If the limb feature persists, it raises serious concerns
-  about the Pass 7 processing of $E > 100$ GeV events.
+  about the \texttt{Pass 7} processing of $E > 100$ GeV events.
 \end{abstract}
 
 \pacs{}
@@ -244,31 +244,28 @@ parameter files.  We can use this information to search for
 any line-producing artifacts in the detector frame, and
 investigate if they could map onto the Galactic center.
 
-The Earth's atmosphere provides a convenient source of photons for systematics
-tests.  The continual cosmic-ray cascades in the Earth's atmosphere
-produce gamma rays with $dN/dE \sim
-E^{-2.8}$~\citep{FermiLimb}.  Because these so-called `Earth limb photons'
-result from atmospheric cascades, they are produced by
-interactions in a highly boosted frame, and cannot contain
-line emission.  
-\medskip
+The Earth's atmosphere provides a convenient source of
+photons for systematics tests.  The continual cosmic-ray
+cascades in the Earth's atmosphere produce gamma rays with
+$dN/dE \sim E^{-2.8}$~\citep{FermiLimb}.  Because these
+so-called `Earth limb photons' result from atmospheric
+cascades, they are produced by interactions in a highly
+boosted frame, and cannot contain line emission.
 
-In this paper, we use Earth limb photons in the first 4 years of LAT data to
-search for any
-suspicious trends that could generate a spurious line signal
-at 130 GeV.  We examine these events in detail and compare
-with the line photons from the Galactic center.  {\bf compare what?  I would
-  make this sentence more informative or remove it}  In
-\Refsec{130GeV} we briefly define the key parameters
-of LAT photon events and describe its survey strategy. We
-examine possible peculiarities of Galactic center
-observation and systematics of the LAT instrument which could plausibly 
-introduce a spurious line signal. In
-\Refsec{EarthLimb}, we use the Earth limb photons to look for line-like features
-in more detail.  Finally in \Refsec{Conclusion}, we discuss
-our findings and implications for the 130 GeV line search.
-{\bf come back to this at the end -- I don't quite have a feeling for the
-  layout of the paper just from reading this}
+
+In this paper, we use Earth limb photons in the first 4
+years of LAT data to search for any suspicious trends that
+could generate a spurious line signal at 130 GeV.  In
+\Refsec{130GeV} we briefly define the key parameters of LAT
+photon events and describe its survey strategy. We examine
+possible peculiarities of Galactic center observation and
+systematics of the LAT instrument which could plausibly
+introduce a spurious line signal. In \Refsec{EarthLimb}, we
+use the Earth limb photons to look for line-like features in
+more detail.  Finally in \Refsec{Conclusion}, we discuss our
+findings and implications for the 130 GeV line search.  {\bf
+come back to this at the end -- I don't quite have a feeling
+for the layout of the paper just from reading this}
 
 
 
@@ -813,7 +810,7 @@ reconstructed}
   panel}: First tracker layer to show evidence of a particle
   hit for the best track reconstruction. Tracker layers are
   0-17 where 0 is closest to the calorimeter, and 6-17 (2-5)
-  corresponds to front- (back-)converting events (tracker
+  corresponds to \texttt{FRONT}- (\texttt{BACK}-)converting events (tracker
   layers 0 and 1 come without conversion foils). The gray
   bars show the distribution averaged over all $>100$ GeV
   standard events, the red bars show the distribution
@@ -841,8 +838,8 @@ Fig.~\ref{fig:CTBquality} show the first tracker layer that
 shows evidence of a particle hit for the best track
 reconstruction (Tkr1FirstLayer) in case of the GC line
 events.  Tracker layers are 0--17, where 0 is closest to the
-calorimeter and 6--17 (2--5) corresponds to front-
-(back-)converting events (tracker layers 0 and 1 come
+calorimeter and 6--17 (2--5) corresponds to \texttt{FRONT}-
+(\texttt{BACK}-)converting events (tracker layers 0 and 1 come
 without conversion foils). The dark gray bars show the
 distribution averaged over all $>100$ GeV standard events;
 the light gray bars
@@ -950,8 +947,7 @@ line.
     an excess of events appear.  The vast majority of limb
     events are at $\theta > 60\degree$ because the telescope
     seldom points more than $50\degree$ from zenith, and the
-    limb events are mostly at $Z>110\degree$.  {\bf (Change ``Front only'' to
-      ``Front'' and ``Back only'' to ``Back'' ?)}}
+    limb events are mostly at $Z>110\degree$. }
   \label{fig:theta-E-frontback}
 \end{figure}
 
@@ -968,8 +964,20 @@ line.
     events. \texttt{FRONT} and \texttt{BACK} converting
     events are overplotted with dark green and purple lines
     respectively. The 130 GeV excess appears equally in
-    front and back converting events.}
+    \texttt{FRONT} and \texttt{BACK} converting events.}
   \label{fig:Ehist-all}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.48\textwidth]{plots/counts_suspiciousLimb.eps}
+  \includegraphics[width=0.48\textwidth]{plots/counts_GC_wo3045.eps}
+  \caption{Same as Fig.~\ref{fig:spectra1}, but for
+  suspicious limb data subset with
+  $30^\circ<\theta<45^\circ$ (top panel), as well as for the
+  GC events \emph{without} the suspicious
+  $30^\circ<\theta<45^\circ$ range for comparison.}
+  \label{fig:spectra2}
 \end{figure}
 
 % \begin{figure*}
@@ -1097,29 +1105,18 @@ background from the Earth limb.  For \zrock = $50\degree$
 (the typical survey rocking angle, see \Refsec{130GeV}), the
 limb photons are hence typically at $\theta > 60\degree$.
 
-In 125 GeV $< E <$ 140 GeV, {\bf (caption says 125-135) }we find that there is an excess
+In 125 GeV $< E <$ 135 GeV, we find that there is an excess
 of events appearing in the region of $30\degree < \theta <
-45\degree$, as indicated in
-Fig.~\ref{fig:polarPlotsAll} (this $\theta$ range contains
-about 5\% of the limb events). No significant excess in this
-energy range has been found in other $\theta$ regions (see
+45\degree$, as indicated in Fig.~\ref{fig:polarPlotsAll}
+(this $\theta$ range contains about 5\% of the limb
+events). No significant excess in this energy range has been
+found in other $\theta$ regions (see
 Fig.~\ref{fig:Ehist-all}). We fit the Earth limb events with
 incidence angles $30^\circ<\theta<45^\circ$ with a
 monochromatic line at 129 GeV (shown in top panel of
 Fig.~\ref{fig:spectra2}). We find a local significance of
 3.2$\sigma$.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.48\textwidth]{plots/counts_suspiciousLimb.eps}
-  \includegraphics[width=0.48\textwidth]{plots/counts_GC_wo3045.eps}
-  \caption{Same as Fig.~\ref{fig:spectra1}, but for
-  suspicious limb data subset with
-  $30^\circ<\theta<45^\circ$ (top panel), as well as for the
-  GC events \emph{without} the suspicious
-  $30^\circ<\theta<45^\circ$ range for comparison.}
-  \label{fig:spectra2}
-\end{figure}
 
 
 %For standard events with
@@ -1138,7 +1135,7 @@ photons are shown in Fig.~\ref{fig:timehist}. In
 Fig.~\ref{fig:spectra2} we show the Galactic center energy
 spectrum with and without incidence angle events with
 $30^\circ<\theta<45^\circ$.  We have checked that this 129
-GeV excess appears equally in front and back converting
+GeV excess appears equally in \texttt{FRONT} and \texttt{FRONT} converting
 events (shown in Fig. \ref{fig:Ehist-all}).
 
 \textbf{(extend discussion)}
@@ -1283,7 +1280,7 @@ gives an even larger significance (4.7$\sigma$) makes
 further studies important. A modest amount of additional
 limb data would tell us if the limb feature is a statistical
 fluke.  If the limb feature persists, it raises serious
-concerns about the Pass 7 processing of $E > 100$ GeV
+concerns about the \texttt{Pass 7} processing of $E > 100$ GeV
 events.
 
 During the normal survey mode, the LAT usually points away
@@ -1302,7 +1299,7 @@ photons and provide a calibration of the LAT instrument,
 especially to check if there is any instrumental systematics
 at 130 GeV producing a line-like feature.
 
-With Pass 6 \texttt{diffuse} class events along with
+With \texttt{Pass 6} \texttt{diffuse} class events along with
 post-launch instrument response functions (P6\_V3),
 \cite{FermiLimb} has analyzed the spatial morphology and the
 energy spectrum from the combined Earth limb photon events
