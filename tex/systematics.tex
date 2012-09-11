@@ -281,14 +281,6 @@ are peculiar in a way that could enhance instrumental
 effects towards this direction and search for suspicious trends in
 other regions of the sky and the reconstruction parameters.
 
-We emphasize that signal significances calculated from the GC region as
-defined in this paper \emph{do not represent the full significance of the
-  putative signal}, which is higher in regions with optimized signal-to-noise
-ratio~\cite{Weniger:2012} or when extracted by a template
-analysis~\cite{linepaper}. We use the GC region as defined here since it
-should be dominated by line events, making it a good starting point to look
-for suspicious trends in the data.
-
 %% Rock angle is 50, orbit precesses in $53.4$ days, leading to nearly uniform
 %% exposure.  Occasional ToO observations.
 
@@ -470,9 +462,6 @@ below.
 % events from zrock>52 etc?) What happens for P7SOURCE_V6?
 \medskip
 
-
-\medskip
-
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=0.9\linewidth]{plots/polarCounts.eps}
@@ -531,15 +520,25 @@ The hardware trigger rate of the LAT is typically
 about $10^3$--$10^4\Hz$, with the rate of
 accepted SOURCE and CLEAN class events below
 $3\Hz$~\citep{collaboration:2012kca}, and the rate of $E>100\GeV$ events
-much lower. In light of these low trigger rates
+orders of magnitude lower. In light of these low trigger rates
 (and assuming steady sources and CR background fluxes) the
 LAT instrumental response cannot
 depend on the brightness of an observed region.
-Instead, bright regions provide samples with a high gamma-ray-to-CR ratio,
+
+At $E > 100$ GeV, the Galactic center is only modestly brighter
+than the surrounding regions, so that related effects should also appear away
+from the GC. Otherwise, fake 130 GeV events would have to be mistakenly
+mapped from either lower energy ($E \la 10$ GeV) gammas or much lower energy
+photons (e.g.  X-rays from the 1E 1740.7-2942 microquasar~\cite{Gallo:2002} or
+511 keV photons~\cite{Prantzos:2011}) in which the Galactic center is much
+brighter.  It is difficult to see how this could happen.
+
+Bright regions provide samples with a high gamma-ray-to-CR ratio,
 which are used for calibration purposes by the LAT team~\cite{collaboration:2012kca}.
-They feature a large number of events so
+Besides that, their main virtue is that they feature a large number of events so
 that the impact of an instrumental effect, like e.g.~energy
-reconstruction or acceptance anomalies, can be statistically more
+reconstruction or acceptance anomalies that affect the reconstruction of
+gamma-ray events, can be statistically more
 significant there. 
 We check as a warm-up whether we find indications for
 suspicious features at 130 GeV.
@@ -552,12 +551,13 @@ Galactic plane
 Table~\ref{tab:regions}. 
 %All these samples provide a large number of events;
 The sample with the highest number of celestrial photons 
-(but a smaller flux, $\sim5\times10^{-9}\ph\cm^{-2}\s^{-1}\sr^{-1}$) is
+(but a smaller flux, $\sim5\times10^{-9}\ph\cm^{-2}\s^{-1}\sr^{-1}$, and hence
+a higher CR contamination) is
 simply the whole sample of
 standard events excluding the region around the GC
 ($\psi>10^\circ$).
 For these samples, we show the corresponding energy
-distributions in Fig.~\ref{fig:target_spectra}. Except from the GC, none of the
+distributions in Fig.~\ref{fig:target_spectra}. None of the
 samples exhibit an $\mathcal{O}(1)$ excess at 130 GeV as
 observed in the Galactic center. Note that in the vicinity
 of the bright point sources Vela and Geminga (within
@@ -576,7 +576,9 @@ only four $E>100\GeV$ events were measured, at
   shows the alternative power-law + line fit; the dotted
   blue lines are the two components of the alternative
   model. The red (black) dotted lines indicate 129 GeV
-  (13.6\% FWHM around 129 GeV).}
+  (13.6\% FWHM around 129 GeV). 
+  Note that the significance found in the GC region is not representing
+  the full significance of the putative signal (see text).}
   \label{fig:spectra1}
 \end{figure}
 
@@ -592,7 +594,21 @@ the GC is relatively large, there is no indication for line contributions in
 the Inner Galactic plane or Earth limb samples.
 %(Fig.~\ref{fig:spectra1}).
 
-% CHECK: Time correlation with solar flares?
+We emphasize that signal significances calculated from the GC region as
+defined in this paper \emph{do not represent the full significance of the
+  putative signal}, which is higher in regions with optimized signal-to-noise
+ratio~\cite{Weniger:2012} or when extracted by a template
+analysis~\cite{linepaper}. We use the GC region as defined here since it
+should be dominated by line events, making it a good starting point to look
+for suspicious trends in the data.
+
+
+% Redundant:
+% {\it Misreconstructed high-energy photons:} At $E > 100$
+% GeV, the Galactic center is only modestly brighter than the
+% surrounding regions (Tab.~\ref{tab:regions}), and there are not enough photons
+% available (see discussion above).
+% 
 
 \begin{figure*}
   \centering
@@ -736,8 +752,20 @@ quality parameters, and arrival times.  We also search for the possibility of
 `hotspots' at other regions of the sky; they could indicate instrumental
 effects or an exotic source population.
 
-% {\bf (Do hotspots belong in a
-%   section on Peculiarities of the instrument? }
+An error in the LAT effective area (e.g.~various cuts at $\sim130\GeV$ are
+less restrictive for some reason) for $30\degree < \theta < 45\degree$ could
+in principle explain the GC line, but would also produce a line in the other
+samples listed in Tab.~\ref{tab:regions} or in the corresponding panels
+of~Fig.~\ref{fig:polarPlotsAll} in case of $Z<100^\circ$ events. No such line
+is seen outside of the GC (but see Earth limb discussion below). The LAT team
+estimated the point-to-point correlation of the effective area on scales
+relevant for line searches to be on the level of $2\%$~\cite{performance},
+which is not enough to explain the $\mathcal{O}(1)$ GC or Earth limb features.
+
+If the GC line is due to non-rejected CRs, it is hard to understand how
+mono-energetic particles could be present in the CR spectrum. As we discussed
+above, a bright region like the Galactic center has a large gamma-ray-to-CR
+ratio, such that a CR contamination would affect it last, not first.
 
 \subsubsection{Hypothesis: A 130 GeV features is visible
 at specific incidence angles on the instrument}
@@ -1115,12 +1143,19 @@ the GC excess.
 %% particles at large angles relative to the CR cascade
 %% direction is very rare
 We begin by examining the limb events and finding a bump at
-130 GeV in a subsample of these events.  We consider two
-hypotheses for the origin of the bump: (1) the events come
-from far away in energy; (2) the more subtle possibility
+130 GeV in a subsample of these events. 
+%We consider two
+%hypotheses for the origin of the bump: (1) the events come
+%from far away in energy; (2) the more subtle possibility
+%that an energy mapping error could redistribute events in energy,
+%thus making a spectral feature.  
+We then explore the various
+parameters of the GC line events and the limb bump events, and 
+consider the possibility
 that an energy mapping error could redistribute events in energy,
-thus making a spectral feature.  We then explore the various
-parameters of the GC line events and the limb bump events.
+thus making a spectral feature.  
+
+\subsection{The Earth limb bump and correlations with the GC signal}
 
 In Fig. \ref{fig:theta-E-frontback}, we show the incidence angle
 $\theta$ distribution as a function of events energy with $Z
@@ -1147,6 +1182,7 @@ the bottom panel of Fig.~\ref{fig:Ehist-all}, and decreases when
 considering larger ranges of $\theta$ (other panels).
 Note that the 129 GeV excess appears equally in \texttt{FRONT} and
 \texttt{BACK} converting events. %in Fig. \ref{fig:Ehist-all}).
+
 As shown in the top panel of Fig.~\ref{fig:spectra2},
 fitting the Earth limb events with
 incidence angles $30^\circ<\theta<45^\circ$ with a
@@ -1173,52 +1209,22 @@ reveals suspicious trends or correlations.
 %% line and the same limb events in Fig.~\ref{fig:rockTime}.
 %We compare the Galactic center line photons and the selected
 %low incidence Earth limb events with the high-incidence limb
-
-\subsection{Fake lines from extra events}
-Although there is no indication of instrumental systematics
-which can produce any gamma-ray line feature in the spectrum
-from either Galactic center or the Earth limb events, here
-we list several possibilities that might in principle fake a
-line feature with extra events:
-
-{\it Misreconstructed low-energy photons:} Events would
-have to be mistakenly mapped from either lower energy ($E
-\la 10$ GeV) gammas or much lower energy photons (e.g.
-X-rays from the 1E 1740.7-2942 microquasar~\cite{Gallo:2002}
-or 511 keV photons~\cite{Prantzos:2011}) in which the
-Galactic center is much brighter.  It is difficult to see
-how this could happen.
-
-{\it Misreconstructed high-energy photons:} At $E > 100$
-GeV, the Galactic center is only modestly brighter than the
-surrounding regions (Tab.~\ref{tab:regions}), and there are not enough photons
-available (see discussion above).
-
-{\it Particle contamination:} If monochromatic photons from
-the limb are difficult to explain, it is even harder to
-understand how mono-energetic particles could be present. What is more, a bright
-region like the Galactic center has a large gamma-ray-to-CR ratio, such that
-a CR contamination would affect it last, not first.
-
-{\it Effective area error:} An error in the LAT effective
-area (e.g.~various cuts at $\sim130\GeV$ are less restrictive for some
-reason) for $30\degree < \theta < 45\degree$ could in principle explain
-the limb photons, but would also produce a line in the other samples listed in
-Tab.~\ref{tab:regions} or in the corresponding panels
-of~Fig.~\ref{fig:polarPlotsAll} in case of $Z<100^\circ$ events. No such line
-is seen outside of the GC. The LAT team estimated the point-to-point
-correlation of the effective area on scales relevant for line
-searches to be on the level of $2\%$~\cite{performance}, which is not enough
-to explain the $\mathcal{O}(1)$ GC or Earth limb features.
 \medskip
 
-From these considerations, we conclude that it is extremely unlikely %there is no way
-for the limb and GC lines to be caused by extra events. However, it
-is still plausible that there is a more subtle energy
-mapping error that distorts the energy scale near 130 GeV.
-In the next section, we argue that this is a reasonable
-explanation of the line feature revealed in the limb
-photons, but {\em not} of the GC lines. 
+% Although there is no indication of instrumental systematics
+% which can produce any gamma-ray line feature in the spectrum
+% from either Galactic center or the Earth limb events, here
+% we list several possibilities that might in principle fake a
+% line feature with extra events:
+% 
+
+% However, it
+% is plausible that there is a subtle energy
+% mapping error that distorts the energy scale near 130 GeV.
+% 
+% In the next section, we argue that this is a reasonable
+% explanation of the line feature revealed in the limb
+% photons, but {\em not} of the GC lines. \textbf{(Do we really? -- CW)}
 
 %%%%%%%%%%%%%%%%%%%%%% SECTION IV %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Energy mapping error: a model for the limb bump}
@@ -1227,12 +1233,16 @@ photons, but {\em not} of the GC lines.
 % model, which enhances the significance of the 130 GeV line
 % feature in the limb photons.
  
-Given the difficulty in explaining the excess with extra events, we consider the
-possibility that the limb bump results from an energy mapping error, and
+As we discussed above in Sec.~II, it is very unlikely %there is no way for the
+GC line to be caused by extra events (from either photons with far away
+energies or CR background); the same is true for the line feature in the low
+incidence Earth limb events.  Given these difficulties, we consider the
+possibility that the Earth limb bump results from an energy mapping error, and
 assume that for some unknown reason it only affects low incidence Earth limb
-and GC events (similar to the errors in the effective area, one would naively
-expect that such an error should affect all regions of the sky, in
-contradiction to the observations). 
+events (and potentially the GC).\footnote{Similar to anomalies in the
+effective area, one would naively expect that such an error should affect all
+regions of the sky, in contradiction to the observations.}
+
 We propose a simple model, in
 which the mapping from true energy to reported energy,
 $E(E_t)$, is linear except for a bump near some reference
