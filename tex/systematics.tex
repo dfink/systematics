@@ -127,7 +127,7 @@
   ranging from dark matter annihilation to exotic pulsar
   winds.  Because of the importance of such interpretations
   for physics and astrophysics, the threshold for discovery
-  is unusually high.  This requires not only additional
+  is unusually high.  It will require not only additional
   data, but a thorough investigation of possible LAT
   systematics.  While we do not have access to the details
   of each event reconstruction, we do have information about
@@ -146,7 +146,7 @@
   about the \texttt{Pass 7} processing of $E > 100$ GeV events.
 \end{abstract}
 
-\pacs{}
+\pacs{95.35.+d}
 
 \maketitle
 
@@ -163,8 +163,8 @@
 
 
 The search for non-gravitational signatures from WIMP{}
-(weakly interacting massive particle) dark matter has been
-generally taken place in three different directions: missing
+(weakly interacting massive particle) dark matter has 
+generally been approached from three different directions: missing
 energy searching from colliders, direct searches for the
 recoil of nuclei from underground detectors, and indirect
 methods including searching dark matter signal from cosmic
@@ -172,14 +172,14 @@ rays (CR) and multiwavelength astronomical
 observations~\citep{Jungman:1995df,Bergstrom:2000,Bertone:2005,Hooper:2007Review,
   2012arXiv1205.4882B}.
 
-For indirect direction, distinguishing the dark matter
+For indirect detection, distinguishing the dark matter
 signal from conventional astrophysical backgrounds is
 challenging.  Among various possible signatures, gamma-ray
-line emission has been considered as a long-sought ``smoking
+line emission is a long-sought ``smoking
 gun'' for dark matter annihilation, as no plausible
-astrophysical background can produce such line
-signature.\footnote{although a narrow feature is
-possible~\citep[see][]{2012arXiv1207.0458A}}  Gamma-ray line(s)
+astrophysical background can produce such a line
+signature.\footnote{A narrow feature is
+possible in theory~\citep[see][]{2012arXiv1207.0458A}.}  Gamma-ray line(s)
 could be produced by dark matter decays or annihilations
 into two photons, or two-body final states involving one
 photon plus a Higgs boson, Z boson, or other neutral non-SM
@@ -235,7 +235,7 @@ annihilation~\cite{doubleline}.
 The high statistical significance of the line
 feature motivates a search for systematic errors in the
 LAT data that could mimic a line in the Galactic center.
-Confirmation by H.E.S.S II might be possible already the next
+Confirmation by H.E.S.S II might be possible next
 year~\cite{Bergstrom:2012}, but in the meantime a thorough
 study of LAT systematics is urgently needed.  We do not have
 access to the details of the reconstruction of each photon
@@ -259,7 +259,7 @@ In this paper, we use Earth limb photons in the first 4
 years of LAT data to search for any suspicious trends that
 could generate a spurious line signal at 130 GeV.  In
 \Refsec{130GeV} we briefly define the key parameters of LAT
-photon events and describe its survey strategy. We examine
+photon events and describe the survey strategy. We examine
 possible peculiarities of Galactic center observation and
 systematics of the LAT instrument which could plausibly
 introduce a spurious line signal. In \Refsec{EarthLimb}, we
@@ -275,7 +275,7 @@ for the layout of the paper just from reading this}
 \label{sec:130GeV}
 %%%%%%%%%%%%%%%%%%%%%% SECTION II %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In this section, we briefly summarize the standard survey strategy of \Fermi\ 
-and introduce basic parameters of each event.  We will
+and define the basic parameters of each event.  We
 address the question of whether observations of the Galactic center
 are peculiar in a way that could enhance instrumental
 effects towards this direction and search for suspicious trends in
@@ -298,7 +298,7 @@ other regions of the sky and the reconstruction parameters.
       $Z$      &&    0 & $\sim113$ && Zenith angle (horizon at $Z=113\degree$) \\
       $\ell$   && -180 & 180 && Galactic longitude \\
       $b$      &&  -90 &  90 && Galactic latitude \\
-      $\psi$   &&    0 & 180 && Angle to Galactic center; $\cos\psi=\cos\ell\cos b$ \\
+      $\psi$   &&    0 & 180 && Angle to Galactic center; $\cos\psi\equiv\cos\ell\cos b$ \\
       \zrock\  && -110 & 110 && Rocking angle (boresight angle N of zenith) \\
       \hline
     \end{tabular}
@@ -349,11 +349,8 @@ by an angle \zrock\ on one orbit, and south of zenith by the same angle on the
 next orbit.  In this mode, the LAT pointing is confined to the plane
 perpendicular to its orbital velocity.  The slews are
 performed with a repeating pattern of 17 waypoints defining
-\zrock\ as a function of time.\footnote{The survey mode can
-be also performed with alternate explicit slew
-commands - \bf IS THIS TRUE?  I think this would not be survey mode any more...}
-\footnote{The survey pattern profiles are available
-at
+\zrock\ as a function of time.\footnote{The 
+survey rocking angle profiles are available at
 \url{http://fermi.gsfc.nasa.gov/ssc/observations/types/allsky/}.
 The effective dates and times for each profile are provided.
 } \zrock\ was $35\degree$ at the start of the nominal
@@ -362,7 +359,7 @@ to $50\degree$ on Sep 3rd, 2009 for better thermal
 management of the downward-facing battery
 radiator.\footnote{Various profiles
 with rocking angle 39$\degree$, 40$\degree$, and 45$\degree$
-respectively have been tested with relatively short periods,
+respectively have been tested for relatively short periods,
 including a 3 orbit profile test that overweights the south.} 
 This rocking-angle profile, combined with the precession
 of the orbit every $\sim53.4$ days, allows the LAT to observe
@@ -396,7 +393,7 @@ reconstructed event direction and the zenith line, which passes from the
 Earth center through the satellite center.  All angles are in units of
 degrees.
 
-Due to the large rocking angle of \zrock$\simeq50\degree$
+Due to the increased rocking angle \zrock$\simeq50\degree$
 since September 2009, photons from the Earth limb 
 % (seen
 % near zenith angles of $Z\sim113^\circ$; see discussion
@@ -404,14 +401,14 @@ since September 2009, photons from the Earth limb
 %{\bf (Move discussion here?)} 
 entered the FOV of the LAT:
 %
-At an spacecraft altitude $a$, the geometric (unrefracted) horizon is seen at zenith angle \be
+At a spacecraft altitude $a$, the geometric (unrefracted) horizon is seen at zenith angle \be
 Z_{\rm hor} = \cos^{-1}\left(\frac{R_\oplus}{R_\oplus+a}\right)+90\degree\;. \ee
 The \Fermi\ orbit is nearly circular with 535~km $< a <$ 564~km, yielding
 $Z_{\rm hor}$ in the 112.7$\degree$ to 113.3$\degree$ range, with the tangent
 point some 2400 km distant.  At this distance, the $\sim 100$ km height of the
 atmosphere subtends about $2\degree$, or roughly $111\degree < Z <
 113\degree$. Combined with the large rocking angle, the Earth limb events are
-dominantly seen under the incidence angle $\theta=Z_{\rm hor}-Z_{\rm rock}\sim 62^\circ$.
+dominantly seen near the incidence angle $\theta=Z_{\rm hor}-Z_{\rm rock}\sim 62^\circ$.
 \medskip
 
 \begin{table*}
@@ -444,7 +441,7 @@ to but without the center; `Galactic center' events come from
 a radius of $3^\circ$ around
 $\ell=b=0^\circ$; `Earth limb events' have
 zenith angles $Z>110^\circ$, and are completely
-dominated by photons generated in CR interaction with the
+dominated by photons generated in CR cascades in the
 atmosphere. `Line' events refer to subsets with energies
 between $120$ and $138$ GeV. This energy range is selected
 since the dominant line at the GC is found to be around 129
@@ -483,7 +480,7 @@ below.
 
 In
 Fig~\ref{fig:phiThetaDist}, the gray dots show the
-distribution of \emph{all} events (i.e.~without $Z$ cut)
+distribution of \emph{all} events (i.e.~without the $Z$ cut)
 with energies above 100 GeV as a function of the instrumental
 incidence angles $\theta$ and $\phi$.
 The contribution from the Earth limb is clearly visible at
@@ -496,14 +493,14 @@ The fact that the dominant 130 GeV line signal is near the
 Galactic center raises a number of concerns.  The gamma-ray
 flux at the GC is somewhat brighter and might have a harder
 spectrum than neighboring regions. Also, the GC is near the
-ecliptic ($\beta \approx -5\degree$) and may be observed in
+ecliptic ($\beta \approx -5\degree$) and is observed in
 a restricted range of angles in instrument coordinates
 $(\theta, \phi)$ when the Sun passes near it.  We consider
 whether these facts could exacerbate any systematic errors
 in the LAT data to produce a spurious signal.
 
 \subsubsection{Hypothesis: The Galactic center is bright, so
-instrumental artifacts are more significant there}
+instrumental artifacts are more significant there.}
 
 \begin{figure}
   \centering
@@ -542,16 +539,16 @@ gamma-ray events, can be statistically more
 significant there. 
 We check as a warm-up whether we find indications for
 suspicious features at 130 GeV.
-Besides the Galactic center (with a flux of $\sim 8\times10^{-8}
+Besides the Galactic center (with an intensity of $\sim 8\times10^{-8}
 \ph\cm^{-2}\s^{-1}\sr^{-1}$ above 100 GeV), we consider the
-Earth limb (with \emph{all} impact angles and a flux of $\sim3\times10^{-7}
+Earth limb (with \emph{all} impact angles and an intensity of $\sim3\times10^{-7}
 \ph \cm^{-2}\s^{-1}\sr^{-1}$ above 100~GeV~\cite{FermiLimb}) and the inner
 Galactic plane
 ($\sim9\times10^{-8}\ph\cm^{-2}\s^{-1}\sr^{-1}$), see
 Table~\ref{tab:regions}. 
 %All these samples provide a large number of events;
 The sample with the highest number of celestrial photons 
-(but a smaller flux, $\sim5\times10^{-9}\ph\cm^{-2}\s^{-1}\sr^{-1}$, and hence
+(but a smaller intensity, $\sim5\times10^{-9}\ph\cm^{-2}\s^{-1}\sr^{-1}$, and hence
 a higher CR contamination) is
 simply the whole sample of
 standard events excluding the region around the GC
@@ -647,9 +644,10 @@ for suspicious trends in the data.
 
 \subsubsection{Hypothesis: The Galactic
 center has a hard spectrum, making energy mapping errors more
-significant}
+significant.}
 
-The Galactic center black hole (Sgr A$^*$) may have a hard spectrum, or other
+The Galactic center black hole (Sgr A$^*$) is visible up to 20 
+TeV, and other
 sources in the GC may be unusually hard. If these high energy
 photons are occasionally mis-reconstructed with energies
 close to 130 GeV, this could produce a line feature in the
@@ -661,7 +659,8 @@ GC spectrum is not much harder than the rest of the Inner Galactic
 plane, but the latter shows no sign of a feature at 130 GeV
 (Fig.~\ref{fig:spectra1}). Note that
 about $\sim15$ events contribute to the central part of the
-line feature seen at the GC. Assuming that the GC spectrum is not
+line feature seen at the GC~\citep{linepaper}. 
+Assuming that the GC spectrum is not
 harder than $dN/dE \propto E^{-2.0}$ (normalized to the
 number of events above 150 GeV), the GC events cannot come
 from energies above 300 GeV, since there would not be enough
@@ -671,7 +670,7 @@ mapping errors of events close to 130 GeV will be discussed
 in Sec.~\ref{sec:EarthLimb}.
 
 \subsubsection{Hypothesis: the GC observations have a
-restricted range of incidence angles on the instrument}
+restricted range of incidence angles on the instrument.}
 
 If the Galactic center were predominantly observed at
 specific angles in LAT instrumental coordinates, associated
@@ -768,7 +767,7 @@ above, a bright region like the Galactic center has a large gamma-ray-to-CR
 ratio, such that a CR contamination would affect it last, not first.
 
 \subsubsection{Hypothesis: A 130 GeV features is visible
-at specific incidence angles on the instrument}
+at specific incidence angles on the instrument.}
 
 % Intro
 
@@ -790,10 +789,10 @@ regions as shown in the left panels of
 Fig.~\ref{fig:polarPlotsAll}. We then analyse the spectrum
 of all events that hit the detector at these incidence
 angle patches separately and search for lines. The fits are
-performed as in Ref.~\cite{Weniger:2012}, the energy
-window is fixed to 80--210 GeV, we assume a flat
-acceptance and for a line we take a simple Gaussian with $6\%$
-standard deviation (as approximation to the central part of the non-gaussian
+performed as in Ref.~\cite{Weniger:2012}, but the energy
+window is fixed to 80 to 210 GeV, we assume a flat
+acceptance and for a line we take a simple Gaussian with a 
+standard deviation of $6\%$ (to approximate the central part of the non-gaussian
 LAT energy dispersion).
 
 The left panels of Fig.~\ref{fig:polarPlotsAll} show from
@@ -832,7 +831,7 @@ once the large number of associated trials is taken into account.
 However, it cannot be excluded that the 130 GeV excess in
 these parts of the Earth limb indicates a real instrumental
 effect. Then the energy
-reconstruction at different incidence angles must somehow
+reconstruction at different incidence angles would have to somehow
 additionally
 depend on the zenith angle $Z$ of the events
 (e.g. via a
@@ -845,7 +844,7 @@ section~\ref{sec:EarthLimb}; in any case more
 Earth limb data will help to verify or falsify this possibility.
 
 \subsubsection{Hypothesis: The Galactic center events are flagged as badly
-reconstructed}
+reconstructed.}
 
 \begin{figure}
   \centering
@@ -904,7 +903,7 @@ the distribution of GC line events is compatible with the
 expectations for standard events.
 
 \subsubsection{Hypothesis: There are `hotspots' with
-line-like features in other sky regions}
+line-like features in other sky regions.}
 
 \begin{figure}
   \begin{center}
@@ -928,7 +927,7 @@ could indicate an unexpected instrumental effect, or point to a new exotic
 source class~\cite{Boyarsky:2012ca}. 
 In absence of knowledge about the distribution of such possible
 sources, we adopt the following strategy. We select regions of
-$6^\circ\times6^\circ$ degrees size, centered along the Galactic disk at
+$6^\circ\times6^\circ$ size, centered along the Galactic disk at
 $b=0^\circ$, $|\ell|=13.5^\circ, 16.5^\circ \dots 178.5^\circ$. The size of
 the region is chosen to include roughly 50--100 events above 80 GeV (like in our `GC
 region'); regions close to the GC are excluded to avoid contamination with the
@@ -941,14 +940,14 @@ line energies; a combination of
 TS values for all line energies is shown by the solid black line. Its tail
 distribution is in excellent agreement with the statistical expectations
 (shown by the black dotted line) within the $\pm1\sigma$ error bars, showing
-no indication for the presence of `hotspots'. We
-checked that we obtain the same result when reducing the size of the regions,
-when shifting them by a common offset, or when selecting regions all over the
-sky such that always $\sim100$ events are included. 
+no indication for the presence of `hotspots'. We obtain the same 
+result when reducing the size of the regions,
+shifting them by a common offset, or selecting regions all over the
+sky such that $\sim100$ events are included. 
 % Hence, regions with $\gtrsim3\sigma$ lines \emph{are} present in the data also away from the
 % GC, however in complete agreement with the statistical expectations.
 
-\subsubsection{Hypothesis: The observed signal is variable}
+\subsubsection{Hypothesis: The observed signal is variable.}
 % --- we might add the TS evolution after the template fitting results
 
 \begin{figure}
@@ -973,7 +972,7 @@ Fig.~\ref{fig:timeevolution} we plot how the $TS$ value of
 the signal in the GC region evolved over time (red);
 compared to the time-evolution of the suspicious Earth limb
 line (blue). The GC curve appears to have grown most
-strongly during March 2011 and February 2012, and falling
+strongly between March 2011 and February 2012, and falling
 during last few months, but it lies mostly within the
 statistical expectations for a steady source (68\% and 95\% envelopes from a
 Monte Carlo analysis are shown by the gray lines). The number of
@@ -1218,7 +1217,7 @@ y=x - A\sigma \exp\left(\frac{1}{2}-\frac{(x-x_0)^2}{2\sigma^2}\right),
 \ee
 where $A$ is a dimensionless amplitude of the bump ($-1<A<1$
 is required for monotonicity of $y(x)$), $x_0$ is a
-reference energy, and $\sigma$ is the width of the bump (see
+reference log energy, and $\sigma$ is the width of the bump (see
 Fig. \ref{fig:bumpmodel}).  The effect of the distortion is
 to change the true spectrum $dN/dx = dN/dlog(E_t)$ into an
 observed spectrum
@@ -1245,10 +1244,11 @@ Poisson likelihood of observing the data given the model.
 % look very similar to the bump in real data as shown in Fig. \ref{fig:Ehist-all}. 
 
 In Fig.~\ref{fig:limbfits}, we fit the energy mapping model
-to the Earth limb data for various range of inclination
+to the Earth limb data for various ranges of inclination
 angle. We find a 4.7$\sigma$ excess of $30\degree-45\degree$
-limb photons at 129 GeV. But note that this is only 5\% subsample of the Earth limb photon events in the public available \Fermi\ data.
-
+limb photons at 129 GeV. But note that this is only 5\% subsample of the Earth
+limb photon events in the public available \Fermi\ data, and this excess is
+\emph{not} seen in the other ranges. 
 
 \section{Discussion and Conclusion}
 \label{sec:Conclusion}
