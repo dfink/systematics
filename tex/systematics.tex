@@ -216,11 +216,11 @@ GeV.  The lower energy line is tantalizing because it
 matches the expected energy of a $Z\gamma$ line if the
 higher energy is the $\gamma\gamma$ line.  These findings
 have inspired theorists to try to reconcile the observations
-with a number of models~\citep{Dudas:2012, Choi:2012,
+with a number of models and thought about implications~\citep{Dudas:2012, Choi:2012,
   Kyae:2012, Lee:2012, Rajaraman:2012, Acharya:2012,
   Garny:2012, Buckley:2012, Chu:2012, Kang:2012,
   Buchmuller:2012, Heo:2012, Park:2012, Tulin:2012,
-  Cline:2012, Weiner:2012}.
+  Cline:2012, Weiner:2012, Bringmann:2012ez}.
 
 Recent evidence for lines at 111 GeV and 129 GeV with a
 local significance of $3.3\sigma$ from \Fermi\ unassociated
@@ -448,7 +448,7 @@ GeV~\cite{linepaper}, and the FWHM of the relevant LAT energy dispersion is abou
 13.6\% at that energy~\cite{Weniger:2012}.
 
 Throughout, we will use \texttt{P7CLEAN\_V6} events from
-Aug 4th 2008 to Jul 18th 2012, with $10\GeV\leq E\leq 500 \GeV$ and the good-time-interval cuts
+Aug 4th 2008 to Sep 5th 2012, with $10\GeV\leq E\leq 500 \GeV$ and the good-time-interval cuts
 \texttt{DATA\_QUAL==1} and \texttt{LAT\_CONFIG==1}, however
 without the commonly adopted cut on the rocking angle
 $|$\zrock$|<52^\circ$, unless otherwise stated. This last cut would remove
@@ -585,7 +585,7 @@ in~\cite{Weniger:2012}. The $TS$ value
 is defined as $TS=-2\ln \mathcal{L}_{\rm
 null}/\mathcal{L}_{\rm alt}$, where $\mathcal{L}_{\rm
 null(alt)}$ is the likelihood of a fit without(with) a line.  The line
-normalization is constrained to be non-negative. While the TS value of 16.9 in
+normalization is constrained to be non-negative. While the TS value of 18.8 in
 the GC is relatively large, there is no indication for line contributions in
 the Inner Galactic plane or Earth limb samples.
 %(Fig.~\ref{fig:spectra1}).
@@ -624,8 +624,9 @@ for suspicious trends in the data.
   $\theta$ (right panel) distribution of standard events
   along the Galactic disk. Close to the GC, the distribution
   becomes significantly bimodal. The red and blue dots are
-  as in Fig.~\ref{fig:phiThetaDist}.  {\bf  There are a lot at $\ell=70\degree$ does
-    this mean anything ???}}
+  as in Fig.~\ref{fig:phiThetaDist}.}
+  %{\bf  There are a lot at $\ell=70\degree$ does
+  %  this mean anything ???}}
   % Two 70deg events observed within 5 min (after 446 days)
   % Two 70deg events observed within 1 day (after 965 days)
   \label{fig:time_phi}
@@ -751,18 +752,25 @@ quality parameters, and arrival times.  We also search for the possibility of
 effects or an exotic source population.
 
 An error in the LAT effective area (e.g.~various cuts at $\sim130\GeV$ are
-less restrictive for some reason) for $30\degree < \theta < 45\degree$ could
+less/more restrictive for some reason) %for $30\degree < \theta < 45\degree$ 
+could
 in principle explain the GC line, but would also produce a line in the other
-samples listed in Tab.~\ref{tab:regions} or in the corresponding panels
-of~Fig.~\ref{fig:polarPlotsAll} in case of $Z<100^\circ$ events. No such line
-is seen outside of the GC (but see Earth limb discussion below). The LAT team
+samples listed in Tab.~\ref{tab:regions}. % or in the corresponding panels
+%of~Fig.~\ref{fig:polarPlotsAll} in case of $Z<100^\circ$ events. 
+Exactly this already happend in the past at energies close to
+$10\GeV$~\cite{Ackermann:2012qk}.
+However, no 130 GeV feature
+is seen in the main test samples outside of the GC (though in a small subsample
+that we will discuss below). The LAT team
 estimated the point-to-point correlation of the effective area on scales
-relevant for line searches to be on the level of $2\%$~\cite{performance},
+relevant for line searches to be on the level of
+$2\%$~\cite{Fermi:caveatsPASS7},
 which is not enough to explain the $\mathcal{O}(1)$ GC or Earth limb features.
 
 If the GC line is due to non-rejected CRs, it is hard to understand how
-mono-energetic particles could be present in the CR spectrum. As we discussed
-above, a bright region like the Galactic center has a large gamma-ray-to-CR
+mono-energetic particles could be present in the CR spectrum. 
+What is more,
+a bright region like the Galactic center has a large gamma-ray-to-CR
 ratio, such that a CR contamination would affect it last, not first.
 
 \subsubsection{Hypothesis: A 130 GeV features is visible
@@ -791,7 +799,7 @@ angle patches separately and search for lines. The fits are
 performed as in Ref.~\cite{Weniger:2012}, but the energy
 window is fixed to 80 to 200 GeV, we assume a flat
 acceptance and for a line we take a simple Gaussian with a 
-standard deviation of $6\%$ (to approximate the central part of the non-gaussian
+standard deviation of $6\%$ (to approximate the central part of the non-Gaussian
 LAT energy dispersion).
 
 The left panels of Fig.~\ref{fig:polarPlotsAll} show from
