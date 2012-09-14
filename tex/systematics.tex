@@ -307,7 +307,7 @@ other regions of the sky and the reconstruction parameters.
     \end{tabular}
     \caption{Event parameter definitions. The Cartesian coordinates $(x, y, z)$ are
     defined such that the $z$-axis corresponds to the LAT boresight, and the
-    y-axis is parallel to the solar panels.}
+    $y$-axis is parallel to the solar panels.}
     \label{tab:parameters}
   \end{center}
 \end{table*}
@@ -428,9 +428,9 @@ dominantly seen near the incidence angle $\theta=Z_{\rm hor}-Z_{\rm rock}\sim 62
     % FWHM of GC line is 13.6%
     \hline
   \end{tabular}
-  \caption{Various samples of events used throughout this work, with 
-    the total number of events and event ratios.
-    All samples have $10\leq E\leq500\GeV$.}
+  \caption{Definition of six samples of events used throughout this work.  The
+    number with $E>100$ GeV is given for each sample, along with the indicated
+    ratios.  All samples have $10\leq E\leq500\GeV$.}
   \label{tab:regions}
 \end{table*}
 
@@ -468,7 +468,7 @@ below.
     \vspace{-0.5cm}
   \end{center}
   \caption{Incidence angle distribution of \emph{all} events
-  with $E>100\GeV$ that enter our analysis (gray dots; see
+  with $E>100\GeV$ (gray dots; see
   discussion in Sec.~\ref{sec:conventions}), of GC line
   events (red dots; see Table~\ref{tab:regions}) and of
   suspicious Earth limb events (blue dots; see
@@ -571,14 +571,15 @@ only four $E>100\GeV$ events were measured, at
   \includegraphics[width=0.48\textwidth]{plots/counts_GC.eps}
   \includegraphics[width=0.48\textwidth]{plots/counts_IGP.eps}
   \includegraphics[width=0.48\textwidth]{plots/counts_limb.eps}
-  \caption{Fits to different events samples. The green line
+  \caption{Spectral fits to the GC, inner Galactic plane, and Earth limb
+    samples. The green line
   shows the null model (a power-law), whereas the red line
   shows the alternative power-law + line fit; the dotted
   blue lines are the two components of the alternative
   model. The red (black) dotted lines indicate 129 GeV
   (13.6\% FWHM around 129 GeV). 
-  Note that the significance found in the GC region is not representing
-  the full significance of the putative signal (see text).}
+  Note that the significance found in the GC region does not represent
+  the full significance of the putative signal.}
   \label{fig:spectra1}
 \end{figure}
 
@@ -617,7 +618,7 @@ for suspicious trends in the data.
   \includegraphics[width=0.44\textwidth]{plots/L_PHI.eps}
   \includegraphics[width=0.44\textwidth]{plots/L_THETA.eps}
   \caption{\emph{Upper panels:} $\phi$ (left panel) and
-  $\theta$ (right panel) distribution of standard events
+  $\theta$ (right panel) distributions of standard events
   close to the Galactic center, as a function of time modulo
   one year (with Jan 1st at the origin). In Dec (Jun) the
   Sun passes near the Galactic center (anti-center).  In
@@ -871,7 +872,7 @@ reconstructed.}
   hit for the best track reconstruction. Tracker layers are
   0-17 where 0 is closest to the calorimeter, and 6-17 (2-5)
   corresponds to \texttt{FRONT}- (\texttt{BACK}-)converting events (tracker
-  layers 0 and 1 come without conversion foils). The dark (light) gray
+  layers 0 and 1 have no conversion foils). The dark (light) gray
   bars show the average over all $>100$ GeV
   standard events ('dirty' sample defined as SOURCE-CLEAN events with
   $|b|>5^\circ$); the red bars show the distribution for the GC line.}
@@ -921,7 +922,7 @@ line-like features in other sky regions.}
   \begin{center}
     \includegraphics[width=1.0\linewidth]{plots/hotspot_histogram.eps}
   \end{center}
-  \caption{Histogram of TS values observed in different
+  \caption{Histogram of TS values observed in partially overlapping
   $6^\circ\times6^\circ$ regions along the Galactic disk, centered on $b=0^\circ$ and
   $|\ell|=13.5^\circ, 16.5^\circ \dots 178.5^\circ$. We show results for
   different line energies from 90 to $170\GeV$ (dotted lines), as well as all
@@ -971,7 +972,7 @@ sky such that $\sim100$ events are included.
   Ref.~\cite{Weniger:2012}), in blue we show the evolution of the Earth limb
   line. The gray line indicates for comparison the TS value obtained for the
   Inner Galactic plane, where no signal is observed.  Jumps in the Earth limb
-  line significance are related to the fraction of times where
+  line significance are related to times when
   \zrock$>52^\circ$, cp.~Fig.~\ref{fig:timehist}.}
   \label{fig:timeevolution}
 \end{figure}
@@ -1014,8 +1015,7 @@ observational period are respectively 12 and 14.
   \centering
   \includegraphics[width=1.0\linewidth]{plots/theta-E-frontback.ps}
   \caption{Incidence angle $\theta$ vs. log $E$ for $Z >
-    110\degree$.  Dark green points are \texttt{FRONT} only
-    events, and purple points are \texttt{BACK} only
+    110\degree$, with \texttt{FRONT} (Dark green) and \texttt{BACK} (purple)
     events. A blue box indicates the region $30\degree <
     \theta < 45\degree$ and 125 GeV $< E <$ 135 GeV, where
     an excess of events appear.  The vast majority of limb
