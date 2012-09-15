@@ -484,7 +484,7 @@ below.
 \end{figure}
 
 In
-Fig~\ref{fig:phiThetaDist}, the gray dots show the
+Fig.~\ref{fig:phiThetaDist}, the gray dots show the
 distribution of \emph{all} events (i.e.~without the $Z$ cut)
 with energies above 100 GeV as a function of the instrumental
 incidence angles $\theta$ and $\phi$.
@@ -838,7 +838,7 @@ $\sim2\times23\times2$ trials over a $\chi_{k=2}^2$ distribution
 (two $Z$ ranges, $23$ incidence angle panels, $\sim2$
 independent search regions~\cite{Gross:2010qma}). 
 
-Fig.~6 suggests that the TS values observed in some panels in case of
+Fig.~\ref{fig:polarPlotsAll} suggests that the TS values observed in some panels in case of
 Earth limb ($Z>110^\circ$) events are well within the statistical expectations
 once the large number of associated trials is taken into account.
 % Move up this part
@@ -1015,9 +1015,39 @@ observational period are respectively 12 and 14.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
+  \includegraphics[width=1.0\linewidth]{plots/limb_bump_model.ps}
+  \caption{Upper panel: function mapping true energy $E_t$
+  to reported energy $E$ (see Eqs. \ref{eq:yofx} and
+  \ref{eq:dydx}). Lower panel: The effect of this mapping
+  on a spectrum $dN/dE \sim E^{-2.6}$,
+  as in Eq.
+  \ref{eq:dndy} (red line) and also for mock data (black
+  histogram).}
+  \label{fig:bumpmodel}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=1.0\linewidth]{plots/limbfits.ps}
+  \caption{Fits of the energy mapping model to limb data for
+  various ranges of inclination angle $\theta$.  The
+  vertical red dotted line corresponds to 130 GeV.  The test
+  statistic ($2\Delta\ln L$) for the best fit model (green
+  line) relative to the null hypothesis (red line) is given,
+  along with the significance, expressed in ``sigma''
+  including a penalty for the 3 additional degrees of
+  freedom.  The deviation from linearity is only significant
+  in the $30\degree < \theta < 45\degree$ panel, but {\emph not} in events with other incidence angles.}
+  \label{fig:limbfits}
+\end{figure}
+
+
+
+\begin{figure}
+  \centering
   \includegraphics[width=1.0\linewidth]{plots/theta-E-frontback.ps}
   \caption{Incidence angle $\theta$ vs. log $E$ for $Z >
-    110\degree$, with \texttt{FRONT} (Dark green) and \texttt{BACK} (purple)
+    110\degree$, with \texttt{FRONT} (dark green) and \texttt{BACK} (purple)
     events. A blue box indicates the region $30\degree <
     \theta < 45\degree$ and 125 GeV $< E <$ 135 GeV, where
     an excess of events appear.  The vast majority of limb
@@ -1080,34 +1110,6 @@ observational period are respectively 12 and 14.
   \label{fig:timehist}
 \end{figure}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=1.0\linewidth]{plots/limb_bump_model.ps}
-  \caption{Upper panel: function mapping true energy $E_t$
-  to reported energy $E$ (see Eqs. \ref{eq:yofx} and
-  \ref{eq:dydx}). Lower panel: The effect of this mapping
-  on a spectrum $dN/dE \sim E^{-2.6}$,
-  as in Eq.
-  \ref{eq:dndy} (red line) and also for mock data (black
-  histogram).}
-  \label{fig:bumpmodel}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=1.0\linewidth]{plots/limbfits.ps}
-  \caption{Fits of the energy mapping model to limb data for
-  various ranges of inclination angle $\theta$.  The
-  vertical red dotted line corresponds to 130 GeV.  The test
-  statistic ($2\Delta\ln L$) for the best fit model (green
-  line) relative to the null hypothesis (red line) is given,
-  along with the significance, expressed in ``sigma''
-  including a penalty for the 3 additional degrees of
-  freedom.  The deviation from linearity is only significant
-  in the $30\degree < \theta < 45\degree$ panel, but {\emph not} in events with other incidence angles.}
-  \label{fig:limbfits}
-\end{figure}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -1166,7 +1168,7 @@ y=x - A\sigma \exp\left(\frac{1}{2}-\frac{(x-x_0)^2}{2\sigma^2}\right),
 where $A$ is a dimensionless amplitude of the bump ($-1<A<1$
 is required for monotonicity of $y(x)$), $x_0$ is a
 reference log energy, and $\sigma$ is the width of the bump (see
-Fig. \ref{fig:bumpmodel}).  The effect of the distortion is
+Fig.~\ref{fig:bumpmodel}).  The effect of the distortion is
 to change the true spectrum $dN/dx = dN/dlog(E_t)$ into an
 observed spectrum
 \be
@@ -1203,7 +1205,7 @@ limb photon events in the public available \Fermi\ data, and this excess is
 Although there is some evidence for an artifact in the Earth limb line
 photons, it is unlikely that such an artifact has been mapped onto the GC to
 produce a line. 
-In Fig. \ref{fig:theta-E-frontback}, we plot incidence angle $\theta$ versus
+In Fig.~\ref{fig:theta-E-frontback}, we plot incidence angle $\theta$ versus
 energy for limb events ($Z > 110\degree$).  For 125 GeV $< E <$ 135 GeV, we find
 an excess of events with $30\degree < \theta < 45\degree$, as already indicated
 in Fig.~\ref{fig:polarPlotsAll}.  This $\theta$ range contains 6\% of
@@ -1269,7 +1271,7 @@ times corresponding to pointed observations at large zenith angle.  There is no
 evidence that the distribution of line events deviates from expectations.
 
 \emph{There are excess line events in the limb data for some incidence angles.}
-For a small subset of the limb data with large zenith angle (when the limb may
+For a small subset of the limb data with large rocking angle (when the limb may
 be seen at small incidence angles) and a particular incidence angle range
 $30\degree$ to $45\degree$, we find a marginally significant 130 GeV feature
 (3.2$\sigma$).  This feature is not observed in limb events at other incidence
@@ -1305,15 +1307,15 @@ energy spectrum from the combined Earth limb photon events
 which contains 218 photons above 100 GeV and 16 photons
 above 500 GeV. The energy spectrum of the Earth limb photons
 is a power-law with spectral index $2.79\pm
-0.06$ for 3-500 GeV photons (Fig. 2 of \cite{FermiLimb}),
+0.06$ for 3-500 GeV photons (Fig.~2 of \cite{FermiLimb}),
 which is consistent with the primary cosmic-ray spectral
-index $2.75\pm 0.03$\footnote{The Earth limb photon above 10
+index $2.75\pm 0.03$.\footnote{The Earth limb photon above 10
   GeV from CR interactions in the upper atmospheric
   layers do not suffer large energy loses and the cosmic-ray
   primaries at this energy are unaffected by the Earth's
   magnetic fields. The Earth limb photons should have a
   spectral index close to that of the primary cosmic
-  rays~\cite{FermiLimb}. }. Note that the systematic errors
+  rays~\cite{FermiLimb}. } Note that the systematic errors
 have been taken into account in the spectral fitting by
 extrapolating the estimation based on Vela observations less
 than 10 GeV to above 10 GeV. And the systematic error
