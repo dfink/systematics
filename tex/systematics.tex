@@ -987,7 +987,8 @@ terms of dark matter annihilation predicts it to be steady;
 a strong variability could
 indicate (time-dependent) instrumental effects. In
 Fig.~\ref{fig:timeevolution} we plot how the $TS$ value of
-the GC signal evolved over time. The dark red line corresponds
+the GC signal evolved over time (assuming $E_\gamma=129.8\GeV$~\cite{Weniger:2012}). 
+The dark red line corresponds
 to the GC region from Tab.~\ref{tab:regions}, the light red line shows the
 results for Reg4 from Ref.~\cite{Weniger:2012}. We
 compare them to the time-evolution of the suspicious Earth limb
@@ -1018,6 +1019,36 @@ observational period are respectively 12 and 14.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
   \centering
+  \includegraphics[width=1.0\linewidth]{plots/theta-E-frontback.ps}
+  \caption{Incidence angle $\theta$ vs. log $E$ for $Z >
+    110\degree$, with \texttt{FRONT} (dark green) and \texttt{BACK} (purple)
+    events. A blue box indicates the region $30\degree <
+    \theta < 45\degree$ and 125 GeV $< E <$ 135 GeV, where
+    an excess of events appear.  The vast majority of limb
+    events are at $\theta > 60\degree$ because the telescope
+    seldom points more than $50\degree$ from zenith, and the
+    limb events are mostly at $Z>110\degree$. }
+  \label{fig:theta-E-frontback}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=1.0\linewidth]{plots/Ehist-all.ps}
+  \caption{Histogram of Earth limb $(Z>110\degree)$ events vs.
+    log($E$) for various ranges of $\theta$. 
+    $E=129\GeV$ is
+    indicated by red dotted line.  Note the excess in the
+    $30\degree < \theta < 45\degree$ incidence angle bin,
+    which contains about 6\% of the limb
+    events. \texttt{FRONT} and \texttt{BACK} converting
+    events are overplotted with dark green and purple lines
+    respectively. The 130 GeV excess appears equally in
+    \texttt{FRONT} and \texttt{BACK} converting events.}
+  \label{fig:Ehist-all}
+\end{figure}
+
+\begin{figure}
+  \centering
   \includegraphics[width=1.0\linewidth]{plots/limb_bump_model.ps}
   \caption{Upper panel: function mapping true energy $E_t$
   to reported energy $E$ (see Eqs. \ref{eq:yofx} and
@@ -1046,36 +1077,6 @@ observational period are respectively 12 and 14.
 
 
 
-\begin{figure}
-  \centering
-  \includegraphics[width=1.0\linewidth]{plots/theta-E-frontback.ps}
-  \caption{Incidence angle $\theta$ vs. log $E$ for $Z >
-    110\degree$, with \texttt{FRONT} (dark green) and \texttt{BACK} (purple)
-    events. A blue box indicates the region $30\degree <
-    \theta < 45\degree$ and 125 GeV $< E <$ 135 GeV, where
-    an excess of events appear.  The vast majority of limb
-    events are at $\theta > 60\degree$ because the telescope
-    seldom points more than $50\degree$ from zenith, and the
-    limb events are mostly at $Z>110\degree$. }
-  \label{fig:theta-E-frontback}
-\end{figure}
-
-
-\begin{figure}
-  \centering
-  \includegraphics[width=1.0\linewidth]{plots/Ehist-all.ps}
-  \caption{Histogram of Earth limb $(Z>110\degree)$ events vs.
-    log($E$) for various ranges of $\theta$. 
-    $E=129\GeV$ is
-    indicated by red dotted line.  Note the excess in the
-    $30\degree < \theta < 45\degree$ incidence angle bin,
-    which contains about 6\% of the limb
-    events. \texttt{FRONT} and \texttt{BACK} converting
-    events are overplotted with dark green and purple lines
-    respectively. The 130 GeV excess appears equally in
-    \texttt{FRONT} and \texttt{BACK} converting events.}
-  \label{fig:Ehist-all}
-\end{figure}
 
 \begin{figure}
   \centering
@@ -1126,18 +1127,30 @@ the GC excess.
 %%  while the back-scattered secondary
 %% particles at large angles relative to the CR cascade
 %% direction is very rare
-We begin by examining the limb events and finding a bump at
-130 GeV in a subsample of these events. 
+% We begin by examining the limb events and finding a bump at
+% 130 GeV in a subsample of these events. 
 %We consider two
 %hypotheses for the origin of the bump: (1) the events come
 %from far away in energy; (2) the more subtle possibility
 %that an energy mapping error could redistribute events in energy,
 %thus making a spectral feature.  
-We then explore the various
-parameters of the GC line events and the limb bump events, and 
+We then
 consider the possibility
 that an energy mapping error could redistribute events in energy,
-thus making a spectral feature.  
+thus making a spectral feature, and
+explore the various
+parameters of the GC line events and the limb bump events.
+\medskip
+
+In Fig.~\ref{fig:theta-E-frontback}, we plot incidence angle $\theta$ versus
+energy for limb events ($Z > 110\degree$).  For 125 GeV $< E <$ 135 GeV, we find
+an excess of events with $30\degree < \theta < 45\degree$, as already indicated
+in Fig.~\ref{fig:polarPlotsAll}.  This $\theta$ range contains 6\% of
+the limb events for $E>100$ GeV. This 129 GeV bump is clearly visible in the
+spectrum plotted in
+the bottom panel of Fig.~\ref{fig:Ehist-all}, and decreases for
+larger ranges of $\theta$ (other panels).  The bump appears equally in
+\texttt{FRONT} and \texttt{BACK} converting events.
 
 \subsection{Energy mapping error: a model for the limb bump}
 
@@ -1152,7 +1165,7 @@ incidence Earth limb events.  Given these difficulties, we consider the
 possibility that the Earth limb bump results from an energy mapping error, and
 assume that for some unknown reason it only affects low incidence Earth limb
 events (and potentially the GC).\footnote{Similar to anomalies in the
-effective area, one would naively expect that such an error should affect all
+effective area, one would expect that such an error should affect all
 regions of the sky, in contradiction to the observations.}
 
 We propose a simple model, in
@@ -1203,40 +1216,41 @@ limb photons at 129 GeV. But note that this is only 6\% subsample of the Earth
 limb photon events in the public available \Fermi\ data, and this excess is
 \emph{not} seen in the other ranges. 
 
-\subsection{The Earth limb bump and correlations with the GC signal}
-
-Although there is some evidence for an artifact in the Earth limb line
-photons, it is unlikely that such an artifact has been mapped onto the GC to
-produce a line. 
-In Fig.~\ref{fig:theta-E-frontback}, we plot incidence angle $\theta$ versus
-energy for limb events ($Z > 110\degree$).  For 125 GeV $< E <$ 135 GeV, we find
-an excess of events with $30\degree < \theta < 45\degree$, as already indicated
-in Fig.~\ref{fig:polarPlotsAll}.  This $\theta$ range contains 6\% of
-the limb events for $E>100$ GeV. This 129 GeV bump is clearly visible in the
-spectrum plotted in
-the bottom panel of Fig.~\ref{fig:Ehist-all}, and decreases for
-larger ranges of $\theta$ (other panels).  The bump appears equally in
-\texttt{FRONT} and \texttt{BACK} converting events.
+\subsection{The Earth limb line and correlations with the GC signal}
 
 As shown in the top panel of Fig.~\ref{fig:spectra2},
 fitting the Earth limb events with
 incidence angles $30^\circ<\theta<45^\circ$ with a
-monochromatic line at 129 GeV yields a local significance of almost
-$3\sigma$. For comparison, the lower panel
-shows a fit to the Galactic center energy
-spectrum \emph{without} incidence angles
-$30^\circ<\theta<45^\circ$. The GC excess is not removed by this cut, which
-would have indicated a spurious signal.  
+monochromatic line at 129 GeV (instead of an energy remapping model) yields a
+local significance of
+$2.9\sigma$.
+A further tuning of the $\theta$-range yields TS values up to $TS=16.6$ for
+$25^\circ<\theta<53^\circ$, such that after trials the overall statistical
+significance for a line in the $\theta<60^\circ$ Earth limb data is
+$\gtrsim3.0\sigma$. 
+For comparison, the lower panel of Fig.~\ref{fig:spectra2} shows a fit to the Galactic center energy
+spectrum \emph{without} incidence angles $30^\circ<\theta<45^\circ$. The GC
+excess is not removed by this cut, which would have indicated a spurious
+signal.  
+Even when removing all events with
+$25^\circ<\theta<53^\circ$ from the GC region (from Reg4~\cite{Weniger:2012}),
+we obtain $TS=5.1$ ($TS=10.1$) for the Galactic center signal. 
+%The adopted range $30^\circ<\theta<45^\circ$ is motivated by providing a
+%large fraction of suspicious Earth limb line events in the 125--135 GeV
+%range.
 
+Although there is some evidence for an artifact in the Earth limb line
+photons, it is unlikely that such an artifact has been mapped onto the GC to
+produce a line. 
 The Earth limb line events are distributed all over the sky, as expected
 (Fig.~\ref{fig:l-b}).  The arrival time of these events is concentrated during
 periods of high rocking angle, because it is geometrically impossible to see
 limb
 events at $\theta <45\degree$ in normal survey mode (Fig.~\ref{fig:timehist}).
 As already mentioned in Section \ref{sec:130GeV}, the distribution of
-$(\theta,\phi)$ vs. each other and vs. time and longitude are as expected.
+$(\theta,\phi)$ vs.~each other and vs.~time and longitude are as expected
 (Figs.~\ref{fig:phiThetaDist} and~\ref{fig:time_phi}).  In short, none of
-these tests reveals suspicious trends or correlations, or indicate in any way that
+these tests reveals suspicious trends or correlations, or indicates in any way that
 a systematic error in detector coordinates could map events specifically onto
 the Galactic center.
 
@@ -1277,8 +1291,9 @@ evidence that the distribution of line events deviates from expectations.
 For a small subset of the limb data with large rocking angle (when the limb may
 be seen at small incidence angles) and a particular incidence angle range
 $30\degree$ to $45\degree$, we find a marginally significant 130 GeV feature
-(3.2$\sigma$).  This feature is not observed in limb events at other incidence
-angles.  The majority of events with incidence angle $30\degree$ to
+(about $3\sigma$).  
+%This feature is not observed in limb events at other incidence angles.  
+The majority of events with incidence angle $30\degree$ to
 $45\degree$ are {\emph not} from the Earth limb, and we find no 130 GeV
 feature in this much larger sample of events at this incidence angle.  If the
 limb line events are an artifact, they must conspire to only appear when the
