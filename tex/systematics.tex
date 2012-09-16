@@ -393,7 +393,7 @@ coordinates, and Earth coordinates is described by parameters in
 Table~\ref{tab:parameters}.  $\theta$ is the reconstructed incidence angle of
 the photon event with respect to the LAT boresight (defined as the $+z$ axis).
 The $+x$ axis is the line normal to the Sun-facing side of the spacecraft,
-i.e. the solar panels, which are parallel to the $y$ axis, face roughly the $+x$ direction.   $\phi$ is the
+i.e.~the solar panels, which are parallel to the $y$ axis, face roughly the $+x$ direction.   $\phi$ is the
 azimuthal angle of incidence with respect to the $+x$ axis.
 %{\bf I think this was wrong before and fixed it -- make sure you agree -- DPF}
 The Zenith angle $Z$ is the angle between the
@@ -529,8 +529,8 @@ orders of magnitude lower. In light of these low trigger rates
 (and assuming steady sources and CR background fluxes) the
 LAT instrumental response cannot
 depend on the brightness of an observed region.
-
-At $E > 100$ GeV, the Galactic center is only modestly brighter
+%
+Furthermore, at $E > 100$ GeV, the Galactic center is only modestly brighter
 than the surrounding regions, so that related effects should also appear away
 from the GC. Otherwise, fake 130 GeV events would have to be mistakenly
 mapped from either lower energy ($E \la 10$ GeV) gammas or much lower energy
@@ -549,7 +549,7 @@ We check as a warm-up whether we find indications for
 suspicious features at 130 GeV.
 Besides the Galactic center (with an intensity of $\sim 8\times10^{-8}
 \ph\cm^{-2}\s^{-1}\sr^{-1}$ above 100 GeV), we consider the
-Earth limb (with \emph{all} impact angles and an intensity of $\sim3\times10^{-7}
+Earth limb (with \emph{all} incidence angles and an intensity of $\sim3\times10^{-7}
 \ph \cm^{-2}\s^{-1}\sr^{-1}$ above 100~GeV~\cite{FermiLimb}) and the inner
 Galactic plane
 ($\sim9\times10^{-8}\ph\cm^{-2}\s^{-1}\sr^{-1}$), see
@@ -668,7 +668,7 @@ events for our samples.  The
 GC spectrum is not much harder than the rest of the Inner Galactic
 plane, but the latter shows no sign of a feature at 130 GeV
 (Fig.~\ref{fig:spectra1}). Note that
-about $\sim15$ events contribute to the central part of the
+about $\sim20$ events contribute to the central part of the
 line feature seen at the GC~\citep{linepaper}. 
 Assuming that the GC spectrum is not
 harder than $dN/dE \propto E^{-2.0}$ (normalized to the
@@ -760,6 +760,7 @@ suspicious trends at 130 GeV as a function of the event incidence angles,
 quality parameters, and arrival times.  We also search for the possibility of
 `hotspots' at other regions of the sky; they could indicate instrumental
 effects or an exotic source population.
+\medskip
 
 An error in the LAT effective area (e.g.~various cuts at $\sim130\GeV$ are
 less/more restrictive for some reason) %for $30\degree < \theta < 45\degree$ 
@@ -835,7 +836,7 @@ particular the lower two plots which correspond to
 independent data sets show clearly that the enhanced $TS$
 values at different energies in different panels are not
 correlated. Lastly, we note that the significance of the
-largest $TS$ value, $TS=11$ (corresponding to $115\GeV$), has a $p$-value of
+largest $TS$ value, $TS\simeq11$ (at $115\GeV$), has a $p$-value of
 about $\sim0.3$ when taking into account
 $\sim2\times23\times2$ trials over a $\chi_{k=2}^2$ distribution
 (two $Z$ ranges, $23$ incidence angle panels, $\sim2$
@@ -851,12 +852,12 @@ effect. Then the energy
 reconstruction at different incidence angles would have to somehow
 additionally
 depend on the zenith angle $Z$ of the events
-(e.g. via a
+(e.g.~via a
 subtle correlation with the rocking angle).
 %, and that the
 %large $TS$ values around $\theta\sim40^\circ$ actually
 %indicate an instrumental effect. 
-We postpone a in-depth discussion of this possibility to
+We postpone an in-depth discussion of this possibility to
 section~\ref{sec:EarthLimb}; in any case more
 Earth limb data will help to verify or falsify this possibility.
 
@@ -907,15 +908,15 @@ shows evidence of a particle hit for the best track
 reconstruction (Tkr1FirstLayer) in case of the GC line
 events.  Tracker layers are 0--17, where 0 is closest to the
 calorimeter and 6--17 (2--5) corresponds to \texttt{FRONT}-
-(\texttt{BACK}-)converting events (tracker layers 0 and 1 come
-without conversion foils due to requirements of the three-in-a-row trigger
+(\texttt{BACK}-)converting events (tracker layers 0 and 1 do not have
+conversion foils due to requirements of the three-in-a-row trigger
 primitive). The dark gray bars show the
 distribution averaged over all $>100$ GeV standard events.
 The light gray bars
 show for comparison the distribution of a `dirty' $>100$~GeV event sample.
 It is defined as all SOURCE-CLEAN events with $|b|>5^\circ$,
-and hence has a higher
-cosmic-ray contamination. The distribution of the latter is significantly biased
+and hence has a high
+CR contamination. The distribution of the latter is significantly biased
 towards the first and last tracker layers, whereas
 the distribution of GC line events is compatible with the
 expectations for standard events.
@@ -944,7 +945,7 @@ regions with a significant line-like emission at or around 130 GeV) in the sky
 could indicate an unexpected instrumental effect, or point to a new exotic
 source class~\cite{Boyarsky:2012ca}. 
 In absence of knowledge about the distribution of such possible
-sources, we adopt the following strategy. We select regions of
+sources, we adopt the following strategy. We select partially overlapping regions of
 $6^\circ\times6^\circ$ size, centered along the Galactic disk at
 $b=0^\circ$, $|\ell|=13.5^\circ, 16.5^\circ \dots 178.5^\circ$. The size of
 the region is chosen to include roughly 50--100 events above 80 GeV (like in our `GC
@@ -960,8 +961,9 @@ distribution is in excellent agreement with the statistical expectations
 (shown by the black dotted line) within the $\pm1\sigma$ error bars, showing
 no indication for the presence of `hotspots'. We obtain the same 
 result when reducing the size of the regions,
-shifting them by a common offset, or selecting regions all over the
-sky such that $\sim100$ events are included. 
+shifting them by a common offset, or selecting random circular regions all
+over the
+sky with the requirement that $\sim100$ events are included. 
 % Hence, regions with $\gtrsim3\sigma$ lines \emph{are} present in the data also away from the
 % GC, however in complete agreement with the statistical expectations.
 
@@ -983,20 +985,20 @@ sky such that $\sim100$ events are included.
 \end{figure}
 
 An interpretation of the 130 GeV excess in
-terms of dark matter annihilation predicts it to be steady;
+terms of dark matter annihilation requires steadiness of the source;
 a strong variability could
 indicate (time-dependent) instrumental effects. In
 Fig.~\ref{fig:timeevolution} we plot how the $TS$ value of
 the GC signal evolved over time (assuming $E_\gamma=129.8\GeV$~\cite{Weniger:2012}). 
 The dark red line corresponds
 to the GC region from Tab.~\ref{tab:regions}, the light red line shows the
-results for Reg4 from Ref.~\cite{Weniger:2012}. We
+results for region Reg4 from Ref.~\cite{Weniger:2012}. We
 compare them to the time-evolution of the suspicious Earth limb
 line (blue) and the time evolution of the TS value obtained from the
 Inner Galactic plane (gray). The `GC region' curve appears to have grown most
 strongly between March 2011 and February 2012, and falling
-during last few months; the signal evolution observed in the larger Reg4
-region is on the other hand more steady. In all cases, the open circles
+during last few months; on the other hand, the signal observed in the larger Reg4
+does not show the same behaviour and appears more steady. In all cases, the open circles
 indicate an event between 120 and 138 GeV.
 % but it lies mostly within the
 % statistical expectations for a steady source (68\% and 95\% envelopes from a
@@ -1146,7 +1148,7 @@ In Fig.~\ref{fig:theta-E-frontback}, we plot incidence angle $\theta$ versus
 energy for limb events ($Z > 110\degree$).  For 125 GeV $< E <$ 135 GeV, we find
 an excess of events with $30\degree < \theta < 45\degree$, as already indicated
 in Fig.~\ref{fig:polarPlotsAll}.  This $\theta$ range contains 6\% of
-the limb events for $E>100$ GeV. This 129 GeV bump is clearly visible in the
+the limb events for $E>100$ GeV. The 129 GeV bump is clearly visible in the
 spectrum plotted in
 the bottom panel of Fig.~\ref{fig:Ehist-all}, and decreases for
 larger ranges of $\theta$ (other panels).  The bump appears equally in
@@ -1214,34 +1216,38 @@ to the Earth limb data for various ranges of inclination
 angle. We find a 4.7$\sigma$ excess of $30\degree-45\degree$
 limb photons at 129 GeV. But note that this is only 6\% subsample of the Earth
 limb photon events in the public available \Fermi\ data, and this excess is
-\emph{not} seen in the other ranges. 
+\emph{not} seen in the other ranges or test samples.
 
 \subsection{The Earth limb line and correlations with the GC signal}
 
 As shown in the top panel of Fig.~\ref{fig:spectra2},
-fitting the Earth limb events with
+fitting the Earth limb events at
 incidence angles $30^\circ<\theta<45^\circ$ with a
-monochromatic line at 129 GeV (instead of an energy remapping model) yields a
-local significance of
-$2.9\sigma$.
-A further tuning of the $\theta$-range yields TS values up to $TS=16.6$ for
-$25^\circ<\theta<53^\circ$, such that after trials the overall statistical
-significance for a line in the $\theta<60^\circ$ Earth limb data is
-$\gtrsim3.0\sigma$. 
+monochromatic line at 129 GeV instead of an energy remapping model yields a
+local significance of only
+$2.9\sigma$ (adopting an energy range from 80 to 210 GeV like above in
+Fig.~\ref{fig:spectra1}).
+However, a further tuning of the $\theta$-range yields significances up to $4.1\sigma$
+(for $25^\circ<\theta<53^\circ$), 
+but this comes with an additional number of trials.
+In any case, the overall statistical
+significance for a line in the $\theta<60^\circ$ Earth limb data is 
+above $3\sigma$. 
 For comparison, the lower panel of Fig.~\ref{fig:spectra2} shows a fit to the Galactic center energy
 spectrum \emph{without} incidence angles $30^\circ<\theta<45^\circ$. The GC
 excess is not removed by this cut, which would have indicated a spurious
 signal.  
 Even when removing all events with
-$25^\circ<\theta<53^\circ$ from the GC region (from Reg4~\cite{Weniger:2012}),
-we obtain $TS=5.1$ ($TS=10.1$) for the Galactic center signal. 
+$25^\circ<\theta<53^\circ$ from the GC region (from region Reg4~\cite{Weniger:2012}),
+we obtain $TS=5.1$ ($TS=10.1$) for the Galactic center signal, whereas the
+Earth limb line completely disappears.
 %The adopted range $30^\circ<\theta<45^\circ$ is motivated by providing a
 %large fraction of suspicious Earth limb line events in the 125--135 GeV
 %range.
 
-Although there is some evidence for an artifact in the Earth limb line
-photons, it is unlikely that such an artifact has been mapped onto the GC to
-produce a line. 
+% Although there is some evidence for an artifact in the Earth limb line
+% photons, it is unlikely that such an artifact has been mapped onto the GC to
+% produce a line. 
 The Earth limb line events are distributed all over the sky, as expected
 (Fig.~\ref{fig:l-b}).  The arrival time of these events is concentrated during
 periods of high rocking angle, because it is geometrically impossible to see
@@ -1290,14 +1296,14 @@ evidence that the distribution of line events deviates from expectations.
 \emph{There are excess line events in the limb data for some incidence angles.}
 For a small subset of the limb data with large rocking angle (when the limb may
 be seen at small incidence angles) and a particular incidence angle range
-$30\degree$ to $45\degree$, we find a marginally significant 130 GeV feature
-(about $3\sigma$).  
+around $30\degree$ to $45\degree$, we find a marginally significant 130 GeV feature
+(above $3\sigma$).  
 %This feature is not observed in limb events at other incidence angles.  
 The majority of events with incidence angle $30\degree$ to
-$45\degree$ are {\emph not} from the Earth limb, and we find no 130 GeV
-feature in this much larger sample of events at this incidence angle.  If the
+$45\degree$ are \emph{not} from the Earth limb, and we find no 130 GeV
+feature in this much larger sample of events at this incidence angles.  If the
 limb line events are an artifact, they must conspire to only appear when the
-LAT is positioned at high zenith angle. 
+LAT is positioned at high rocking angle. 
 
 \emph{The bump in the limb data might result from an energy mapping error.}
 We propose a simple model for an error in the mapping from true photon energy
