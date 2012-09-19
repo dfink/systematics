@@ -1099,9 +1099,9 @@ observational period are respectively 12 and 14.
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.48\textwidth]{plots/counts_suspiciousLimb.eps}
-  \includegraphics[width=0.48\textwidth]{plots/counts_suspiciousLimb_tuned.eps}
-  \includegraphics[width=0.48\textwidth]{plots/counts_GC_wo3045.eps}
+  \includegraphics[width=0.45\textwidth]{plots/counts_suspiciousLimb.eps}
+  \includegraphics[width=0.45\textwidth]{plots/counts_suspiciousLimb_tuned.eps}
+  \includegraphics[width=0.45\textwidth]{plots/counts_GC_wo3045.eps}
   \caption{Same as Fig.~\ref{fig:spectra1}, but for
   suspicious limb data subset with
   $30^\circ<\theta<45^\circ$ (top panel),
@@ -1320,7 +1320,7 @@ around $30\degree$ to $45\degree$, we find a marginally significant 130 GeV feat
 %This feature is not observed in limb events at other incidence angles.  
 The majority of events with incidence angle $30\degree$ to
 $45\degree$ are \emph{not} from the Earth limb, and we find no 130 GeV
-feature in this much larger sample of events at this incidence angles.  If the
+feature in this much larger sample of events at these incidence angles.  If the
 limb line events are an artifact, they must conspire to only appear when the
 LAT is positioned at high rocking angle. 
 
@@ -1338,18 +1338,13 @@ period.  The Launch \& Early Operations (LEO) data were
 taken during the first 60 days of the mission. Combined with
 a dedicated Earth-limb observation in September 2008, this
 provides $\sim$250 hours total livetime on the Earth
-limb~\cite{FermiLimb}.  This data set has allowed the study
-of the spatial and spectral distribution of the limb photons
-and provides a calibration of the LAT instrument, especially
-to check if there is any instrumental systematics at 130 GeV
-producing a line-like feature.
+limb~\cite{FermiLimb}.
 
-With \texttt{Pass 6} \texttt{diffuse} class events along with
-post-launch instrument response functions (P6\_V3),
+With \texttt{Pass 6} \texttt{diffuse} class events,
 \cite{FermiLimb} has analyzed the spatial morphology and the
-energy spectrum from the combined Earth limb photon events
+energy spectrum of the Earth limb sample,
 which contains 218 photons above 100 GeV and 16 photons
-above 500 GeV. The energy spectrum of the Earth limb photons
+above 500 GeV. The energy spectrum 
 is a power-law with spectral index $2.79\pm
 0.06$ for 3-500 GeV photons (Fig.~2 of \cite{FermiLimb}),
 which is consistent with the primary cosmic-ray spectral
@@ -1359,28 +1354,15 @@ index $2.75\pm 0.03$.\footnote{The Earth limb photon above 10
   primaries at this energy are unaffected by the Earth's
   magnetic fields. The Earth limb photons should have a
   spectral index close to that of the primary cosmic
-  rays~\cite{FermiLimb}. } Note that the systematic errors
-have been taken into account in the spectral fitting by
-extrapolating the estimation based on Vela observations less
-than 10 GeV to above 10 GeV. And the systematic error
-dominates over the statistical error in the spectrum
-fitting. \emph{No significant line/bump feature is revealed
-  in this spectrum of earth limb photons around 130 GeV.}
-
-The additional limb data provided by LEO would provide an exposure comparable
-to the limb photons used in this paper. Detailed analysis and public release
-of the LEO data would be very helpful to study systematics of LAT around 130
-GeV.  New limb observations could also be undertaken, in order to test the
-reality of the 130 GeV limb feature.
+  rays~\cite{FermiLimb}. } 
 
 The spectrum of the Earth limb photons provided by
 \citep{FermiLimb} does not show any significant feature at
 130 GeV. If improved processing of the limb photons does not
-replicate the line or the "remapping error" we found for a
-subsample of the limb photon during the normal survey mode,
+replicate the line or the "energy mapping error" we found for a
+subsample of the limb photons during the normal survey mode,
 it can be dismissed as a statistical fluke.  If it
-reappears, a deeper investigation into its cause is
-warranted.
+reappears, a deeper investigation into its cause will be necessary.
 
 Even then, it is a challenge to understand how such an
 instrumental feature could be mapped so precisely onto a
@@ -1393,11 +1375,11 @@ shown that the events in question are drawn from every part
 of event and spacecraft parameter space available in the
 public files. 
 
-In sumary, we find no significant instrumental systematics that could
+In summary, we find no significant instrumental systematics that could
 plausibly explain the excess Galactic center emission observed at 130 GeV. 
 
 \vskip 0.15in {\bf \noindent Acknowledgments:} We thank Neal
-Weiner for helpful discussions. We acknowledge the use of
+Weiner, Dan Hooper, and Jesse Thaler for helpful discussions. We acknowledge the use of
 public data from the \Fermi\ data archive at
 \texttt{http://fermi.gsfc.nasa.gov/ssc/}.  M.S. and
 D.P.F. are partially supported by the NASA Fermi Guest
@@ -1419,9 +1401,11 @@ Library at Goddard (Available at
 \begin{figure}
   \centering
   \includegraphics[width=0.45\textwidth]{plots/geo-lonlat.ps}
-  \caption{Distribution of suspicious events in Earth
+  \caption{Distribution of events in Earth
   longitude and latitude (upper panel) and satellite zenith
-  RA,dec (lower panel).   The avoidance of the SAA leaves a
+  RA,dec (lower panel).  In this and following figures, Galactic center line photons (red), Earth limb line
+  photons (blue) and Earth limb photons for all incidence angles (black) are
+  shown.  The avoidance of the SAA leaves a
   hole in the upper panel.}
   \label{fig:geo-lonlat}
 \end{figure}
@@ -1430,8 +1414,7 @@ Library at Goddard (Available at
   \centering
   \includegraphics[width=0.45\textwidth]{plots/spacecraft-zx.ps}
   \caption{RA and Dec of spacecraft Z axis (boresight
-  direction) and X axis (Solar panel direction) for the
-  suspicious events.  }
+  direction) and X axis (Solar panel direction).  }
   \label{fig:spacecraft-zx}
 \end{figure}
 
@@ -1443,17 +1426,17 @@ Library at Goddard (Available at
   photons observed in survey mode are seen predominantly to
   the north and south azimuth directions, i.e approximately
   perpendicular to the orbit direction. The blue points are
-  the Earth limb ``line'' events. }
+  the Earth limb line events. }
   \label{fig:earth-az}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=0.45\textwidth]{plots/sun.ps}
-  \caption{Blue, red, and black events as a function of
+  \caption{Events as a function of
   orbital precession phase (upper panel) and time of year
   (lower panel).  Note that there are only about 6 months of
-  the year during which the 38 limb events are seen.}
+  the year during which the 38 Earth limb line events (blue) are seen.}
   \label{fig:sun}
 \end{figure}
 
@@ -1478,50 +1461,16 @@ Library at Goddard (Available at
 
 In this Appendix, we compare the distritution of the
 Galactic center line events with the Earth limb photons in
-various parameter space, and search for any unexpected
-behavior of the two data sets. As we used earlier in the
-paper, red points have been used to represent the Galactic
-center line photons and the blue points are used for the
-Earth limb line events. We use black points to show Earth limb
-photons with $135 GeV > E > 125 GeV$ without incidence angle cut.
-% In Fig.~\ref{fig:rock}, we show the rocking angle
-% distribution (i.e. the angle of the spacecraft Z-axis from
-% zenith) of the GC line events.
+various projections of the event parameter space, and 
+search for any unexpected
+behavior.  As above, red points represent the Galactic
+center line photons and the blue points represent
+Earth limb line events. Earth limb
+photons with 135 GeV $> E >$ 125 GeV at all incidence angles are shown in
+black.  None of the Figures (Figs. \ref{fig:geo-lonlat}-\ref{fig:theta_z})
+show any sign of unexpected behavior. 
 
-In Fig.~\ref{fig:geo-lonlat}, we show the distribution of
-suspicious Earth limb line events in the map of Earth
-longitude and latitude and satellite zenith RA and Dec. We
-don't find any strange distribution in these
-coordinates. 
-
-In Fig.~\ref{fig:spacecraft-zx}, we show the distribution of
-RA and Dec of spacecraft Z axis (boresight direction) and X
-axis (Solar panel direction) for the suspicious Earth limb
-events. Again, we don't find any strange distribution in these
-coordinates. 
-
-In Fig.~\ref{fig:earth-az}, we show the distribution of
- Zenith angle with Earth azimuth angle for the Earth limb
- photons. The $\theta > 60\degree$ limb photons observed in
- the normal survey mode are seen predominantly to the north
- and south azimuth directions, i.e. approximately
- perpendicular to the orbit direction. 
-
-In Fig.~\ref{fig:sun}, we show the dependence of the orbital
-precession phase and arriving time of year.
-
-In Fig.~\ref{fig:rock}, we show the rocking angle
-distribution of the Galactic center and Earth limb line
-events.
-
-In Fig.~\ref{fig:theta_z}, we show how GC and Earth limb
-line events are distributed in the $Z$-$\theta$ plane. None
-of the GC line events is observed close to the
-horizon. Almost all limb events are observed at
-$\theta\gtrsim 62^\circ$, the $\theta<60^\circ$ \&\&
-$Z>110^\circ$ events come from the Earth limb during
-observational periods where \zrock$>50^\circ$.
-
+\clearpage
 \bibliography{systematics}
 
 \end{document}
