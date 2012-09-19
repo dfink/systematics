@@ -361,28 +361,29 @@ other regions of the sky and the reconstruction parameters.
 %%       above 300 GeV to explain the signal, even if all of them got
 %%       mapped to 130 GeV.
 
-With a field of view of $\sim2.5$~sr, the LAT can survey the entire sky
-in two orbits.  In \emph{standard survey mode}, the LAT points north of zenith
-towards the orbital pole
-by an angle \zrock\ on one orbit, and south of zenith by the same angle on the
-next orbit.  In this mode, the LAT pointing is confined to the plane
-perpendicular to its orbital velocity.  The slews are
-performed with a repeating pattern of 17 waypoints defining
-\zrock\ as a function of time.\footnote{The 
-survey rocking angle profiles are available at
+With a field of view of $\sim2.5$~sr, the LAT can survey the
+entire sky in two orbits.  In \emph{standard survey mode},
+the LAT points north of zenith towards the orbital pole by
+an angle \zrock\ on one orbit, and south of zenith by the
+same angle on the next orbit.  In this mode, the LAT
+pointing is confined to the plane perpendicular to its
+orbital velocity.  The slews are performed with a repeating
+pattern of 17 waypoints defining \zrock\ as a function of
+time.\footnote{The survey rocking angle profiles are
+available at
 \url{http://fermi.gsfc.nasa.gov/ssc/observations/types/allsky/}.
 The effective dates and times for each profile are provided.
 } \zrock\ was $35\degree$ at the start of the nominal
-mission on August 4, 2008 until May 7th, 2009, and was changed
-to $50\degree$ on Sep 3rd, 2009 for better thermal
-management of the downward-facing battery
-radiator.\footnote{Various profiles
-with rocking angle 39$\degree$, 40$\degree$, and 45$\degree$
-respectively have been tested for relatively short periods,
-including a 3 orbit profile test that overweights the south.} 
-This rocking-angle profile, combined with the precession
-of the orbit every $\sim53.4$ days, allows the LAT to observe
-the whole sky with approximately uniform coverage.
+mission on August 4, 2008 until May 7th, 2009, and was
+changed to $50\degree$ on September 3rd 2009 for better
+thermal management of the downward-facing battery
+radiator.\footnote{Various profiles with rocking angle
+39$\degree$, 40$\degree$, and 45$\degree$ respectively have
+been tested for relatively short periods, including a 3
+orbit profile test that overweights the south.}  This
+rocking-angle profile, combined with the precession of the
+orbit every $\sim53.4$ days, allows the LAT to observe the
+whole sky with approximately uniform coverage.
 
 \Fermi\ spends over 95\% of the mission time in standard survey mode.
 This is only occasionally interrupted for
@@ -399,21 +400,22 @@ Repoints of the observatory for triggered
 gamma-ray burst follow-up observations, and for calibration.
 \medskip
 
-The reconstructed arrival direction of photons in celestial coordinates, LAT
-coordinates, and Earth coordinates is described by parameters in 
-Table~\ref{tab:parameters}.  $\theta$ is the reconstructed incidence angle of
-the photon event with respect to the LAT boresight (defined as the $+z$ axis).
-The $+x$ axis is the line normal to the Sun-facing side of the spacecraft,
-i.e.~the solar panels, which are parallel to the $y$ axis, face roughly the $+x$ direction.   $\phi$ is the
-azimuthal angle of incidence with respect to the $+x$ axis.
-%{\bf I think this was wrong before and fixed it -- make sure you agree -- DPF}
-The Zenith angle $Z$ is the angle between the
-reconstructed event direction and the zenith line, which passes from the
-Earth center through the satellite center.  All angles are in units of
-degrees.
+The reconstructed arrival direction of photons in celestial
+coordinates, LAT coordinates, and Earth coordinates is
+described by parameters in Table~\ref{tab:parameters}.
+$\theta$ is the reconstructed incidence angle of the photon
+event with respect to the LAT boresight (defined as the $+z$
+axis).  The $+x$ axis is the line normal to the Sun-facing
+side of the spacecraft, i.e.~the solar panels, which are
+parallel to the $y$ axis, face roughly the $+x$ direction.
+$\phi$ is the azimuthal angle of incidence with respect to
+the $+x$ axis. The Zenith angle $Z$ is the angle between the
+reconstructed event direction and the zenith line, which
+passes from the Earth center through the satellite center.
+All angles are in units of degrees.
 
 Due to the increased rocking angle \zrock$\simeq50\degree$
-since September 2009, photons from the Earth limb 
+since September 2009, photons from the Earth limb
 % (seen
 % near zenith angles of $Z\sim113^\circ$; see discussion
 % below) 
@@ -468,7 +470,7 @@ GeV~\cite{linepaper}, and the FWHM of the relevant LAT energy dispersion is abou
 13.6\% at that energy~\cite{Weniger:2012}.
 
 Throughout, we will use \texttt{P7CLEAN\_V6} events from
-Aug 4th 2008 to Sep 5th 2012, with $10\GeV\leq E\leq 500 \GeV$ and the good-time-interval cuts
+Aug 4th 2008 to September 5th 2012, with $10\GeV\leq E\leq 500 \GeV$ and the good-time-interval cuts
 \texttt{DATA\_QUAL==1} and \texttt{LAT\_CONFIG==1}, however
 without the commonly adopted cut on the rocking angle
 $|$\zrock$|<52^\circ$, unless otherwise stated. This last cut would remove
@@ -1328,15 +1330,16 @@ limb feature is a statistical fluke.  If the limb feature persists, it raises
 serious concerns about the \texttt{Pass 7} processing of $E > 100$ GeV events.
 \medskip
 
-Additional limb data are available from the commissioning period.  The
-Launch \& Early Operations (LEO) data were taken during the first 60 days of
-the mission. Combined with a dedicated Earth-limb observation in September
-2008, this
-provides $\sim$250 hours total livetime on the Earth limb~\cite{FermiLimb}. 
-This data set has allowed the study of the spatial
-and spectral distribution of the limb photons and provides a calibration of the
-LAT instrument, especially to check if there is any instrumental systematics
-at 130 GeV producing a line-like feature.
+Additional limb data are available from the commissioning
+period.  The Launch \& Early Operations (LEO) data were
+taken during the first 60 days of the mission. Combined with
+a dedicated Earth-limb observation in September 2008, this
+provides $\sim$250 hours total livetime on the Earth
+limb~\cite{FermiLimb}.  This data set has allowed the study
+of the spatial and spectral distribution of the limb photons
+and provides a calibration of the LAT instrument, especially
+to check if there is any instrumental systematics at 130 GeV
+producing a line-like feature.
 
 With \texttt{Pass 6} \texttt{diffuse} class events along with
 post-launch instrument response functions (P6\_V3),
