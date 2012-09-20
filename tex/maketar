@@ -1,0 +1,61 @@
+#!/usr/bin/perl
+# Parse latex file for figure filenames
+# D. Finkbeiner 2008 Nov 24
+# Example:
+# maketar fsratio
+
+$base = $ARGV[0];
+$fname = "$base.tex";
+
+if (!-e $fname) {die "File not found: $fname\n";}
+
+# Read entire file
+open FILE, "<$fname";
+@size = stat($fname);
+read FILE, $list, $size[7];
+close FILE;
+
+system "mkdir -p tardir\n";
+
+# stripe out "plots/" and rewrite
+$latex = $list;
+$latex =~ s%\{plots/%\{%g;
+open FILE, ">tardir/$base.tex";
+print FILE $latex;
+close FILE;
+
+$cmd = "cp $base.bib tardir\n";
+print "$cmd"; system "$cmd";
+$cmd = "cp *.cls tardir\n";
+print "$cmd"; system "$cmd";
+$cmd = "cp *.bst tardir\n";
+print "$cmd"; system "$cmd";
+$cmd = "cp $base.bbl tardir\n";
+print "$cmd"; system "$cmd";
+#$cmd = "cp $base.tex tardir\n";
+#print "$cmd"; system "$cmd";
+
+# remove comment lines
+@list1 = split "\n", $list;
+@list = grep (! /^%/, @list1);
+
+for ($i = 0; $i < @list; $i++) {
+    ($foo) = ($list[$i] =~ m/.+width\]\{(.+eps).+/);
+    if (length($foo) > 2) {
+	$cmd = "cp $foo tardir\n";
+	print "$cmd";
+	system "$cmd";
+    }
+    ($foo) = ($list[$i] =~ m/.+width\]\{(.+ps).+/);
+    if (length($foo) > 2) {
+	$cmd = "cp $foo tardir\n";
+	print "$cmd";
+	system "$cmd";
+    }
+}
+
+$cmd = 'cd tardir; tar cf arxiv.tar * --exclude "arxiv.tar"';
+print "$cmd\n";
+system "$cmd";
+
+exit;
