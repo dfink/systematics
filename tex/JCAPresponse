@@ -1,0 +1,69 @@
+Dear Editor,
+
+thank you for the timely and helpful referee report. We happy to provide
+the requested minor revisions.
+
+In detail, our replies to the referee's comments are as follows:
+
+1) We admit that we were not very specific at this point. One way to
+assess the variability in a way that does not depend too much on the
+background fluxes outside of the line's energy range is to just consider
+the number of events close to 130 GeV that were measured in the
+first half and the second half of the full data taking period. This is
+easy to do by counting the marked circles in Fig. 9.  There is
+no indication for a significant bias towards the first or second
+half. However, we also checked with explicit subsampling of the data
+that the fluctuations of the TS value around its linear trend are at
+95%CL within the statistically expected variations. We clarified the
+first point in the text (very end of section II).
+
+
+2) The expected residual background of cosmic rays from the direction of
+the GC region in the CLEAN (SOURCE) event class is roughly about 2%
+(10%) [see e.g. Reg4 in Fig. 1 from 1204.2797]. It is indeed an
+interesting question in how far a local proton source, accidentally
+aligned with the Galactic center, could produce the observed
+signal. However, the proton flux measured by PAMELA does not show any
+indication for an excess in the Galactic center direction [1].
+Furthermore, a 130 GeV monochromatic flux of protons would not be
+reconstructed as 130 GeV photons. It is hence difficult to see how such
+a hypothetical source could produce the observed signature.
+
+The relevant paragraph now begins with:
+
+"Bright regions provide samples with a high gamma-ray-to-CR ratio that are used
+for calibration by the LAT team~\cite{collaboration:2012kca}.  For example,
+the Galactic center ($\psi < 5\degree$) contains $\sim 40$ times as many
+$E>100$ GeV \texttt{CLEAN} events per square degree as the high latitude sky
+($|b| > 30 \degree$).  Assuming the CR contamination at $E>100$ GeV is
+spatially uniform, and that more than half of the high latitude \texttt{CLEAN}
+events are photons, the gamma-ray-to-CR ratio in the Galactic center is of
+order 100 or more. 
+
+
+3) We replaced the first sentence of the abstract with:
+
+"Our recent claims of a Galactic center feature in Fermi-LAT data at
+approximately 130 GeV have motivated a large number of papers proposing
+explanations ranging from dark matter annihilation to monoenergetic
+pulsar winds."
+
+We also slightly rephrased the third paragraph of the introduction.
+
+We hope that with these changes our paper is now acceptable for publication in
+JCAP.
+
+Best regards,
+
+Christoph Weniger, for the authors
+
+
+
+
+
+Refs:
+
+[1] (Anisotropy studies in the proton flux with the PAMELA apparatus) 
+
+    http://agenda.infn.it/getFile.py/access?contribId=18&sessionId=9&resId=0&materialId=slides&confId=4267
+
