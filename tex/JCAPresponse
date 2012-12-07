@@ -11,11 +11,11 @@ background fluxes outside of the line's energy range is to just consider
 the number of events close to 130 GeV that were measured in the
 first half and the second half of the full data taking period. This is
 easy to do by counting the marked circles in Fig. 9.  There is
-no indication for a significant bias towards the first or second
-half. However, we also checked with explicit subsampling of the data
-that the fluctuations of the TS value around its linear trend are at
-95%CL within the statistically expected variations. We clarified the
-first point in the text (very end of section II).
+no indication for a significant bias towards the first or second half.
+However, we also checked with explicit subsampling of the data, as well as
+with analytical estimates, that the fluctuations of the TS value around its
+linear trend are at 95%CL within the statistically expected variations. We
+clarified this in the text (very end of section II).
 
 
 2) The expected residual background of cosmic rays from the direction of
