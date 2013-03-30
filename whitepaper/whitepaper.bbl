@@ -1,0 +1,389 @@
+\begin{thebibliography}{50}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Jungman et~al.}(1996)\citenamefont{Jungman,
+  Kamionkowski, and Griest}}]{Jungman:1995df}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Jungman}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Kamionkowski}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Griest}},
+  \bibinfo{journal}{Phys. Rept.} \textbf{\bibinfo{volume}{267}},
+  \bibinfo{pages}{195} (\bibinfo{year}{1996}), \eprint{hep-ph/9506380}.
+
+\bibitem[{\citenamefont{{Bergstr{\"o}m}}(2000)}]{Bergstrom:2000}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Bergstr{\"o}m}}},
+  \bibinfo{journal}{Reports on Progress in Physics}
+  \textbf{\bibinfo{volume}{63}}, \bibinfo{pages}{793} (\bibinfo{year}{2000}),
+  \eprint{arXiv:hep-ph/0002126}.
+
+\bibitem[{\citenamefont{{Bertone} et~al.}(2005)\citenamefont{{Bertone},
+  {Hooper}, and {Silk}}}]{Bertone:2005}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Bertone}}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Hooper}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Silk}}},
+  \bibinfo{journal}{\physrep} \textbf{\bibinfo{volume}{405}},
+  \bibinfo{pages}{279} (\bibinfo{year}{2005}), \eprint{arXiv:hep-ph/0404175}.
+
+\bibitem[{\citenamefont{{Hooper} and {Profumo}}(2007)}]{Hooper:2007Review}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Hooper}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Profumo}}},
+  \bibinfo{journal}{\physrep} \textbf{\bibinfo{volume}{453}},
+  \bibinfo{pages}{29} (\bibinfo{year}{2007}), \eprint{arXiv:hep-ph/0701197}.
+
+\bibitem[{\citenamefont{{Bergstr{\"o}m}}(2012{\natexlab{a}})}]{2012arXiv1205.4882B}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Bergstr{\"o}m}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}{\natexlab{a}}),
+  \eprint{1205.4882}.
+
+\bibitem[{\citenamefont{Cirelli}(2012)}]{Cirelli:2012tf}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Cirelli}}
+  (\bibinfo{year}{2012}), \eprint{1202.1454}.
+
+\bibitem[{\citenamefont{Bringmann and Weniger}(2012)}]{Bringmann:2012ez}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Bringmann}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Weniger}}
+  (\bibinfo{year}{2012}), \eprint{1208.5481}.
+
+\bibitem[{\citenamefont{Bergstrom and Snellman}(1988)}]{Bergstrom:1988fp}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Bergstrom}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Snellman}},
+  \bibinfo{journal}{Phys.Rev.} \textbf{\bibinfo{volume}{D37}},
+  \bibinfo{pages}{3737} (\bibinfo{year}{1988}).
+
+\bibitem[{\citenamefont{{Bergstr{\"o}m} and {Ullio}}(1997)}]{Bergstrom:1997}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Bergstr{\"o}m}}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{{Ullio}}},
+  \bibinfo{journal}{Nuclear Physics B} \textbf{\bibinfo{volume}{504}},
+  \bibinfo{pages}{27} (\bibinfo{year}{1997}), \eprint{arXiv:hep-ph/9706232}.
+
+\bibitem[{\citenamefont{{Bergstr{\"o}m}
+  et~al.}(1998)\citenamefont{{Bergstr{\"o}m}, {Ullio}, and
+  {Buckley}}}]{Bergstrom:1998}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Bergstr{\"o}m}}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{{Ullio}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~H.} \bibnamefont{{Buckley}}},
+  \bibinfo{journal}{Astroparticle Physics} \textbf{\bibinfo{volume}{9}},
+  \bibinfo{pages}{137} (\bibinfo{year}{1998}), \eprint{arXiv:astro-ph/9712318}.
+
+\bibitem[{\citenamefont{{Bertone} et~al.}(2009)\citenamefont{{Bertone},
+  {Jackson}, {Shaughnessy}, {Tait}, and {Vallinotto}}}]{Bertone:2009}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Bertone}}},
+  \bibinfo{author}{\bibfnamefont{C.~B.} \bibnamefont{{Jackson}}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Shaughnessy}}},
+  \bibinfo{author}{\bibfnamefont{T.~M.~P.} \bibnamefont{{Tait}}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{{Vallinotto}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{80}}, \bibinfo{eid}{023512}
+  (\bibinfo{year}{2009}), \eprint{0904.1442}.
+
+\bibitem[{\citenamefont{{Jackson} et~al.}(2010)\citenamefont{{Jackson},
+  {Servant}, {Shaughnessy}, {Tait}, and {Taoso}}}]{Jackson:2010}
+\bibinfo{author}{\bibfnamefont{C.~B.} \bibnamefont{{Jackson}}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Servant}}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Shaughnessy}}},
+  \bibinfo{author}{\bibfnamefont{T.~M.~P.} \bibnamefont{{Tait}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Taoso}}},
+  \bibinfo{journal}{JCAP} \textbf{\bibinfo{volume}{4}}, \bibinfo{pages}{4}
+  (\bibinfo{year}{2010}), \eprint{0912.0004}.
+
+\bibitem[{\citenamefont{{Cline}}(2012)}]{Cline:2012}
+\bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{{Cline}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1205.2688}.
+
+\bibitem[{\citenamefont{{Weiner} and
+  {Yavin}}(2012{\natexlab{a}})}]{Weiner:2012}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Weiner}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{{Yavin}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}{\natexlab{a}}),
+  \eprint{1206.2910}.
+
+\bibitem[{\citenamefont{Pullen et~al.}(2007)\citenamefont{Pullen, Chary, and
+  Kamionkowski}}]{Pullen:2006sy}
+\bibinfo{author}{\bibfnamefont{A.~R.} \bibnamefont{Pullen}},
+  \bibinfo{author}{\bibfnamefont{R.-R.} \bibnamefont{Chary}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Kamionkowski}},
+  \bibinfo{journal}{Phys.Rev.} \textbf{\bibinfo{volume}{D76}},
+  \bibinfo{pages}{063006} (\bibinfo{year}{2007}), \eprint{astro-ph/0610295}.
+
+\bibitem[{\citenamefont{Abdo et~al.}(2010)\citenamefont{Abdo, Ackermann,
+  Ajello, Atwood, Baldini et~al.}}]{Abdo:2010nc}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Abdo}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Ackermann}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Ajello}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Atwood}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Baldini}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys.Rev.Lett.}
+  \textbf{\bibinfo{volume}{104}}, \bibinfo{pages}{091302}
+  (\bibinfo{year}{2010}), \eprint{1001.4836}.
+
+\bibitem[{\citenamefont{Vertongen and Weniger}(2011)}]{Vertongen:2011mu}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Vertongen}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Weniger}},
+  \bibinfo{journal}{JCAP} \textbf{\bibinfo{volume}{1105}}, \bibinfo{pages}{027}
+  (\bibinfo{year}{2011}), \eprint{1101.2610}.
+
+\bibitem[{\citenamefont{Ackermann et~al.}(2012)}]{Ackermann:2012qk}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Ackermann}}
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{LAT Collaboration}),
+  \bibinfo{journal}{Phys.Rev.} \textbf{\bibinfo{volume}{D86}},
+  \bibinfo{pages}{022002} (\bibinfo{year}{2012}), \eprint{1205.2739}.
+
+\bibitem[{\citenamefont{{Bringmann} et~al.}(2012)\citenamefont{{Bringmann},
+  {Huang}, {Ibarra}, {Vogl}, and {Weniger}}}]{Bringmann:2012}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{{Bringmann}}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Huang}}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{{Ibarra}}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Vogl}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{{Weniger}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1203.1312}.
+
+\bibitem[{\citenamefont{{Weniger}}(2012)}]{Weniger:2012}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{{Weniger}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1204.2797}.
+
+\bibitem[{\citenamefont{Tempel et~al.}(2012)\citenamefont{Tempel, Hektor, and
+  Raidal}}]{tempel:2012ey}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Tempel}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Hektor}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Raidal}}
+  (\bibinfo{year}{2012}), \eprint{1205.1045}.
+
+\bibitem[{\citenamefont{Boyarsky et~al.}(2012)\citenamefont{Boyarsky, Malyshev,
+  and Ruchayskiy}}]{Boyarsky:2012ca}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Boyarsky}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Malyshev}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Ruchayskiy}}
+  (\bibinfo{year}{2012}), \eprint{1205.4700}.
+
+\bibitem[{\citenamefont{{Su} and {Finkbeiner}}(2012{\natexlab{a}})}]{linepaper}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Su}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{{Finkbeiner}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}{\natexlab{a}}),
+  \eprint{1206.1616}.
+
+\bibitem[{\citenamefont{{Dudas} et~al.}(2012)\citenamefont{{Dudas}, {Mambrini},
+  {Pokorski}, and {Romagnoni}}}]{Dudas:2012}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{{Dudas}}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{{Mambrini}}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Pokorski}}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{{Romagnoni}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1205.1520}.
+
+\bibitem[{\citenamefont{{Choi} and {Seto}}(2012)}]{Choi:2012}
+\bibinfo{author}{\bibfnamefont{K.-Y.} \bibnamefont{{Choi}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{{Seto}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1205.3276}.
+
+\bibitem[{\citenamefont{{Kyae} and {Park}}(2012)}]{Kyae:2012}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{{Kyae}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.-C.} \bibnamefont{{Park}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1205.4151}.
+
+\bibitem[{\citenamefont{{Lee} et~al.}(2012)\citenamefont{{Lee}, {Park}, and
+  {Park}}}]{Lee:2012}
+\bibinfo{author}{\bibfnamefont{H.~M.} \bibnamefont{{Lee}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Park}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.-I.} \bibnamefont{{Park}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1205.4675}.
+
+\bibitem[{\citenamefont{{Rajaraman} et~al.}(2012)\citenamefont{{Rajaraman},
+  {Tait}, and {Whiteson}}}]{Rajaraman:2012}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{{Rajaraman}}},
+  \bibinfo{author}{\bibfnamefont{T.~M.~P.} \bibnamefont{{Tait}}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Whiteson}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1205.4723}.
+
+\bibitem[{\citenamefont{{Samir Acharya} et~al.}(2012)\citenamefont{{Samir
+  Acharya}, {Kane}, {Kumar}, {Lu}, and {Zheng}}}]{Acharya:2012}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{{Samir Acharya}}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Kane}}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{{Kumar}}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Lu}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{{Zheng}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1205.5789}.
+
+\bibitem[{\citenamefont{{Garny} et~al.}(2012)\citenamefont{{Garny}, {Ibarra},
+  and {Tran}}}]{Garny:2012}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Garny}}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{{Ibarra}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Tran}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1205.6783}.
+
+\bibitem[{\citenamefont{{Buckley} and {Hooper}}(2012)}]{Buckley:2012}
+\bibinfo{author}{\bibfnamefont{M.~R.} \bibnamefont{{Buckley}}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Hooper}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1205.6811}.
+
+\bibitem[{\citenamefont{{Chu} et~al.}(2012)\citenamefont{{Chu}, {Hambye},
+  {Scarna}, and {Tytgat}}}]{Chu:2012}
+\bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Chu}}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{{Hambye}}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{{Scarna}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~H.~G.} \bibnamefont{{Tytgat}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1206.2279}.
+
+\bibitem[{\citenamefont{{Kang} et~al.}(2012)\citenamefont{{Kang}, {Li}, {Li},
+  and {Liu}}}]{Kang:2012}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{{Kang}}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{{Li}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Li}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{{Liu}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1206.2863}.
+
+\bibitem[{\citenamefont{{Buchmuller} and {Garny}}(2012)}]{Buchmuller:2012}
+\bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{{Buchmuller}}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Garny}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1206.7056}.
+
+\bibitem[{\citenamefont{{Bergstr{\"o}m}}(2012{\natexlab{b}})}]{Bergstrom:2012b}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Bergstr{\"o}m}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}{\natexlab{b}}),
+  \eprint{1208.6082}.
+
+\bibitem[{\citenamefont{{Heo} and {Kim}}(2012)}]{Heo:2012}
+\bibinfo{author}{\bibfnamefont{J.~H.} \bibnamefont{{Heo}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.~S.} \bibnamefont{{Kim}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1207.1341}.
+
+\bibitem[{\citenamefont{{Park} and {Park}}(2012)}]{Park:2012}
+\bibinfo{author}{\bibfnamefont{J.-C.} \bibnamefont{{Park}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~C.} \bibnamefont{{Park}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1207.4981}.
+
+\bibitem[{\citenamefont{{Tulin} et~al.}(2012)\citenamefont{{Tulin}, {Yu}, and
+  {Zurek}}}]{Tulin:2012}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Tulin}}},
+  \bibinfo{author}{\bibfnamefont{H.-B.} \bibnamefont{{Yu}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{K.~M.} \bibnamefont{{Zurek}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1208.0009}.
+
+\bibitem[{\citenamefont{{Weiner} and
+  {Yavin}}(2012{\natexlab{b}})}]{WeinerYavin:2012b}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Weiner}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{{Yavin}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}{\natexlab{b}}),
+  \eprint{1209.1093}.
+
+\bibitem[{\citenamefont{{Fan} and {Reece}}(2012)}]{FanReece:2012}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Fan}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Reece}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1209.1097}.
+
+\bibitem[{\citenamefont{{Huang} et~al.}(2012)\citenamefont{{Huang}, {Yuan},
+  {Yin}, {Bi}, and {Chen}}}]{Huang:2012}
+\bibinfo{author}{\bibfnamefont{X.-Y.} \bibnamefont{{Huang}}},
+  \bibinfo{author}{\bibfnamefont{Q.}~\bibnamefont{{Yuan}}},
+  \bibinfo{author}{\bibfnamefont{P.-F.} \bibnamefont{{Yin}}},
+  \bibinfo{author}{\bibfnamefont{X.-J.} \bibnamefont{{Bi}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{X.-L.} \bibnamefont{{Chen}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1208.0267}.
+
+\bibitem[{\citenamefont{{Whiteson}}(2012)}]{Whiteson:2012}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Whiteson}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1208.3677}.
+
+\bibitem[{\citenamefont{{Cholis} et~al.}(2012)\citenamefont{{Cholis},
+  {Tavakoli}, and {Ullio}}}]{Cholis:2012}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{{Cholis}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Tavakoli}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{{Ullio}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1207.1468}.
+
+\bibitem[{\citenamefont{{Su} and
+  {Finkbeiner}}(2012{\natexlab{b}})}]{doubleline}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Su}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{{Finkbeiner}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}{\natexlab{b}}),
+  \eprint{1207.7060}.
+
+\bibitem[{\citenamefont{{Hooper} and {Linden}}(2012)}]{HooperLinden:2012b}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Hooper}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{{Linden}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1208.0828}.
+
+\bibitem[{\citenamefont{Hektor et~al.}(2012{\natexlab{a}})\citenamefont{Hektor,
+  Raidal, and Tempel}}]{Hektor:2012kc}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Hektor}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Raidal}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Tempel}}
+  (\bibinfo{year}{2012}{\natexlab{a}}), \eprint{1207.4466}.
+
+\bibitem[{\citenamefont{{Bergstr{\"o}m}
+  et~al.}(2012)\citenamefont{{Bergstr{\"o}m}, {Bertone}, {Conrad}, {Farnier},
+  and {Weniger}}}]{Bergstrom:2012}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Bergstr{\"o}m}}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Bertone}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Conrad}}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{{Farnier}}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{{Weniger}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1207.6773}.
+
+\bibitem[{\citenamefont{{Abdo} et~al.}(2009)\citenamefont{{Abdo}, {Ackermann},
+  {Ajello}, {Atwood}, {Baldini}, {Ballet}, {Barbiellini}, {Bastieri},
+  {Baughman}, {Bechtol} et~al.}}]{FermiLimb}
+\bibinfo{author}{\bibfnamefont{A.~A.} \bibnamefont{{Abdo}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Ackermann}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Ajello}}},
+  \bibinfo{author}{\bibfnamefont{W.~B.} \bibnamefont{{Atwood}}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Baldini}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Ballet}}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Barbiellini}}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Bastieri}}},
+  \bibinfo{author}{\bibfnamefont{B.~M.} \bibnamefont{{Baughman}}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{{Bechtol}}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{80}},
+  \bibinfo{eid}{122004} (\bibinfo{year}{2009}), \eprint{0912.1868}.
+
+\bibitem[{\citenamefont{Hektor et~al.}(2012{\natexlab{b}})\citenamefont{Hektor,
+  Raidal, and Tempel}}]{TempelSoon}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Hektor}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Raidal}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Tempel}}
+  (\bibinfo{year}{2012}{\natexlab{b}}), \eprint{1209.xxxx}.
+
+\bibitem[{\citenamefont{{Aharonian} et~al.}(2012)\citenamefont{{Aharonian},
+  {Khangulyan}, and {Malyshev}}}]{2012arXiv1207.0458A}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{{Aharonian}}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Khangulyan}}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Malyshev}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1207.0458}.
+
+\end{thebibliography}
