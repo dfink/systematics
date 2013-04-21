@@ -3,10 +3,9 @@ all :
 	bibtex whitepaper
 	latex whitepaper.tex
 	latex whitepaper.tex
-	latex whitepaper.tex
 	dvips -o whitepaper.ps -t letter whitepaper
 	ps2pdf whitepaper.ps
-	rm -f *.aux *.blg *.log *.dvi *~ 
+	rm -f *.aux *.blg *.log *.dvi *~ *Notes.bib
 
 
 latex -interaction=nonstopmode :
