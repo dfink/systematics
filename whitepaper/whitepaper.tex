@@ -1,7 +1,7 @@
 %Publication version
-%\documentclass[aps,twocolumn,prd,superscriptaddress,showpacs,nofootinbib,fixfloat]{revtex4}
+% \documentclass[aps,twocolumn,prd,superscriptaddress,showpacs,nofootinbib,fixfloat]{revtex4-1}
 %Draft version
-\documentclass[aps,prd,superscriptaddress,showpacs, 12pt]{revtex4-1}
+\documentclass[aps,prd,superscriptaddress,showpacs,nofootinbib,fixlfloat, 12pt]{revtex4-1}
 %\usepackage{doublespace}
 \usepackage{graphicx}
 \usepackage{dcolumn}
@@ -22,12 +22,14 @@
 \newcommand{\aj}{{Astron.~J.}}
 \newcommand{\mnras}{{Mon.~Not.~R.~Astron.~Soc.}}
 
+
 % Making life easier
 \newcommand{\be}{\begin{equation}}
 \newcommand{\ee}{\end{equation}}
 \newcommand{\bea}{\begin{eqnarray}}
 \newcommand{\eea}{\end{eqnarray}}
 \newcommand{\backten}{\!\!\!\!\!\!\!\!\!\!}
+
 
 % useful symbols
 \newcommand{\nhat}{\hat{\bf n}}
@@ -360,7 +362,7 @@ region.
 
 \subsection{The Earth limb feature}
 The most critical indication for an instrumental cause of the Galactic center
-feature is an excess of 130 GeV feature in the low indcidence angle data of
+feature is an excess of 130 GeV feature in the low incidence angle data of
 the Earth limb~\cite{linepaper, finkbeiner_systematics, Hektor:2012ev,
 bloom_charles_fermi_lat_line}. Although it is challenging to understand how
 such a feature could possibly be mapped onto the Galactic center, while being
@@ -385,7 +387,64 @@ significance on average, or to rule it out with high significance if it is a
 fluke. This would be achieved end of 2014.
 
 \section{Observation Strategy}
-\dots Julie inspired\dots
+Since start of the mission, Fermi has spend over 95\% of the time in
+\emph{standard survey mode}.
+% With a field of view of $\sim2.5$~sr, the LAT can survey the entire sky in
+% two orbits. 
+In this mode, the LAT points north of zenith towards the orbital pole by an
+angle \zrock\ on one orbit, and south of zenith by the same angle on the next
+orbit; the LAT pointing is confined to the plane perpendicular to its orbital
+velocity. 
+% The slews are performed with a repeating pattern of 17 waypoints defining
+% \zrock\ as a function of time.  \zrock\ was $35\degree$ at the start of the
+% nominal mission on August 4, 2008 until May 7th, 2009, and was changed to
+% $50\degree$ on September 3rd, 2009 for better thermal management of the
+% downward-facing battery radiator.  
+This observation profile, combined with the precession of the orbit every
+$\sim53.4$ days, allows the LAT to observe the whole sky with approximately
+uniform coverage. The standard survey mode is only occasionally interrupted
+for pointed observations of targets of opportunity (ToOs). During such times
+the LAT may point at larger zenith angle than usual, even at the horizon.  In
+addition, survey mode is occasionally interrupted by Autonomous Repoints of
+the observatory for triggered gamma-ray burst follow-up observations, and for
+calibration.
+% Furthermore, \Fermi's survey observations are halted during passages through
+% the South Atlantic Anomaly, resulting in an exposure differential between
+% north and south of $\sim15$\%. 
+
+However, Fermi is capable of very flexible survey mode patterns. These can
+e.g.~alter between survey and pointed observations even within one orbit,
+which allows to efficiently increase coverage of certain parts of the sky if
+required. We will discuss here in how far such a mode can be beneficial for a
+study of the 130 GeV feature at the Galactic center. In particular, we will
+follow the mixed mode ``option3v3'' proposed by the Fermi
+mission.\footnote{See
+\url{http://fermi.gsfc.nasa.gov/ssc/proposals/alt_obs/obs_modes.html}.}
+
+In \emph{mixed observation mode}, we select as target not the Galactic center
+itself, but a point at RA=261.4 and with a declination Dec that lies on the
+orbit equator. \Fermi\ slews to the target once it is $10^\circ$ from Earth
+occultation, and slews back to its survey mode position once the target is
+reentering $10^\circ$ from Earth occultation. The minimal distance to the
+Earth horizon is set to $30^\circ$, to avoid loosing too much exposure during
+the transition periods. The shift of the target position results in an
+improved sky uniformity on short time scales, as well as a measurement of the
+Galactic center at different incidence angles, which can help to reduce
+systematics.
+
+We evaluate the mixed observation mode in the following. 
+
+\dots Exposure maps, integrated over precession period \dots
+
+\dots Exposure maps, integrated over 24 hours (or 3 hours or whatever) \dots
+
+\dots Histogram for uniformity \dots
+
+\dots energy resolution in different sky regions (optional) \dots
+
+\dots Figure of merit \dots
+
+\dots theta distribution at GC (optional) \dots
 
 \section{Discussion and Conclusion}
 \label{sec:Conclusion}
@@ -393,13 +452,12 @@ fluke. This would be achieved end of 2014.
 In this white paper we have argued for a change in the Fermi strategy on the
 following basis.
 
-
 \begin{itemize}
 
 \item{\bf It is important: discovery of a dark matter annihilation line in the
     Galactic center would be Fermi's greatest accomplishment.}  The nature of
   dark matter is one of the greatest mysteries in physics and astrophysics,
-  and the disovery of a line would be a major step forward for both fields.
+  and the discovery of a line would be a major step forward for both fields.
   Exploring the nature of dark matter is one of the major goals of the Fermi
   project, and a discovery would define Fermi's legacy.
 
