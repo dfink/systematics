@@ -294,20 +294,6 @@ boosted frame, and cannot contain line emission.
 \end{figure}
 
 
-\begin{figure}[h]
-  \begin{center}
-    \includegraphics[width=0.6\linewidth]{plots/option3v3_lineEval.eps}
-    \vspace{-0.5cm}
-  \end{center}
-  \caption{Evaluation of mixed observation strategy. \emph{Top panel:}
-    Effective energy resolution in different sky regions. \emph{Central
-      panel:} change in exposure relative to standard survey
-    mode. \emph{Bottom panel:} Figure of merit for gamma-ray line searches in
-    different sky regions.}
-  \label{fig:option}
-\end{figure}
-
-
 \section{Current situation and projection}
 \subsection{The Galactic center feature}
 In Fig.~1 we show the distribution of tentative signal events over the course
@@ -386,7 +372,7 @@ data are enough to regenerate the putative signature with $4.0\sigma$
 significance on average, or to rule it out with high significance if it is a
 fluke. This would be achieved end of 2014.
 
-\section{Observation Strategy}
+\section{A New Observation Strategy}
 Since start of the mission, Fermi has spend over 95\% of the time in
 \emph{standard survey mode}.
 % With a field of view of $\sim2.5$~sr, the LAT can survey the entire sky in
@@ -432,53 +418,92 @@ improved sky uniformity on short time scales, as well as a measurement of the
 Galactic center at different incidence angles, which can help to reduce
 systematics.
 
-We evaluate the mixed observation mode in the following. 
+\subsection{Impact on line searches at the GC}
 
-\dots Exposure maps, integrated over precession period \dots
-\begin{figure}[h]
+\begin{figure}[t]
   \begin{center}
-    \includegraphics[width=0.9\linewidth]{plots/exposure.ps}
+    \includegraphics[width=0.5\linewidth]{plots/option3v3_lineEval.eps}
     \vspace{-0.5cm}
   \end{center}
-  \caption{All sky exposure maps for modified survey
-  strategy option 1, 2, and 3 (left column) and fraction of
-  exposure maps relative to standard survey mode (right
-  column). The exposure maps on left were divided by
-  4.1$\times 10^9 cm^2/s$, which is roughly the exposure at
-  the Galactic center for the 50 deg survey mode at ~100
-  GeV. }
-  \label{fig:option}
+  \caption{Evaluation of mixed observation strategy. \emph{Top panel:}
+    Effective energy resolution in different sky regions. \emph{Central
+      panel:} change in exposure relative to standard survey
+    mode. \emph{Bottom panel:} Figure of merit for gamma-ray line searches in
+    different sky regions.}
+  \label{fig:mollweide}
 \end{figure}
 
-\dots Exposure maps, integrated over 24 hours (or 3 hours or whatever) \dots
-\begin{figure}[h]
+The upper panel of Fig.~\ref{fig:mollweide} shows the exposure map after 55
+days of mixed observation mode in equatorial coordinates. It is normalized to
+the mean exposure in standard survey mode
+($\mathcal{E}_0=4.1\times10^9\rm\,cm^2s$ after 55 days). The point of highest
+exposure is at (RA, Dec)$\approx(260^\circ$, $0^\circ)$, which is displaced
+from the GC by $29^\circ$. Directly at the GC, the exposure increases by a
+factor of XXX with respoct to normal survey mode.
+
+In mixed observation mode, regions close to the GC are predominantly observed
+under low incidence angles in the range $\theta=4^\circ$--$54^\circ$ (see
+Fig.~\ref{fig:thetaDist}). This has impact on the effective energy resolution
+in that direction, which is shown in the central panel of
+Fig.~\ref{fig:mollweide}. In direction of the GC the energy resolution is in
+fact slightly reduced w.r.t.~standard survey mode, i.e.~$\Delta E/E=XXX$
+instead of $\Delta E/E=XXX$.
+
+As \emph{figure-of-merit} for line searches we define the dimensionless
+quantity $Q\equiv\sqrt{\mathcal{E}/\Delta E}/Q_0$, which is proportional to
+the average significance expected for a line signal, and $Q_0$ is an arbitrary
+normalization. A sky map of $Q_m/Q_s$ is shown in the bottom panel of
+Fig.~\ref{fig:mollweide}, where $Q_m$ referes to the mixed and $Q_s$ to the
+standard survey mode, respectively. Regions close to the GC have values of
+$Q_m/Q_s=XXX$. This is the factor by which the growth of a gamma-ray line
+signal at the GC would be accelerated by switching from survey to mixed
+observation mode.
+
+\subsection{Impact on other science}
+
+\begin{figure}[t]
   \begin{center}
-    \includegraphics[width=0.37\linewidth, angle=-90]{plots/exposure_pixel_hist_perday.ps}
-    \includegraphics[width=0.37\linewidth, angle=-90]{plots/exposure_exp_hist_perday.ps}
+    % \includegraphics[width=0.49\linewidth, angle=-90]{plots/option1_survey_hist.ps}
+    \includegraphics[width=0.49\linewidth, angle=-90]{plots/option2_option3_hist.ps}
     \vspace{-0.5cm}
   \end{center}
-  \caption{Left panel: daily sky coverage with different range of exposure time normalized to the mean value of the exposure map of each day (in total 55 days to complete on orbit precession period). Right panel: in stead the sky coverage, we plot the fractional exposure time relative to the mean value of the exposure map of each day.}
-  \label{fig:option}
+  \caption{Histogram on sky pixels of fractional exposure normalized to
+  standard survey strategy. Left panel compares the modified strategy option 1
+  to the standard survey strategy, and the right panel shows the modified
+  strategy option 1 relative to option 3. }
+  \label{fig:expHisto}
 \end{figure}
 
-\dots Histogram for uniformity \dots
-\begin{figure}[h]
+In Fig.~\ref{fig:expHisto}, we show as histogram the distribution of exposure
+in different pixels of the sky (using a Healpix projection with $N=128$). In
+case of standard survey mode, the exposure distribution spans a factor of two,
+whereas is spans a factor $12$ in the mixed observation mode. However, only in
+a small fraction of the sky, about XXX\%, the coverage drops by as much as a
+factor of $0.3$--$0.5$, and never below $0.3$.
+
+Figs.~\ref{fig:expHisto} and~\ref{fig:mollweide} show the exposure integrated
+over the orbital precession period of 55 days. However, for the observation of
+transient phenomena, it is vital that all parts of the sky are sufficiently
+covered at least each day. In Fig.~\ref{fig:coverage} we show for each
+individual day of the precession period which fraction of the sky are covered
+by different amounts of exposure. \dots
+
+\begin{figure}[t]
   \begin{center}
-    \includegraphics[width=0.37\linewidth, angle=-90]{plots/option1_survey_hist.ps}
-    \includegraphics[width=0.37\linewidth, angle=-90]{plots/option2_option3_hist.ps}
+    \includegraphics[width=0.49\linewidth, angle=-90]{plots/exposure_pixel_hist_perday.ps}
+    % \includegraphics[width=0.37\linewidth, angle=-90]{plots/exposure_exp_hist_perday.ps}
     \vspace{-0.5cm}
   \end{center}
-  \caption{Histogram on sky pixels of fractional exposure normalized to standard survey strategy. Left panel compares the modified strategy option 1 to the standard survey strategy, and the right panel shows the modified strategy option 1 relative to option 3. }
-  \label{fig:option}
+  \caption{Left panel: daily sky coverage with different range of exposure
+  time normalized to the mean value of the exposure map of each day (in total
+  55 days to complete on orbit precession period).} %Right panel: in stead the sky
+  %coverage, we plot the fractional exposure time relative to the mean value of
+  %the exposure map of each day.}
+  \label{fig:coverage}
 \end{figure}
-
-\dots energy resolution in different sky regions (optional) \dots
-
-\dots Figure of merit \dots
-I thought we can just use your plot, but let me regenerate this with all the three strategies.
 
 \dots theta distribution at GC (optional) \dots
-Do we want this plot? I can do it.
+
 
 \section{Discussion and Conclusion}
 \label{sec:Conclusion}
