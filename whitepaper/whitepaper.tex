@@ -480,28 +480,26 @@ $40\%$ by switching from survey to mixed observation mode.
 In Fig.~\ref{fig:expHisto}, we show as histogram the distribution of exposure
 in different pixels of the sky (using a Healpix projection with $N=128$). In
 case of standard survey mode, the exposure distribution spans a factor of two,
-whereas is spans a factor $12$ in the mixed observation mode. However, only in
-a small fraction of the sky, about XXX\%, the coverage drops by as much as a
-factor of $0.3$--$0.5$, and never below $0.3$.
+whereas is spans a factor $12$ in the mixed observation mode. 
+% However, only in a small fraction of the sky, about XXX\%, the coverage
+% drops by as much as a factor of $0.3$--$0.5$, and never below $0.3$.
 
-Figs.~\ref{fig:expHisto} and~\ref{fig:mollweide} show the exposure integrated
-over the orbital precession period of 55 days. However, for the observation of
-transient phenomena, it is vital that all parts of the sky are sufficiently
-covered at least each day. In Fig.~\ref{fig:coverage} we show for each
-individual day of the precession period which fraction of the sky are covered
-by different amounts of exposure. \dots
+For the observation of transient phenomena, it is vital that all parts of the
+sky are sufficiently covered at least each day. In Fig.~\ref{fig:coverage} we
+show for each individual day of the precession period which fraction of the
+sky is covered by what fraction of the mean exposure. As can be seen from the
+plot, in less than $\sim5\%$ of the sky the daily coverage drops below $20\%$
+of the mean, whereas in $>80\%$ the daily coverage remains above $50\%$ of the
+mean.
 
 \begin{figure}[t]
   \begin{center}
     \includegraphics[width=0.49\linewidth, angle=-90]{plots/exposure_pixel_hist_perday.ps}
-    % \includegraphics[width=0.37\linewidth, angle=-90]{plots/exposure_exp_hist_perday.ps}
     \vspace{-0.5cm}
   \end{center}
   \caption{Left panel: daily sky coverage with different range of exposure
   time normalized to the mean value of the exposure map of each day (in total
-  55 days to complete on orbit precession period).} %Right panel: in stead the sky
-  %coverage, we plot the fractional exposure time relative to the mean value of
-  %the exposure map of each day.}
+  55 days to complete on orbit precession period).} 
   \label{fig:coverage}
 \end{figure}
 
