@@ -379,7 +379,8 @@ target of opportunity observations in that time period. If the accumulation of
 low incidence angle Earth limb data continues at this pace, 2.3 years of fresh
 data are enough to regenerate the putative signature with $4.0\sigma$
 significance on average, or to rule it out with high significance if it is a
-fluke. This amount of data would be available end of 2014.
+fluke. Even without a change of the observation strategy, this amount of data
+would be available end of 2014.
 
 \section{A New Observation Strategy}
 Since start of the mission, Fermi has spend over 95\% of the time in
@@ -493,6 +494,42 @@ by a factor $1.43$ when switching from survey to mixed mode. Hence, for
 gamma-ray lines at the GC, the growth rate of the signal significance is
 increased by $40\%$ when switching from survey to mixed observation mode.
 
+\subsection{Impact on Earth limb data}
+An important side effect of the mixed observation mode is the accumulation of
+additional Earth limb data at low incidence angles. This happens during the
+transitions between pointed observation and survey mode. The target comes
+close to the horizon, while the satellite maintains a minimal distance of
+$30^\circ$ from the Earth limb. Consequently, the Earth limb is observed at
+incidence angles $\theta\gtrsim30^\circ$ twice every 1.5 hours.
+
+In Fig.~\ref{fig:limb_exposure}, we show the expected differential exposure of
+the Earth limb at zenith angles $111^\circ<Z<113^\circ$. In standard survey
+mode, practically no limb data is collected at $\theta\lesssim60^\circ$.
+However, during mixed observations a significant amount of Earth limb events
+is collected at lower incidence angles. This would accelerate the accumulation
+of low incidence angle Earth limb data w.r.t.~the previous 4.5 years by about
+\emph{a factor of five}, and will allow a rapid rejection or confirmation of
+the 130 GeV feature in the Earth limb. Note that a collection of Earth limb
+events at incidence angles even lower than $30^\circ$ is possible if the EAA
+is set appropriately, however with the price of loosing more exposure on the
+rest of the sky.
+
+\begin{figure}[t]
+  \begin{center}
+    \includegraphics[width=0.6\linewidth]{plots/limb_exposure.eps}
+    \vspace{-0.5cm}
+  \end{center}
+  \caption{Differential exposure of Earth limb region (zenith angles
+    $111^\circ<Z<113^\circ$) as function of incidence angle $\theta$. In
+    standard survey mode, incidence angles below $\theta<60^\circ$ are not
+    exposed to the Earth limb. However, in mixed observation modes, a
+    large number of Earth limb events would be collected down to incidence
+    angles $\theta\simeq30^\circ$. In brackets we show the exposure below and
+  above $\theta=60^\circ$ in units of $10^{11}\rm\,cm^2\,s$.}
+  \label{fig:limb_exposure}
+\end{figure}
+
+
 \subsection{Impact on other science}
 
 \begin{figure}[t]
@@ -535,21 +572,6 @@ mean.
   time normalized to the mean value of the exposure map of each day (in total
   55 days to complete on orbit precession period).} 
   \label{fig:coverage}
-\end{figure}
-
-\begin{figure}[t]
-  \begin{center}
-    \includegraphics[width=0.6\linewidth]{plots/limb_exposure.eps}
-    \vspace{-0.5cm}
-  \end{center}
-  \caption{Differential exposure of Earth limb region (zenith angles
-    $111^\circ<Z<113^\circ$) as function of incidence angle $\theta$. In
-    standard survey mode, incidence angles below $\theta<60^\circ$ are not
-    exposed to the Earth limb. However, in mixed observation modes, a
-    large number of Earth limb events would be collected down to incidence
-    angles $\theta\simeq30^\circ$. In brackets we show the exposure below and
-  above $\theta=60^\circ$ in units of $10^{11}\rm\,cm^2\,s$.}
-  \label{fig:limb_exposure}
 \end{figure}
 
 \dots theta distribution at GC (optional) \dots
