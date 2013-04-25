@@ -97,7 +97,8 @@
 \begin{document}
 
 
-\title{Fermi White Paper}
+\title{Let the LAT speak: Closing in on the Fermi line with a changed survey
+strategy}
 
 \author{Douglas P. Finkbeiner}
 %\email{dfinkbeiner@cfa.harvard.edu}
@@ -136,117 +137,89 @@
 %%%%%%%%%%%%%%%%%%%%%% SECTION I %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
+For indirect dark matter searches with gamma rays, discriminating between a
+signal from conventional astrophysical backgrounds is challenging (for a
+recent review see~\cite{Bringmann:2012ez}).  Among various possible
+signatures, gamma-ray line emission is a long-sought ``smoking gun'' for dark
+matter annihilation~\cite{Bergstrom:1988fp}, as no plausible astrophysical
+background can produce a diffuse line signature.
 
-
-The search for non-gravitational signatures from WIMP
-(weakly interacting massive particle) dark matter has 
-generally been approached from three different directions: missing
-energy searches at colliders, direct searches for the
-recoil of nuclei from underground detectors, and indirect
-methods including searching for dark matter signals from cosmic
-rays (CR) and multiwavelength astronomical
-observations~\citep{Jungman:1995df, Bergstrom:2000, Bertone:2005, Hooper:2007Review,
-2012arXiv1205.4882B, Cirelli:2012tf}.
-
-For indirect detection, distinguishing the dark matter
-signal from conventional astrophysical backgrounds is
-challenging
-(for a recent review on indirect searches with gamma rays
-see~\cite{Bringmann:2012ez}).
-Among various possible signatures, gamma-ray
-line emission is a long-sought ``smoking
-gun'' for dark matter annihilation~\cite{Bergstrom:1988fp}, as no plausible
-astrophysical background can produce such a line
-signature.\footnote{A narrow feature is
-possible in theory~\citep[see][]{2012arXiv1207.0458A}.}  Gamma-ray line(s)
-could be produced by dark matter decays or annihilations
-into two photons, or two-body final states involving one
-photon plus a Higgs boson, Z boson, or other neutral non-SM
-particle.  In most models, the branching ratio
-to lines is loop suppressed relative to the continuum
-emission, and one would have expected to see the continuum
-first in e.g. MSSM models~\citep[e.g.][]{Bergstrom:1997}.
-Although this theoretical prejudice led most previous
-studies to focus on continuum searches, there are models
-being proposed that allow high line to continuum
-ratios~\citep[e.g.][]{Bergstrom:1998, Bergstrom:2000,
-Bertone:2009, Jackson:2010, Cline:2012, Weiner:2012}.
-However, previous searches in EGRET~\cite{Pullen:2006sy} and \Fermi-LAT
-data~\cite{Abdo:2010nc, Vertongen:2011mu, Ackermann:2012qk}
-did not find any
-indications for a gamma-ray line signal and presented only upper limits on the
-line flux.
-
+% Gamma-ray line(s)
+% could be produced by dark matter decays or annihilations
+% into two photons, or two-body final states involving one
+% photon plus a Higgs boson, Z boson, or other neutral non-SM
+% particle.  In most models, the branching ratio
+% to lines is loop suppressed relative to the continuum
+% emission, and one would have expected to see the continuum
+% first in e.g. MSSM models~\citep[e.g.][]{Bergstrom:1997}.
+% Although this theoretical prejudice led most previous
+% studies to focus on continuum searches, there are models
+% being proposed that allow high line to continuum
+% ratios~\citep[e.g.][]{Bergstrom:1998, Bergstrom:2000,
+% Bertone:2009, Jackson:2010, Cline:2012, Weiner:2012}.
+ 
 The first claims for a spectral feature around 130 GeV were made by Bringmann
-\textit{et al.}~\citep{Bringmann:2012} and Weniger~\citep{Weniger:2012}. While
-Ref.~\citep{Bringmann:2012} mostly concentrated on an interpretation in the context of
-virtual internal Bremsstrahlung signals from annihilations,
-Ref.~\citep{Weniger:2012} focused on gamma-ray lines and a thorough discussion
-of possible instrumental effects.  Both works performed a spectral fit to
-photon events in regions of interest in
-the inner Galaxy designed to maximize S/N. The significance of the line structure
-at 130 GeV was found to be 4.6$\sigma$, or 3.2$\sigma$ after the trials factor
-correction~\citep{Weniger:2012}.
-This claim was quickly followed up and disputed by a number of
-groups~\cite{tempel:2012ey, Boyarsky:2012ca}.
+\textit{et al.}~\citep{Bringmann:2012} and Weniger~\citep{Weniger:2012} (for
+previous studies see~\cite{Pullen:2006sy, Abdo:2010nc, Vertongen:2011mu,
+Ackermann:2012qk}). Subsequent work by Su \& Finkbeiner approached the problem
+with template fitting, which takes into account the spatial distribution of
+events along with spectral information, and found 6.6$\sigma$ (5.1$\sigma$
+after the trials factor correction) for an Einasto profile centered
+$1.5\degree$ west of the Galactic center, and also suggested that there may
+be two lines, at about 111 and 129 GeV. The lower energy line is
+tantalizing because it matches the expected energy of a $Z\gamma$ line if
+the higher energy is the $\gamma\gamma$ line.  
 
-Subsequent work by Su \& Finkbeiner approached the problem
-with template fitting, which takes into account the spatial
-distribution of events along with spectral information,
-assuming various profiles (Einasto, NFW, Gaussian) for the
-DM distribution~\citep{linepaper}.  If the template is
-correct, this allows extraction of the DM signal with higher
-S/N.  This work found 6.6$\sigma$ (5.1$\sigma$ after the
-trials factor correction) for an Einasto profile centered
-$1.5\degree$ west of the Galactic center, and also suggested
-that there may be two lines, at about 111 and 129 GeV.  The
-lower energy line is tantalizing because it matches the
-expected energy of a $Z\gamma$ line if the higher energy is
-the $\gamma\gamma$ line.  These findings have inspired a
-number of models and further analysis of the \Fermi\
-data~\citep{Dudas:2012, Choi:2012, Kyae:2012, Lee:2012,
-Rajaraman:2012, Acharya:2012, Garny:2012, Buckley:2012,
-Chu:2012, Kang:2012, Buchmuller:2012, Bergstrom:2012b,
-Heo:2012, Park:2012, Tulin:2012, Cline:2012, Weiner:2012,
-WeinerYavin:2012b, FanReece:2012, Huang:2012, Whiteson:2012,
-Buchmuller:2012, Cholis:2012}.
+% These findings have inspired a number of models and
+% further analysis of the \Fermi\ data~\citep{Dudas:2012, Choi:2012,
+% Kyae:2012, Lee:2012, Rajaraman:2012, Acharya:2012, Garny:2012,
+% Buckley:2012, Chu:2012, Kang:2012, Buchmuller:2012, Bergstrom:2012b,
+% Heo:2012, Park:2012, Tulin:2012, Cline:2012, Weiner:2012, WeinerYavin:2012b,
+% FanReece:2012, Huang:2012, Whiteson:2012, Buchmuller:2012, Cholis:2012}.
+ 
+% Recent evidence for lines at 111 GeV and 129 GeV with a
+% local significance of $3.3\sigma$ from \Fermi\ unassociated
+% point sources suggests an annihilation signal is
+% present~\cite{doubleline}\citep[but
+% see][]{HooperLinden:2012b}, as does the claim of line
+% emission from galaxy clusters at 130
+% GeV~\cite{Hektor:2012kc}.  Neither of these would stand on
+% their own, but they provide support for the hypothesis that
+% the Galactic center line signal is produced by dark matter
+% annihilation.
 
-Recent evidence for lines at 111 GeV and 129 GeV with a
-local significance of $3.3\sigma$ from \Fermi\ unassociated
-point sources suggests an annihilation signal is
-present~\cite{doubleline}\citep[but
-see][]{HooperLinden:2012b}, as does the claim of line
-emission from galaxy clusters at 130
-GeV~\cite{Hektor:2012kc}.  Neither of these would stand on
-their own, but they provide support for the hypothesis that
-the Galactic center line signal is produced by dark matter
-annihilation.
+% The high statistical significance of the line feature
+% motivates a search for systematic errors in the LAT data
+% that could mimic a line in the Galactic center.
+% Confirmation by Imaging Air Cherenkov Telescopes like
+% HESS-II might be possible as early as next
+% year~\cite{Bergstrom:2012}, but in the meantime a thorough
+% study of LAT systematics is urgently needed.  We do not have
+% access to the details of the reconstruction of each photon
+% event, which would allow us to study how it developed in the
+% tracker and calorimeter.  However, we do have information
+% about each event from the public event lists and spacecraft
+% parameter files.  We can use this information to search for
+% any line-producing artifacts in the detector frame, and
+% investigate if they could map onto the Galactic center.
+ 
+% The Earth's atmosphere provides a convenient source of
+% photons for systematics tests.  The continual cosmic-ray
+% cascades in the Earth's atmosphere produce gamma rays with
+% $dN/dE \sim E^{-2.8}$~\citep{FermiLimb}.  Because these
+% so-called `Earth limb photons' result from atmospheric
+% cascades, they are produced by interactions in a highly
+% boosted frame, and cannot contain line emission.
+% \medskip
 
-The high statistical significance of the line feature
-motivates a search for systematic errors in the LAT data
-that could mimic a line in the Galactic center.
-Confirmation by Imaging Air Cherenkov Telescopes like
-HESS-II might be possible as early as next
-year~\cite{Bergstrom:2012}, but in the meantime a thorough
-study of LAT systematics is urgently needed.  We do not have
-access to the details of the reconstruction of each photon
-event, which would allow us to study how it developed in the
-tracker and calorimeter.  However, we do have information
-about each event from the public event lists and spacecraft
-parameter files.  We can use this information to search for
-any line-producing artifacts in the detector frame, and
-investigate if they could map onto the Galactic center.
+\dots Earth limb story etc \dots
 
-The Earth's atmosphere provides a convenient source of
-photons for systematics tests.  The continual cosmic-ray
-cascades in the Earth's atmosphere produce gamma rays with
-$dN/dE \sim E^{-2.8}$~\citep{FermiLimb}.  Because these
-so-called `Earth limb photons' result from atmospheric
-cascades, they are produced by interactions in a highly
-boosted frame, and cannot contain line emission.
-\medskip
+\dots Here, we propose to settle this issue for good, using Fermi LAT itself
+\dots
 
-
+\section{Current situation and projection}
+\subsection{The Galactic center feature}
+ 
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=0.60\linewidth]{plots/semester_fluxes.eps}
@@ -295,8 +268,6 @@ boosted frame, and cannot contain line emission.
 \end{figure}
 
 
-\section{Current situation and projection}
-\subsection{The Galactic center feature}
 In Fig.~1 we show the temporal distribution of tentative signal events 
 during the last 4.5 years of data taking.
 Starting at 4 August 2008, each bin corresponds to a time interval
@@ -358,7 +329,7 @@ bloom_charles_fermi_lat_line}. Although it is challenging to understand how
 such a feature could possibly be mapped onto the Galactic center while being
 absent in other test regions, this feature raised serious concerns about the
 energy reconstruction of the LAT around 130 GeV. More data is required to
-determin whether the Earth limb feature is indeed a true systematic effect or
+determine whether the Earth limb feature is indeed a true systematic effect or
 merely a statistical fluke in light of a large number of hidden trials.
 
 We define here the Earth limb excess by selecting P7CLEAN events until 5 Sep 2012 at zenith angles $Z>100^\circ$,
