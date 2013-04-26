@@ -100,15 +100,9 @@
 \title{Let the LAT speak: Closing in on the Fermi line with a changed survey
 strategy}
 
-\author{Douglas P. Finkbeiner}
-%\email{dfinkbeiner@cfa.harvard.edu}
-\affiliation{Institute for Theory and Computation,
-  Harvard-Smithsonian Center for Astrophysics, 
-  60 Garden Street, MS-51, Cambridge, MA 02138, USA} 
-\affiliation{Center for the Fundamental Laws of Nature,
-  Physics Department, 
-  Harvard University, 
-  Cambridge, MA 02138 USA}
+\author{Christoph Weniger}
+\affiliation{GRAPPA Institute, Univ.~of Amsterdam, Science Park 904, 1098 GL
+Amsterdam, Netherlands}
 
 \author{Meng Su}
 \affiliation{Institute for Theory and Computation,
@@ -117,8 +111,19 @@ strategy}
 \affiliation{Department of Physics, and Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA}
 \affiliation{Einstein Fellow}
 
-\author{Christoph Weniger}
-\affiliation{Amsterdam}
+\author{Douglas P. Finkbeiner}
+%\email{dfinkbeiner@cfa.harvard.edu}
+\affiliation{Institute for Theory and Computation,
+  Harvard-Smithsonian Center for Astrophysics, 
+  60 Garden Street, MS-51, Cambridge, MA 02138, USA} 
+\affiliation{Center for the Fundamental Laws of Nature,
+  Physics Department, 
+  Harvard University, 
+  Cambridge, MA 02138, USA}
+
+% \author{Torsten Bringmann}
+% \affiliation{II.~Institute for Theoretical Physics, University of Hamburg,
+% Luruper Chaussee 149, 22761 Hamburg, Germany}
 
 \author{Nestor Mirabel}
 \affiliation{affil}
@@ -230,13 +235,13 @@ The first claims of a spectral feature \citep{Bringmann:2012,Weniger:2012}
 were based on 3.5 years of LAT data (through 4 February 2012).  Subsequent
 data provide an opportunity to confirm the signal and see how it evolves with
 time.  Because the signal is based on approximately 1 signal count per month
-in the ROI, Poisson fluctuations cause the significance to accumulate in
+in the region of interested (ROI) that gave the highest significance, Poisson fluctuations cause the significance to accumulate in
 something akin to a random walk.  The mean trend in significance builds with
 sqrt(time) but with large uncertainties.  A confirmation at $3\sigma$ of the
-signal in the original ROI (i.e. no trials factor) would be persuasive, but
+signal in the original ROI (i.e.~no trials factor) would be persuasive, but
 the exposure required to get an expected significance of $3\sigma$ is quite
 different from the exposure required to achieve $3\sigma$ \emph{with 95\%
-  confidence.}
+  probability.}
 
 \begin{figure}[h]
   \begin{center}
@@ -259,6 +264,7 @@ different from the exposure required to achieve $3\sigma$ \emph{with 95\%
     \vspace{-0.5cm}
   \end{center}
   \caption{
+    \textbf{(Update figure with correct exposure factor for optionX)}
     Expected evolution of signal significance in Region~3 from
     Ref.~\cite{Weniger:2012}, starting on 4
     February 2012, as function of
@@ -269,7 +275,7 @@ different from the exposure required to achieve $3\sigma$ \emph{with 95\%
     The first and second vertical dotted lines indicate how much exposure is
     expected to be accumulated until end of 2014 if the observation strategy remains
     unchanged, and respectively when the observation strategy proposed in this
-    white paper is adopted starting from June 2013.}
+    document is adopted starting from June 2013.}
   \label{fig:projection}
 \end{figure}
 
@@ -294,8 +300,7 @@ we will not use the template regression technique from Ref.~\cite{linepaper},
 but follow~\cite{Bringmann:2012, Weniger:2012} and use spectral fits in ROIs
 with large S/N.  For definiteness, we will here only use `Region 3' from
 Ref.~\cite{Weniger:2012}; this is one of the regions where the excess was
-first identified. We use this region to avoid introducing additional trials,
-or making assumptions about the underlying signal profile. Below we will
+first identified with high significance. Below we will
 propose a geometrically similar but much simpler region that we advocate as an
 alternative for future studies.
 % The temporal distribution of `signal' events at the Galactic center over the
@@ -310,26 +315,29 @@ the fit, we adopt an energy range from 65 to 260 GeV, fix the line position at
 $E_\gamma=129.8\rm\,GeV$, and use P7CLEAN events only.\footnote{The details of
 the fit are identical what was done in Ref.~\cite{Weniger:2012}, but we
 checked that similar results are obtained using Region 4, P7SOURCE events,
-or a 2D fit that takes into account incidence angle as well as energy
-information in the modeling of the line.} We find a number of $N_s=XXX\pm XXX$
+or a `2D' fit that takes into account incidence angle as well as energy
+information in the modeling of the line.} We find a number of $N_s=50.0\pm 13.3$
 excess events (with $\pm1\sigma$ profile likelihood errors), with a
-statistical significance of $s=XXX$ standard deviations. The effective number
-of background events can estimated as $N_b = N_s^2/s^2$, and yields $N_b=XXX$.
+statistical significance of $s=4.3\sigma$. The effective number
+of background events can estimated as $N_b = N_s^2/s^2$, and is $N_b=137.4$.
+These parameters together with the details of the fit define our \emph{signal
+hypothesis}; the \emph{null hypothesis} is that the flux is compatible with a
+single power law, i.e.~$N_s=0$.
 
 In Fig.~1 we show the distribution of these excess events in bins of six
 month. The first seven bins correspond to the 3.5 years that define the
-excess, the two red data points are data taken afterwards. Error-bars include
+excess, the two red data points are data taken afterwards. Error bars include
 background fluctuations and are given by $\Delta N_s = \sqrt{N_s+N_b}$. To
-obtain $N_s$ and $N_b$, we fit the data from the six month intervals
+obtain $N_s$ and $N_b$, we fit the data from each six month interval
 individually. The gray bands show the number of signal events expected from
-the above fit to 3.5 years of data; this is on average $N_s=7.1\pm 1.8$ events
-per bin, with mild variations being related to the exposure. 
+the above fit to the 3.5 years data, with small variations being related to
+the exposure.
 
 The last two bins are compatible with both the null-hypothesis at the one
 sigma level, and with the signal-hypothesis at the two sigma level (see also
 Ref.~\cite{Weniger:2013dya}). In case of a real signal, the last bin would
-represent a decent downward fluctuation. However, it is still too premature to
-draw strong conclusions from that.
+represent a decent downward fluctuation. However, it is premature to
+draw strong conclusions from this single downward fluctuation.
 
 \emph{Projection.} 
 Going forward, the signal hypothesis predicts that the significance will build
@@ -344,9 +352,9 @@ derive the signal significance for each realization as described above. The
 background and signal correspond to the best-fit values obtained in Region 3
 with data until 4 February 2012.  For different realizations we allow the
 signal normalization to vary following a normal distribution that is matched
-to the $\pm1\sigma$ flux uncertainties from the 3.5 year results. We checked
-that similar results are obtained for Region 4, or in the hourglass region
-discussed below.
+to the $\pm1\sigma$ flux uncertainties from the 3.5 year results.\footnote{We
+checked that similar results for the projection evolution are obtained for
+Region 4, or in the hourglass region discussed below.}
 
 The first vertical dashed line indicates the exposure that will be acquired by
 1 Jan 2015 with the current survey strategy. It is likely that a true signal
@@ -367,10 +375,12 @@ Fig.~3. This region is (1) geometrically simple and easy to reproduce, and (2)
 it is centered on the part of the sky where the excess was largest in the
 previous data. Though we avoid any statement about particular dark matter
 profiles, it is an \emph{a priori} region for data taken since 4 February
-2012. We define is in $(\ell, b)$ space as the intersection of $\ell^2+b^2\leq
+2012. We defined this ROI in $(\ell, b)$ space as the intersection of
+$\ell^2+b^2\leq
 r^2$ and $\ell^2\leq (b\tan\varphi)^2 + d^2$, with $(r, d, \varphi) =
-(20^\circ, 3^\circ, 60^\circ)$, and has similar signal-to-noise properties as
-Region 3 or 4. 
+(20^\circ, 3^\circ, 60^\circ)$. 
+%and note that it has similar signal-to-noise
+%properties as Region 3 or 4. 
 
 \subsection{The Earth limb feature}
 The most direct indication for an instrumental cause of the Galactic center
@@ -391,19 +401,22 @@ adopting an energy range from 65--260~GeV in the fit (for details of the
 assumed line shape, etc.,
 see Ref.~\cite{finkbeiner_systematics}).\footnote{If we take into account data
   until 16 Apr 2013, the
-significance of the Earth limb feature is marginally larger, namely
-$3.0\sigma$.} Data accumulated after 5 Sep 2012 can
+significance of the Earth limb feature is $3.0\sigma$, which is marginally
+larger.}
+Data accumulated after 5 Sep 2012 can
 now be used to test whether this excess is a fluke or not. Using the above
 cuts, we find that the rate of events above 100 GeV that were accumulated between the
 start of the mission and 5 Sep 2012 is 9.5 ph/month (in total 474), whereas it
-was 36.7 ph/month between 5 Sep 2012 and 16 Apr 2013. The Reason for this increase
+was 36.7 ph/month between 5 Sep 2012 and 16 Apr 2013. The reason for this increase
 in the rate are the start of weekly dedicated limb observations as well as two extended
 target of opportunity observations in that time period. If the accumulation of
 low incidence angle Earth limb data continues at this pace, 2.3 years of fresh
 data are enough to regenerate the putative signature with $4.0\sigma$
-significance on average, or to rule it out with high significance if it is a
-fluke. Even without a change of the observation strategy, this amount of data
-would be available end of 2014.
+significance \emph{on average}, or to rule it out with high significance if it is a
+fluke. Without a change of the observation strategy, this amount of data would
+be available end of 2014. As we will discuss next, a change of the
+observation strategy would help to collect the same amount of low incidence
+angle Earth limb data in a much shorter time period.
 
 \section{A New Observation Strategy}
 Since the start of the mission, Fermi has spent over 95\% of the time in
