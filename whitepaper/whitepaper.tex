@@ -405,59 +405,6 @@ significance on average, or to rule it out with high significance if it is a
 fluke. Even without a change of the observation strategy, this amount of data
 would be available end of 2014.
 
-\section{A New Observation Strategy}
-Since the start of the mission, Fermi has spent over 95\% of the time in
-\emph{standard survey mode}.
-% With a field of view of $\sim2.5$~sr, the LAT can survey the entire sky in
-% two orbits. 
-In this mode, the LAT points north of zenith towards the orbital pole by an
-angle \zrock\ on one orbit, and south of zenith by the same angle on the next
-orbit; the LAT pointing is confined to the plane perpendicular to its orbital
-velocity. 
-% The slews are performed with a repeating pattern of 17 waypoints defining
-% \zrock\ as a function of time.  \zrock\ was $35\degree$ at the start of the
-% nominal mission on August 4, 2008 until May 7th, 2009, and was changed to
-% $50\degree$ on September 3rd, 2009 for better thermal management of the
-% downward-facing battery radiator.  
-This observation profile, combined with the precession of the orbit every
-$\sim53.4$ days, allows the LAT to observe the whole sky with approximately
-uniform coverage. The standard survey mode is only occasionally interrupted
-for pointed observations of targets of opportunity (ToOs). During such times
-the LAT may point at larger zenith angle than usual, even at the horizon.  In
-addition, survey mode is occasionally interrupted by Autonomous Repoints of
-the observatory for triggered gamma-ray burst follow-up observations, and for
-calibration.
-% Furthermore, \Fermi's survey observations are halted during passages through
-% the South Atlantic Anomaly, resulting in an exposure differential between
-% north and south of $\sim15$\%. 
-
-However, Fermi is capable of very flexible survey mode patterns. These can
-e.g.~alter between survey and pointed observations even within one orbit,
-which allows to efficiently increase coverage of certain parts of the sky if
-required. We will discuss how far this fact can be beneficial for a
-study of the 130 GeV feature at the Galactic center. We will
-focus on the mixed mode ``option3v3'' put forth for discussion by the Fermi
-mission.\footnote{See
-\url{http://fermi.gsfc.nasa.gov/ssc/proposals/alt_obs/obs_modes.html}.}
-
-We are interested in increasing the exposure of the Galactic center. The basic
-strategy would be to switch to pointed observation of the Galactic center as
-soon as it gets above the horizon, and to follow the standard survey mode
-otherwise. More precisely, \Fermi\ would slew from survey mode to the target
-once the target is $10^\circ$ from Earth occultation, and slews back to survey
-mode position once the target is reentering $10^\circ$ from Earth occultation.
-The minimal distance to the Earth horizon (the Earth Avoidance Angle, EAA) is
-set to $30^\circ$, to avoid the loss of too much exposure during the
-transition periods. 
-
-To reduce potential systematics, it is advisable to avoid pointing directly at
-the target. Instead, it is useful to observe it with a broad distribution of
-non-zero incidence angles. In the \emph{mixed observation mode} that we
-discuss here, the target is fixed to RA=266.4$^\circ$ and oscillates within
-the range Dec=$\pm25.6^\circ$ during one precession period such that the
-target lies on the orbital equator. Besides reducing potential systematics,
-the variation of the target position yields an improved sky uniformity on
-short time scales. 
 
 \subsection{Impact on line searches at the GC}
 
@@ -491,6 +438,54 @@ short time scales.
   \label{fig:mollweide2}
 \end{figure}
 
+\section{A New Observation Strategy}
+Since the start of the mission, Fermi has spent over 95\% of the time in
+\emph{standard survey mode}.
+% With a field of view of $\sim2.5$~sr, the LAT can survey the entire sky in
+% two orbits. 
+In this mode, the LAT points north of zenith towards the orbital pole by an
+angle \zrock\ on one orbit, and south of zenith by the same angle on the next
+orbit; the LAT pointing is confined to the plane perpendicular to its orbital
+velocity. 
+This observation profile, combined with the precession of the orbit every
+$\sim53.4$ days, allows the LAT to observe the whole sky with approximately
+uniform coverage. The standard survey mode is only occasionally interrupted
+for pointed observations of targets of opportunity (ToOs). During such times
+the LAT may point at a larger zenith angle than usual, even at the horizon.  In
+addition, survey mode is occasionally interrupted by Autonomous Repoints of
+the observatory for triggered gamma-ray burst follow-up observations, and for
+calibration.
+% Furthermore, \Fermi's survey observations are halted during passages through
+% the South Atlantic Anomaly, resulting in an exposure differential between
+% north and south of $\sim15$\%. 
+
+However, Fermi is capable of very flexible survey mode patterns. For example,
+a single orbit may include both survey mode and pointed observations (``mixed
+mode''), increasing coverage of certain parts of the sky. We will explore the
+impact of such a strategy on study of the 130 GeV feature at the Galactic
+center, focusing on the mixed mode ``option3v3'' put forth for discussion by
+the Fermi mission.\footnote{See
+  \url{http://fermi.gsfc.nasa.gov/ssc/proposals/alt_obs/obs_modes.html}.}
+
+We are interested in increasing the exposure of the Galactic center. The basic
+strategy would be to switch to pointed observation of the Galactic center when
+possible, and to follow the standard survey mode
+otherwise. More precisely, \Fermi\ would slew from survey mode to the target
+once the target is $10^\circ$ from Earth occultation, and slew back to survey
+mode position once the target reenters $10^\circ$ from Earth occultation.
+The minimal distance to the Earth horizon (the Earth Avoidance Angle, EAA) is
+set to $30^\circ$, to avoid the loss of too much exposure during the
+transition periods. 
+
+To reduce potential systematics, it is advisable to avoid pointing directly at
+the target. Instead, it is useful to observe it with a broad distribution of
+non-zero incidence angles. In the \emph{mixed observation mode} that we
+discuss here, the target is fixed to RA=266.4$^\circ$ and oscillates within
+the range Dec=$\pm25.6^\circ$ during one orbital precession period such that the
+target lies on the orbital equator. Besides reducing potential systematics,
+the variation of the target position yields an improved sky uniformity on
+short time scales. 
+
 The upper panels of Fig.~\ref{fig:mollweide} show exposure maps after 55 days
 of survey and mixed observation mode in galactic coordinates. As discussed
 above, in mixed
@@ -503,16 +498,16 @@ under low incidence angles in the range $\theta=4^\circ$--$54^\circ$ (see
 Fig.~\ref{fig:thetaDist}). This has impact on the effective energy resolution
 in that direction, which is shown in the central panel of
 Fig.~\ref{fig:mollweide}. In direction of the GC the energy resolution is in
-fact slightly worsen w.r.t.~standard survey mode: namely $\Delta E/E=9.59\%$
-instead of $\Delta E/E=8.75\%$. However, this has only a small effect on line
-searches.
+fact slightly worsen than in standard survey mode ($\Delta E/E=9.59\%$ instead
+of $\Delta E/E=8.75\%$).  This loss of resolution has only a small effect on
+line searches.
 
 As a \emph{figure of merit} for line searches we define the dimensionless
 quantity 
 $$Q\equiv a\sqrt{\mathcal{E}/\Delta E},$$
  which is proportional to the
-average expected line significance in units of Gaussian sigma. Here, $a$ is an
-arbitrary normalization that we set such that the spatial mean in survey mode
+average expected line significance in units of Gaussian sigma. Here, $a$
+normalizes $Q$ such that the spatial mean in survey mode
 is $\bar Q=1$, and $\mathcal{E}$ is the exposure in cm$^2$s. In the bottom panel of Fig.~\ref{fig:mollweide} we show sky
 maps for $Q$ in mixed and survey mode. At the Galactic center, $Q$ increases
 by a factor $1.43$ when switching from survey to mixed mode. Hence, for
@@ -532,8 +527,8 @@ In Fig.~\ref{fig:limb_exposure}, we show the expected differential exposure of
 the Earth limb at zenith angles $111^\circ<Z<113^\circ$. In standard survey
 mode, practically no limb data is collected at $\theta\lesssim60^\circ$.
 However, during mixed observations a significant number of Earth limb events
-is collected at lower incidence angles. This would accelerate the accumulation
-of low incidence angle Earth limb data w.r.t.~the previous 4.5 years by about
+are collected at lower incidence angles. This would accelerate the accumulation
+of low incidence angle Earth limb data with respect to the previous 4.5 years by about
 \emph{a factor of five}, and will allow a rapid rejection or confirmation of
 the 130 GeV feature in the Earth limb. Note that a collection of Earth limb
 events at incidence angles even lower than $30^\circ$ is possible if the EAA
@@ -564,10 +559,10 @@ rest of the sky.
     \includegraphics[width=0.49\linewidth, angle=-90]{plots/option2_option3_hist.ps}
     \vspace{-0.5cm}
   \end{center}
-  \caption{Histogram on sky pixels of fractional exposure normalized to
+  \caption{Histogram of fractional exposure per sky pixel, normalized to
   standard survey strategy. Left panel compares the modified strategy option 1
   to the standard survey strategy, and the right panel shows the modified
-  strategy option 1 relative to option 3. }
+  strategy option 1 relative to option 3. {\bf two panels??}}
   \label{fig:expHisto}
 \end{figure}
 
@@ -586,6 +581,23 @@ sky is covered by what fraction of the mean exposure. As can be seen from the
 plot, in less than $\sim5\%$ of the sky the daily coverage drops below $20\%$
 of the mean, whereas in $>80\%$ the daily coverage remains above $50\%$ of the
 mean.
+
+\subsection{Possible triggers}
+{\bf moved here from the end, where it did not belong.  Remove entirely??}
+A more conservative approach might involve waiting for certain triggers before
+initiating a change.  For example, one might wait until the Pass 8 processing
+is finished before making the change.  However, it will probably not be public
+for another year or more, and we feel it is undesirable to tie this decision
+to a data release at an uncertain date.  It is also difficult to tie the
+decision to an internal release; in order for the community to provide input,
+the decision must be made based upon public data. 
+
+Another trigger might be to just wait until X significance is achieved.  This
+could cause a long-enough delay to make a later change insufficient.  And this
+is seems backwards.  It would make more sense to make the change immediately,
+and then have a trigger to revert to normal survey mode when the signal
+hypothesis is ruled out at some level.
+
 
 \begin{figure}[t]
   \begin{center}
@@ -657,56 +669,37 @@ GeV spectral line.  The principal reasons for a change are:
   evolves as sqrt(exposure), but with large uncertainty due to Poisson
   fluctuations.  For example, if the signal hypothesis is correct, the
   expected signal significance by 1 Jan 2015 is about $4\sigma$
-  (Fig. \ref{fig:projection}).  Because of Poisson fluctuations, a given
-  realization of future data will achieve a significance between 2.5 and
+  (Fig. \ref{fig:projection}).  Poisson fluctuations broaden this range such
+  that the actual significance achieved is between 2.5 and
   5$\sigma$ 68\% of the time, and between 1.5 and 6.5$\sigma$ 95\% of the
-  time.  A clear separation the signal hypothesis from the null hypothesis
+  time.  A clear separation of the signal hypothesis from the null hypothesis
   requires more data than one might think.  If the project continues with
   standard survey mode until 2016, there is a fair chance that we leave this
-  question unresolved.  We cannot permit that to happen.
+  question unresolved.  We cannot permit this to happen.
 
-\item{\bf A change is not bad for other science.}  There will be winners and
+\item{\bf This is a win-win: the proposed change is not bad for other science.}  There will be winners and
   losers in any change, but more time on the inner Galaxy is good for lots of
   projects (better time coverage for pulsars and transients, etc.).  Many
   wide-angle surveys (SDSS, Pan-STARRs, etc.) have found it fruitful to
   dedicate a significant fraction of observing time to ``deep fields'' where
   greater sensitivity and improved cadence extend the range of phenomena
-  observable.  Furthermore, as see in Fig. \ref{fig:coverage}, roughly half
+  observable.  Furthermore, roughly half
   the sky has more exposure under the new strategy, and even the underexposed
   regions are still observed on a regular basis for continued monitoring of
-  transients. 
-
-\item{\bf It looks good for an extension of the mission.}  Fermi will soon
-  pass the milestone of its 5-year nominal mission, and an extension until
-  2016 has already been granted.  While there are many
-  reasons to grant additional extensions, it is helpful to consider options
-  that improve something faster than sqrt(time).
+  transients (Fig. \ref{fig:coverage}).
 
 \end{itemize}
 
 For all of these reasons, we advocate a change in the survey strategy, as soon
 as possible.
-(Should we specifically advocate option 3 here?)  
+{\bf (Should we specifically advocate option 3 here?)  }
 
-A more conservative approach might involve waiting for certain triggers before
-initiating a change.  For example, one might wait until the Pass 8 processing
-is finished before making the change.  However, it will probably not be public
-for another year or more, and we feel it is undesirable to tie this decision
-to a data release at an uncertain date.  It is also difficult to tie the
-decision to an internal release; in order for the community to provide input,
-the decision must be made based upon public data. 
-
-Another trigger might be to just wait until X significance is achieved.  This
-could cause a long-enough delay to make a later change insufficient.  And this
-is seems backwards.  It would make more sense to make the change immediately,
-and then have a trigger to revert to normal survey mode when the signal
-hypothesis is ruled out at some level.
 
 At least for the next several years, Fermi is uniquely able to address the 130
 GeV line.  If it is an artifact, it is a subtle one -- and understanding its
 origin is important for the dark matter search in
 particular, and the mission as a whole.  If the line is real, we would forever
-regret this opportunity to pursue it aggressively. 
+regret missing this opportunity to pursue it aggressively. 
 
 \clearpage
 \bibliography{whitepaper}
