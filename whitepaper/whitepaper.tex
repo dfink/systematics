@@ -508,8 +508,23 @@ coordinates.  In the mixed mode, the point of highest exposure is at (RA,
 Dec)$\simeq(261.4^\circ$, $0^\circ)$. At the GC, the exposure increases by a
 factor of 2.23 with respect to normal survey mode.
 
+\begin{figure}[t]
+  \begin{center}
+    \includegraphics[width=0.38\linewidth, angle=-90]{plots/option1v2_theta.ps}
+    \includegraphics[width=0.38\linewidth, angle=-90]{plots/option2v2_theta.ps}
+    \includegraphics[width=0.38\linewidth, angle=-90]{plots/option3v3_theta.ps}
+    \includegraphics[width=0.38\linewidth, angle=-90]{plots/survey_theta.ps}
+    \vspace{-0.5cm}
+  \end{center}
+  \caption{The distribution of Galactic center theta angle. Each entry in the
+  histogram corresponds to a 30 seconds interval. The two colors correspond to
+  times where the GC was within $10^\circ$ or between $10^\circ$ to $45^\circ$
+  of the Fermi zenith. Note that this includes time in the SAA.} 
+  \label{fig:thetaDist}
+\end{figure}
+
 In mixed mode, regions close to the GC are predominantly observed
-under low incidence angles in the range $\theta=4^\circ$--$54^\circ$ (see
+at low incidence angles in the range $\theta\simeq5^\circ$--$50^\circ$ (see
 Fig.~\ref{fig:thetaDist}). This has impact on the effective energy resolution,
 which is shown in the central panel of Fig.~\ref{fig:mollweide}. In direction
 of the GC the energy resolution is in fact slightly worsen with respect to the
@@ -569,16 +584,24 @@ however at the cost of losing more exposure on the rest of the sky.
   \label{fig:limb_exposure}
 \end{figure}
 
+In general, to keep systematics that might be related to specific incidence
+angles $\theta$ under control, it is useful if the Galactic center is observed
+at a broad distribution of different incidence angles. For the four
+observation modes, this distribution is shown in the
+Figs.~\ref{fig:thetaDist}. In case of option3v3, $\theta$ spans a range from
+$6\circ$ to $50^\circ$ (the discrete distribution comes from jumps in the
+target position as it follows Dec$\approx0$). This is a significant advantage
+when compared to option1v2 and option2v2, which have pronounced peaks at
+$\theta\sim5^\circ$ and $\theta\sim30^\circ$, respectively.
 
 \subsection{Impact on other science}
-
 Changing from survey mode to mixed mode observation will necessarily drag
 exposure from some parts of the sky towards the Galactic center. In order not
 lower the scientific power of Fermi, it is imperative that the
 \emph{integrated} exposure over the whole sky should remain as high as
-possible. Furthermore, for the observation of transient phenomena, it is
-vital that all parts of the sky are sufficiently covered at least each day;
-`blind spots' should be avoided.
+possible. Furthermore, for the observation of transient phenomena, it is vital
+that all parts of the sky are sufficiently covered at least each day; `blind
+spots' should be avoided.
 
 \begin{table}[t]
   \begin{tabular}{lcrcr}
@@ -663,23 +686,6 @@ hypothesis is ruled out at some level.
 
 
 \dots theta distribution at GC (optional) \dots
-
-\begin{figure}[t]
-  \begin{center}
-    \includegraphics[width=0.38\linewidth, angle=-90]{plots/option1v2_theta.ps}
-    \includegraphics[width=0.38\linewidth, angle=-90]{plots/option2v2_theta.ps}
-    \includegraphics[width=0.38\linewidth, angle=-90]{plots/option3v3_theta.ps}
-    \includegraphics[width=0.38\linewidth, angle=-90]{plots/survey_theta.ps}
-    \vspace{-0.5cm}
-  \end{center}
-  \caption{The distribution of Galactic center theta angle. Each entry in the
-  histogram corresponds to a 30 seconds interval. The two colors correspond to
-  different ranges from the GC and to the Fermi zenith angle.
-  Note that this includes time in the SAA.} %Right panel: in stead the sky
-  %coverage, we plot the fractional exposure time relative to the mean value of
-  %the exposure map of each day.}
-  \label{fig:thetaDist}
-\end{figure}
 
 \begin{figure}[t]
   \begin{center}
