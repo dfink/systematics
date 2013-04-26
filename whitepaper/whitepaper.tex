@@ -217,7 +217,7 @@ the higher energy is the $\gamma\gamma$ line.
 \dots Here, we propose to settle this issue for good, using Fermi LAT itself
 \dots
 
-\section{Current situation and projection}
+\section{Current status of signal and systematics}
 Major concerns about the Galactic center signature are: (1) its statistical
 robustness and (2) its possible cause by an instrumental systematic. We will
 here shortly summarize the current situation, concentrating on statistical
@@ -225,8 +225,19 @@ properties of the Galactic center excess and -- as arguably the most worrisome
 indication for a systematic -- the feature in the low incidence angle Earth
 limb data.
 
-\subsection{The Galactic center feature}
- 
+\subsection{Time evolution of the signal significance}
+The first claims of a spectral feature \citep{Bringmann:2012,Weniger:2012}
+were based on 3.5 years of LAT data (through 4 February 2012).  Subsequent
+data provide an opportunity to confirm the signal and see how it evolves with
+time.  Because the signal is based on approximately 1 signal count per month
+in the ROI, Poisson fluctuations cause the significance to accumulate in
+something akin to a random walk.  The mean trend in significance builds with
+sqrt(time) but with large uncertainties.  A confirmation at $3\sigma$ of the
+signal in the original ROI (i.e. no trials factor) would be persuasive, but
+the exposure required to get an expected significance of $3\sigma$ is quite
+different from the exposure required to achieve $3\sigma$ \emph{with 95\%
+  confidence.}
+
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=0.60\linewidth]{plots/semester_fluxes.eps}
@@ -236,7 +247,7 @@ limb data.
     August 2008, obtained by an unbinned likelihood fit to the data in
     Region~3 of Ref.~\cite{Weniger:2012}. The gray band shows the expected
     signal rate with $\pm1\sigma$ uncertainty as extracted from data taken until
-    4 February 2012; the mild variations stem from variations of the
+    4 February 2012; the small variations stem from variations of the
     exposure. In red we show data taken since 4 February 2012
     together with the projected event rate.}
   \label{fig:semester_fluxes}
@@ -319,27 +330,34 @@ sigma level, and with the signal-hypothesis at the two sigma level (see also
 Ref.~\cite{Weniger:2013dya}). In case of a real signal, the last bin would
 represent a decent downward fluctuation. However, it is still too premature to
 draw strong conclusions from that.
-\medskip
 
-\emph{Projection.} In Fig.~2 we shows 68\% and 95\% CL bands for the projected
-evolution of the signal significance as function of exposure accumulated after
-4 February 2012.  To generate the plot, we simulate events from a power-law
-plus line model and derive the signal significance for each realization as
-described above. The background and signal correspond to the best-fit values
-obtained in Region 3 with data until 4 February 2012.  For different
-realizations we allow the signal normalization to vary following a normal
-distribution that is matched to the $\pm1\sigma$ flux uncertainties from the
-3.5 year results. We checked that similar results are obtained for Region 4,
-or in the hourglass region discussed below.
+\emph{Projection.} 
+Going forward, the signal hypothesis predicts that the significance will build
+as sqrt(exposure), but with large uncertainties.  It is essential to estimate
+these uncertainties, because we need to know how much exposure is required to
+\emph{cleanly} separate the signal hypothesis from the null hypothesis. 
 
-The first vertical dashed line indicates the exposure that will be acquired
-until end of next year. It is likely that a true signal would be confirmed
-with $>3\sigma$ significance, although this is not guaranteed due to the
-$95\%$ CL error bands that range down to significances of only $1\sigma$. What
-is more, it will be difficult to robustly rule out the signal hypothesis at
-the $3\sigma$ level unless the accumulated significance will be close to zero.
-As we will discuss in the next section, a change in the observation strategy
-will allow a much quicker confirmation/rejection of the signal hypothesis.
+In Fig.~2 we show 68\% and 95\% CL bands for the projected evolution of the
+signal significance as function of exposure accumulated after 4 February 2012.
+To generate the plot, we simulate events from a power-law plus line model and
+derive the signal significance for each realization as described above. The
+background and signal correspond to the best-fit values obtained in Region 3
+with data until 4 February 2012.  For different realizations we allow the
+signal normalization to vary following a normal distribution that is matched
+to the $\pm1\sigma$ flux uncertainties from the 3.5 year results. We checked
+that similar results are obtained for Region 4, or in the hourglass region
+discussed below.
+
+The first vertical dashed line indicates the exposure that will be acquired by
+1 Jan 2015 with the current survey strategy. It is likely that a true signal
+would be confirmed with $>3\sigma$ significance, although this is not
+guaranteed due to the $95\%$ CL error bands that range down to significances
+of only $1\sigma$. Worse, it will be difficult to robustly rule out the signal
+hypothesis at the $3\sigma$ level unless the accumulated significance is close
+to zero.  This drives home the point that, left unchanged, the current survey
+strategy may well leave us with ambiguous results well into 2015.  As we will
+discuss in the next section, a change in the observation strategy will allow a
+much quicker confirmation/rejection of the signal hypothesis.
 \medskip
 
 \emph{Alternative ROI.} For future analysis of the 130 GeV feature in the LAT
@@ -361,7 +379,7 @@ the Earth limb~\cite{linepaper, finkbeiner_systematics, Hektor:2012ev,
 bloom_charles_fermi_lat_line}. Although it is challenging to understand how
 such a feature could possibly be mapped onto the Galactic center while being
 absent in other test regions, this feature raised serious concerns about the
-energy reconstruction of the LAT around 130 GeV. More data is required to
+energy reconstruction of the LAT around 130 GeV.  Additional limb data would
 determine whether the Earth limb feature is indeed a true systematic effect or
 merely a statistical fluke in light of a large number of hidden trials.
 
@@ -369,7 +387,8 @@ We define here the Earth limb excess by selecting P7CLEAN events until 5 Sep 201
 incidence angles $\theta<60^\circ$, and excluding events within $20^\circ$ of
 the Galactic center. In this data set, the line feature at 130~GeV has a
 significance of $2.7\sigma$ when
-adopting an energy range from 65--260~GeV in the fit (for details of the assumed line shape etc
+adopting an energy range from 65--260~GeV in the fit (for details of the
+assumed line shape, etc.,
 see Ref.~\cite{finkbeiner_systematics}).\footnote{If we take into account data
   until 16 Apr 2013, the
 significance of the Earth limb feature is marginally larger, namely
@@ -377,7 +396,7 @@ $3.0\sigma$.} Data accumulated after 5 Sep 2012 can
 now be used to test whether this excess is a fluke or not. Using the above
 cuts, we find that the rate of events above 100 GeV that were accumulated between the
 start of the mission and 5 Sep 2012 is 9.5 ph/month (in total 474), whereas it
-was 36.7 ph/month between 5 Sep 2012 and 16 Apr 2013. Reason for this increase
+was 36.7 ph/month between 5 Sep 2012 and 16 Apr 2013. The Reason for this increase
 in the rate are the start of weekly dedicated limb observations as well as two extended
 target of opportunity observations in that time period. If the accumulation of
 low incidence angle Earth limb data continues at this pace, 2.3 years of fresh
@@ -387,7 +406,7 @@ fluke. Even without a change of the observation strategy, this amount of data
 would be available end of 2014.
 
 \section{A New Observation Strategy}
-Since start of the mission, Fermi has spend over 95\% of the time in
+Since the start of the mission, Fermi has spent over 95\% of the time in
 \emph{standard survey mode}.
 % With a field of view of $\sim2.5$~sr, the LAT can survey the entire sky in
 % two orbits. 
@@ -415,15 +434,15 @@ calibration.
 However, Fermi is capable of very flexible survey mode patterns. These can
 e.g.~alter between survey and pointed observations even within one orbit,
 which allows to efficiently increase coverage of certain parts of the sky if
-required. We will discuss here in how far this fact can be beneficial for a
+required. We will discuss how far this fact can be beneficial for a
 study of the 130 GeV feature at the Galactic center. We will
-follow here the mixed mode ``option3v3'' proposed by the Fermi
+focus on the mixed mode ``option3v3'' put forth for discussion by the Fermi
 mission.\footnote{See
 \url{http://fermi.gsfc.nasa.gov/ssc/proposals/alt_obs/obs_modes.html}.}
 
 We are interested in increasing the exposure of the Galactic center. The basic
 strategy would be to switch to pointed observation of the Galactic center as
-soon as it gets above horizon, and to follow the standard survey mode
+soon as it gets above the horizon, and to follow the standard survey mode
 otherwise. More precisely, \Fermi\ would slew from survey mode to the target
 once the target is $10^\circ$ from Earth occultation, and slews back to survey
 mode position once the target is reentering $10^\circ$ from Earth occultation.
@@ -431,7 +450,7 @@ The minimal distance to the Earth horizon (the Earth Avoidance Angle, EAA) is
 set to $30^\circ$, to avoid the loss of too much exposure during the
 transition periods. 
 
-To reduce potential systematics, it is advisable to avoid point directly at
+To reduce potential systematics, it is advisable to avoid pointing directly at
 the target. Instead, it is useful to observe it with a broad distribution of
 non-zero incidence angles. In the \emph{mixed observation mode} that we
 discuss here, the target is fixed to RA=266.4$^\circ$ and oscillates within
@@ -457,7 +476,7 @@ short time scales.
     Effective energy resolution.
   \emph{Bottom panels:} Figure of merit for gamma-ray line searches. In all
   panels the overlaid lines show the main axes of the equatorial coordinate
-  system; sky maps are symmetric around the Earth equator.}
+  system; sky maps are symmetric around the celestial equator.}
   \label{fig:mollweide}
 \end{figure}
 
@@ -488,15 +507,18 @@ fact slightly worsen w.r.t.~standard survey mode: namely $\Delta E/E=9.59\%$
 instead of $\Delta E/E=8.75\%$. However, this has only a small effect on line
 searches.
 
-As \emph{figure-of-merit} for line searches we define the dimensionless
-quantity $Q\equiv a\sqrt{\mathcal{E}/\Delta E}$, which is proportional to the
+As a \emph{figure of merit} for line searches we define the dimensionless
+quantity 
+$$Q\equiv a\sqrt{\mathcal{E}/\Delta E},$$
+ which is proportional to the
 average expected line significance in units of Gaussian sigma. Here, $a$ is an
 arbitrary normalization that we set such that the spatial mean in survey mode
-is $\bar Q=1$. In the bottom panel of Fig.~\ref{fig:mollweide} we show sky
+is $\bar Q=1$, and $\mathcal{E}$ is the exposure in cm$^2$s. In the bottom panel of Fig.~\ref{fig:mollweide} we show sky
 maps for $Q$ in mixed and survey mode. At the Galactic center, $Q$ increases
 by a factor $1.43$ when switching from survey to mixed mode. Hence, for
 gamma-ray lines at the GC, the growth rate of the signal significance is
-increased by $40\%$ when switching from survey to mixed observation mode.
+increased by $40\%$ when switching from survey to mixed observation mode,
+equivalent to doubling the exposure/time. 
 
 \subsection{Impact on Earth limb data}
 An important side effect of the mixed observation mode is the accumulation of
@@ -509,13 +531,13 @@ incidence angles $\theta\gtrsim30^\circ$ twice every 1.5 hours.
 In Fig.~\ref{fig:limb_exposure}, we show the expected differential exposure of
 the Earth limb at zenith angles $111^\circ<Z<113^\circ$. In standard survey
 mode, practically no limb data is collected at $\theta\lesssim60^\circ$.
-However, during mixed observations a significant amount of Earth limb events
+However, during mixed observations a significant number of Earth limb events
 is collected at lower incidence angles. This would accelerate the accumulation
 of low incidence angle Earth limb data w.r.t.~the previous 4.5 years by about
 \emph{a factor of five}, and will allow a rapid rejection or confirmation of
 the 130 GeV feature in the Earth limb. Note that a collection of Earth limb
 events at incidence angles even lower than $30^\circ$ is possible if the EAA
-is set appropriately, however with the price of loosing more exposure on the
+is set appropriately, however at the cost of losing more exposure on the
 rest of the sky.
 
 \begin{figure}[t]
@@ -549,10 +571,11 @@ rest of the sky.
   \label{fig:expHisto}
 \end{figure}
 
-In Fig.~\ref{fig:expHisto}, we show as histogram the distribution of exposure
+In Fig.~\ref{fig:expHisto}, we show a histogram of the distribution of exposure
 in different pixels of the sky (using a Healpix projection with $N=128$). In
+the 
 case of standard survey mode, the exposure distribution spans a factor of two,
-whereas is spans a factor $12$ in the mixed observation mode. 
+whereas it spans a factor $12$ in the mixed observation mode. 
 % However, only in a small fraction of the sky, about XXX\%, the coverage
 % drops by as much as a factor of $0.3$--$0.5$, and never below $0.3$.
 
@@ -591,12 +614,12 @@ mean.
   \caption{The distribution of Galactic center theta angle. Each entry in the histogram corresponds to a 30 seconds interval. Note that this includes time in the SAA.} %Right panel: in stead the sky
   %coverage, we plot the fractional exposure time relative to the mean value of
   %the exposure map of each day.}
-  \label{fig:coverage}
+  \label{fig:thetaDist}
 \end{figure}
 
 \begin{figure}[t]
   \begin{center}
-    \includegraphics[width=0.49\linewidth, angle=-90]{plots/exposure_pixel_hist_perday_survey.ps}
+    \includegraphics[width=0.9\linewidth, angle=0]{plots/transient_source_map.ps}
     \vspace{-0.5cm}
   \end{center}
   \caption{The spatial distribution of FAVA sources overplotted with the exposure map of Option 1 survey strategy. Red circles mark sources with expected exposure $>150\%$ than the standard survey strategy with a total number of 25 sources. Green circles mark sources with expected exposure $<50\%$ than the standard survey strategy with a total number of 59 sources. The rest sources are marked by blue cycles in total 131. }
