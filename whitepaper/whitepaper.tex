@@ -111,7 +111,7 @@ Amsterdam, Netherlands}
 \affiliation{Department of Physics, and Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA}
 \affiliation{Einstein Fellow}
 
-\author{Douglas P. Finkbeiner}
+\author{Douglas P.~Finkbeiner}
 %\email{dfinkbeiner@cfa.harvard.edu}
 \affiliation{Institute for Theory and Computation,
   Harvard-Smithsonian Center for Astrophysics, 
@@ -121,9 +121,9 @@ Amsterdam, Netherlands}
   Harvard University, 
   Cambridge, MA 02138, USA}
 
-% \author{Torsten Bringmann}
-% \affiliation{II.~Institute for Theoretical Physics, University of Hamburg,
-% Luruper Chaussee 149, 22761 Hamburg, Germany}
+\author{Torsten Bringmann}
+\affiliation{II.~Institute for Theoretical Physics, University of Hamburg,
+Luruper Chaussee 149, 22761 Hamburg, Germany}
 
 \author{Nestor Mirabel}
 \affiliation{affil}
@@ -584,17 +584,34 @@ however at the cost of losing more exposure on the rest of the sky.
     shows the modified strategy option2v2 and option2v3.}
   \label{fig:expHisto}
 \end{figure}
+Changing from survey mode to mixed mode observation will necessarily drag
+exposure from some parts of the sky towards the Galactic center. In order not
+lower the scientific power of Fermi, the \emph{integrated} exposure over the
+whole sky should however remain as high as possible.  Furthermore, for the
+observation of transient phenomena, it is vital that all parts of the sky are
+sufficiently covered at least each day; `blind spots' should be avoided.
 
-In Fig.~\ref{fig:expHisto}, we show a histogram of the distribution of exposure
-in different pixels of the sky (using a Healpix projection with $N=128$). In
-the 
-case of standard survey mode, the exposure distribution spans a factor of two,
-whereas it spans a factor $12$ in the mixed observation mode. 
+\begin{table}[t]
+  \begin{tabular}{lcrcr}
+    Mode && Integrated exposure && GC exposure \\
+    survey && 5.54e9 && \\
+    option1v2 && 5.13e9 && \\
+    option2v2 && && \\
+    option3v3 && && \\
+%     % survey
+  \end{tabular}
+  \caption{This is the caption}
+\end{table}
+
+In Fig.~\ref{fig:expHisto}, we show a histogram of the distribution of
+exposure in different pixels of the sky (using a Healpix projection with
+$N=128$). In the case of standard survey mode, the exposure distribution spans
+a factor of two, whereas it spans a factor $12$ in the mixed observation mode. 
 % However, only in a small fraction of the sky, about XXX\%, the coverage
 % drops by as much as a factor of $0.3$--$0.5$, and never below $0.3$.
 
-For the observation of transient phenomena, it is vital that all parts of the
-sky are sufficiently covered at least each day. In Fig.~\ref{fig:coverage} we
+
+In Fig.~\ref{fig:coverage} we
 show for each individual day of the precession period which fraction of the
 sky is covered by what fraction of the mean exposure. As can be seen from the
 plot, in less than $\sim5\%$ of the sky the daily coverage drops below $20\%$
