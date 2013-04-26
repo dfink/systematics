@@ -572,6 +572,36 @@ however at the cost of losing more exposure on the rest of the sky.
 
 \subsection{Impact on other science}
 
+Changing from survey mode to mixed mode observation will necessarily drag
+exposure from some parts of the sky towards the Galactic center. In order not
+lower the scientific power of Fermi, it is imperative that the
+\emph{integrated} exposure over the whole sky should remain as high as
+possible. Furthermore, for the observation of transient phenomena, it is
+vital that all parts of the sky are sufficiently covered at least each day;
+`blind spots' should be avoided.
+
+\begin{table}[t]
+  \begin{tabular}{lcrcr}
+    \hline
+    Mode && Mean exposure [$10^9\rm\,cm^2\,s]$ && GC exposure
+    [$10^9\rm\,cm^2\,s]$ \\\hline
+    survey && 4.74 && 4.33 \\
+    option1v2 && 4.38 && 13.1 \\
+    option2v2 && 4.44 && 10.7 \\
+    option3v3 && 4.56 && 9.67  \\
+    \hline
+  \end{tabular}
+  \caption{\textbf{(Double check numbers)} Mean exposure (averaged over full
+  sky) and exposure of GC for different observation profiles in comparison.
+  We assume P7CLEAN events at 100 GeV and 55 days of observation.}
+  \label{tab:exposures}
+\end{table}
+
+In Tab.~\ref{tab:exposures}, we compare for the four reference observations
+strategies the mean sky exposures obtained after 55 days of observation. The
+overall loss in sky exposure w.r.t.~to the standard survey mode is small and
+between $4\%$ (option3v3) to $8\%$ (option1v2).
+
 \begin{figure}[t]
   \begin{center}
     \includegraphics[width=0.39\linewidth, angle=-90]{plots/option1_survey_hist.ps}
@@ -584,41 +614,36 @@ however at the cost of losing more exposure on the rest of the sky.
     shows the modified strategy option2v2 and option2v3.}
   \label{fig:expHisto}
 \end{figure}
-Changing from survey mode to mixed mode observation will necessarily drag
-exposure from some parts of the sky towards the Galactic center. In order not
-lower the scientific power of Fermi, the \emph{integrated} exposure over the
-whole sky should however remain as high as possible.  Furthermore, for the
-observation of transient phenomena, it is vital that all parts of the sky are
-sufficiently covered at least each day; `blind spots' should be avoided.
 
-\begin{table}[t]
-  \begin{tabular}{lcrcr}
-    Mode && Integrated exposure && GC exposure \\
-    survey && 5.54e9 && \\
-    option1v2 && 5.13e9 && \\
-    option2v2 && && \\
-    option3v3 && && \\
-%     % survey
-  \end{tabular}
-  \caption{This is the caption}
-\end{table}
+The variations of the exposure over different regions of the sky are
+illustrated in in Fig.~\ref{fig:expHisto}, where we show a histogram of the
+distribution of exposure in different sky pixels (using a Healpix projection
+with $N=128$). In the case of standard survey mode, the exposure distribution
+spans already a factor of two (being highest at Dec=$\pm90^\circ$), whereas it
+spans a factor $10$ in the mixed mode option3v3. However, in no region of the
+sky the exposure drops by more than a factor of three w.r.t.~to normal survey
+mode.
 
-In Fig.~\ref{fig:expHisto}, we show a histogram of the distribution of
-exposure in different pixels of the sky (using a Healpix projection with
-$N=128$). In the case of standard survey mode, the exposure distribution spans
-a factor of two, whereas it spans a factor $12$ in the mixed observation mode. 
-% However, only in a small fraction of the sky, about XXX\%, the coverage
-% drops by as much as a factor of $0.3$--$0.5$, and never below $0.3$.
+\begin{figure}[t]
+  \begin{center}
+    \includegraphics[width=0.38\linewidth, angle=-90]{plots/exposure_pixel_hist_perday_option1.ps}
+    \includegraphics[width=0.38\linewidth, angle=-90]{plots/exposure_pixel_hist_perday_option2.ps}
+    \includegraphics[width=0.38\linewidth, angle=-90]{plots/exposure_pixel_hist_perday.ps}
+    \includegraphics[width=0.38\linewidth, angle=-90]{plots/exposure_pixel_hist_perday_survey.ps}
+    \vspace{-0.5cm}
+  \end{center}
+  \caption{Daily sky coverage with different range of exposure
+  time normalized to the mean value of the exposure map of each day (in total
+  55 days to complete on orbit precession period).} 
+  \label{fig:coverage}
+\end{figure}
 
-
-In Fig.~\ref{fig:coverage} we
-show for each individual day of the precession period which fraction of the
-sky is covered by what fraction of the mean exposure. As can be seen from the
-plot, in less than $\sim5\%$ of the sky the daily coverage drops below $20\%$
-of the mean, whereas in $>80\%$ the daily coverage remains above $50\%$ of the
-mean.
-
-\dots comparison of exposure integrated over whole sky for different options \dots
+For transient phenomena, the daily sky exposure is of importance. In the
+Figs.~\ref{fig:coverage} we show for each individual day of the precession
+period which fraction of the sky is covered by what fraction of the mean
+exposure. In case of the mixed mode observations option2v2 and option3v3, in
+less than $5\%$ of the sky the daily coverage drops below $20\%$ of the daily
+mean, whereas in $>80\%$ the coverage remains above $50\%$ of the mean.
 
 \subsection{Possible triggers}
 {\bf moved here from the end, where it did not belong.  Remove entirely??}
@@ -636,20 +661,6 @@ is seems backwards.  It would make more sense to make the change immediately,
 and then have a trigger to revert to normal survey mode when the signal
 hypothesis is ruled out at some level.
 
-
-\begin{figure}[t]
-  \begin{center}
-    \includegraphics[width=0.38\linewidth, angle=-90]{plots/exposure_pixel_hist_perday_option1.ps}
-    \includegraphics[width=0.38\linewidth, angle=-90]{plots/exposure_pixel_hist_perday_option2.ps}
-    \includegraphics[width=0.38\linewidth, angle=-90]{plots/exposure_pixel_hist_perday.ps}
-    \includegraphics[width=0.38\linewidth, angle=-90]{plots/exposure_pixel_hist_perday_survey.ps}
-    \vspace{-0.5cm}
-  \end{center}
-  \caption{Daily sky coverage with different range of exposure
-  time normalized to the mean value of the exposure map of each day (in total
-  55 days to complete on orbit precession period).} 
-  \label{fig:coverage}
-\end{figure}
 
 \dots theta distribution at GC (optional) \dots
 
