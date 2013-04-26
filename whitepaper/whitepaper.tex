@@ -533,9 +533,9 @@ However, this loss of resolution has only a small effect on line searches.
 
 In Fig.~\ref{fig:mollweide2}, we show the same information, but for the mixed
 modes option1v2 (left) and option2v2 (right). The GC exposure increases by a
-factor XXX and XXX, respectively, whereas the effective energy resolution is
-$XXX$ and $XXX$. Apart from the characteristics at the GC, these modes mainly
-differ in the impact on other science goals, as we will discuss below.
+factor 3.0 and 2.5, respectively, whereas the effective energy resolution is
+$11.1\%$ and $10.0\%$. Apart from the characteristics at the GC, these modes
+mainly differ in the impact on other science goals, as we will discuss below.
 \medskip
 
 As a convenient \emph{figure of merit} for line searches we define the
@@ -590,7 +590,7 @@ at a broad distribution of different incidence angles. For the four
 observation modes, this distribution is shown in the
 Figs.~\ref{fig:thetaDist}. In case of option3v3, $\theta$ spans a range from
 $6\circ$ to $50^\circ$ (the discrete distribution comes from jumps in the
-target position as it follows Dec$\approx0$). This is a significant advantage
+target position as it follows $\rm Dec\simeq$). This is a significant advantage
 when compared to option1v2 and option2v2, which have pronounced peaks at
 $\theta\sim5^\circ$ and $\theta\sim30^\circ$, respectively.
 
@@ -668,6 +668,23 @@ exposure. In case of the mixed mode observations option2v2 and option3v3, in
 less than $5\%$ of the sky the daily coverage drops below $20\%$ of the daily
 mean, whereas in $>80\%$ the coverage remains above $50\%$ of the mean.
 
+\begin{figure}[t]
+  \begin{center}
+    \includegraphics[width=0.7\linewidth, angle=-90]{plots/source_type_hist.ps}
+    \vspace{-0.5cm}
+  \end{center}
+  \caption{Source type distribution for the 1FAV catalog. We classify the sources into three categories: sources with expected exposure time (assuming option 1 survey strategy) less than 50\% of the standard survey strategy; sources with expected exposure between 50\% to 150\% compared to the standard survey strategy; and sources with expected exposure more than 150\%. }
+  \label{fig:transhist}
+\end{figure}
+
+In Fig.~\ref{fig:transhist} we show how the exposure of different variable
+source types from the 1FAV is affected by changing from survey to mixed mode
+observations. For the different source classes, we show the fraction of
+sources which would loose in exposure by than $50\%$ (red), which would gain
+more than $50\%$ of exposure (green), and which remain relatively uneffected
+(black). \textbf{(MENG: which source class is most effected? How much is this
+effected? Do we care?)}
+
 \subsection{Possible triggers}
 {\bf moved here from the end, where it did not belong.  Remove entirely??}
 A more conservative approach might involve waiting for certain triggers before
@@ -684,27 +701,14 @@ is seems backwards.  It would make more sense to make the change immediately,
 and then have a trigger to revert to normal survey mode when the signal
 hypothesis is ruled out at some level.
 
-
-\dots theta distribution at GC (optional) \dots
-
-\begin{figure}[t]
-  \begin{center}
-    \includegraphics[width=0.9\linewidth, angle=0]{plots/transient_source_map.ps}
-    \vspace{-0.5cm}
-  \end{center}
-  \caption{The spatial distribution of 1FAV sources overplotted with the exposure map of Option 1 survey strategy. Red circles mark sources with expected exposure $>150\%$ than the standard survey strategy with a total number of 25 sources. Green circles mark sources with expected exposure $<50\%$ than the standard survey strategy with a total number of 59 sources. The rest sources are marked by blue cycles in total 131. }
-  \label{fig:transmap}
-\end{figure}
-
-\begin{figure}[t]
-  \begin{center}
-    \includegraphics[width=0.7\linewidth, angle=-90]{plots/source_type_hist.ps}
-    \vspace{-0.5cm}
-  \end{center}
-  \caption{Source type distribution for the 1FAV catalog. We classify the sources into three categories: sources with expected exposure time (assuming option 1 survey strategy) less than 50\% of the standard survey strategy; sources with expected exposure between 50\% to 150\% compared to the standard survey strategy; and sources with expected exposure more than 150\%. }
-  \label{fig:transhist}
-\end{figure}
-
+% \begin{figure}[t]
+%   \begin{center}
+%     \includegraphics[width=0.9\linewidth, angle=0]{plots/transient_source_map.ps}
+%     \vspace{-0.5cm}
+%   \end{center}
+%   \caption{The spatial distribution of 1FAV sources overplotted with the exposure map of Option 1 survey strategy. Red circles mark sources with expected exposure $>150\%$ than the standard survey strategy with a total number of 25 sources. Green circles mark sources with expected exposure $<50\%$ than the standard survey strategy with a total number of 59 sources. The rest sources are marked by blue cycles in total 131. }
+%   \label{fig:transmap}
+% \end{figure}
 
 \section{Discussion and Conclusion}
 \label{sec:Conclusion}
