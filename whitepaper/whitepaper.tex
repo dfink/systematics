@@ -301,7 +301,7 @@ probability of 95\%.}
   Ref.~\cite{Weniger:2012}, together with the simpler hourglass region
   proposed for future studies (cp.~also with Fig.~3 in
   Ref.~\cite{Bringmann:2012ez}).}
-  \label{fig:projection}
+  \label{fig:regions}
 \end{figure}
 
 \emph{Status.} 
@@ -338,8 +338,8 @@ These parameters together with the details of the fit define our \emph{signal
 hypothesis}; the \emph{null hypothesis} is that the flux is compatible with a
 single power law, i.e.~$N_s=0$.
 
-In Fig.~1 we show the distribution of these excess events in bins of six
-months. The first seven bins correspond to the 3.5 years that define the
+In Fig.~\ref{fig:semester_fluxes} we show the distribution of these excess events in bins of six
+month. The first seven bins correspond to the 3.5 years that define the
 excess, the two red data points are data taken afterwards. Error bars include
 background fluctuations and are given by $\Delta N_s = \sqrt{N_s+N_b}$. To
 obtain $N_s$ and $N_b$, we fit the data of each six-month bin
@@ -359,7 +359,7 @@ as sqrt(exposure), but with large uncertainties.  It is essential to estimate
 these uncertainties, because we need to know how much exposure is required to
 \emph{cleanly} separate the signal from the null hypothesis. 
 
-In Fig.~2 we show 68\% and 95\% CL bands for the projected evolution of the
+In Fig.~\ref{fig:projection} we show 68\% and 95\% CL bands for the projected evolution of the
 signal significance as function of exposure accumulated after 4 February 2012.
 To generate the plot, we simulate events from a power-law plus line model and
 derive the signal significance for each realization as described above. The
@@ -381,7 +381,7 @@ hypothesis at the $3\sigma$ level unless the accumulated significance is close
 to zero.\footnote{To exclude the signal hypothesis at, say, the $2\sigma$ level at a
 specific point in time, the actually observed significance has to lie outside
 of the predicted
-$95\%$ CL band in Fig.~2.} This drives home the point
+$95\%$ CL band in Fig.~\ref{fig:projection}.} This drives home the point
 that, left unchanged, the current survey
 strategy may well leave us with ambiguous results well into 2015.  As we will
 discuss in the next section, a change in the observation strategy will allow a
@@ -391,7 +391,7 @@ much quicker confirmation/rejection of the signal hypothesis.
 \emph{Alternative ROI.} For future analysis of the 130 GeV feature in the LAT
 data, instead of using the difficult to manage regions from
 Ref.~\cite{Weniger:2012}, we propose to use the region shown in black in
-Fig.~3. This region is (1) geometrically simple and easy to reproduce, and (2)
+Fig.~\ref{fig:regions}. This region is (1) geometrically simple and easy to reproduce, and (2)
 it is centered on the part of the sky where the excess was largest in the
 previous data. Though we avoid any statement about particular dark matter
 profiles, it is an \emph{a priori} region for data taken since 4 February
@@ -591,7 +591,7 @@ respect to the previous 4.5 years by about \emph{a factor of five}, and will
 allow a rapid rejection or confirmation of the 130 GeV feature in part of the
 Earth limb spectrum. Note that a collection of Earth limb events at incidence
 angles even lower than $30^\circ$ is possible if the EAA is set appropriately,
-however at the cost of losing more exposure on the rest of the sky.
+however at the cost of loosing more exposure on the rest of the sky.
 
 \begin{figure}[t]
   \begin{center}
@@ -611,11 +611,12 @@ however at the cost of losing more exposure on the rest of the sky.
 In general, to keep systematics that might be related to specific incidence
 angles $\theta$ under control, it is useful if the Galactic center is observed
 at a broad distribution of different incidence angles. For the four
-observation modes, this distribution is shown in the
-Figs.~\ref{fig:thetaDist}. In case of option3v3, $\theta$ spans a range from
-$6\circ$ to $50^\circ$ (the discrete distribution comes from jumps in the
-target position as it follows $\rm Dec\simeq$). This is a significant advantage
-when compared to option1v2 and option2v2, which have pronounced peaks at
+observation modes, this distribution is shown in
+Fig.~\ref{fig:thetaDist}. In case of option3v3, $\theta$ spans a range from
+$5^\circ$ to $50^\circ$ (the discrete distribution comes from jumps in the
+target position as it follows $\rm Dec\simeq0^\circ$). This is a significant
+advantage
+when compared to option1v2 and option2v2, which feature pronounced peaks at
 $\theta\sim5^\circ$ and $\theta\sim30^\circ$, respectively.
 
 \subsection{Impact on other science}
@@ -666,7 +667,7 @@ The variations of the exposure over different regions of the sky are
 illustrated in in Fig.~\ref{fig:expHisto}, where we show a histogram of the
 distribution of exposure in different sky pixels (using a Healpix projection
 with $N=128$). In the case of standard survey mode, the exposure distribution
-spans already a factor of two (being highest at Dec=$\pm90^\circ$), whereas it
+spans already a factor of two (being largest at Dec=$\pm90^\circ$), whereas it
 spans a factor $10$ in the mixed mode option3v3. However, in no region of the
 sky the exposure drops by more than a factor of three w.r.t.~to normal survey
 mode.
@@ -685,8 +686,8 @@ mode.
   \label{fig:coverage}
 \end{figure}
 
-For transient phenomena, the daily sky exposure is of importance. In the
-Figs.~\ref{fig:coverage} we show for each individual day of the precession
+For transient phenomena, the daily sky exposure is of importance. In 
+Fig.~\ref{fig:coverage} we show for each individual day of the precession
 period which fraction of the sky is covered by what fraction of the mean
 exposure. In case of the mixed mode observations option2v2 and option3v3, in
 less than $5\%$ of the sky the daily coverage drops below $20\%$ of the daily
@@ -697,32 +698,33 @@ mean, whereas in $>80\%$ the coverage remains above $50\%$ of the mean.
     \includegraphics[width=0.7\linewidth, angle=-90]{plots/source_type_hist.ps}
     \vspace{-0.5cm}
   \end{center}
-  \caption{Source type distribution for the 1FAV catalog~\cite{1FAV:2013}. We classify the sources into three categories: sources with expected exposure time (assuming option 1 survey strategy) less than 50\% of the standard survey strategy; sources with expected exposure between 50\% to 150\% compared to the standard survey strategy; and sources with expected exposure more than 150\%. }
+  \caption{Source type distribution for the 1FAV
+    catalog~\cite{Fermi-LAT:2013jsa}. We classify the sources into three
+    categories: sources with expected exposure time (assuming option1v2) less than 50\% of the standard survey strategy; sources with expected exposure between 50\% to 150\% compared to the standard survey strategy; and sources with expected exposure more than 150\%. }
   \label{fig:transhist}
 \end{figure}
 
 The Fermi All-sky Variability Analysis has detected a total
 of 215 flaring gamma-ray sources over the entire sky based
 on weekly time intervals of 47 months LAT
-data~\cite{1FAV:2013}. In Fig.~\ref{fig:transhist} we show
+data~\cite{Fermi-LAT:2013jsa}. In Fig.~\ref{fig:transhist} we show
 how the exposure of different variable source types could be
 affected by changing from survey to mixed mode
 observations. For the different source classes, we show the
 fraction of sources which would loose in exposure by than
 $50\%$ (red), which would gain more than $50\%$ of exposure
 (green), and which remain relatively unaffected (black). For
-option1v2, we have 25 sources would receive more than 150\%
+option1v2, we have 25 sources that would receive more than 150\%
 exposure compared to the standard survey strategy with finer
 sampling on time domain (including the recently detected
 Nova Sco 2012), although with the price that 59 sources
 would receive less than 50\% exposure. We note that 61\% of
 the transient sources (131 in total) would receive
-comparable exposure time from option1v2 survey strategy
-compared to the standard one.
+comparable exposure time for option1v2 and the standard survey mode.
 
 For transient searches on different time scales, both
 short-term flares on time scales of a few hours and
-long-term flux variations of a few months, changed survey
+long-term flux variations of a few months, the changed survey
 strategy would open the opportunity for a sample of sources
 with better sampling on time domain and higher sensitivity
 of flare detection.
@@ -738,7 +740,7 @@ the decision to an internal release; in order for the community to provide
 input, the decision should be made based upon public data. 
 
 Another trigger might be to just wait until a certain significance against/in
-favour of the signal hypothesis are achieved. However, this could cause a
+favour of the signal hypothesis is achieved. However, this could cause a
 long-enough delay to make a later change inefficient. It would make more sense
 to make the change immediately, and then have a trigger to revert to normal
 survey mode when the signal hypothesis is ruled out at some level.
@@ -799,7 +801,8 @@ as possible. For reasons discussed above, `option3v3' put forward by the Fermi
 mission seems to be the best way to go.
 
 At least for the next several years, Fermi is uniquely able to address the 130
-GeV line.  If it is an artifact, it is a subtle one -- and understanding its
+GeV line (with possible competition from HESS-II~\cite{Bergstrom:2012vd}).
+If it is an artifact, it is a subtle one -- and understanding its
 origin is important for the dark matter search in
 particular, and the mission as a whole. If the line is real, we would forever
 regret missing this opportunity to pursue it aggressively. 
