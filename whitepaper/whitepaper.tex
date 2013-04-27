@@ -97,8 +97,7 @@
 \begin{document}
 
 
-\title{Let the LAT speak: Closing in on the Fermi line with a changed survey
-strategy}
+\title{Closing in on the Fermi line with a new observation strategy}
 
 \author{Christoph Weniger}
 \affiliation{GRAPPA Institute, Univ.~of Amsterdam, Science Park 904, 1098 GL
@@ -264,7 +263,6 @@ different from the exposure required to achieve $3\sigma$ \emph{with 95\%
     \vspace{-0.5cm}
   \end{center}
   \caption{
-    \textbf{(Update figure with correct exposure factor for optionX)}
     Expected evolution of signal significance in Region~3 from
     Ref.~\cite{Weniger:2012}, starting on 4
     February 2012, as function of
@@ -285,8 +283,9 @@ different from the exposure required to achieve $3\sigma$ \emph{with 95\%
     \vspace{-0.5cm}
   \end{center}
   \caption{Region 3 (blue) and Region 4 (red) used in
-    Ref.~\cite{Weniger:2012}, together with the simpler hourglass region
-    proposed for future studies.}
+  Ref.~\cite{Weniger:2012}, together with the simpler hourglass region
+  proposed for future studies (cp.~also with Fig.~3 in
+  Ref.~\cite{Bringmann:2012ez}).}
   \label{fig:projection}
 \end{figure}
 
@@ -362,7 +361,11 @@ would be confirmed with $>3\sigma$ significance, although this is not
 guaranteed due to the $95\%$ CL error bands that range down to significances
 of only $1\sigma$. Worse, it will be difficult to robustly rule out the signal
 hypothesis at the $3\sigma$ level unless the accumulated significance is close
-to zero.  This drives home the point that, left unchanged, the current survey
+to zero.\footnote{To exclude the signal hypothesis at the $3\sigma$ level at a
+specific point in time, the acctually observed significance has to lie outside
+of the predicted
+$99.7\%$ CL band (which we omitted in Fig.~2).} This drives home the point
+that, left unchanged, the current survey
 strategy may well leave us with ambiguous results well into 2015.  As we will
 discuss in the next section, a change in the observation strategy will allow a
 much quicker confirmation/rejection of the signal hypothesis.
@@ -393,7 +396,8 @@ energy reconstruction of the LAT around 130 GeV.  Additional limb data would
 determine whether the Earth limb feature is indeed a true systematic effect or
 merely a statistical fluke in light of a large number of hidden trials.
 
-We define here the Earth limb excess by selecting P7CLEAN events until 5 Sep 2012 at zenith angles $Z>100^\circ$,
+We define here the Earth limb excess by selecting P7CLEAN events until 5 Sep
+2012 at zenith angles $Z>100^\circ$,
 incidence angles $\theta<60^\circ$, and excluding events within $20^\circ$ of
 the Galactic center. In this data set, the line feature at 130~GeV has a
 significance of $2.7\sigma$ when
@@ -614,7 +618,7 @@ spots' should be avoided.
     option3v3 && 4.56 && 9.67  \\
     \hline
   \end{tabular}
-  \caption{\textbf{(Double check numbers)} Mean exposure (averaged over full
+  \caption{Mean exposure (averaged over full
   sky) and exposure of GC for different observation profiles in comparison.
   We assume P7CLEAN events at 100 GeV and 55 days of observation.}
   \label{tab:exposures}
@@ -632,7 +636,7 @@ between $4\%$ (option3v3) to $8\%$ (option1v2).
     \vspace{-0.5cm}
   \end{center}
   \caption{Histogram of exposure per sky pixel, normalized to standard survey
-    strategy \textbf{(it does not look like that!)}. Left panel compares the
+    strategy. Left panel compares the
     mixed mode option1v2 to the standard survey strategy, and the right panel
     shows the modified strategy option2v2 and option2v3.}
   \label{fig:expHisto}
