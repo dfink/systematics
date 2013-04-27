@@ -482,7 +482,7 @@ calibration.
 However, Fermi is capable of very flexible survey mode patterns. For example,
 a single orbit may include both survey mode and pointed observations (``mixed
 mode''), increasing coverage of certain parts of the sky. We will explore the
-impact of such a strategy on study of the 130 GeV feature at the Galactic
+impact of such a strategy the on study of the 130 GeV feature at the Galactic
 center.  We focus here on the mixed modes `option1v2', `option2v2' and
 `option3v3' put forth for discussion by the Fermi mission.\footnote{See
 \url{http://fermi.gsfc.nasa.gov/ssc/proposals/alt_obs/obs_modes.html}.}
@@ -492,22 +492,24 @@ basic strategy would be to switch to pointed observation of the Galactic
 center when possible, and to follow the standard survey mode otherwise. More
 precisely, \Fermi\ would slew from survey mode to the target once the target
 is $10^\circ$ from Earth occultation, and slew back to survey mode position
-once the target reenters $10^\circ$ from Earth occultation.  The minimal
-distance to the Earth horizon (the Earth Avoidance Angle, EAA) is set to
+once the target reenters $10^\circ$ from Earth occultation.  The
+the Earth Avoidance Angle (EAA) is set to
 $30^\circ$, to avoid the loss of too much exposure during the transition
-periods. 
+periods. This means that the LAT will track the target only to within $30^\circ$ of
+the Earth limb and then hold steady before it switches back to survey mode. 
 
 To reduce potential systematics, it is advisable to avoid pointing directly at
 the target. Instead, it is useful to observe it with a broad distribution of
-non-zero incidence angles. The three mixed modes option1v2, option2v2
+incidence angles. The three mixed modes option1v2, option2v2
 and option3v3 differ mainly in what target position exactly is adopted.
-In option1v2 and option2v2, the target position is fixed at (RA,
+In option1v2 and option2v2, the position is fixed at (RA,
 Dec)=($261.4^\circ$, $-28.9^\circ$) and (RA, Dec)=($261.4^\circ$, $0^\circ$),
-respectively.  In option3v3 the target position RA is set to
-261.4$^\circ$, while the target position declination oscillates within the
+respectively.\footnote{The Galactic center is at RA=266.4$^\circ$,
+Dec=-28.9$^\circ$.}  In option3v3 the target position RA is set to
+261.4$^\circ$, while the target declination varies within the
 range Dec=$\pm25.6^\circ$ during one orbital precession period such that the
-target position lies on the orbital equator.  The variation of the target
-position yields an improved sky uniformity on short time scales. 
+target position remains close to the orbital equator.  These variations of the target
+position yield an improved sky uniformity on short time scales. 
 
 \subsection{Impact on line searches at the Galactic center}
 The upper panels of Fig.~\ref{fig:mollweide} show exposure maps after 55 days
@@ -534,9 +536,9 @@ factor of 2.23 with respect to normal survey mode.
 In mixed mode, regions close to the Galactic center are predominantly observed
 at low incidence angles in the range $\theta\simeq5^\circ$--$50^\circ$ (see
 Fig.~\ref{fig:thetaDist}). This has impact on the effective energy resolution,
-which is shown in the central panel of Fig.~\ref{fig:mollweide}. In direction
+which is shown in the central panels of Fig.~\ref{fig:mollweide}. In direction
 of the Galactic center the energy resolution is in fact slightly worsen with respect to the
-standard survey mode ($\Delta E/E=9.59\%$ instead of $\Delta E/E=8.75\%$).
+standard survey mode ($\Delta E/E=9.59\%$ for option3v3 instead of $\Delta E/E=8.75\%$).
 However, this loss of resolution has only a small effect on line searches.
 
 In Fig.~\ref{fig:mollweide2}, we show the same information, but for the mixed
@@ -549,11 +551,12 @@ mainly differ in the impact on other science goals, as we will discuss below.
 As a convenient \emph{figure of merit} for line searches we define the
 dimensionless quantity $$Q\equiv a\sqrt{\mathcal{E}/\Delta E}\,,$$ which is
 proportional to the expected median line significance in units of standard
-deviations.  Here, $\mathcal{E}$ is the exposure in cm$^2$s, and $a$
+deviations.  Here, $\mathcal{E}$ is the exposure in cm$^2$s, $\Delta E$ the
+energy resolution, and $a$
 normalizes $Q$ such that the spatial mean in survey mode is $\bar Q=1$. In the
-bottom panel of Fig.~\ref{fig:mollweide} we show sky maps for $Q$ in mixed and
+bottom panels of Fig.~\ref{fig:mollweide} and~\ref{fig:mollweide2} we show sky maps for $Q$ in mixed and
 survey mode.  At the Galactic center, $Q$ increases by a factor $1.43$ when
-switching to mixed mode observation, which would increase the growth rate of
+switching to mixed mode option3v3, which would increase the growth rate of
 the signal significance by $43\%$, equivalent to doubling the exposure/time. 
 
 \subsection{Impact on Earth limb observations}
