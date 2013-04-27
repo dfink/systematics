@@ -188,25 +188,12 @@ $1.5\degree$ west of the Galactic center, and also suggested that there may
 be two lines, at about 111 and 129 GeV. The lower energy line is
 tantalizing because it matches the expected energy of a $Z\gamma$ line if
 the higher energy is the $\gamma\gamma$ line.  
-
-% These findings have inspired a number of models and
-% further analysis of the \Fermi\ data~\citep{Dudas:2012, Choi:2012,
-% Kyae:2012, Lee:2012, Rajaraman:2012, Acharya:2012, Garny:2012,
-% Buckley:2012, Chu:2012, Kang:2012, Buchmuller:2012, Bergstrom:2012b,
-% Heo:2012, Park:2012, Tulin:2012, Cline:2012, Weiner:2012, WeinerYavin:2012b,
-% FanReece:2012, Huang:2012, Whiteson:2012, Buchmuller:2012, Cholis:2012}.
- 
-% Recent evidence for lines at 111 GeV and 129 GeV with a
-% local significance of $3.3\sigma$ from \Fermi\ unassociated
-% point sources suggests an annihilation signal is
-% present~\cite{doubleline}\citep[but
-% see][]{HooperLinden:2012b}, as does the claim of line
-% emission from galaxy clusters at 130
-% GeV~\cite{Hektor:2012kc}.  Neither of these would stand on
-% their own, but they provide support for the hypothesis that
-% the Galactic center line signal is produced by dark matter
-% annihilation.
-
+These findings have inspired a number of models and
+further analysis of the \Fermi\ data~\citep{Dudas:2012, Choi:2012,
+Kyae:2012, Lee:2012, Rajaraman:2012, Acharya:2012, Garny:2012,
+Buckley:2012, Chu:2012, Kang:2012, Buchmuller:2012, Bergstrom:2012b,
+Heo:2012, Park:2012, Tulin:2012, Cline:2012, Weiner:2012, WeinerYavin:2012b,
+FanReece:2012, Huang:2012, Whiteson:2012, Buchmuller:2012, Cholis:2012}.
 % The high statistical significance of the line feature
 % motivates a search for systematic errors in the LAT data
 % that could mimic a line in the Galactic center.
@@ -222,19 +209,17 @@ the higher energy is the $\gamma\gamma$ line.
 % any line-producing artifacts in the detector frame, and
 % investigate if they could map onto the Galactic center.
  
-% The Earth's atmosphere provides a convenient source of
-% photons for systematics tests.  The continual cosmic-ray
-% cascades in the Earth's atmosphere produce gamma rays with
-% $dN/dE \sim E^{-2.8}$~\citep{FermiLimb}.  Because these
-% so-called `Earth limb photons' result from atmospheric
-% cascades, they are produced by interactions in a highly
-% boosted frame, and cannot contain line emission.
-% \medskip
+The Earth's atmosphere provides a convenient source of
+photons for systematics tests.  The continual cosmic-ray
+cascades in the Earth's atmosphere produce gamma rays with
+$dN/dE \sim E^{-2.8}$~\citep{FermiLimb}.  Because these
+so-called `Earth limb photons' result from atmospheric
+cascades, they are produced by interactions in a highly
+boosted frame, and cannot contain line emission.
 
-\dots Earth limb story etc \dots
-
-\dots Here, we propose to settle this issue for good, using Fermi LAT itself
-\dots
+In the following, we review the current observational status, estimate the
+additional exposure needed, and propose a strategy to obtain it while
+mitigating impact on other science objectives. 
 
 \section{Current status of signal and systematics}
 Although the evidence for a 130 GeV line is compelling, significant concerns
@@ -704,28 +689,55 @@ mean, whereas in $>80\%$ the coverage remains above $50\%$ of the mean.
     \vspace{-0.5cm}
   \end{center}
   \caption{Source type distribution for the 1FAV
-    catalog~\cite{Fermi-LAT:2013jsa}. We classify the sources into three
-    categories: sources with expected exposure time (assuming option1v2) less than 50\% of the standard survey strategy; sources with expected exposure between 50\% to 150\% compared to the standard survey strategy; and sources with expected exposure more than 150\%. }
+    catalog~\cite{Fermi-LAT:2013jsa}. We classify the
+    sources into three categories: sources with expected
+    exposure time (assuming option1v2) less than 50\% of the
+    standard survey strategy; sources with expected exposure
+    between 50\% to 150\% compared to the standard survey
+    strategy; and sources with expected exposure more than
+    150\%. }
   \label{fig:transhist}
 \end{figure}
+
+\begin{table}[t]
+  \begin{tabular}{lcrcrcr}
+    \hline
+    Mode && $>150\%$ exposure && $<50\%$ exposure && $50\%<$ exposure $<150\%$\\
+    \hline
+    option1v2 && 25 ($12\%$) && 59 ($27\%$) && 131 ($61\%$) \\
+    option2v2 && 32 ($15\%$) && 45 ($21\%$) && 138 ($64\%$) \\
+    option3v3 && 29 ($13\%$) && 30 ($14\%$) && 156 ($73\%$)\\
+    \hline
+  \end{tabular}
+  \caption{Number (fraction) of transient sources corresponding to different expected exposure given three modified survey strategy. The fraction of expected exposure is compared to the standard survey strategy. }
+  \label{tab:transsource}
+\end{table}
 
 The Fermi All-sky Variability Analysis has detected a total
 of 215 flaring gamma-ray sources over the entire sky based
 on weekly time intervals of 47 months LAT
-data~\cite{Fermi-LAT:2013jsa}. In Fig.~\ref{fig:transhist} we show
-how the exposure of different variable source types could be
-affected by changing from survey to mixed mode
+data~\cite{Fermi-LAT:2013jsa}. In Fig.~\ref{fig:transhist}
+we show how the exposure of different variable source types
+could be affected by changing from survey to mixed mode
 observations. For the different source classes, we show the
 fraction of sources which would loose in exposure by than
 $50\%$ (red), which would gain more than $50\%$ of exposure
 (green), and which remain relatively unaffected (black). For
-option1v2, we have 25 sources that would receive more than 150\%
-exposure compared to the standard survey strategy with finer
-sampling on time domain (including the recently detected
-Nova Sco 2012), although with the price that 59 sources
-would receive less than 50\% exposure. We note that 61\% of
-the transient sources (131 in total) would receive
-comparable exposure time for option1v2 and the standard survey mode.
+option1v2, we have 25 sources that would receive more than
+150\% exposure compared to the standard survey strategy with
+finer sampling on time domain (including the recently
+detected Nova Sco 2012), although with the price that 59
+sources would receive less than 50\% exposure. We note that
+61\% of the transient sources (131 in total) would receive
+comparable exposure time for option1v2 and the standard
+survey mode.  In Tab.~\ref{tab:transsource}, we compare the
+three modified strategies the fraction of transient sources
+would obtain $>150\%$ exposure, $<50\%$ exposure, and fairly
+unaffected sources. As we see from the Table, option3v3
+provide comparable number of sources with $>150\%$ exposure,
+but 50\% (33\%) smaller sample of sources with $<50\%$
+exposure for option1v2 (option2v2).
+
 
 For transient searches on different time scales, both
 short-term flares on time scales of a few hours and
