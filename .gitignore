@@ -1,3 +1,5 @@
 .*
 *.pdf
 *.ps
+whitepaper/whitepaper.bbl
+whitepaper/whitepaper.end
