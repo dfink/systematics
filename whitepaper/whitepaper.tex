@@ -556,6 +556,17 @@ switching to mixed mode option3v3, which would increase the growth rate of
 the signal significance by $43\%$, equivalent to doubling the exposure/time. 
 
 \subsection{Impact on Earth limb observations}
+In general, to keep systematics that might be related to specific incidence
+angles $\theta$ under control, it is useful if the Galactic center is observed
+at a broad distribution of different incidence angles. For the four
+observation modes, this distribution is shown in
+Fig.~\ref{fig:thetaDist}. In case of option3v3, $\theta$ spans a range from
+$5^\circ$ to $50^\circ$ (the discrete distribution comes from jumps in the
+target position as it follows $\rm Dec\simeq0^\circ$). This is a significant
+advantage
+when compared to option1v2 and option2v2, which feature pronounced peaks at
+$\theta\sim5^\circ$ and $\theta\sim30^\circ$, respectively.
+
 An important side effect of the mixed mode is the accumulation of
 additional Earth limb data at low incidence angles, which can be used for
 checks of instrumental systematics. This happens during the
@@ -563,18 +574,6 @@ transitions between pointed observation and survey mode. The target comes
 close to the horizon, while the satellite maintains a minimal distance of
 $30^\circ$ from the Earth limb. Consequently, the Earth limb is observed at
 incidence angles $\theta\gtrsim30^\circ$ twice every orbit (1.5 hours).
-
-In Fig.~\ref{fig:limb_exposure}, we show the expected differential exposure of
-the Earth limb at zenith angles $111^\circ<Z<113^\circ$. In standard survey
-mode, practically no limb data is collected at $\theta\lesssim60^\circ$.
-However, during mixed mode a very significant number of the detected Earth
-limb events would be collected at lower incidence angles. This would
-accelerate the accumulation of low incidence angle Earth limb data with
-respect to the previous 4.5 years by about \emph{a factor of five}, and will
-allow a rapid rejection or confirmation of the 130 GeV feature in part of the
-Earth limb spectrum. Note that a collection of Earth limb events at incidence
-angles even lower than $30^\circ$ is possible if the EAA is set appropriately,
-however at the cost of losing more exposure on the rest of the sky.
 
 \begin{figure}[t]
   \begin{center}
@@ -591,16 +590,17 @@ however at the cost of losing more exposure on the rest of the sky.
   \label{fig:limb_exposure}
 \end{figure}
 
-In general, to keep systematics that might be related to specific incidence
-angles $\theta$ under control, it is useful if the Galactic center is observed
-at a broad distribution of different incidence angles. For the four
-observation modes, this distribution is shown in
-Fig.~\ref{fig:thetaDist}. In case of option3v3, $\theta$ spans a range from
-$5^\circ$ to $50^\circ$ (the discrete distribution comes from jumps in the
-target position as it follows $\rm Dec\simeq0^\circ$). This is a significant
-advantage
-when compared to option1v2 and option2v2, which feature pronounced peaks at
-$\theta\sim5^\circ$ and $\theta\sim30^\circ$, respectively.
+In Fig.~\ref{fig:limb_exposure}, we show the expected differential exposure of
+the Earth limb at zenith angles $111^\circ<Z<113^\circ$. In standard survey
+mode, practically no limb data is collected at $\theta\lesssim60^\circ$.
+However, during mixed mode a very significant number of the detected Earth
+limb events would be collected at lower incidence angles. This would
+accelerate the accumulation of low incidence angle Earth limb data with
+respect to the previous 4.5 years by about \emph{a factor of five}, and will
+allow a rapid rejection or confirmation of the 130 GeV feature in part of the
+Earth limb spectrum. Note that a collection of Earth limb events at incidence
+angles even lower than $30^\circ$ is possible if the EAA is set appropriately,
+however at the cost of losing more exposure on the rest of the sky.
 
 \subsection{Impact on other science}
 Changing from survey mode to mixed mode observation will necessarily drag
