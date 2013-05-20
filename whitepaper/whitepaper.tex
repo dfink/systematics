@@ -1,14 +1,8 @@
-%Publication version
-% \documentclass[aps,twocolumn,prd,superscriptaddress,showpacs,nofootinbib,fixfloat]{revtex4-1}
-%Draft version
 \documentclass[aps,prd,superscriptaddress,nofootinbib,fixlfloat, 12pt]{revtex4-1}
-%\usepackage{doublespace}
 \usepackage{graphicx}
 \usepackage{dcolumn}
 \usepackage{bm}
 \usepackage{natbib}
-
-%\topmargin+1cm
 
 \hyphenation{CTBCORE}
 
@@ -88,12 +82,6 @@
 \def\ga{\vcenter{\hbox{$>$}\offinterlineskip\hbox{$\sim$}}}
 \newcommand\Refsec[1]{Section \ref{sec:#1}}
 
-% Necessary for appendices
-
-%% \newcommand\dpf[1]{{\bf (DPF: #1)}}
-%% \newcommand\dpf[1]{{\bf (MS: #1)}}
-%% \newcommand\dpf[1]{{\bf (CW: #1)}}
-
 \begin{document}
 
 
@@ -128,9 +116,6 @@ Luruper Chaussee 149, 22761 Hamburg, Germany}
 \author{Nestor Mirabal}
 \affiliation{Universidad Complutense de Madrid, Spain}
 
-%% Claims of a line are important and demand a careful search for
-%% systematics.  Limb photons provide a reference spectrum and look a bit
-%% fishy.  Need more data.
 \begin{abstract}
   Evidence for a spectral line in the inner Galaxy has caused a great deal of
   excitement over the last year, mainly because of its interpretation as a
@@ -151,8 +136,6 @@ Luruper Chaussee 149, 22761 Hamburg, Germany}
 
 \maketitle
 
-
-%%%%%%%%%%%%%%%%%%%%%% SECTION I %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
 For indirect dark matter searches with gamma rays, discriminating between a
@@ -188,20 +171,6 @@ WeinerYavin:2012b,
 FanReece:2012, Huang:2012, Whiteson:2012, Buchmuller:2012, Cholis:2012,
 Rao:2012fh, Whiteson:2013cs, Carlson:2013vka}. Preliminary results from the
 LAT team investigating the excess were presented in~\cite{bloom_charles_fermi_lat_line, Albert:Talk}.
-% The high statistical significance of the line feature
-% motivates a search for systematic errors in the LAT data
-% that could mimic a line in the Galactic center.
-% Confirmation by Imaging Air Cherenkov Telescopes like
-% HESS-II might be possible as early as next
-% year~\cite{Bergstrom:2012}, but in the meantime a thorough
-% study of LAT systematics is urgently needed.  We do not have
-% access to the details of the reconstruction of each photon
-% event, which would allow us to study how it developed in the
-% tracker and calorimeter.  However, we do have information
-% about each event from the public event lists and spacecraft
-% parameter files.  We can use this information to search for
-% any line-producing artifacts in the detector frame, and
-% investigate if they could map onto the Galactic center.
  
 Although the evidence for a 130 GeV line is compelling, significant concerns
 about the Galactic center signature remain, including: (1) its statistical
@@ -290,9 +259,6 @@ Ref.~\cite{Weniger:2012}, which is one of the regions where the excess was
 first identified. Below we
 propose a geometrically similar but much simpler region that we advocate as an
 alternative for future studies.
-% The temporal distribution of `signal' events at the Galactic center over the
-% previous 4.5 years of data taking can be used for a trial-free statistical
-% confirmation of the excess. 
 
 We will here rely on the public unreprocessed Pass 7 data. Preliminary results
 from the LAT team show that the line feature is also present in the
@@ -300,8 +266,6 @@ reprocessed Pass 7 data, though it moves to 135 GeV and appears to be slightly
 less significant~\cite{Albert:Talk}. Throughout, we will refer to the feature
 as `130~GeV feature' for simplicity.
 
-% The number of signal events $N_s$ in each bin follows directly from a
-% maximum likelihood fit to the data (power-law background plus line feature). 
 We derive the number of excess events $N_s$ by a maximum likelihood fit to the
 first 3.5 years of data from Region 3 (using a power-law plus line model). In
 the fit, we adopt an energy range from 65 to 260 GeV, fix the line position at
@@ -378,15 +342,10 @@ profiles, it is an \emph{a priori} region for data taken since 4 February
 $\ell^2+b^2\leq
 r^2$ and $\ell^2\leq (b\tan\varphi)^2 + d^2$, with $(r, d, \varphi) =
 (20^\circ, 3^\circ, 60^\circ)$. 
-%and note that it has similar signal-to-noise
-%properties as Region 3 or 4. 
 
 \subsection{The Earth limb feature}
 The continual cosmic-ray cascades in the Earth's atmosphere produce gamma rays
 with $dN/dE \sim E^{-2.8}$~\citep{FermiLimb}. 
-%Because these so-called `Earth limb photons' result from atmospheric
-%cascades, they are produced by interactions in a highly boosted frame, and
-%cannot contain line emission.  
 These so-called `Earth limb' photons provides a convenient source of photons
 for systematics tests. 
 %
@@ -466,8 +425,6 @@ would be invaluable for diagnosing instrumental problems.
 \section{A New Observation Strategy}
 Since the start of the mission, Fermi has spent over 95\% of the time in
 \emph{standard survey mode}.
-% With a field of view of $\sim2.5$~sr, the LAT can survey the entire sky in
-% two orbits. 
 In this mode, the LAT points north of zenith towards the orbital pole by an
 angle \zrock\ on one orbit, and south of zenith by the same angle on the next
 orbit; the LAT pointing is confined to the plane perpendicular to its orbital
@@ -480,9 +437,6 @@ the LAT may point at a larger zenith angle than usual, even at the horizon.  In
 addition, survey mode is occasionally interrupted by Autonomous Repoints of
 the observatory for triggered gamma-ray burst follow-up observations, and for
 calibration.
-% Furthermore, \Fermi's survey observations are halted during passages through
-% the South Atlantic Anomaly, resulting in an exposure differential between
-% north and south of $\sim15$\%. 
 
 However, Fermi is capable of very flexible survey mode patterns. For example,
 a single orbit may include both survey mode and pointed observations (``mixed
@@ -777,15 +731,6 @@ favour of the signal hypothesis is achieved. However, this could cause a
 long-enough delay to make a later change inefficient. It would make more sense
 to make the change immediately, and then have a trigger to revert to normal
 survey mode when the signal hypothesis is ruled out at some level.
-
-% \begin{figure}[t]
-%   \begin{center}
-%     \includegraphics[width=0.9\linewidth, angle=0]{plots/transient_source_map.ps}
-%     \vspace{-0.5cm}
-%   \end{center}
-%   \caption{The spatial distribution of 1FAV sources overplotted with the exposure map of Option 1 survey strategy. Red circles mark sources with expected exposure $>150\%$ than the standard survey strategy with a total number of 25 sources. Green circles mark sources with expected exposure $<50\%$ than the standard survey strategy with a total number of 59 sources. The rest sources are marked by blue cycles in total 131. }
-%   \label{fig:transmap}
-% \end{figure}
 
 \section{Discussion and Conclusion}
 \label{sec:Conclusion}
