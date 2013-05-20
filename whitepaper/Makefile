@@ -5,14 +5,14 @@ all :
 	latex whitepaper.tex
 	dvips -o whitepaper.ps -t letter whitepaper
 	ps2pdf whitepaper.ps
-	rm -f *.aux *.blg *.log *.dvi *~ *Notes.bib
+	rm -f *.aux *.blg *.log *.dvi *~ *Notes.bib *.end
 
 
 latex -interaction=nonstopmode :
 	latex -interaction=nonstopmode fermiics
 
 clean :
-	rm -f *.aux *.blg *.log *.dvi *.bbl *.ps *.pdf *~ *.bbl
+	rm -f *.aux *.blg *.log *.dvi *.bbl *.ps *.pdf *~ *.bbl *.end
 
 
 xxx :
